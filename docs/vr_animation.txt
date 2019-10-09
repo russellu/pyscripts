@@ -1,0 +1,4 @@
+moving brain areas around - expand them outwards, and then bring them back in.
+
+get a normal vector for each area based on how far it is from the center
+place the controller over the brain area, and the name pops up 

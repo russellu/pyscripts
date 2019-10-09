@@ -1,0 +1,125 @@
+interactions between two different inhibitory systems in the human motor cortex: 
+intracortical inhibition in the human motor cortex has been previously demonstrated using paired pulse TMS protocols at short (1-6ms)
+with subthreshold conditioning pulse and suprathreshold test pulse, and long (LICI) with suprathreshold conditioning and test pulses
+they investigated whether different circuits mediate these inhibitory phenomenon and how they interact. TMS was applied to the motor
+cortex of 9 healthy volunteers, and MEP was recorded from the first dorsal interosseous muscle. with increasing test pulse strength,
+LICI decreases but SICI increases, there was no correlation between the degree of SICI and LICI. they tested the interactions between
+sici and lici, sici was reduced or eliminated in the presence of lici. loss of sici was seen even with a conditioning stimulus too
+weak to reduce significant lici. they conclude that different cell populations mediate sici and lici. the results are consistent 
+with the hypothesis that lici inhibits sici through presynaptic gabab receptors. testing of sici in the presence of lici may be a 
+non-invasive way of evaluating inhibitory mechanisms in the human motor cortex. 
+
+introduction: cortical inhibitory systems play a crucial role in modulating cortical output. changes in cortical inhibition occur
+in many neurological diseases and may also affect synaptic plasticity. cortical output depends on the balance between excitatory and
+inhibitory systems. the inhibitory systems of the human motor cortex can be assessed non-invasively using tms, a widely used protocol
+being a weak, subthreshold conditioning stimulus followed by a stronger suprathreshold test stimulus. the test responses are 
+inhibited at isis of 1-6ms, and facilitated at isis of 8-30ms, these phenomena will be referred to as sici and intra-cortical
+facilitation (icf). evidence that sici occurs in the cortex includes the reduction of descending corticospinal waves and an anodal
+transcranial electrical stimulation test pulse, which directly activates corticospinal axons, is not inhibited by a TMS conditioning
+pulse. 
+sici is reduced prior to voluntary movement in the intended agonist but not in the antagonist muscle. changes in sici could serve to
+focus the subsequent excitatory drive to produce the intended movement. alteration in sici and icf may mediate cortical plasticity,
+and abnormalities of sici and icf have been reported in some neurological and psychiatric disorders such as parkinson's, dystonia,
+and tourettes. 
+another form of inhibition induced by TMS pulses is from a suprathreshold conditioning pulse applied 50-200ms prior to the test pulse,
+referred to as long interstimulus interval intracortical inhibition (lici). as for sici, lici at isis of >50ms occurs in the cortex
+due to absence of any change in spinal excitability, the failure to suppress the response to double TES, and marked reduction in 
+corticospinal waves evoked by TMS. LICI has been shown to be abnormal in some conditions such as stroke, dystonia, and parkinsons. 
+although both sici and lici are due to reduced cortical excitability, it is not known whether the same population of neurons mediates
+both types of cortical inhibition. pharmacological studies suggest that the two forms of inhibition can be differentially modulated,
+it has been hypothesized that sici is primarily mediated by gabaa receptors, while lici is mediated by gabab receptors, however the
+evidence supporting activity at different receptor subtypes does not resolve the question of whether cell populations responsible
+for sici and lici are themselves distinct. 
+the presente study tests the hypothesis that different neuronal circuits mediate SICI and LICI. they first determine the effects of
+different test stimulus intensities on sici and lici,  a different pattern of response would support the existence of two distinct
+inhibitory circuits. they then examined the interaction of sici and lici in a triple stimulation protocol that allows to measure
+sici in the presence of lici. 
+
+methods: 9 healthy volunteers, 6 men 3 women, mean age 40. 
+emg recording: surface emg was recorded from the right first dorsal interosseus muscle (fdi) with disposable disc electrodes in a 
+tendon-belly arrangement. 
+tms stimulation: a 7cm figure 8 coil and four magstim 200 stimulators, the setup allowed to deliver up to four pulses of different
+intensities at very short ISI. the coil was placed at the optimal location for elicting mep from fdi. 
+
+study design: each trial consisted of a test pulse, which could be preceded by one or two conditioning pulses. the conditioning pulse
+could be at 2,10,or 100ms prior to the test pulse, labeled as test, cs2,cs10,and cs100. the intensities of test and cs100 were 
+adjusted to achieve specific MEP amplitudes for each subject, and the strength of the pulses was labeled accordingly. stimulus 
+intensity of 1mv indicates the minimum stimulator setting necessary to produce peak to peak mep amplitude of 1mv in 5/10 trials, .2
+and 4mv are defined similarly. conditioning stimulus intensities were expressed as a percentage of the motor threshold, which was
+determined at rest and defined as the minimum stimulator output that produced meps of >50uv in 5/10 trials. a stimulator setting at
+80% of MT is given as 0.8mt. inhibition and facilitation were expressed as the ratio of the conditioned mep amplitudes to the
+unconditioned mep amplitude. 
+experiment 1: effects of test stimulus intensity on sici, icf, and lici: 
+they examined whether changes in the test stimulus intensity had different effects on sici, icf, and lici. the intensities of the 
+sub-threshold cs2 and cs10 were 0.8mt, and the intensity of the suprathreshold cs100 pulse to elicit lici was 1mv. each run consisted
+of 10 trials each of a test stimulus alone, a cs2 test-stimulus pair, a cs10 pair, and cs100 pair, each delivered in random order. 
+three test stimuli of 0.2, 1, and 4mv were studied in separate runs. 
+
+experiment 2: effects of lici on sici and icf: 
+this experiment investigated whether sici and icf were affected by lici. ten conditions were tested. each run consisted of 10 trials
+of each of the 10 conditions delivered in random order. baseline sici, icf, and lici were determined for a 1mV test MEP. because
+sici and icf may be affected by the size of the test response, and the preceding cs100 inhibits the test response, the strength of
+the test pulse was increased to compensate for this effect. the strength of the test pulse was adjusted to produce 1mv mep in the 
+presence of the earlier cs100 pulse, and this test pulse is referred to as 1mvcs100. sici and icf in the presence of preceding cs100
+pulse were studied using three pulses. the experiment was designed to compare sici and icf in the presence of the cs100 pulse to 
+SICI and icf in the absence of cs100 pulse matched for test MEP amplitude. 
+
+experiment 3: effects of stronger cs2 and cs10 pulses: 
+since the preceding cs100 pulse may also inhibit or reduce the effectiveness of the cs2 or cs10 pulses, sici and icf were tested
+with stronger cs2 and cs10 to compensate for the effects of cs100. the rmt was determined in the presence of cs100, and the 
+intensities of cs2 and cs10 were adjusted to be 80% of the conditioned motor threshold in thre presence of cs100. 
+
+experiment 4: effects of variations in lici intensity: the effects of different strength cs100 stimuli were tested. the effects of
+adding a cs2 pulse on lici was examined by comparing a test MEP generated by a single pulse to one generated by a cs2 pulse, the 
+effects of different strength cs100 on lici and subsequent sici and icf were also tested. 
+
+experiment5: effects of weak LICI within the silent period: 
+with cs100 at 1.1mt, cs2 and test pulses were delivered around the end of the silent period. since the cortical neurons may have
+increased excitability at the end of the silent period, an additional experiment was performed to examine the effects of weak lici
+within the silent period. 
+
+experiment 6: silent period duration: the duration of the silent period following a single stimuli at 1.1, 1.3, and 1.5mt and a 
+strength of 1mv were measured. 
+
+data analysis: peak to peak MEP amplitude for each trial was measured offline. inhibition was a ratio between conditioned and
+unconditioned <1, and facilitation >1. 
+statistical analyis: anova, and linear regression (pearson). 
+
+results: 
+experiment 1: the test stimulus strength was varied from 0.2-4mV. for SICI, there was only slight inhibition for small test meps of
+0.2mv, and the inhibition increased up to 1mv, after which there was a pleateau, the effect of test stimulus strength on Sici did
+not reach significance. the effect of test stimulus intensity of icf was also not significant. in contrast, lici decreased with 
+higher test stimulus intensities, with a significant decrease in LICI at higher test stimuli. 
+
+experiment 2: the average MEP amplitude for all subjects was 1.3mV for the 1mV test stimulus alone, and 2.6mV for the 1mVcs100 test
+stimulus alone. with cs100 at 1mv intensity and the test stimulus at 1mvcs100, the mep amplitude was 1.3mv, thus the mep amplitude
+to blah. compared to test stimulus alone, a preceding cs2 or cs100 stimulus inhibited the response, however in the presence of cs100,
+cs2 did not inhibit the response. 
+
+discussion:
+do different cell populations mediate the two inhibitory phenomena? if so, what are their interactions? 
+different cell populations mediate sici and lici: changes in the strength of the test stimulus had markedly different effects on 
+sici and lici, and there was no correlation between the extent of sici and lici, which suggests that different cell populations 
+mediate sici and lici. since lici was greatest for low-intensity test stimuli, neurons with the lowest threshold are more sensitive
+to lici than those with higher threshold, and increasing the test stimulus intensity may recruit neurons that are less excitable or
+spatially further away from from the center of TMS activation. these neurons may be less sensitive to LICI. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

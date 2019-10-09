@@ -1,0 +1,11 @@
+correlation_parameters
+
+structural measures:
+distance, intrinsic curvature, mean curvature, inot 
+
+functional measures:
+percent change, #voxels
+
+EEG measures
+amplitude, peak frequency 
+

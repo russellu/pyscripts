@@ -1,0 +1,157 @@
+weekend of april 7-8
+goal: finish all auto-trader stuff for app 
+	main objectives:
+
+	1) complete auto trader workshop -> allow user to set up their own entry/exit criteria using dropdown menus
+		first thing - skip mode and recreate your own auto trader in the workshop, to make sure it works. 
+		auto-entry trigger: select indicator parameters -> get the indicator -> set triggers, etc. 
+			finsih both indicator setups, then do the trigger setup. goal is to have most of the auto-trader custom indicators working by tonight
+			change the entry trigger colors
+		auto-entry filter - 
+		move the cancellation button down	
+		goal by the end of today: recreate the bollinger band using custom indicator creator 
+			have a cancel button only up till the final step (then add the accept button) 
+
+	TOMORROW: two main goals: 1) complete the auto trader custom indicators
+			          2) test the auto trader incorporating higher time frame somehow (or just use long duration lower TF) 
+
+	fix the cancel/accept - only when all parameters are complete
+	fix the purple boxes (done)
+	add in the stop/take profit (done)  
+	add in some more indicators. should have the stop/take profit, bollinger bands, and the framework complete + some other indicators by end of day 
+	tomorrow - FIX the exit thing - need to reverse the exit markers??? (done)
+	aroon, cci, rsi, stochastic. finish all these today, and send figures to kevin. 
+	everything seems to be working. test on phone, and then do the automatic skip mode, and fix the faster time frame advances
+		fix the faster time advances, and add some more speeds so you can advance it that way (done) 
+		save an auto-trader and remove an auto-trader dropdowns - once the user has created their own auto-trader, save it (and save it for that account) 		
+		today: save the auto-trader, and be able to load previously-saved auto-traders. 
+
+		once you have saved the auto-trader, test the trade analyzer and account summary using it. 
+
+			how to save and load different auto-traders? you want to save the parameters only, and when the user selects the auto-trader,
+			load up the saved version. when they create a new one, append it to the list and save those parameters as well. 	
+				first thing to do: create a saved auto-trader automatically, add it to the list, and use it to trade. 
+				works, now get it from the saved auto-trader list.
+				first thing to do, when the user presses the "auto-trader workshops button" initialize the saved auto-trader.
+					if there is no existing saved auto trader file, it creates a new array, if there is, it loads the array. 
+				you need to go from the saved auto trader parameters to the actual auto-trader. 
+				so save the auto-trader indicator parameters in a savedindicator, then use a switch statement to grab the parameters
+				in autotrader.cs, you want to just go directly from saved autotrader to autotraderinstance. 
+				
+				1) pre-loaded auto trader. go to saved auto trader, then go to instance. then try saving newly created (done)
+				2) don't forget about the take profit condition. 
+				successfully saving and loading auto traders - now need to add option to delete, improve the labels, and remove auto traders
+				from the plot in real time (ie, from the currently selected user). 
+				^^^^^^^^^^^^ once this is done, you will be 2 steps away from release (trade analyzer + account summary) 
+				(and the optimal parameters from the matlab script) 
+			
+			all strategy parameters - save unique params for each currency and timeframe? 				
+			need a way to sort strategies according to how well they work on each currency
+
+
+
+	next step - write in the optimized parameters for all the currencies, for a few select strategies. 
+		run the overall strategy finder again, and select the top 5 strategies to optimize. 
+
+	2) get parameters for all strategies for 15m, 30m, 60, 240m, and daily bars (and save in code or text file) 
+	3) add 3-4 more promising strategies (aroon, macd, etc) so you have a nice stable of pre-optimized auto-traders. 
+		these pre-optimized auto-traders need to work, otherwise the user will be skeptical/disillusioned
+	4) auto trader skip mode (skip to end)(DONE), and auto trader info box (check parameters of auto trader)
+		test all mode - test all currencies with a single auto-trader paradigm? 
+	5) misc stuff: 
+		advance increment -> if >1, find a way to check all available preceding bars (done)
+		high/low - take this into account when entering/exiting the auto-trader (and matlab strategy as well) (done, does not affect)
+	
+	today: make sure that the auto trader loading/saving works with stop/take profit, improve labels, and input 5 strategies. 
+		make it so the auto-trader loads automatically when selecting the loaded user. (done) 
+			also have a "using auto-trader" string and a mode where you manually trade and the autotrader only generates signals. (done)
+		a way to remove previously added auto-traders. "clear list" option (done)
+		MACD auto-trader option (done)
+		test all configurations extensively, with/without stop/tp 
+		today you want to be completely finished with the auto-traders
+			first step - save auto-trader and re-load user (use the pre-optimized one) (done)
+		also be able to remove auto-trader? (done) 
+		
+other stuff to finish app:
+	account summary, trade analyzer, sounds, compression. should be ready to release by next friday. 
+
+getting the auto-trader parameters from matlab - re-run the script that tries all the parameters, and get the top 5 (diverse) 
+	once you have selected the top 5, create a separate matlab script for each, and optimize the parameters for each currency and timeframe.
+	save the optimized timeframes and currency parameters for each auto-trader configuration as a text file, and then load that in unity and test on a few 
+	currencies to make sure it works. 
+
+science - FMRI add up the quadrants/hemis, see if it matches the EEG. get contrast response function. get orientation tuning oblique/cardinal. 
+process jessily data
+
+
+tomorrow - monday - goals:
+	run ALL currencies and time frames, SAVE data, and get it loaded into your preselected auto-trader dropdown.
+	finish the account summary AND the trade analyzer. 
+	AND get the compression done, compress down to ~250mb. 
+	also find a way to change dropdown options to premium colors etc. 
+	ONCE these two steps are complete, the app will be ready to release.
+	show a profit curve and cancel button for account summary (done in 30 minutes tomorrow) (with and without spread) and fix the average win/loss
+	finish trade analyzer tomorrow. 
+	compression + autotrader + inapp purchases by friday
+	GOAL: on the app store by this friday!!!!! work hard and it is doable. 
+
+for account summary: monthly and yearly ROI, then done, average time in trade 
+
+
+compression + dropdown colors + IAP = done. 	
+dropdown colors doesn't look like it will be doable. find another way to get premium options. or just release a straight up paid app...
+next - compression. how to unzip these binary files??? (done) 
+movie - create a promo movie, showing off all the features. 
+add home button to main menu (done) 
+do some testing, try to break the app. 
+
+what will be premium? 
+	only a few currencies (where pre-optimized works)
+	certain time frames (30 minutes only)
+	certain indicators (moving average, bollinger bands)
+
+in-app purchasing - first set up what is premium and what isn't, then see if you can unlock it by pressing purchase, then install the APK on google play
+store and see if it works with your CC. 
+
+a simple first step - time frames. premium/not premium. 
+
+need to reduce the size of the app to 100mb. that means eliminating 100/250 = 60% of of the currencies. 
+
+
+SELLING POINT - need to make the auto-trader convincing - restrict the premium access to currencies that perform more poorly on the autotrader
+tomorrow (saturday) - set up all the premium features (account summary, auto-trader, etc) along with "premium feature only" message
+get the 5 pre-optimized auto-traders loaded into unity and 
+
+today:
+
+add auto-traders
+add premium labels and restrictions (According to auto-traders) along with text popup that says  "premium only" or something	
+fix text sizes and leverages
+test for 1 hr and write down everything that goes wrong, fix all that. 
+add readme/help to main menu
+
+goal today: get the app on the appstore
+get the auto-traders installed, finish the premium options, and then put on app store BOOM
+
+first - get all the labels working with the premium/nopremium purchase, then implement the logic and the popup (do the stress test before the logic)
+
+App has been released!!! 
+
+now, need to start marketing it and selling it on your website with a landing page, and release it to the apple play store 
+
+next - the sales part, and the working out of bugs and posting updates part (for android)
+spend 30minutes-1hr writting down all the small stuff that needs fixing in the next release,
+
+tomorrow - finish all the nagging issues, release the new version, and get more keywords from the keyword list you downloaded. 
+	other stuff for this week: FINISH landing page for website, get approved for jneur, get more FMRI subjects (3) and finalize results
+	start planning RPG game. work on movie for auto-trader app. 
+
+return car in surance payment, cash work cheque. 
+rank all forex keywords by monthly clicks, and use the top keywords in your 
+
+more market research - do more research surrounding forex and other things that interest you, find what people google the most. 
+start working on the landing page and online shop. make a new project with more data and currencies, that you can use more data on (2gb total) 
+
+first, make the movie. you can use this for the app and then make a better one for the website. 
+
+save it to bitbucket. 

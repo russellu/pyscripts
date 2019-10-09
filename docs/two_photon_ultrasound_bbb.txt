@@ -1,0 +1,226 @@
+two_photon_fluorescence microscopy study of cerebrovascular dynamics in ultrasound induced bbb opening, cho/hynynen
+stuff to research: 2-photon microscopy. ultrasound. original microbubble paper, raymond et al 2007 (hemorrage)
+van wamel 2004 fast framing camera, next experiment: longer duration for sustained, 
+
+blood brain barrier disruption can be achieved with ultrasound and circulating microbubble contrast agent. using
+dorsal ultrasound and definity, responses of the cortical cerebral vasculature to BBB opening were observed with
+varying acoustic peak negative pressure (0.071 to 025MPa) under two-photon microscope. wistar rats with a 
+craniotomy were sonicated with a single piezoelectric transducer following the intravenous injection of texas red
+for visualization of vasculature and leakage from BBB opening. based on time dependent intensity change in the
+extravascular area, the leakage was classified into 3 types : fast, sustained, and slow. fast leakage was 
+characterized by a rapid increase to peak intensity during sonication, and a decrease afterwards, occuring at all
+pressures and vessel sizes analyzed during the study. sustained leakage was characterized by a similar rapid
+increase to peak intensity during sonication, but remaining elevated for the duration of the imaging, occuring at
+low to intermediate pressures. slow leakage began 5-15 minutes after sonication, dominating at low pressures, and w
+was more prevalent amoung small vessels than fast and sustained leakage. the study shows the possibility of 
+controlling leakage type and vessel size in us-induced bbb opening through varying acoustic pressure. 
+
+introduction: cerebral capillaries have specific properties that contribute to the formation of the blood brain
+barrier. brain ecs have continuous tight junctions that differ from systemic ecs. brain ecs also have a high number
+of mitochondria, lack of fenestrations, and reduced pinocytosis. membrane proteins, astrocytes and pericytes act
+together with the brain ecs to form a bbb that limits diffusion across the capillary wall, selectively allowing 
+substances of certain size and polarity  (<400-500Da, highly soluble in lipid) to cross between the lumen of the
+blood vessel and the tissue. treatment of nervous system pathology has been limited by this barrier. a number of 
+studies have found however that US sonication in combination with microbubble contrast agents can modify the
+permeability of the bbb, and electron microscopy of the bbb during us/mb treatment has shown increased molecular
+passage across the capillary bed. the bbb can be transiently and selectively disrupted at the us foci without 
+any acute or lasting neurological damage. MRI studies have been used for visualization of the above effects, but
+due to low time resolution, it is not an ideal technique and questions remain. real time monitoring of the bbb at
+the level of individual vessels needs further analysis. two photon microscopy allows in-vivo visualization of the
+cerebral vasculature and neurons at the sub-cellular level. two-photon microscopy is capbable of 500-600 um in depth,
+unlike other modalities. photobleaching and phototoxicity can be minimized with two-photon microscopy, even with
+repeated imaging as two-photon microscopy excitation occurs only at the point of focus. a previous study on 
+multiphoton imaging of BBB disruption assessed cerebrovascular dynamics and the kinetics of dye leakage after US 
+sonication from the ventral side of the brain. three leakage processes were described in this study, hemorrhage,
+focal disruption, and transcytosis. frequent vascoconstriction accompanying bbb disruption was also noted. 
+constriction duration and differences between arterial and venous leakage remain to be examined. dorsal rather than
+ventral sonication was used to minimize tissue attenuation and variations in US exposure level, they specifically
+wanted to study the effects of various acoustic pressures on BBB disruptions and vessels of varying size. the aim
+was to investigate vessel caliber dependence of the leakage and characterize the kinetics of the process. 
+
+materials and methods: 
+animal preparation: 20 male wistar rats were used, placed in an induction box and allowed to breathe oxygen
+enriched air containing 5% isoflurane, once fully relaxed isoflurane was reduced to 2%. after tracheotomy, the 
+animal was restrained in a stereotaxic holder using ear bars and a bite bar. intramuscular injection of 
+glycopyrrolate was also administed every hour to reduce secretion and help with breathing. the animals were connected
+to a ventilator and constantly monitered with a pulse oximeter. the body temperature was controlled using an 
+electric heating pad at 37.5deg celsius. the tail vain was cannulated with a catheter made with a 23 g needle 
+attached to polyethelene tubing and secured with cyanoacrylate glue. a cranial window 5x5mm was prepared on the right
+side of the skull about 3mm lateral from the midline by locating the primary somatosensory cortex, about 3mm
+posterolateral to bregma. in cases where there was bleeding from removal of the dura, a second window was prepared
+contralaterally. the cranial window was closed using 1% agarose, and a coverslip, secured using dental acrylate 
+cement, and cyanoacrylate glue. the exposed brain within the cranial window was marked with tissue dye, before 
+removal to help identify the sonication region. after euthanasia, brains were postfixed in 10% neutral buffered 
+formalin followed by routine processing for paraffin wax embedding. 4 micron thick slices were cut every 150um through
+the sonicated region, and sections were subsequently stained with hematoxylin and eosin to identify extravasated
+red blood cells and other tissue damage. 
+ultrasound application: a single element, ring-shaped, piezoelectric transducer was manufactured in house and driven
+by a function generator and a 53-dB RF Power Amplifier. the applied forward and reflected RF power was monitered by
+computer during sonication by an in-house constructed detector circuit. the computer system controlled the entire
+sonication process. a 15mm cover glass was attached to the transducer with cyano-acrylate glue for direct attachment
+to the rat skull. the transducer frequency varied from 1.15 to 1.2MHz, average input electrical power was between
+0.26 to 1.45W in order to produce varying acoustic pressures. a vibrometer was used to measure acoustic peak 
+pressure amplitudes at various input electrical and gave results in the range of 0.071 to 0.25MPa in an ex-vivo 
+experiment. 20 rats were sonicated for 120 seconds each, each using a pulse duration of 10ms and a repetition 
+frequency of 1Hz. Definity was diluted with saline in a 1:10 volume ratio, and injected through the tail vein at a
+final concentration of 0.02mL/kg. the saline solution of MB was injected either 10s before or 10s after the start
+of US sonication, to observe any difference in MB injection time. each animal was sonicated once or twice, if no 
+leakage was observed within an hour, sonication was applied up to four times. control animals were either sonicated
+without MB injection or injected with MB without any sonication. 
+two-photon imaging: after the craniotomy was complete, the stereotaxic frame was moved to the microscope stage. 
+Dextran conjugated texas red was injected through the tail vein catheter for visualization of the vessels and dye 
+leakage following the disruption of the BBB. ultransound exposure and two-photon imaging was performed
+simultaneously, the blood vessels in the brain were illuminated with a mode-locked Ti, a stack of 10 images 
+spanning 100 to 300 um was acquired every 15-30seconds. 
+image processing and statistical analysis: images were processed with olympus fluoview and matlab. all images were
+converted to 8-bit grayscale before the analysis, regions of interest were demarcated along the vascular wall outside
+the lumen to explore leakage of the dye by analyzing the intensity change over time. peak time was recorded for each
+leaky vessel, which was arbitrarily set as the time taken to reach 80% or maximum intensity. the reason for using
+80% instead of maximum intensity was due to the nature of sustained leakage, which reaches plateau, making it hard
+for consistent measurement of peak times as they are trying to show the difference between 3 types. by choosing 80%
+instead of 100%, the 3 leakage types were differentiated not only visually but numerically, especially the difference
+between sustained and slow. the intraluminal vessel diameter was estimated by taking the fwhm of the signal profile
+taken perpendicular to the local tangent to the vessels of interest. statistical differences amoung the different 
+leakage mechanisms was calculated with a one-way anova followed by a neuman keuls multiple comparison test. 
+
+results: in the controls, no signal change was observed with either MB injections or US exposure alone. the treated
+animals had distinct responses to the MB/US treatment by displaying dye leakage compared with no leakage in controls.
+treated animals receiving MB injection 10s before US did not differ from those receiving 10s after. 22 vessels
+were located in animals receiving MB injection before US, and 30 vessels from animals receiving MB injection after
+US stimulation. amoung the 22 vessels from the first group, 16 displayed fast leakage, 3 sustained, and 3 slow. for
+the second group, of the 30 leaky vessels 18 were fast, 4 sustained, and 8 slow. of the 52 vessels from which 
+leakage was observed, 35 were under 25um in diameter. by observing dye injection pretreatment, they were able to 
+differentiate the types of vessels pretreatment for 13 vessels from 5 animals, and they observed leakage from
+arteries 9/13 more often than veins (4/13). based on the peak time for start of dye leakage, three types of leakage
+responses were identified. the peak time for leakage significantly increased for slow leakage, the first category
+indentified as fast leakage was characterized by the detection of leakage within about a minute after the application
+of MB and US. the leakage appeared to be from point sources along the vessel wall. the intensity decreased sharply
+with time after reaching the peak, dropping below 80% of the maximum intensity in 18 seconds. sustained leakage
+was that which displayed similar response to the fast leakage, except the peak intensity was sustained for the
+duration of the experiment (up to 1 hr following cessation of sonication). slow leakage was characterized by a 
+longer time delay post MB/US treatment, until leakage was observed. slow leakage was observed along the entire 
+length of the vessels instead of circulating from point sources. 
+there was a correlation between leakage category and the observed vascular diameter, fast leakage was observed from
+a wide range of vascular sizes including largest and smallest, sustained leakage included vessels of varying size
+similar to fast leakage, but within a smaller range of diameters. sustained leakage comprised the highest median
+vessel diameter, but the upper limit was smaller than for fast leakage. slow leakage was observed mostly for vessels
+under 25um, with the lowest median diameter of the leakage types. within the same animal there were multiple
+leakages in a field of view, most of which included capillary leakages on top of a few arterial and/or venous 
+leakages. capillaries responded immediately to mb/us treatment, constituting 37% of fast leakage. 
+changes in acoustic pressure resulted in different leakage types. the higher the acoustic pressure, the more likely
+that leakage started without delay upon initiation of the mb/us treatment. fast leakage occured for all types of 
+acoustic pressure, but slow leakage was more prevalent at low levels of acoustic pressure. there was no correlation
+between acoustic pressure amplitude and the diameter of the leaky vessels, all the pressures affected a wide range
+of vascular sizes. about 25% of the vessels constricted, and 10% dilated upon MB/US treatment, while the remaining
+65% showed no change in diameter with leakage. vasoconstriction and dilation were evident only in the fast and 
+sustained leakage cases, slow leakage was free of changes in vessel diameter. there was an inverse correlation 
+with vessel size and constriction, with the percentage of constriction increaseing with decreasing vessel size. 
+vasoconstriction occured almost simultaneously with leakage in a number of cases.  
+brain slices of animals who displayed only one type of leakage were selected for histological analysis, two 
+per each type. one of the samples sonicated at low pressure had small extravasation is the tissue, but not as 
+extensive as the larger extravasations observed in the high powered samples. The petechiae were observed 400um 
+from the cortical surface of the animal. the other sample was also sonicated at 0.085MPa and did not have any
+sign of extravasation. there was no apparent damage from the animals sonicated at 0.13MPa. one of the samples 
+sonicated at high pressure 0.17MPa that displayed fast leakage from all leaky vessels had signs of extravasation
+of red blood cells near the site of sonication. 
+
+discussion: 
+vascular size and blood brain barrier disruption: over 67% of the leaky vessels were under 25um in diameter, a size
+that includes capillaries and the smallest arterioles and venules. the high variability in the size of intraluminal
+space from 10s of um to 100s of um across the vascular bed would have influenced mb/ec interactions inside the
+vessels. a much greater number of vessels underwent fast leakage than sustained or slow leakage, because of the 
+number of capillaries that were compromised immediately upon sonication. since there is only a single layer of ecs
+that make up the capillary wall, capillaries would be much more prone to fast disruption than bigger vessels, which
+have multiple cellular layers. the mean size of defninity MB is 1.2-3 um in diameter, and can expand up to 20um. 
+however, since mbs are injected intravenously, the capillary bed in the lungs will filter out the large mbs. in 
+cases where mbs were sonicated while circulating in the capillaries, the tight junctions of the capillaries would
+have been disrupted by the expanding and contracting mbs that stretch the vessel wall. it is possible that this would
+disrupt the integrity of the tight junctions of the BBB, as has been observed with electron microscopy. additional
+mechanisms for transendothelial transport of molecules identified by electron microscopy analyses of US induced 
+BBB modulation include transcytosis, cytoplasmic opening of ec, and injured endothelial lining. 
+vessel diameter change: an increase in intraluminal stress is known to cause vasoconstriction, the mb/us treatment
+would have imposed such stresses along the walls, initiating cascade effects that ultimately cause vasoconstriction. 
+it is also possible that vasoconstriction occured as a homeostatic mechanism in response to hemorrhagic damages observed
+in fast leakage. the effects of vessel spasm and hemorrahage have been discussed in earlier reports with the aim of
+avoiding the adverse effects of US stimulation on vessels, however only 25% of the sites tested here observed 
+vasoconstriction combined with leakage or vasospasm. the lack of vasoconstriciton in rats may be due to the fact that
+rats have reduced vasomotor excitability, making them less sensitive to the same mechanical stress applied in mice. 
+vasodilation was also observed in 10% of the vessels, and the relationship between vasodilation and the BBB 
+permeability has been previously examined. using stimulation of the parasympathetic sphenopalatine ganglion and found
+temporary increases in the permeability of the BBB. another group has made a connection between disintegration of tight
+junctions of the BBB and matrix metalloproteinases, inflammatory agents that are released by various stimuli in the 
+brain which cause vasodilation of the vessels at the site of incipient inflammation. some of the vessel diameter changes
+they observed could be explained by an in vitro study where microscopic images of MB-EC interaction were recorded with
+a fast framing camera, where they found an inverse relationship between mb diameter and the distance between two 
+fixed points on an ec, as the bubbles expanded the distance got shorter, as the bubbles shrank it increased. another
+study posits that shear stress caused by oscillating MBs also likely modifies cellular permeability. vessel caliber 
+changes can be indicative of the intraluminal stress that ultimately results in bbb disruption. all vessels that 
+constricted leaked, but not all vessels that leaked constricted. constriction is therefore not essential to but 
+contributes to leakiness. 
+venous leakage: leakage from the veins was observed here but not in other studies. veins are larger in diameter and 
+have thinner less rigid walls. veins also have a lower blood flow rate, and fewer tight junctions that make the
+postcapillary venules the primary site of increased permeability during inflammation and prone to leukocyte traffiking.
+microbubble injection time: there was no significant difference among the results obtained when injecting microbubbles
+before sonication, or after sonication, although it was expected that injection before sonication would lead to 
+increased leakage due to the longer circulation time. a study on definity kinetics under US stimulation showed that
+precise timing is needed, the us must not be applied before the capillaries have had time to fill up with mb. it takes
+about 5 seconds for dye injected to circulate through the cerebral vasculature, and the half life of definity in blood
+is thought to be 1.9minutes. 
+negative acoustic pressure amplitudes: variations in the interquartile, median, and mean negative peak pressure 
+amplitudes among the three types of leakage reveal that peak negative acoustic pressures have influence over the 
+leakage type. higher acoustic pressures would have caused bubble oscillation in greater amplitudes, transferring a 
+strong mechanical stress on the tight junctions of cells. on the other hand, MBs sonicated at low pressures would not
+have imposed enough local force to immediately rupture the barrier. although mbs vibrate in response to ultrasound
+pulses, they do not always make enough contact with the ecs to cause changes in barrier integrity and permeability. 
+a permeability study on the chorioallantoic membrane model with low frequency contrast material-enhanced us shows 
+difference in the extent of endothelial gaps and the mean velocity of extravasation flow of dextran between high 
+mechanical stress and low stress groups. 
+leakage types: for slow leakage, the response time varied in the range of 5-15 minutes, until the intensity of the 
+signal within the extravascular regions of interest started to change significantly. this time period is close to the
+duration of transcytosis of low density lipoproteins taken across the ecs of the vessels, which was found to be about
+15 minutes. they speculate that the mechanism responsible for slow leakage is transcytosis, which does not occur in a 
+normal bbb, further investigation is necessary. the mb/us treatment increases both transjunctional and transcellular
+transfer of molecules from the lumen of the cerebral vessels into the interstitual space. 
+one possibility for the cause of fast leakage comes from a puncture of a vessel wall that heals quickly. the signal
+intensity reduction is then caused by the diffusion of the dye into neighbouring tissues, reducing the concentrations
+in the region of interest. the speed of vessel wall repair may be the major difference between sustained and fast 
+leakage. a study on cell sonoporation with mb/us has shown temporary pore formation followed by quick resealing of cell
+membrane after sonication. the real-time measurement of the membrane potential shows that the transmembrane recovers to
+its original state following the us exposure, indication for resealing of the pores. with a pressure amplitude of 
+<1Mpa, and duration of 1 second of US sonication, the recovery time of sonoporation is found to be 4-10s. although the
+sonication parameters of that experimental setup are different, it raises the possibility that pores are rapidly 
+opening and then resealing, which would match the rapid increase in peak intensity and subsequent fall off of leakage.
+another explanation for reduction in intensity observed in fast leakage can be attributed to extravasations. a study
+on the millimolar absportivities of human hemoglobin in the visible and near-infrared spectra range reveals that their
+absorption peaks between 450 and 600nm. the intensity curve could have decreased rapidly upon reaching the peak value
+due to red blood cells leaking out of the vessel. extravasations have also been observed in previous studies on us
+induced bbb opening, although they observed extravasation in only one of the two samples that displayed fast leakage,
+there is evidence that inertial cavitation causes vessel rupture and provides passages for erthrocytes observed in the
+minor vascular damage. understanding these different leakage types can have important roles to the therapeutic studies
+using mb/us. the kinetics of dye leakage can be further studied in pharmacokinetics. 
+
+conclusions: different types of leakage can be obtained by controlling peak negative pressure amplitude of sonication.
+low power seem to elicit transcytosis initially followed by formation of a transcellular gap that allows transport of
+materials from the lumen of the blood vessel to the intercellular space. the intermediate and high powers result in
+immediate response to the mb/us treatment, via multiple leakage patterns, resulting from a number of possible 
+mechanisms such as local puncture on the vascular wall and widening of the tight junctions. vasoconstriction did not
+occur as often as expected based on previous studies, and some small vasodilation was observed. the size of the blood
+vessel also influenced its response in terms of diameter change, with smaller blood vessels constricting more and
+more easy to disrupt even with low acoustic pressures. the results show that us induced bbb opening may be selective
+for vessel size by controlling sonication pressure. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

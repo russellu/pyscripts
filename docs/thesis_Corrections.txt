@@ -1,0 +1,21 @@
+thesis: 
+talkk more about orientation in the gamma section
+find out what 2nd plot in two components of gamma plot means 
+global gamma figure show spike rate vs gamma
+ing vs ping explain both or remove one from teh graph? 
+skull scalp switch order
+LFP modalities add letters A B etc
+increase size of cortical ROIs from kerkoerle (or remove some) 
+add column implant electrode slnated next to orientation columns 
+explain the figures in pyramdial cell cylinder 
+alpha add figure for how activity propagates through the layers to create the alpha rhythm 
+link the orientation and motion tuning to the grating 
+
+take 2
+
+dipole equation after modalities figure
+NRF have a 'b' with all sorted components 
+describe better what broadband gamma is ie 100+Hz etc 
+add the correlation map for the GLM analysis 
+sub-population motion severity. 
+fix the BOLD CBF figure in BOLD section (make it flow better, maybe have an ASL only section) 

@@ -1,0 +1,4 @@
+a new stimulus to better understand the neurophysiological basis of alpha/beta and gamma rhythms. 
+alpha is feedback and gamma is feedforward. great...so what? we need a stimulus that affects alpha/beta but not gamma, and vice versa. perhaps
+
+linearity differences in alpha/beta and gamma - gamma is linear to the stimulus while alpha/beta is not. 

@@ -1,0 +1,78 @@
+apponomics_discovery
+
+app discovery apps are apps that help users find other apps, ranging from daily app deals, to deal finder apps. 
+daily deal apps: negotiate deals with app developers to offer users a single deal per day, cheap or free apps and a boost in downloads
+which can help push their app up the charts. 
+deal finders: helps users find apps aligned with their tastes when they go on sale. 
+
+alternative app stores: an increasing number of developers are exploring other routes than just getting placed in google play.
+publishing your app on multiple stores increases your chances of monetizing or gaining exposure for your android app. alternative
+app stores often have benefits compared to google play, such as superior app discovery features and incentives. also, the chances of
+your app being featured on alternative stores are 20x higher than on google play. 
+a good way to understand the dynamics for app stores is to consult with other developers via blogs, forums to learn about their exp. 
+there are hundreds of independent app stores. some of the top ones:
+1) amazon app store, the primary contender to google play. 
+2) getjar - offers premium apps for free, and then monetizes that traffic with advertising dollars. 
+3) lg smart world - an app store exclusive to lg phones, holds 5.1% of global smartphone market share. 
+4) mobango - 8 million users, with major publishers, 100,000 apps. 
+5) opera mobile store - browser based app serving andorid, windows phone, ios, etc. 
+6) samsung apps mobile
+7) slideme market global reach, comes pre-installed in 140 OEMs. 
+many others (See list on page 40). 
+
+distributing through alternative stores comes with its own share of challenges: 
+1) marketing and management - different publication requirements, ranging from dozens of different screenshots, to differen ratings
+2) bothersome bureacracy - a local presence remains the best route, if you want to manage the everyday business and stay on top of
+red tape. 
+3) limited resources - time is money. it takes a lot of time and focus to publish, which means you may not have as much time to spend
+on your real business which is making great apps. 
+
+how to cash in on the benefits?
+1) be smart - find the best store, with the least bureacracy
+2) be selective
+3) be innovative - your apps and games are where you make money, and you need to innovate. 
+
+inmobi - publishes in over 140 different app stores simultaneously 
+
+key resources for monetization models: 
+adeven: analytics and ad verification company, uses apptrace which is a free online tool for understanding how, when, and where apps
+perform. offers global app rankings that can be sorted by 155 countries, device, and price, providing you with key market data. 
+also publishes MASR, giving information on most trendy and addictive apps in major categories. 
+app annie- more analytics 
+distimo appIQ - insights into download volume, and revenue
+inmobi insights - thought leadership portal on mobile advertising
+priori - great resource for identifying trending categories, business models, and the most popular publishers and apps. 
+developer economics - a research series produced by market analysis and strategy firm visionmobile
+
+some good keywords: stocks investing simulator
+fitness workout progress tracker with timer
+action rpg
+stock market app - rainbow + sounds. 
+
+goal: have 4 apps released by christmas, averaging 10$ per day, or at least have 1 10 dollar day. 
+
+eric seufert - fremium economics 
+
+the next app - re-do the forex price action app, but with more data and better keywords (stocks, futures, indices, etc), put adds, allow 
+user to download data 
+
+the overall goal is to keep creating apps, and with each app that you create, add to your skillset and code base. 
+so, for the first app, you just wanted to get experience publishing an app on the app store
+for this workout app, you want to add ads and in-app purchases, while improving the menu
+for the next app (forex version 2.0), you want to have in app purchases, adds, and be downloading data from online databases
+then, move on to web crawling or integrating multiple users. 
+the next app - add push messages, and in app purchases downloading from your server - push messages to indicate when a specific currency
+has reached a buy/sell point. 
+
+your goal is to beat 68$ a day on average, by next christmas. 
+"custom workout planner with timer"	
+"my fitness workout planner + free timer"
+funnels - getting a user to convert on a desired action. prompts and nudges, that induce the user to spend money on your app. 
+push messages - a reminder to users to buy shit
+5% of users make in-app purchases - sell your app for 5$, 100k downloads in a year (good keywords) => 25,000$
+
+personalized push messages to a key subset of users. 
+
+FTP client and cpanel file manager
+
+

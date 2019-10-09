@@ -1,0 +1,7 @@
+what does google do?
+google uses a crawler to follow links on the web, saving indices of a page in a giant database called the index. google comes around more or less often 
+depending on the amount of traffic at your site. 
+for google to notice your site, there must be a link to it from another site. following that link will lead to the first crawler save. after indexing your 
+website, google will show it in the search results. google has an algorithm that decides how pages are shown. google's results page is referred to as the organic
+search results, there are also paid ads. price for the search terms in the ads are determined by level of competition. when determining your page rank, google
+relies on the number of links and types of links. 

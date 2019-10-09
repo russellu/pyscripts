@@ -1,0 +1,85 @@
+app store optimization 
+android has 2x downloads of apple, but apply has 2x revenue of android - apple is more profitable for devs
+most downloaded types of apps: 
+email, chat, social networks, utilities, maps, gps, games, music, banks, online video, dictionary/translator, image processing,
+purchase, transport, sports, health/well being, fashion, pay parking, car related, others. 
+7/10 apps are discovered through simple search of the app store, so tricking the search engine is importances 
+non-organic installations come through paid channels. 
+important factors: app name/ title, description, category, icon, screenshots, video preview, size of app. 
+
+keyword selection process: 
+1) selection of keyword groups
+2) selection of main word (top term)
+3) creation of key texts
+4) title (Adapted to top keyword)
+5) short description, description
+
+what are the trends in searches, and which terms have less competition? 
+google keyword tool, semrush, google suggest (keyword generic) 
+sensortower, appnique, keywordtool.io (App specific)
+
+off-metadata ASO factors: ASO elements we cannot control in a direct way, but which are indirectly powerful
+installation volume, speed of installation, user engagement (Average and total #), comments, website mentions.
+
+conversion factors - if the user downloads your app after viewing it? 
+keys to getting higher in the rankings - more downloads, faster downloads, recurrent use, and high ratings 
+
+ASO involves three phases: 1) research 2) optimizing 3) monitoring
+1) define the best keywords: define the apps keywords and which apps are ranking through those keywords. find out which words are 
+less used, and amoung those, which can be used for higher positioning in ASO tools. locate keywords to position the app in other 
+countries, analyse the category where similar apps are, look over icons, screenshots, and videos of competition and improve on that,
+inspect ratings and comments of competition to detect weak/strong points. 
+phase 2: use keywords in name/description, chose the best category, design a simple, attractive logo, design attractive screenshots
+that compel users to download, upload a great video. 
+3) monitor rankings with ASO tools, monitor competition rankings with ASO tools, compare the situation of our app with competitors in 
+terms of rankings of keywords. analyze and redefine strategy to optimize app in the store. assess users comments and feedback. 
+
+main tools:
+ASO tools: app annie, sensor tower, mobile action, apptweak, appnique
+attribution: emma, apps flyer, adjust, kochava, mobile app tracking
+user feedback: 	appbot, apptentive, polljoy
+
+get the most out of available characters to optimize keywords, and do heavy research to select good keywords. 
+use A/B tests to see what works best for the app. think globally
+
+how to make my app known by the public? 
+2 kinds of channels 
+1) branding communication plan a) foster our own channels, b) send press releases to special media, c) count on celebrities
+influencers, and early adopters, d) use offline channels (Tv, radio, etc). 
+2) performance acquiring plan: a) design and optimize a social ads study, b) mobile display ads (stimulated/non-stimulated) 
+c) search ads (google search). 
+
+app indexing: possible with native apps now. helps get new downloads and improves applications traffic. 
+
+you want 4 apps live by the time you go to cuba - this one should be done by next friday, what next? 
+remember you only have x amount of energy in a day - don't waste it on sites like breitbart cnn and bb.com, use it all to make money
+
+google's adwords keyword planner
+
+more analytics:
+Mobile Action
+Sensor Tower
+SearchMan
+TUNE's app store analytics
+app annie
+
+next app - heat map for various utilities (clubs, restaurants, grocery stores, etc). use google maps and google data. 
+targeting your group - forex get rich quick scheme - target the male insecurity about having a small wallet. 
+fear drives demand - make people fear missing out. how to generate revenue? subscription based is best, most obvious ex. is netflix. 
+make it so the user can download all data, but they have to pay to replenish their stock (recurring sales). allow them to buy a 
+subscription to access unlimited data
+
+keywords: avoid, challenge, dangerous, last chance, removal, last second, right now, security, survive, uncover.
+buy traffic and use it to test the waters for your idea 
+
+
+
+
+
+
+
+
+
+
+
+

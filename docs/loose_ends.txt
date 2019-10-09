@@ -1,0 +1,10 @@
+tying up loose ends
+karl and sukhman - get T1 freesurfer segmentations
+do the retinotopy stimuli as well - get 17 more minutes of correlations, and see how stimulus/task evoked vs rest looks 
+get gamma study subjects denoised using melodic ICA - and arrange that computer to process the EEG-structure results 
+
+transfer all files from snail to your own personal hard disk
+process capybara and Dave's simultaneous data as well (for future papers, and gamma correlations)
+
+
+first - gamma

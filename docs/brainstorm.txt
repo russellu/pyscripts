@@ -1,0 +1,11 @@
+brainstorm_workshop
+
+how to place dipoles and generate scalp topographies?
+how to generate a source in 
+just 'activate each scalp component' according to how the sources are placed?
+-compare that to the real EEG  (erp) 
+
+fmri brainstorm
+tegan's electrode locations and consequently source activations are wack. why? they appear to be quite high up on the head, 
+strangely. maybe they're still wrong?
+electrode locations are wack. check the raw UTE to make sure they're in the right positions ie you're isolating the proper coordinates 

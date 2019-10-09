@@ -1,0 +1,25 @@
+being hungry physically makes you hungry in life. 
+like today, you didn't eat until 3:30pm, and now you are eating again at 10:43. 
+also, you worked on new goals and made progress in your app. 
+
+goals: don't eat until you get home (EAt fruit if you must, from the store). and eat within an 8 hour window (Try to shrink
+this down eventually). 
+don't smoke weed. (don't buy any new weed after you are done this current batch, throw out all the roaches). 
+
+goals:
+by tomorrow: 3 new subjects (n=9), eyetracker data for one, eyetracker working on EEG computer, eyetracker working on your
+own computer, grand average plots, forex app primitive version working (buttons, buy/sell, market trace)
+reality: only got one subject (good one though, and made some small progress on app). 
+
+
+grand average plots: grand average tuning, and tuning grand average 
+grand average angle ERSP type things 
+some findings: low gamma tuning, and low gamma for orientation not retinotopy. gamma is more tuned than alpha/beta to
+orientation, but not to retinotopy. 
+
+later: 
+app:
+
+think about the basic functionality that you want the app to possess: 
+buy/sell, to ride the market. 
+start with a few different currency

@@ -1,0 +1,34 @@
+end of this week (by march 17)
+
+progress report should read:
+
+coupling figures complete and sent to kevin
+	started some stuff today - tomorrow get all subjects coupling global signal vs electrodes and bcg, all states. 
+
+3 new subjects linearity (yourself + 2 jessily) 
+	change contrast - linear. 
+	got first subject - keep investigating and planning paper
+
+tested EEG orientation tuning with new sequence
+
+all data for market app parsed, labeled, compressed into folders, and loadable from app (test all folders and settings) 
+	(with time information! (long)) - all you need is bitcoin because they're all correlated anyways 
+	if you save the timestamp, you can create an interval selector to trade on (in the app itself) 
+	be able to click on the chart and automatically adjust min max? 
+	by the end of today (sunday) - higher timeframe indicator working using timestamps, and testing a second currency
+	using spyfu: gather up all the forex keywords and save them (save all your keywords, actually) 
+	you need the candle to be dynamic if you're watching higher from lower time frames 
+	get data for other types of instrument (from dukascopy) 
+	convert the integers back into strings 
+	
+gym 4 times (mon tues wed fri)
+
+got protein from house (DONE) 
+
+reactivate credit card
+
+read 1 self help book
+
+ordered new supplements (greens + fish oil + other?)
+
+cooked some into crackers

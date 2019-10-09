@@ -1,0 +1,25 @@
+didactic_fecundity_survival_drosophila
+
+abstract:
+presence of artificial light is expanding to the extent that species may never experience natural darkness. 
+effect of chronic exposure to different night time lighting intensities on growth, reproduction, and survival in drosophila. 
+3 generations under ALAN treatments 0,1,10,100 lux, explore variation in oviposition, # eggs, juvenile growth/survival and adult survival.
+in the presence of ALAN, probability of eggs and #eggs reduced, but juvenile development was unchanged. 
+they demonstrate for the first time a relationship between ALAN and adult survival. 
+
+introduction:
+majority of animal species have an evolutionary history that involves a predictable daily cycle characterized by a  bright day (200,000lux) and a 
+dark night (0-0.03lux). accordingly, physiological and behavioral traits have evolved synchronized to this cycle (such as sleep). 
+however recent anthropogenic light sources have significantly altered this environment. nights are significantly brighter now than at any point in history, 
+and organisms living today rarely if ever experience total dark. disruption to the nocturnal photic environment is linked with corresponding biological shifts
+at individual, population, and ecosystem levels.
+
+(see reviews).
+
+chronic exposure to <10lx correlates with fitness traits such as reproduction and juvenile growth. epidemiological demonstrate correlation between dim ALAN 
+exposure and cancer risk as well as tumor growth, immune suppression, and obesity. 
+
+(Cho et al 2015, review light vs cancer risk)
+
+however, relatively few studies have investigated invertebrate physiology in response to light. 
+

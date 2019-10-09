@@ -1,0 +1,19 @@
+forex_app_datafiles
+get 5 years of data for minute
+
+
+dukascopy (minute-4hr, spread, 5 years back or more)
+
+currencies (50+)
+metals (2)
+CFD Commodities (4)
+CFD Indices (12)
+CFD Stocks (3) 
+
+others:
+bitcoin
+stocks
+etfs 
+
+
+

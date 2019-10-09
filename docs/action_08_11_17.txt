@@ -1,0 +1,25 @@
+main priorities - understand all the math behind the techniques in the weka data mining book. 
+including: multiple integrals, partial derivatives, probability distributions, bayesian inference
+1) first two chapters of bishop, all problems/EASY PROBLEMS (1*)
+	+ any supporting math from calculus/probability/linear algebra txtbooks 
+2) release game on steam (needs revisions) (done)
+3) monetize ios version of game (done) 
+	if this still doesn't work, try to do it without the codeless iap buttons. 
+4) add opengl to website, add movie trailer to website
+5) complete rough version of website for all app versions (4) 
+6) integrate the gaussian distribution (done)
+7) email layachi/ayoub about cs 405 (python, overlap with statistical learning, etc) (done)
+8) more integrals at the library - spend 2 hrs per day 'working out' your brain doing integrals at the library. 
+	double/triple integrals, partial derivatives, integration by parts/substitution/trig/etc
+9) linear algebra - be able to solve least squares with matrices, and understand the math
+	-stay 'in the pocket' when it comes to learning math, ie constantly battling new ideas
+
+morning - bishop's ML problems or theory (calculus etc). afteroon linear algebra.
+start re-reading and building up slides next week, start finalizing android slides as well 
+
+this weekend: start re-read of weka, make sure you understand all the math, start adding slides.
+review: probability theory (random variables, conditional probability, etc)
+review: linear algebra matrix identities, qr factorization, linear regression
+review: calculus multiple integrals, partial derivatives
+
+class starts wednesday september 4th ... it begins 

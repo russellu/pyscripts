@@ -1,0 +1,5 @@
+priorities: 
+1) app course
+2) data mining course
+3) grant
+4) articles 

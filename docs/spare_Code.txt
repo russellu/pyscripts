@@ -1,0 +1,72 @@
+spare_code
+
+
+    public void TrackToggled(int toggledBundleIndex, SampleButton sampleButton)
+    {
+
+        //Debug.Log("SAMPLE NAME " + sampleButton.priceLabel); 
+        /*
+        currentTracks = loadTrk.LoadTracks("ColoredBundles/" + bundleNames[trackIndex], bundleLoadingSubSample, trackLoadingSubSample, true);
+        ConvertAndNormalizeTracks();
+        FiberManager nextBundle = CreateTrackObjects(trackIndex);
+        nextBundle.SetPlaneRotation(display);
+        */
+        if (true)
+        {
+            if (bundlesVisible[toggledBundleIndex] == true)
+            {
+                if (sampleButton != null)
+                    sampleButton.GetComponent<Image>().color = new Color(1f, 0.75f, 0.75f);
+
+                fiberManagers[toggledBundleIndex].InactivateFibers();
+                bundlesVisible[toggledBundleIndex] = false;
+            }
+            else if (bundlesVisible[toggledBundleIndex] == false)
+            {
+                if (sampleButton != null)
+                    sampleButton.GetComponent<Image>().color = new Color(0.75f, 1f, 0.75f);
+
+                if (bundlesLoaded[toggledBundleIndex] == true) // if the bundle clicked is already loaded, toggle on/off
+                {
+                    //fiberManager.SubSampleTracks();
+                    //fiberManager.FilterLength(); 
+                    //fiberManager.FilterColor(); 
+                    /*
+                    for (int i = 0; i < bundles[trackIndex].Count; i++)
+                    {
+                        //fiberManager.HideTrackSubset(bundles[trackIndex][i], i, 1f);
+                        fiberManagers[0].ChangeTrackColors(bundles[trackIndex][i], i);
+                        GameObject cBundle = bundles[trackIndex][i];
+                    }
+                    */
+                    bundlesVisible[toggledBundleIndex] = true;
+                    bundlesLoaded[toggledBundleIndex] = true;
+                }
+                else if (bundlesLoaded[toggledBundleIndex] == false) // if the bundle clicked is not loaded currently
+                {
+
+                    /*
+                    currentTracks = loadTrk.LoadTracks("ColoredBundles/" + bundleNames[trackIndex], bundleLoadingSubSample, trackLoadingSubSample, true);
+                    ConvertAndNormalizeTracks();
+                    FiberManager nextBundle = CreateTrackObjects(trackIndex);
+                    nextBundle.SetPlaneRotation(display); 
+                    */
+
+                    /*
+                    for (int i = 0; i < bundles[trackIndex].Count; i++)
+                        bundles[trackIndex][i].SetActive(true);
+
+                    for (int i = 0; i < bundles[trackIndex].Count; i++)
+                    {
+                        bundles[trackIndex][i].transform.rotation = display.nii.rotationPlane.transform.rotation;
+                    }
+                    */
+
+                    bundlesVisible[toggledBundleIndex] = true;
+                    bundlesLoaded[toggledBundleIndex] = true;
+
+                }
+            }
+        }
+    }
+

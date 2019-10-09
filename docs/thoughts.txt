@@ -1,0 +1,25 @@
+thoughts: 
+
+thoughts. 
+
+may 8th is the predoc  - today it is april 23.
+you have 15 days (just over 2 weeks) to prepare for the pre-doc. start spending minimum 8hrs a day studying
+by next wednesday - finish all martin's questions, 10 minute polished ppt
+by the following wednesday, finish JF's questions, 10 minute polished ppt (present both to kevin) 
+final week - review the literature for your own project, practice your own ppt every day (And add things/polish), and practice JF/martin's 
+questions every day while reviewing and taking more notes on the topics. 
+tomorrow (23) - test extensively the app, and make all the final touches
+then on the evenings of the week 23-30, finish the monetization and release on the google play store. 
+how are you going to market the app? 
+stick to simple things like the app store logo, and description - market it as a forex training game, where you can train on
+news, specific time slots, or continuous data. 
+if you could find an indicator that actualy performs better than chance and use that it would be great, but it doesn't appear to be
+the case. 
+
+add a t-test of your results vs randomly generated results - to see if your results are actually better than chance. 
+
+next idea - super simple, and use it to streamline the button creation, and persistence + menu - make an object timer that allows you to 
+track the times of different events - event name, logo, etc. 5 free tracked events + add, and then unlock adds and more events by paying
+after that is done, you will have two apps in the app store (release them on multiple stores) and you will have an idea of how many 
+downloads to expect/what kind of revenue you will generate. you can either continue working on small apps like that (just clone a bunch of
+different concepts) or make a larger app (Game). 

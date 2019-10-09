@@ -1,0 +1,31 @@
+correlations look like shit - tons of noise, and really low correlations. wtf is going on? 
+need to re-do the pipeline one step at a time.
+could be a couple problems - 1) the way you remove noise/perform the cross-correlations
+	2) the way you calculate time-frequency decomposition (though i doubt it) 
+	3) the MNE instead of the beamformer
+
+the coupling actually looks alright, its just that the correlations are quite low
+
+check coupling between EEG electrodes and FMRI components (64 electrodes only)  - find out if its something happening at the source
+localization level, the BOLD level, whatever. maybe you can get better coupling by changing some parameters with the window size,
+ersp denoising, etc. use this to optimize your coupling and then re-do the sources.
+
+also, next time you try different methods of source localization, make sure you check the gamma map on 3 components instead of mean
+
+ttests - convert mean inter-subject correlation maps to tmaps. 
+
+converting to t-test: load each scan separately, or average all and then concatenate?  (run 3x) 
+run the t-test loop four times, and then concatenate at the end using afni. 
+you want the following: stimulus specific t-tests (across subjects) - show t-values in each voxel for all stimulus types. 
+subject specific t-tests (across stimulus types) - show t values in each voxel for all subjects
+
+tonight get the coupling for clean scalp-level data, show kernels, time course at different frequencies
+	-> this is motivation for voxel-based coupling. 
+		need to show quantitatively that coupling is different - how? time-lag (1), strength (2) 
+	-> you need one more thing to quantify this - the ROI based approach - 
+	-> difference in coupling strength as a function of time? 
+
+the main message is that coupling changes across state, and brain area. 
+the following conclusions 1) the canonical HRF may not serve as well in different states/areas - assumes alot
+
+by the time you leave tonight: have the voxel-wise t-stats for both HRF, and xcorrs.

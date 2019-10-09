@@ -1,0 +1,3 @@
+mibrain_bugs
+
+1) loading image with less slices after an image with more slices - f1.nii z-slice bug

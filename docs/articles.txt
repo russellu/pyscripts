@@ -1,0 +1,16 @@
+next publications: 3 more articles + IMEKA by the time you graduate from usherbrooke
+
+1) distance vs gamma
+2) orientation/retinotopic tuning of gamma, alpha/beta, and BOLD
+3) coupling + dynamic coupling 
+4) IMEKA app free to download on app store and play store
+
+re-submit the neuroimage article once kevin has finished looking it over
+get final subjects for FMRI and EEG retinotopy/orientation tuning, need around 5 more 
+EEG and 1-2 more FMRI. 
+
+get the stimulus parameters from the downstairs computer and re-program every 
+crowd-source for deep learning applications - cortical segmentations, and med student 
+learning. 
+
+

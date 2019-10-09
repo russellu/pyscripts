@@ -1,0 +1,29 @@
+weekend:
+finalize and practice seminar 
+analyze all the BOLD/ASL data (2-subjects, HAIFA and ANNE-MARIE) 
+-> get BOLD %change and ASL %change, see if you can denoise the ASL in a manner similar to BOLD (using ICA) 
+look more at the BOLD - see if you can register to gray matter - by cutting off the end of the brain?
+
+http://strai.x0.com/frep
+
+is there another way to regress out signal without modeling it exactly? you could get the peak echo time perhaps in a 
+multi-echo sequence, and use that to map the large veins. 
+you also need to know how much the veins are going to spread. if you don't smooth, the signal shouldn't spread but the
+dephasing may be greater than the voxel size. 
+
+v1 surface area slightly higher on one side = higher peak gamma frequency? what about right,left etc? what about total 
+size?? also, compare the amount of activation to any one quadrant to the amount of vasculature in that quadrant. 
+
+ake sure you put the gel on the back of the head. 
+
+tracking microvasculature draining into macrovasculature?
+0.75,0.75,1.5 => 3.5s TR. will have to do very long blocks (30sec each?) will also lose signal. but with enough trials,
+should be ok. 
+mix up the discrete/continuous => 30 seconds per angle => 120 angles max. wow. you could probably get away with 20 at a TR
+or 3.5, (20/3.5 = ~6) so 6 volumes per stimulus configuration, 20 seconds of EEG data, 180 different stimulus configs,
+throw out any that are bad. estimate PRF on these? the continuous dragging is too slow for the TR, unless you do it 
+extremely slowly, like 1 cycle per 2 minutes. if you can do 15-20 cycles though, that gives you a lot of trials, and
+you can smooth across cycles. so if you have 120/3.7 = 32.43, but it won't be exactly the same for each angle, ie the
+BOLD TR offset will be different (you can track it in the EEG data also). 
+
+try 2 minute blocks tomorrow (continuous), see how that works. try quadrants, and octants, and hemis. 

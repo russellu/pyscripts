@@ -1,0 +1,15 @@
+attack pad: 3 swords, 
+
+questions for guillaume: the blind source separation of channel data
+
+
+
+simultaneous BOLD-ASL results:
+mean cbf: ASL, mean CBF dual-echo ASL (x2), mean BOLD x2
+correlation map right: BOLD,ASL,DUAL-ECHO ASL,DUAL-ECHO BOLDASL
+
+correcting the dephasing? ask about the possibility of using SWI. or, modeling the veins as cylinders and regressing out
+the large vessel contribution. 
+
+noise/signal maps to normalize the EPI ACQUISITION?
+a one-slice SWI acquired at high temporal resolution?

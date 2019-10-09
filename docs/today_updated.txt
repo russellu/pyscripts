@@ -1,0 +1,11 @@
+every day: open a new notepad, and write down what you want to achieve that day
+
+today:
+
+1) finish processing an entire EEG-FMRI dataset from the sleep study (get high quality EEG data)
+2) finalize selection of didactic articles and read both
+
+science idea: frequency space decomposition of works of art - compare to other time periods spectrum
+
+once afni finishes installing, go back to the gradient artifact, find the slice artifact, and set the corrupted
+(gradient pulse still present) areas to zero, or, use a more limited subtraction to deal with these epochs 

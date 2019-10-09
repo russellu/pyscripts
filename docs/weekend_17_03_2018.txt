@@ -1,0 +1,8 @@
+this weekend: work on app exclusively, and plan for EEG/FMRI analysis next week. 
+
+finish data loading and high timeframe indicator, with zipped format. all data parsing/loading should be done by sunday night.
+
+next week eeg/fmri anaylsis - kevin's figure + alpha vs bold pre and post bcg removal + motion regressors vs EEG 
+
+
+tomorrow (thursday) another EEG subject + FMRI experiment (retinotopic + orientation)

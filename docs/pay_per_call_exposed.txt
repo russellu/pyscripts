@@ -1,0 +1,219 @@
+pay per call exposed:
+why do most people fail at PPC?
+can't fully maximize opportunity
+don't realize how important mobile traffic is, and how easy it converts
+try for a few weeks, fail, and give up (no dedication)
+its more than just buying ads - need to think about the customer's needs.
+they are money but not business driven - you need to think long term 
+
+the guy claims he makes 700$ some days in profit, which is relatively passive. 
+
+what the remainder of the course will teach:
+1) the basics of pay per call and why vendors love affiliates in ppc marketing
+2) list of free and paid tools and sources of data to power the marketing
+3) best way to setup landing page, ads, and keywords
+4) why understanding customer behavior is important to win
+5) how to use social media to extend your reach
+6) real examples of strategies and tactics used over the years
+7) how to action what has been learned in pro tips
+8) how to be cost efficient in outsourcing tedious tasks in order to build the business
+
+why pay per call? the rise of the smartPHONE - smartphones are phones, so pay-per-call has a lot of upside these days
+calls are much higher in terms of conversion rates than clicks - simply due to the effort of picking up the phone
+
+keep phone numbers at the top of your mind when it comes to:
+1) advertising strategy
+2) including phone numbers in page titles for all your organic search traffic
+3) including phone numbers with a tap to call button on mobile landing page is key
+4) incorporating a phone number alongside lead forms
+5) add the phone number everywhere - print ads, signs, etc - its the single most important call to action
+
+items people need rather than want, ie repair vs entertainment, are better for pay per call. 
+three basic categories
+1) mobile preferred ads - everything before the click that involves how you talk to your mobile users, what you say,
+what you show them, and how you engage with them, whether they are calling or coming to your site, how they interact with you
+	google and bing 
+2) call only campaigns - google used to offer something called click to call, but now they've taken it up a notch and give
+a whole campaign to use for this particular type of targeting
+3) call tracking 
+
+what is pay per call marketing and what niches are profitable? 
+typical ppc sales flow:
+1) network creates ppc campaign in the system
+2) affiliate applies to campaign and selects tracking phone numbers
+3) affiliate runs advertising with phone number
+4) customer sees phone number and calls
+5) call is tracked to the affiliate and campaign in the system
+6) call is connected to the advertiser, caller stays active for the needed duration
+7) affiliate gets paid 
+
+how to find and apply to pay-per-call networks?
+networks:
+1) ring partner (personally recommended)
+2) max bounty (great support, fast payout)
+3) astoria
+4) mundo media
+5) commission junction
+6) exact match media
+7) call market place
+8) palo media (pay per call blueprint) 
+9) f5 media
+10) goojibear
+11) hypertarget
+
+when applying: 
+1) take time filling out the form
+2) give details on how you plan to promote offers (the more details, the better)
+	mention google CALL ONLY ads, as well as mobile banner ads, etc
+	say main source of traffic will be google
+
+all major networks offer the below toolset in your login area: 
+IVR - interactive voice response gives you the ability to create custom automated phone menus
+search keyword tracking - allows you to track calls back to a specific search engine and keyword, which
+keywords are doing well or underperforming, so you can adjust bids (advanced tracking) 
+custom call treatments enable you to track and handle calls based on time of day, caller's geographic location, and IVR key presses
+make sure you understand and use these tools to their maximum potential! 
+
+how to find and apply to the right offers: 
+pro tip: find offers that are 24hr, least amount of restrictions, short call duration (<1min30), and country-wide.
+
+offer approval schtick: "please approve me for this offer. i will promote by targeting your target customer using search media and mobile search ads"
+"as well as promote it on my site, which has an audience of your core customer. i have read the restrictions and will abide by them." 
+
+Please approve me for this offer. i will promote by targeting your target customer using search media and mobile search ads. I have read the restrictions and will abide by them.
+
+landing page:
+
+make a single website in word press of a high level single topic, add hotline to the domain name (ie, legalhotline, callerhotline, etc). 
+buy your own theme for 30-50$ at themeforest, and use it for all your websites 
+use something like unbounce to create a landing page, instead of making your own. 
+
+methods for cheap CPC rates, high quality score and SEO help:
+
+keywords tools:
+semrush (paid, but free trial)
+	find keywords not listed in adwords/bing, find low cpc keywords that competition or business you are marketing ranks for, buy these keywords
+	find competitor banner ads
+ubersuggest (free) - for long tail keyword discovery
+	get thousands of keyword ideas from real user queries 
+broad match modifier
+	get cheap cpcs, discover new keywords, reduce the chance of unrelated keywords triggering in your ads
+
+how much to bid? CPC should be 50% of the payout, this will be tweaked but generally speaking is a good start, will allow you to get a good number
+of impressions giving good click data to read on and optimize. should start spending around 50$/day to get reliable data 
+
+local targeting to get the urgent customer:
+key tactics to target local customers and win: create a list of all states/major cities
+using these cities and towns, create a list of broad match modifier keywords
+example +appliance +repair +miamia, +appliance +repaire +Clear Water, +Appliance +Repaire +Sarasota, +Appliance +Repaire +Florida
+create ad groups by state, which will help relevancy score
+ensure your landing page is all about appliance repair in florida, and has all cities/towns listed on it, or make separate city pages for ultimate
+control and greater relevant quality score. include zip code as well, which have very low cpc
+use broad to find the phrases people use, and then put those phrases in exact or phrase match
+use this link to get a list of cities within a certain radius: http://www.studiokraft.com/index.php/action/find_cities_in_radius
+
+organizing keywords - important for your own sanity as well as quality score
+target call volume for specific keyword, and later attach a phone number to the ad group. 
+first tactic - find biggest competitor, or company you are promoting for, and get a huge list of auto parts from fiverr. get specific ads using 
+keyword generators. 
+do some specific stuff in adsense to eliminate wastage, use google adwords editor to easily add tons of keywords fast
+
+secrets to bid on brand names for easy conversions. some offers don't tell you not to bid on brand names, these gold mines. 
+you can also search keywords of brands that do allow bidding, and use them for your own offers. scrape the keywords using google maps (can be done automatically)
+and then use them to generate keyword strings 
+
+using negative keywords to ensure efficient spend:
+negatives create a virtuous circle, lowering costs and increasing revenues. 
+negative keyword list: 
+http://www.clixmarketing.com/blog/wp-content/uploads/2008/02/worlds-biggest-negative-keyword-list.txt
+
+google and bing account limits: 
+10000 campaigns (including active and paused)
+20,000 ad groups per campaign
+20000 ad group targeting items per ad group
+
+ad limits:
+300 image/gallery ads
+50 text and non-image
+4 million active or paused ads per account
+
+mater ad extensions to win in search: ad extensions are a gold mine and one of the most underutilized weapons, they allow you to take up more space on the serp
+ads that use both click to call and location extension on mobile see an average CTR of 6-8%. 
+use sitelinks to direct people to more than one webpage using only one ad, and also increases click through rate.
+call only and call extensions - a must for mobile ads
+review extensions - help you stand out more
+callout extensions - additional keywords or benefits of business, 
+
+what does call extension do for your ad?
+encourages calls by showing your number on the ad
+display a clickable call button
+cost the same as a headline click (CPC) 
+idea - have only the call button, no landing page? more clicks=> only clicking on call button..
+benefits of using call extension when promoting pay-per-call offers:
+easy for people to call you on the go
+can share numbers across ads, allowing you to target ad groups by keyword topics and know which are profitable
+no wasted clicks, exclusively calls. can match to the business hours, so that it shows only when they will take your calls
+call extensions increase CTR by 6-8%
+
+using call only ads - the most powerful ppc ad types
+
+tools from google: learn more about your customer shopping habits: 
+https://shopping.thinkwithgoogle.com
+explore trends and popularity of objects across the US, all live stats across industries, platforms
+https://shopping.thinkwithgoogle.com/tools/youtube-dashboard.html
+https://shopping.thinkwithgoogle.com/tools/customer-journey-to-online-purchase.html
+use benchmarks to understand how customers react to different marketing channels 
+
+http://www.richmediagallery.com/tools/benchmarks
+understand how your display campaigns compare to the rest of the industry
+
+mobile in the purchase journey:
+https://www.thinkwithgoogle.com/tools/mobile-purchase-journey.html
+
+ubersuggest - get long tail keywords for lower cpc
+
+making your ads stand out: 
+title: always use dynamic text feature, adds the user's keywords to your title.
+text: first letter of all important words should capitalize, all caps for more important words, use a strong call to action
+display url: put your main keyword as a fake sub-domain
+use the registered or trademark symbol to stand out more and look legit
+create urgency: call now, etc
+
+use custom IVR for more conversions - go to fiverr and get professional sounding voice
+
+use call-now ads on facebook 
+
+use ring pools to track search keywords
+
+use exact zip codes
+google, bing, facebook are main traffic sources
+local space - find a way to automate this 
+scrapebox
+adplexity - get an idea of what ads are being run in a particular niche
+the big picture: who am i trying to convert?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

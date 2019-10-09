@@ -1,0 +1,152 @@
+assessment of bbb disruption using DCE MRI: a systematic review
+systematic review of DCE MRI
+assess pathologies studied, scanning protocols, and analysis methods
+dce shown to provide valuable information in growing application field
+low inter-study comparability due to variability of acquisition and analysis methods
+consensus based recommendations for data acquisition and analysis are needed
+
+introduction: there is increasing recognition of the importance of BBB in stroke, aging, dementia, and MS, as well as more 
+commonly studied pathologies such as tumors. DCE mri is a method for studying BBB disruption in-vivo. there are large variations
+in the type of DCE MRI sequence, imaging protocols, and contrast agents used. studies also use a variety of different methods
+for data analysis, mainly based on model-free analysis, and the patlak/toft models, which results in ktrans values varying
+widely. DCE MRI provides valuable information in a large variety of applications, from grading of primary brain tumors, to 
+more recent applications such as subtle assessment of bbb dysfunction in AD. 
+
+introduction: the BBB separates the parenchyma of the CNS from the blood. quantitative information can be obtained about the
+integrity of the BBB using DCEMRI, which has proven valuable in the assessment of pathologies affecting the BBB such as MS,
+tumor, and acute ischemic stroke, these pathologies have large effects on the BBB, but more subtle effects may also be 
+important in pathologies such as cerebral small vessel disease, diabetes, and alzheimer's disease. a variety of different MR
+sequences, contrast agents, and time courses have been employed to study BBB pathology using DCE MRI. there is also no 
+standardized way for analyzing the data, relatively simple non-model based methods as well as a range of pharmacokinetic models
+exist. this work provides an overview of all applications and scanning protocols used in DCE-MRI of the brain, first by 
+describing the important components of the BBB and available permeability models, the review the available data on BBB
+permeability imaging. 
+
+background:
+BBB functionality: the BBB is formed by endothelial cells that line brain capillaries and are sealed by tight junctions, which
+are unique to the brain microvasculature. the endothelium of the BBB interacts with several cellular and non-cellular elements
+such as astrocytes, pericytes, microglial cells and basement membranes, that provide both functional and structural support to
+the BBB. together, they form an interactive cellular complex, the neurovascular unit (NVU). the BBB regulates the passage of 
+essential molecules such as glucose while restricting the diffusion of potentially harmful substances. many brain pathologies
+are known to cause a disruption of the bbb, the mechanisms that cause the opening are many, and differ across types of disease.
+in meningitis, for example damage to the BBB is is initiated by extrinsic systemic factors, such as infections and 
+auto-immune processes. others such as AD and ischemic stroke are though to activate intrinsic cellular mechanisms secondary to
+the neuroinflammatory injury and other as yet unknown processes. 
+measurement of bbb disruption using DCE MRI: disruption of the bbb can enable the extravasation of low molecular weight MRI
+contrast agents. this accumulation of material in the extravascular extracellular space of affected tissues leads to an
+increased longitudinal relaxation rate and therefore increase signal intensity in T1 weighted images. intravenous injection
+followed by the repeated acquisition of T1-weighted images provide measure of signal enhancement as a function of time. these
+kinetics can be used to extract quantitative information regarding bbb integrity. signal changes caused by extravasation are
+determined by several factors including tissue perfusion and capillary permeability. 
+analysis of DCE MRI data: relatively simple visual assessment of enhancement curves, or more complex fitting of pharmacokinetic
+models have been used. area under the curve or time to maximum enhancement provide semi-quantitative measures of BBB disruption,
+such measures are easy to obtain but difficult to interpret. quantitative analysis, however, aims to provide a link between the
+tissue signal enhancement and physiologically relevant parameters such as microvascular permeability, blood flow, blood volume
+fraction, and interstitial volume fraction. 
+in order to relate the measured signal enhancement to the contrast agent concentration, an appropriate signal model is needed. 
+early DCE-MRI studies assumed a linear relationship between signal enhancement and contrast uptake, but it is well known that
+signal enhancement is highly dependent on intrinsic tissue and acquisition parameters. more complex approaches were developed in
+order to control for the effect of tissue characteristics, such as pre-contrast longitudinal relaxation time and longitudinal 
+and transverse relaxivities of the contrast agent. 
+pharmacokinetic modeling was first introduced for the analysis of DCE MRI in the early 1990s and since then improved imaging
+techniques (temporal resolution and contrast to noise) and better understanding of the underlying physiology have promoted the
+development of several more complex pharmacokinetic models. 
+target parameters of pharmacokinetic modeling in DCE MRI are the fractional plasma volume Vp, the fractional interstitial 
+volume Ve, the plasma flow Fp, and the permeability-surface area product PS, which measures the rate at which contrast agent
+particles leak out of the plasma and into the EES per unit tissue volume and plasma concentration. an important physiological 
+parameter that is widely reported in DCE MRI is the volume transfer constant Ktrans, which is the rate at which the contrast
+agent is delivered to the EES per volume of tissue and contrast agent concentration in the arterial blood plasma. while PS and
+Ktrans are sometimes used interchangeably, PS represents the clearance for contrast agent leaking from the capillary plasma 
+into the EES, ie the flux of the contrast agent across the BBB normalized to the tissue plasma concentration and tissue volume,
+while Ktrans is the contrast clearance normalized to the arterial plasma concentration and therefore depends on the plasma flow
+Fp supplying the capillaries in addition to PS. Ktrans is necessarily equal to the product of plasma flow Fp and the extraction
+fraction E (ie the fraction of contrast agent molecules that leak into the EES). 
+most pharmacokinetic models require the AIF to be known, which describes the tracer concentration in blood plasma over time. 
+there are several ways to determine the AIF, including the use of a standard function, experimentally derived population 
+averaged AIFs, and simultaneous individual assessment of AIF in a feeding vessel close to the tissue of interest. 
+the conventional tofts model considers isodirectional flux of tracer between the two well-mixed blood plasma and EES
+compartments, with the volume transfer constant Ktrans. the plasma compartment is assumed to have negligible volume, vp=0, 
+which makes the classic Tofts model a one compartment model for weakly vascularized tissues. this model was extended by 
+introducing the blood plasma as a second well-mixed and highly perfused compartment, which allows, in addition to Ktrans and
+Ve, the fractional plasma volume Vp to be estimated separating enhancement effects due to contrast leakage from those due to 
+intravascular contrast. if the model fits the data well with a non-negligible Vp value, the tissue must be highly perfused, 
+and the system is permeability limited with Ktrans = PS. 
+finally, the Patlak model also describes a highly perfused two-compartment tissue but considers unidirectional transport from 
+the blood plasma into the EES. a linear graphical analysis methods was proposed which is often used as it permits simple and
+fast fitting of the data. in this analysis, the ratio Ct(t)/Cp(t) is regressed against integral(0,t)[Cp(tau)*dtau]/Cp(t) 
+yielding a straight line with slope Ktrans and intercept Vp. 
+
+results: 
+pathologies studied: 
+the majority of animal studies concerned intracranial neoplasms, including a total of 147/407 animals. five publications 
+investigated changes in the BBB induced by focal ischemia, and one study each focused on the effects of pneumococcal meningitis.
+the pathology most studied in humans was intracranial neoplasms including primary brain tumors and brain metastases (716/1564),
+eleven investigated changes caused by stroke and/or cerebrovascular disease, eight on MS, other pathologies included MCI, AD, 
+brain tuberculomas, infective brain lesions, multiple system atrophy, diabetes, and neurocysticerosis. 
+BBB changes in disease: 
+13 of the 70 studies aimed to investigate a link between a particular disease and BBB function, so BBB integrity was quantified
+and compared to disease state. 8/13 studies found significant differences, including ischemic stroke, pneumococcal meningitis,
+diabetes, vci, brain metastases, ms, mci, zinc deficiency, ad, and small vessel disease. mci and normally aging beagles showed
+no difference. DCE-MRI was also able to distinguish between different tumor types, and grades, and significant differences were
+found between infective vs neoplastic lesions, severe and mild vs moderate tbi, and radiation necrosis vs tumor recurrence. 
+contrast agent and dose: in most cases, Gd-DTPA was used (40/70 studies), most cases standard bolus (0.1mmol/kg), but ranged
+from 0.02-0.5mmol/kg, and a fixed dose, no study investigated the influence of different contrast agent or type. 
+scanning techniques and field strength: most commonly used: spoiled gradient-recalled echo and its ultra-fast variants, as well
+as 11 other GE methods and six spin-echo methods, T1-mapping of partial inversion recovery (TAPIR).
+duration and temporal resolution of DCE-MRI: the duration of data collection following contrast agent injection varied widely
+from 2.1 min to 155min. the highest temporal resolution of 1s was found in tumor studies, whereas a study on diabetes used a 
+temporal resolution in the range of 10-30min. it was also found that reduced scan time and lower temporal resolution resulted 
+in increased uncertainty around the pharmacokinetic parameters Ktrans, Ve, and Vp. studies involving tumors had faster temporal 
+resolution, due study the faster dynamics of the neoplasm, while studies involving MS had lower temporal resolutions due to the
+slower leakage rates observed in that disease.
+use of post-processing techniques: the most common was motion correction, though 42/70 did not perform or report post-processing.
+data analysis methods and pharmacokinetic models: visual assessment of spatiotemporal enhancement patterns in MS lesions,
+calculation of semi-quantitative paremeters from the signal enhancement.
+the most commonly used pharmacokinetic models were the toft, the patlak,and the modified toft, and simplified patlak. ktrans
+values vary depending on the pathology studied, neoplasms showing the greatest ktrans values and normal tissues the lowest. one
+methods was developed based on Tofts but only studying the first pass of the bolus, resulting in visually comparable but less
+sensitive to noise and large vessels. model studies on the two methods show that patlak is more accurate for low ktrans values
+and toft is more accurate for high permeability areas. 
+discussion: 
+
+the calculation of contrast agent concentration from tissue enhancement requires reliable estimation of intrinsic tissue 
+parameters such as the pre-contrast longitudinal relaxation time T10. there are several methods of estimating T10, with variable
+flip angle and variable saturation time delay being the most common, and mis-estimation of T10 produces a significant 
+concentration bias, also, unless T1 is estimated at every time point, drifts in signal intensity may introduce further errors
+into the pharmacokinetic parameters. 
+second, most pharmacokinetic models require the AIF to be known, so determination of the AIF represents a key issue in the 
+reliable estimation of pharmacokinetic parameters. there are several strategies for AIF selection, and the optimal method
+varies based on pathology, study aims, and clinical requirements. direct measurement is preferable to standard or averaged 
+AIFs, but this is not always possible and susceptible to partial volume or inflow artifacts. there is also disagreement on 
+whether to describe the capillary bed in terms of blood or plasma concentration, by correcting for the hematocrit (Hct). 
+other areas of uncertainty include relaxivity values specific to a contrast agent, field strength and tissue/pathology are rarely
+known.
+implications for future DCE-MRI studies of BBB disruption: the optimal method is highly dependent on the specific application. 
+for most applications, changes in the longitudinal relaxation rate rather than the signal intensity should be used, since the
+former more accurately reflects contrast agent concentration required for pharmacokinetic analysis. two critical acquisition
+parameters to determine are temporal resolution and duration of scan, temporal resolution on the order of 1s is necessary to
+quantify tissue plasma flow, even if this quantity is of no interest, it may be necessary to account for flow in order to 
+assess permeability. for accurate estimation of the permeability surface area product, the scan duration should be long enough 
+for significant extravasation to occur. if Ve is to be measured, imaging should be continued well into the washout phase, when
+EES contrast agent concentration begins to fall. 
+the most popular pharmacokinetic models divide the tissue into well mixed compartments, and it is essential to recognize the 
+assumptions built into this model and assess their validity for a given application. the original tofts model for example is 
+strictly valid only in weakly vascularized tissues, where contrast agent in the capillaries can be neglected, and fitted Ktrans
+is equal to PS only when blood flow is sufficiently high. 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

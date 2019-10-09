@@ -1,0 +1,4 @@
+the bug occurs when you change colors with the selection object active 
+and then you de-select the selection object, but the objects don't re-appear. 
+
+can't select bundles when the sphere is active - why? 

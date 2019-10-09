@@ -1,0 +1,15 @@
+weekend 24-25
+
+leisure: diablo 2, ufc on fox
+
+phd: 
+	didactic
+	eeg experiments 
+		eye tracker orientation
+		more parameter matrices (size * contrast, plaids, motion)
+		work on getting coupling figures (reproduce figures from ohbm abstract on desktop)
+
+money/app:
+	get all cryptocurrency data, try to find data with no gaps
+	get all the data aligned (3+ cryptos, all currencies, all etfs, etc) 
+	once all these datasets are aligned, try to get some index of "ease of trading" or randomness on each one. 

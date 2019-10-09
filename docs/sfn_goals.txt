@@ -1,0 +1,19 @@
+goals for SFN 
+
+overall goal: advance your career in neuroscience
+
+sub-goals
+
+advance network
+	social sessions, poster sessions
+	make 50 new contacts (9 per day)
+	learn more about publishing, and reviewer mindset/mentality
+	learn about possible career opportunities in neuroscience (outside postdoc)
+	overall understanding of field (most promising areas for 2nd postdoc)
+		neurodegenerative diseases
+	open data repositories and initiatives
+	
+advance technical knowledge
+	neuron modeling - creating lfp from networks of neurons with input
+	allen brain atlas - how to access and analyze functional recordings
+	ECOG, cutting edge invasive methods

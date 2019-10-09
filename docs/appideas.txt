@@ -1,0 +1,11 @@
+app ideas: 
+lightsaber game, with random walk particles that you have to hit
+an app that shows what time of year the flights are cheapest
+a GTA type app but medieval style
+fourier transform app - fourier filtering of images, save output 
+axe murderer game - have a guy with an axe, and run around chopping stuff up
+release another version of the forex game, but with different key words - S&P predictor, etc
+your niche - data wrangling + data visualization
+
+image racer => racing a car on an image which has been processed
+algebra tetris - balancing equations with falling terms. 

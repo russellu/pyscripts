@@ -1,0 +1,5 @@
+today: 
+1) re-write the grant letter of intent, adding references and better structure
+2) create at least 50 more slides for mobile app design
+3) attend meeting about hiring new profs (1pm)
+4) work more on your heat map app (pausing when not moved, etc) 

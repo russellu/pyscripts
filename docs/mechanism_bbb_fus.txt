@@ -1,0 +1,146 @@
+the mechanism of interaction between focused ultrasound and microbubbles in blood-brain barrier opening in mices
+abstract: the activation of bubbles by an acoustic field has been shown to temporarily open the BBB, but the trigger cause
+responsible for the physiological effects involved in the process of BBB opening remains unknown. here, the physical 
+mechanism of the FUS induced opening of BBB with monodispersed microbubbles is identified. 67 mice were injected 
+intravenously with bubbles of 1-2, 4-5, or 6-8 um diameter and a concentration of 10^7 bubles/ml. the right hippocampus
+of each mouse was then sonicated using focused ultrasound (1.5Mhz frequency, 100 cycle pulse length, 10Hz repetition 
+frequency, 1min duration). peak rarefecation pressures of 0.15, 0.3, 0.45, or 0.6 MPa were applied to identify the threshold
+of BBB opening and inertial cavitation (IC). the results suggest that the BBB opens with nonlinear bubble oscillation when
+the bubble diameter is similar to the capillary diameter, and with inertial cavitation when it is not. the bubble may thus
+have to be in contact with the capillary wall to induce BBB opening without IC. BBB opening was shown capable of being
+induced safely with nonlinear bubble oscillation at the pressure threshold and its volume was highly dependent on both the
+acoustic pressure and bubble diameter. 
+
+introduction: the blood brain barrier is well known for being the main obstacle to delivering drugs into the brain 
+parenchyma. to date, the combination of FUS and microbubble injection has been shown to be the most promising approach 
+to achieving local BBB opening without damaging tissue. BBB opening has been achieved in animals including mice, rabbits,
+pigs, rats, and monkeys. different acoustic parameters have been studied. pulse length can influence the threshold of BBB
+opening, but no significant difference could be found among different pulse repetition frequencies (PRF) or microbubble
+concentrations. the spatial deposition pattern of molecules of distinct molecular weights delivered through the BBB has also
+been established to assess the extent of BBB opening. 
+regarding the cellular mechanism of FUS induced BBB opening, increasing vesicular transport, channel formation, and tight 
+junction opening were all reported in capillaries after sonication. it has been shown the permeability of endothelial cells
+is also increased by ultrasound activated microbubbles. the permeability after BBB opening was also studied using DCE-MRI
+and found to increase by at least 100-fold. during sonication, vascoconstriction was noted, followed by BBB opening, which
+sheds light into how the ultrasound activated microbubbles affect brain microvasculature. however, the entire sequence of 
+events and physical mechanism of the microbubble interaction with ultrasound and subsequent cell impact during BBB opening
+remains to be established. 
+in order to study the physical effects responsible for BBB opening, a passive cavitation detector can be used to acquire
+the acoustic response stemming from the MB and tissue interaction during BBB opening. it has been shown that the BBB could 
+be opened by FUS without inertial cavitation at a peak negative pressure of 0.29 MPa after craniotomy in rabbits. previous
+studies by the group reported in vivo transcranial cavitation detection in mice, and provide evidence that BBB opening 
+could be achieved in absence of inertial cavitation, at 0.3MPa. microbubble kinetics were also investigated in the rabbit
+using an ultrasound linear array, and the blood flow and PRF were found the affect the bubble behavior during BBB opening.
+however, until now most studies used commerical microbubbles, which are typically polydispersed, as the agent for inducing
+BBB opening. thus, it is difficult to determine the role of microbubble properties in BBB opening. 
+the bubble diameter is inversely proportional to the resonance frequency, when all other bubble parameters remain the same.
+for a bubble constrained in a vessel, regardless of the shell property, the resonance frequency determines when the bubble
+size decreases. for example, when the bubble is constrained in a compliant, 10um diameter vessel its resonance frequency
+at a diameter of 2,4,6,and 8um is 3.92, 1.93, 1.41 and 1.26 Mhz respectively. therefore, the FUS frequency in this study
+(1.5Mhz) is close to the resonant frequency of 4-5um bubbles. high speed camera findings have also indicated that the 
+pressure threshold of bubble fragmentation increases with bubble size. recently, monodispersed microbubbles were shown as
+an important factor in high frequency ultrasound imaging. it has also been shown that the pressure threshold of BBB opening
+is bubble size dependent. the threshold of 1-2um microbubbles was higher than that of 4-5um microbubbles, which underlined
+the importance of the microbubble role in BBB opening. therefore, the physical mechanism of FUS induced BBB opening may also
+be bubble size dependent so understanding the role of different microbubble sizes is very important to unveil the physical
+mechanism of BBB opening. 
+the objective of the study therefore was to unveil the physical effects of different microbubble sizes responsible for FUS
+induced BBB opening. microbubbles were isolated into 1-2, 4-5, and 6-8um diameter ranges, and the acoustic responses of 
+different sized microbubbles were transcranially detected during BBB opening. the threshold of BBB opening and BBB opening
+volume at different microbubble sizes was determined by MRI. histological analyis was also performed for damage assessment.
+
+materials and methods:  blah blah
+
+results: as a result of the deposition of the MRI contrast agent induced by BBB opening, the MR images indicate that the 
+threshold of BBB opening is 0.45MPa for 1-2um bubbles, 0.3MPa for the 4-5 and 6-8 um bubbles. the corresponding spectrogram
+shows that only lower harmonics are detected at 0.15MPa, and higher harmonics (up to 8th) can be detected at 0.3MPa. however
+the broadband response (ie, inertial cavitation) occurs at 0.45 and 0.6MPa for all microbubbles used in this study. 
+therefore, BBB opening can be induced by nonlinear oscillation (ie, with harmonics but without broadband emissions) at
+4-5 and 6-8 um diameter, but not 1-2um diameter bubbles at 1.5Mhz frequency. the inertial cavitation dose, bbb opening 
+volume, and their correlation at different bubble diameters are shown. the icd at 0.45 and 0.6 MPa is statistically higher
+than at 0.3 and 0.15Mpa, for all bubble sizes, which confirms that the threshold of inertial cavitation for BBB opening
+is 0.45mpa, which shows that the inertial cavitation dose is also bubble size dependent. 
+
+discussion: the objective of the study was to investigate the physical effects of the systematically circulating 
+microbubbles on the FUS-induced BBB opening. the pressure threshold of BBB opening, determined by MRI contrast enhancement,
+was 0.45MPa for the 1-2um and 0.3MPa for the 4-5 and 6-8um bubbles. however, the broadband response occured at 0.45MPa for
+all microbubble sizes. the uncorrelated threshold between BBB opening and inertial cavitation implied that the physical
+effects responsible for BBB opening may be bubble-size dependent. inertial cavitation may be necessary for BBB opening with
+smaller diameter (1-2um) but not larger diameter (4-5 and 6-8um) microbubbles. 
+for larger diameter microbubbles (4-5 and 6-8um), at 0.45 and 0.6MPa, with the occurence of inertial cavitation, both the 
+volume and shape of the contrast enhancement region was different from the case at 0.3MPa. in the sagittal images, the shape
+of the contrast enhancement region at 0.45 and 0.6MPa with 4-5 and 6-8um microbubbles indicated enhanced shielding effects 
+induced by the bubbles and inertial cavitation occurence. however, at 0.3 MPa without inertial cavitation occurence, the 
+contrast enhancement region, which covered the hippocampal formation, was more homogenous and similar in shape and 
+geometry to the -6dB focal spot of the FUS beam. 
+the capillary diameter in the murine brain ranges from 4-8um, which is 2-8 times larger than the 1-2um diameter bubbles. 
+it has been shown that the microbubble will be fragmented when the radius expands to higher than three times the initial 
+radius at rest. however, the ratio of expansion for the larger microbubbles is smaller, as compared to the smaller 
+microbubbles, for it to come into contact with the capillary wall. bbb opening may thus be induced through nonlinear 
+oscillation only, in the case of larger bubbles. 
+it has been shown that the active vesicular transport is more pronounced in arterioles than in capillaries, and venules 
+after BBB opening, providing evidence that opening is not restricted to the capillaries. as the size of the arterioles is
+10-20um, bubble expansion may not be the factor inducing BBB opening in the arterioles. according to high speed 
+photomicrography, localized vessel invagination was observed when the bubble contacted the vessel wall. vasoconstriction 
+may also be induced by bubble aggregation caused by a secondary radiation force. therefore, larger bubbles may induce 
+vasoconstriction with a higher probability than smaller bubbles. after vasoconstriction is induced by bubble aggregation,
+the shear stress surrounding the microbubble may be high enough to enhance the permeability of endothelial cells, or to 
+relax the tight junctions. therefore, the tensile strength of the tight junctions and shear stress amplitude will be 
+considered in future investigations to determine the physiological effects of FUS-induced BBB opening. 
+the spectrogram used in this study clearly elucidated the onset and duration of inertial cavitation within the first pulse. 
+here, the inertial cavitation occured at the beginning of sonication. at the highest pressure 0.6Mpa, the broadband response
+corresponding to the first pulse lasted throughout the entire duration of the pulse length at all bubble sizes, indicating
+that the highest pressure may fragment the microbubbles to smaller bubbles that serve as cavitation nuclei. in the case of
+0.15 and 0.3 MPa at all bubble sizes, only harmonics without broadband emissions were detected. however, the BBB opened at
+0.3MPa only in the 4-5 and 6-8um cases. despite the fact that harmonics up to the eighth could be detected by PCD, no BBB
+opening was induced at 0.3MPa with the 1-2um bubbles. therefore, the nolinear oscillation of smaller bubbles would not 
+induce BBB opening. the effects to the vasculature and the acoustic emission detection were different at different bubble
+sizes. 
+similar to the threshold of BBB opening, the inertial cavitation dose and bbb opening volumes were also bubble size 
+dependent. because of the difference in the scattering cross section, the acoustic emissions increased with bubble size. 
+once the bubble rupture occured, larger bubbles would also induce larger BBB opening volumes. therefore, a good correlation 
+between inertial cavitation dose and the bbb opening volume was found. 
+according to histological analysis at the bbb opening threshold, the bbb opening can be induced without rbc extravasation
+or neuronal damage. despite the fact that the inertial cavitation occured at 0.45MPa with the 1-2um diameter bubbles, a 
+small opening volume was induced without any damage, which is consistent with the existing sonoporation literature. in this
+study, intertial cavitation did not induce cell death, but was enough to change the permeability of the endothelial cells
+and rupture tight junctions.
+standing waves might be generated within a pulse length of 100 cycles. however, based on the spectrograms no significant
+change could be observed during the 100 cycle sonication. also, it has been shown that standing waves are not necessary
+in the BBB opening mechanism. 
+as the BBB was not opened at 0.15Mpa, at all bubble sizes, and the diffusion of gas from the microbubble core will be
+enhanced in the presence of ultrasound, the discrepancy of the gas volume should not have an effect on the results 
+presented. 
+
+conclusions: the physical mechanism of BBB opening at different bubble sizes was investigated. inertial cavitation was found
+to be required for smaller bubbles to induce BBB opening. however, the interaction between the larger bubbles and the FUS
+beam could induce the BBB opening through nonlinear oscillation, without inertial cavitation. no significant damage was 
+detected at the BBB opening threshold, at all bubble sizes. the BBB opening threshold, ICD, and BBB opening volume were 
+found to be bubble size dependent, therefore, larger (6-8um) bubbles and lower pressures (0.2-.3MPa) were determined to be
+safe and consistent in their associated BBB opening. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+ecg ideas
+
+stress testing - predict how well an athlete will perform based on their heart alone 
+google search 'ICA electrocardiogram' since 2015 - check how many channels people are using.
+
+app that shows heartbeat based on your pulse 
+
+edibles - gradual effects on EEG and RSFMRI 

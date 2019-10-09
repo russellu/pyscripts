@@ -1,0 +1,4 @@
+use different amplitude of instruments by first sorting tracks according to green, red, blue extremity
+have different screens or pov for individual components (veins, arteries, tracks, gray matter)
+
+expand and contract the ROIs according to their position relative to the center

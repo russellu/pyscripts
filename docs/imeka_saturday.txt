@@ -1,0 +1,49 @@
+tomorrow: 
+main goal: FINISH the app - all selection and bug fixes
+
+3) improve the vascular maps - more detail, if possible - you have a bit more space, can add this. 
+4) -add t2, tof, swi background textures? 
+6) fix the track color erasing bug
+8) scale the icon size to the screen, and the scrolling size as well - test on different devices
+9) add icons for all the buttons 
+13) make it so you can select fibers by color (or just set their iso-surface to green and transparent) 
+15) ROI selection remove previously selected
+16) de-select when clicked twice
+17) color ventricles from subcortical
+19) fix subcortical button surface toggling (not working when pressing subcortical buttons) 
+20) improve the track selection colliders
+
+once the above are done, the app is finished. test it on different devices and then release to google play and App store
+APP is slow on the phone - reduce the size of colliders further? nope, turns out it was the renderer
+seems like its not the colliders, but the renderer from other surfaces - veins, arteries, etc?
+	-disable the renderer when not in use, fixed *  
+
+once all the major changes are done, either mirror the cameras, or change the labels everywhere. 
+add comments in code
+
+today: finish all the above. complete the app, and set up an account for Imeka on google play. 
+including: 
+1) selecting the tracks - turn green, deselect - turn back to normal color
+2) change it to only select the ROI if it is set to active - and change the color, but don't use clicks to deselect/select ROIs 
+3) increase font size
+2) switching the selected cortical and subcortical (and track) ROIs - link this up with buttons also?
+4) icons and phone icon
+	-2nd loading icon (imeka + usherbrooke and your name) 
+5) add comments 
+6) update the meshes to make them more accurate (test if this is necessary) 
+7) fix the colluding but notactive colliders 
+8) fix colluding colliders when subcortical, cortical, and tracks are all in play. 
+once these are complete, create a google play account for Imeka, and set up the app. 
+
+
+publish the app as well 
+
+pretty much everything is done, besides the left/right swap and the naming (which are related) 
+
+still need an escape button to quit
+fix the labels
+some of the labels are set to zero for some reason
+	- fix this by just using the string array
+
+
+

@@ -1,0 +1,37 @@
+minimal outline:
+intro: circadian rhythms, SCN, melatonin, light pollution, a few striking examples from the literature
+article 1,2,3,4 - EEG, ebook, LAN nurses, prospective meta-analysis
+
+detailed outline: (After re-reading notes) 
+
+INTRODUCTION
+earth's rotation, and new technology (changing light regimes) 	
+important things to mention: LEDs (light spectrum), lag effects, sphere of influence, evolutionary novelty, sensitivity/diversity of bio responses, impact on 
+human health - start with a BROAD intro/overview of light pollution
+
+anatomy and physiology of circadian system - slow rhythmic modulations in bodily processes and behavior, chronobiology, ultradian, circadian, infradian
+SCN - central oscillator, gene regulation, basic connections & peripheral oscillators, RHT rat lesion study
+how light affects the circadian system - rods, cones, and ipRGCs (melanopsin) (1998), blue light (480nm), 
+functions under control of SCN - locomotion, heart rate, body temperature, sleep, corticosteroid system, MELATONIN SECRETION (most reliable measure) 
+	(marker rhythms) 
+entrainment of circadian (photo-entrainment), threshold/saturation, logarithmic rise, nonphotic zeitgebers
+light in morning vs evening, phase advance vs retreat
+old mice subjected to temporal disruptions equivalent to a flight from Washington to Paris, once a week for 8 weeks, died prematurely
+
+ALAN, melatonin secretion, sleep deprivation, internal clock - health impacts and mechanisms
+does not affect the body in the form of direct toxicity or physical energy, as chemical toxicants/radiation do
+shift work effects - cancer, diabetes, cardiovascular, mood disorder, obesity, age-related macular degeneration, less/lower quality sleep, lower melatonin
+	regular work is now rare (25%) 
+IARC - group 2a probably carcinogen
+	breast cancer and ALAN (israel/south korea), prospective studies in usa and uk, strong evidence of ALAN breast cancer link
+mechanisms - inhibition of nighttime melatonin secretion, sleep deprivation, chronodisruption. 
+	animal models where melatonin affects tumor growth, melatonin levels and estrogen receptor positive breast cancer, anti-estrogenic activity
+	BL induced melatonin suppression was also much higher in subjects diagnosed with pre-menstrual dysmorphic disorder
+
+paper #1: let there be no light
+
+paper #2: evening use of light-emitting e-readers
+
+paper #3: night shift work and breast cancer incidence - 3 prospective studies + meta analysis
+
+paper #4: outdoor light at night and breast cancer incidence in nurses's health study 2

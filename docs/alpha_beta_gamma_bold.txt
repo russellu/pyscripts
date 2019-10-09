@@ -1,0 +1,8 @@
+alpha beta gamma bold 
+
+summarize the results: BOLD contrast, retinotopy, and orientation, average across subjects. 
+
+alpha/beta follows gamma for retinotopy but not contrast or orientation? 
+find the areas where the BOLD signal follows the alpha/beta signal for contrast - ie areas where the BOLD response curve mirrors the alpha/beta response curve. 
+
+implications: orientation tuning for alpha/beta and BOLD, and gamma and BOLD. 

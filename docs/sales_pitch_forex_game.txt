@@ -1,0 +1,9 @@
+sales_pitch_forex_game
+
+this is not the same as regular Demo Trading!
+what if you could test different indicator combinations at 100x the regular speed?
+what if you could automatically detect which indicators were leading to your best trades? 
+what if you could automatically detect conditions leading up to bad trades and eliminate them? 
+
+Features:
+20+ of the most popular indicators! (list them) 

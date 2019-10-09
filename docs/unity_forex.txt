@@ -1,0 +1,4 @@
+unity - re-do the forex auto-trader app in unity, and release for iphone, android, and windows phone.
+use all the currencies, etfs, etc. 
+(make it a 2d app) 
+if you can have that done and released by the time you go to cuba 

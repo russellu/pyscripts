@@ -1,0 +1,6 @@
+paper
+
+1) lines charts (possibly remove bar charts)
+2) reformat discussion (alpha/beta contrast, alpha/beta vertical, BOLD-EEG)
+3) find out how alpha/beta prefers vertical
+4) check format of neuron and current bio

@@ -1,0 +1,96 @@
+ultrasound mediated drug delivery to the brain: principles, progress, and prospects. 
+the blood brain barrier bbb limits drug delivery to the CNS. when combined with microbubbles, ultrasound can transiently permeate
+blood vessels in the brain. this approach, referred to as sonoporation or sonopermeabilization, holds promise for the delivery of
+antibodies, growth factors, and nanomedicine formulations across the bbb. the basic principles of bbb permeation using us and mb,
+summarize several pre-clinical studies showing the potential of bbb opening for treating of cancer and other neurodegenerative
+diseases. 
+
+introduction: the bbb in its natural state allows only for the uptake of small, lipophilic drugs, while preventing the vast 
+majority of other drugs from entering the brain.
+
+ultrasound as a diagnostic and therapeutic tool: us is the most ubiquitous imaging modality in the clinic after x-ray radiography,
+which can be explained by its non-invasive and bedside capable nature, real time diagnosis of various pathological conditions,
+lack of radiation, and low cost. us imaging is used as standard practice in clinics for routine examinations of fetuses during
+prenatal development, breast, abdomen and neck microcirculatory flow, and other soft tissue pathologies. 
+the implementation of MB as contrast agents has extended diagnostic US imaging. during ultrasonography, iv administered MB are
+known to cause an acoustic backscatter due to differences in the acoustic impedance of the gas in the MB core and the surrounding
+tissues. this characteristic of MB very strongly increases their US reflection, and explains their usefulness as blood pool 
+contrast agents. the high echogenicity of circulating MB has improved the US detection and characterization of malignant liver 
+lesions, cardiac pathologies, cerebral vessel stenosis, and is useful to monitor tumor perfusion in oncological studies. 
+apart from diagnostic applications, US has emerged as a powerful tool for therapeutic purposes. MRI guided high intensity 
+focused ultrasound has been employed for the thermal ablation of deep-seated tumors and uterine fibroids, in such a setup US
+waves and energies are focused deep into the pathological brain tissues causing a local temperature increase of up to 60deg which
+causes a thermal ablation. hybrid imaging together with MRI provides anatomical reference for guidance of focused US therapy, 
+and at the same time enables real-time monitoring of local temperature increases via MR thermometry. 
+in the last couple of years, the combination of US with MB has also attracted attention for delivering drugs, genes, and nano-
+medecine formulations across the blood-brain barrier. MB can either be used for direct drug delivery (loading therapeutic agents
+into their interior or shell), or for indirect delivery (upon employing stable and inertial cavitation effects to open up
+biological barriers). MB are 1-5um gas filled vesicles stabilized by phospholipids, proteins or polymers, and their shells can
+be functionalized with various different moieties including drugs, imaging agents, and targeting ligands. due to the compressible
+nature of MB, they can either oscillate (stable cavitation) or implode (inertial cavitation) depending on the magnitude of 
+mechanical index, which is a measure of cavitation intensity governed by pressure amplitude and US frequency. stable and inertial 
+MB cavitation can generate a plethora of biophysical effects that open up temporarily cellular membranes and blood vessels. the 
+term sonoporation will be used to describe both cell membrane and blood vessel permeabilization. 
+
+mechanisms involved in vessel permeabilization: multiple physical phenomena play a role in sonoporation and vessel permeabilization.
+at low mechanical index, MB oscillate in a symmetric manner. the repeated expansion and compression of MB upon exposure to low
+acoustic pressures is referred to as stable or non-inertial cavitation. the expansion of MB near the vessel wall during the gas
+inflow phase can push the endothelial or cellular lining apart, while MB shrinkage during the compression phase causes
+invaginations in the vascular lining, potentially resulting in the opening of tight junctions via push-pull mechanisms. in addition
+the rapid expansion and contraction features of MB in an ultrasonic field are known to create fluid flow patterns known as micro
+streams which which can induce high shear stresses up to several thousand pascals, and which can disrupt the integrity of the 
+endothelial lining. a third mechanism which can help to improve drug delivery across the endothelial lining relies on absorption of
+US energies, which result in pressure gradients and in acoustic radiation forces displacing MB in the direction of US waves. 
+this phenomenon can force MB to push strongly against and massage the endothelium, thereby inducing vascular permeability. if
+mechanical indices exceed a particular threshold, MB violently collapse during the compression phase, which can lead to the
+fragmentation of the MB generating high temperatures and pressures within close proximity. this effect is referred to as inertial
+cavitation, and is generally accompanied by shock waves and micro-jet formation. both of these biophysical effects are known to
+perforate cell membranes and induce vascular permeability. other effects, such as the formation of free radicals, have been 
+proposed to contribute to endothelial permeabilization, for example liquid perodixation mechanisms. 
+factors affecting vessel permeabilization: the magnitude of blood vessel and BBB permeabilization depends on both the US parameters
+and the MB properties. US parameters which play an important role include transducer type, pressure amplitude, sonication time,
+US frequency, burst length, and pulse repetition frequency. selecting an US with optimal geometric design is paramount for 
+efficient propagation of US waves through the skull, which are otherwise distorted by the skull's irregular shape and high acoustic
+impedance. a phased array transducer has been proposed to minimize skull heating and attenuation of US waves, improving propagation
+into the brain and enhancing sonoporation efficiency. increasing the pressure amplitude and sonication time increases the 
+magnitude of BBB permeation, but medical complications such as hemorrhage, erythrocyte extravasation, and edema formation are 
+observed at higher pressure amplitudes and upon prolonged sonication. it was demonstrated that the threshold for BBB permeation 
+linearly increased with US frequency, and that less vascular damage was observed at lower frequencies. studies have also reported
+an increase in BBB opening with increased burst length or repetition frequency. the magnitude of BBB opening, however, has been 
+shown to be saturable. 
+the nature of the mb also play an important role in the extent/duration of BBB opening. using mb with larger average sizes has
+been shown to increase BBB permeability, at the same acoustic pressure of 0.45MPa, the BBB permeability was shown to be increased
+10-fold by increasing average MB size from 0.2 to 0.6um. the composition of the MB shell, which can be based on lipids, proteins,
+and polymers likely also plays a crucial role in optimizing BBB opening. a shell based on denatured albumin, rather than lipid,
+was shown to induce greater BBB disruption. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

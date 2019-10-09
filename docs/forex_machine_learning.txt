@@ -1,0 +1,4 @@
+forex_machine_learning
+
+machine learning forex. input all the normalized parameters into a single feature vector (start with a single time point)
+and then predict where the price will be in 1,2,5,10 etc minutes from then. 

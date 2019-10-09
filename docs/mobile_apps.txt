@@ -1,0 +1,104 @@
+https://cs4720.cs.virginia.edu/category/lectures
+https://canvas.harvard.edu/courses/26767/assignments/syllabus
+https://canvas.instructure.com/courses/1060564/assignments/syllabus
+https://sites.google.com/site/mobileprogrammingusf/syllabus
+http://cs-courses.mines.edu/csci448/syllabus.html
+http://ww2.cs.fsu.edu/~sposaro/mobile/syllabus.html
+https://smude.edu.in/smude/programs/bsc-it/mobile-application-development.html
+http://web.mit.edu/21W.789/www/syllabus.html
+https://www.cs.drexel.edu/~augenbdh/cs275_su15/syllabus.html	
+https://ce.uci.edu/areas/it/mobile/
+https://www.coursera.org/learn/android-programming
+https://stars.bilkent.edu.tr/syllabus/view/CTIS/487/CTIS_BS/
+https://www.lambtoncollege.ca/madt/
+https://www.udacity.com/course/new-android-fundamentals--ud851 (course)
+https://github.com/IDMNYU/DMGY9103-MobileApps-SP15/blob/master/syllabus.md
+
+cs230 learning objectives 
+
+1) be able to quickly implement and monetize idea through mobile app
+	android development best practices and design patterns
+2) improve coding ability
+3) learn/improve version control ability
+4) understand conceptual framework of mobile app (how android OS works) 
+
+basic requirements: java or object oriented. familiarity with xml, html, github, networking, threading. 
+
+*take git or github udacity course
+
+meet your instructor: Russell Butler
+Android developer as side-business
+Develop financial market simulation tools 
+Develop 3d visualization in Unity Game Engine
+Experience with java 
+first class: hello world, change to hello cs230 
+
+
+simple weather app - display weather, display details, settings to change units, etc. 
+intellij ide 
+	-enhance productivity
+	-code templates
+	-layout editor, drag and drop
+	-lint tools
+	-gradle based build system
+	-instarun
+	-debugging support for java and c++
+
+github- exercises and tests (solution folder as well) "the master has failed more times than the beginner has tried"
+a series of toy apps to illustrate key android concepts 
+android 1.0 launched in 2008
+hacksome - hardware virtualization emulator 
+the reason this course is cool is because it allows you to combine concrete objects (phones) with abstract concepts (software eng.) 
+android emulator emulates a real ARM processor on top of the x86
+
+hotkeys:
+shift-n  = locate class
+view -> enter distraction free mode
+find sample code
+
+AVD - important to test on screen sizes and platforms
+x86 relies on haxm (hardware virtualization)
+the emulator runs the complete android stack
+can simulate interrupts and latency, can access adb
+
+Gradle is the build system of choice for android studio	
+adb = android debug bridge 
+
+ACTIVITY : an app is a collection fo components: activities, servicers, broadcast receivers, content providers, all registered in android
+manifest
+
+activity - app-user interaction, a single focused thing the user can do. the user is interacting with the device. draw and receive events 
+such as touch events
+an app looks like a series of linked activities which are preserved on a stack, exits using back button or returns to launcher
+how does launcher fit in? 
+launcher is an intent
+each activity contains a layout (scrollview, textview) - some contain others
+xml file is converted into a hierarchy of view objects in memory 
+activities are written in java, extending from the activity class
+views are responsible for drawing and handling events, and take up a rectangular space on the screen. the xml layout file determines what
+view are created and where they are placed 
+res folder is where resources are stored (images, strings, files) 
+
+views: major categories of views : 1) UI components that are often interactive (textview, button, imageview, etc)
+2) Layout/container view, determines where objects appear on screen, examples are 'Linear Layout, Relative layout, FrameLayout, scrollview)
+	can be nested
+XML attributes: 
+textSize and padding
+android:text attribute - android:text="your name appears here"
+padding and margin - padding is space within view, margin is space outside view
+
+the R class - generated when your app is compiled, creates constants allowing you to dynamically identify various components of res folder,
+including layouts. 
+setContentView - inflates the layout, android reads xml and generates java objects for each of the tags in layout xml. you can then edit 
+them by in java code by calling methods on the java objects. 
+
+gradle sync - a task that looks through all the dependencies in you build gradle files and tries to download the specified version 
+two build.gradle files - (project and module) - 
+module is build file of your specific module, where you add dependencies, signing configs, build types, flavors, etc
+project is where you add configuration options common to all sub-projects/modules. 
+reference to textview (Accessible through R class) @+id/tv_toy_names 
+
+
+
+
+

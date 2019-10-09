@@ -1,0 +1,146 @@
+efficiency: business section
+sell anything legal that actually works. doesn't matter how you sell (Spammy messages, cold-calling, direct traffic etc). 
+avoid "churn and burn", where you constantly come up with new products to churn and burn customers. this takes more work over the 
+long term, since your customers are not "sticky", and you'll be forced to incessently adapt to the next hot thing. also bad for name.
+
+test the product: do research to ensure the product is viable. 
+
+morals that are excuses: people who are morally opposed to legal products are excuse makers...ex diet pills vs vodka shots. 
+can only sell a product you love? its foolish to avoid selling something just because you don't use it yourself. 
+
+business monetization: a company makes money 24/7/365, and has billion dollar potential. 
+
+choosing what to sell, and the selling process: people always start by asking "what is in demand", but this does't make sense because
+pretty much everything is in demand (there are millions of companies). 
+the real question is "why do people buy?". the answer: insecurity/emotion is why people click BUY. 
+instead of asking what is in demand, ask "what emotion or insecurity does this target?" you have to target an innate insecurity/fear.
+insecurity or emotional appeal: for you this, is forex/trading in general - people want to get rich quick. sell them a way by creating
+trading systems that will give them 30-40+% yield per year. 
+the app should 
+use your app to funnel people to your website, where you sell them trading package indicators to use with dukascopy 
+get in touch with people from dukascopy to see if you can get a cut. 
+what do you sell? a high margin product in the sector of your choosing. electronic products. 
+step 3: HOW do you sell? the answer, you sell online. use paid for traffic, to get the highest probability conversion at a fraction of
+the cost of a brick and mortar. 
+emphasize the hands-off approach
+emphasize the fact that you can test it in the app (get it working on IOS as well). 
+
+fear drives demand. 
+how to generate revenue: subscription based revenue is the best, netflix makes money every month based on an ${x}/month fee. 
+find a way to scrape the dukas feed to get access to signals you can sell for a subscription. 
+
+step by step: setting up your first business:
+1) buy the domain name, should match your product or what you are selling.
+2) hosting-  host gator or blue host, both work fine
+3) install wordpress 
+4) grab a premium studo press theme
+5) add an about page - explaining who you are and what your niche knowledge is
+6) create one post a month, max. 
+7) delete all social media (Assuming this is a consulting page). 
+
+teddy bear example - simple case selling bears with hearts saying "shit bitch you is fine", selling 5 bears a day makes a liveable wage
+need a clean emotional angle with a clean marketing strategy that is forever. ie, hit it and quit it. 
+
+start selling: what you need is a "good" product that works, and a world class sales strategy. execution is worth significantly more
+than the product. 
+read the sales books outlined on page 68. 
+
+the basics of selling and copywriting: 
+the framework: stories sell. frame all of your ideas into stories. 
+story: 1) - problem that your customer has 2) - how you solved it, 3) - what are the results of the solution, 4) - how is it different
+after that - call to action to purchase/sign up. give the customer some information on how it works, with some science background,
+and then the call to action. 
+come up with a solution to the problem, explain HOW you came up with it and got results, then close with a *buy this*. 
+this is the SET framework: "story, example, tell"
+know the audience - selling motivation to rich people who have already made it is not going to work, because they understand the game
+selling motivation to people who are lazy and easily persuaded WILL work. 
+
+emotion sells, not logic. the key to keeping your text emotional is to keep everything more conversational (right brain functions). 
+tell the customer to imagine what it would be like if they bought your product, if at a loss for ideas, go with fear of loss. 
+fear of loss and pain phrases: while a lot of good sales pages come from pleasure (desire for pleasure or pain), higher conversion 
+rates are typically obtained from fear/pain vs pleasure. 
+keywords (search for synonyms also) - avoid, challenge, dangerous, imagine (removal of pain), last chance, last second, remove,
+right now (classic), security (classic fear of loss focuses on security), survive, uncover (similar to discover). 
+
+make the customer visualize before trying to close: 
+have a free trial - customer gets to test your algorithm for two weeks - how can you make sure they don't keep it? if you're going
+the dukascopy route, try to make an obfuscated code 
+whiteboarding/videos - embed videos into your website, the use is very likely to click on them. 
+website name - do not use hyphens, and make it as short/memorable as possible. 
+	name1) incite emotion/attention (example, loosit.com, loveislame.com, etc)
+	name2) use the exact name of the product offering: creditcards.com
+	name3) simply state the brand name - pepsi.com 
+
+where to focus your attention: 
+2 basic strategies for begginners: 1)text, 2) taglines with "pre-approval" highlights. 
+
+text section 1 (Customer acquisition): the first paragraph is the most valuable on the main page. should capture attention, and
+connect emotionally (target pain), so they read the first paragraph. 
+strategies:
+1) do you find yourself doing XYZ (insert activity)
+2) making the first sentence appeal to a pain point.
+3) using a leader at the end such as "you'll be surprised to see the anser to this and other problems has been discovered"
+4) avoid words I or my, stick with you to make a connection
+5) stagger out the offering to avoid losing people who are cynical/negative, ie, you could save/earn 50, 200, 500$ to capture the
+full span of attention.
+YOU SHOULD SPEND AT LEAST 20X more time making sure the title and first paragraph are perfect as the majority will not go past. 
+
+text section 2 (sales): 
+testimonials (more likely to buy), case studies (how someone had issue x and used your product to solve it), 
+free gifts - both before AND after purchasing the product, have a "completion bar" for when they enter their information. 
+limited supply or time - create a sense of urgency
+
+text section 3 (close)
+if the price of the product is small, you can compare it to something people regularly buy
+if subscription, compare it to another recurring expense and use that as a value proposition
+comparisons - compare it to other products, show that yours is cheaper or better (2x, 3x, etc)
+focus on lifetime value of the customer - quality over quantity, a lifetime customer brings more revenue and is also
+likely to refer friends which gives you another lifetime customer. 
+no distractions and assume the sale - no ads on the sale page. assume the sale - further down the sales page, you should
+start throwing in phrases where you assue the sale is already made. 
+use before and afters - photos if possible, if not, graphs. 
+influencers the holy grail of sales: try to land a whale, or someone who has thousands/millions of followers to go to bat for you
+use "join x thousand/million subscribers per month!". 
+infographics and photos - create a few solid infographics for the product, keep it structured with 5-7 talking points max. have
+your website/brand/logo clearly displayed on the infographic. test the infographics on a few friends who do not know the product,
+see if their eyes move along it correctly. google image search for photos about your niche. 
+sell faster on mobile - make sure the mobile version is very simple, less chaos the better. a small number of choices including
+1) sign up 2) read content 3) buy now. 
+
+maintenance/follow up: keeping customers and saving lost sales.
+something to understand - if someone shells out 1000$ on a motivational seminar, they would have to admit they were wrong to say that
+it was not worth the money. once the purchase is made, the customer will justify the expense, the more expensive the more committed.
+use words such as frustration, doubt, anger, discouragement, overwhelmed, paralyzed, terrified, worried. 
+
+create templates: use basic financial calculations that explain the benefits of your product. show how much the customer will gain
+by using your product. create an interactive item, that allows them to enter personalized settings
+the more interactive and personal it is, the more likely you will make an emotional connection with the customer, and more money. 
+you're essentially forcing the customer to justify the purchase, and psychologically priming them to buy. 
+don't leave yet popups - can help you retain lost customers. when the customer goes for the x, give them a final popup offering free
+emails: include content to help drive traffic to your website. provide cold hard information. provide real, valuable tips. emails
+link to a new product release, and also give content. 
+re-paste to optimize google: many are familiar with email and content based marketing. place all information based emails into a 
+separate "blog section" of your website. if you are providing fact based information, google will push you up the website rankings.
+product review: go for product review questions first - if the numbers are high, you're in good shape. 
+get reviews on the problem it solved, why they bought it. 
+look for new pain points: find out if there are other issues that have not been addressed - you can create a second product for the
+same customer set. if a large chunk of consumers raise problem b, it is likely worth looking into. 
+stalk your competitors - pay attention to your industry only, paying attention to other sectors loses valuable time. visit their 
+websites, watch their ads/social media, and track their web traffic. you'll learn many things such as if they're buying traffic or not,
+and what items sell best for them. 
+do not just copy your competition - you solution needs to have unique elements.
+the follow up - execution is everything - just because you've sold something doesn't tell you why you've sold it. in addition, just
+because the conversion rate is x%, doesn't mean that is the optimal rate. and lastly, just because one target audience is working, 
+doesn't mean you've targeted correctly. 
+execution is everything, this is why athletes can't teach, and the authors have no problem giving out this information  in the book.
+
+
+
+
+
+
+
+
+
+
+

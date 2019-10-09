@@ -1,0 +1,65 @@
+the correlation between intelligent life belief and other variables 
+google play store best practices (icon, etc) 
+wikipedia to audiobook app
+android app bundle
+brain boosting games - get the books, and then create some apps around that 
+lawnmower game - or any satisfying type of game 
+the range between 15-30Hz - alpha, beta, gamma, or something else? try to study this in more detail 
+eeg and FMRI decoding - see how much information can be decoded from different image types, and if they are independent
+apple watch app - create a heat map of average heart rate based on your location - higher hear rate in lectures, lower at home?
+predict hte number of knockouts from the fights history (on each card)
+create a filter for filtering out announcer voices from sportscast (ufc)
+ufc fighter expressio before the fight predicting outcome?
+picture registration (android app idea) - merge two (or three) pictures into a single image 
+make your own trailer app - create a preview for yourself
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/F5UNSK street level metrics for US towns and cities
+acne remover app - take a picture, use machine learning to remove acne 
+an app that measures how much time you spend on your phone each day, and what apps you use
+ar app showing brain/other organs within an individual
+parsing 10k financial reports to predict a company's future price
+machine learning to predict EEG trials or hrv/eyetracking data using weights. 
+k-means clustering FMRI time series before/after vascular normalization 
+bayesian networks and brain connectivity
+calculate the probability distribution of the brain - given a feature set, where in the brain is it from? brain clades
+decision tree to find gaps in the literature, applying LDA linear discriminant analysis
+data mining tinder convos to create auto tinder bot
+any app (including tinder) - create an app that can query and interact with it (parasite apps) 
+an app that records the hits your phone takes and displays damage each day or turns off when it gets hit
+first msc project should be data mining bcg eeg data 
+forward propagation for source localization - limit the weights with physical constraints 	
+using loss on an EEG dataset- instead of blind source classification, why not use another loss function?
+	ie instead of auto-encoders, why not learn a stimulus time series, or other physiological variable (ecg) (do same with MEG) 
+eeg data augmentation - improving the learning by (rotation, scale change, shear, etc) 
+using convolutional neural networks to decode FMRI recordings (PRF)
+can do the same cnn for FMRI, to learn networks or weight maps. but how do you classify an FMRI signal? by the response to different images? 
+create convolutional autoencoder on upsampled scalp data 
+denoising auto-encoders and ultra-high resolutions vascular imaging (high SNR image for ground truth + NLM) 
+generalizing EEG analysis through deep learning - removes bad channels, muscular, eye, etc in a single step.
+dissociating signal from noise in the forex time series 
+predicting coin toss based on video of hand tossing coin. 
+subtract moving average for real time EEG classification (normalization), do the same for forex and use percent change (From mvg) 
+apple watch synchronization during movie watching 
+an app or scientific article that allows you to detect what type of chewing based on myographic signature (and count calories) 
+conditional distribution - given price is above/below the moving average, what is the probability it will go up/down? 
+effects of doctor pepper vs water on rsfc 
+an app that warns you if you're stretching your jaw 
+matrix multiplication game app - get fastest matrix multiplication time, use numbers from sidebar 
+men and women different voice pitch for evolutionary purposes?
+a general learning algorithm analagous to multiple comparisons - average value increases with multiple comparisons. 
+before and after 4 years of math training - random images vs math formulas. or before and after math formula, even. 
+decision trees for learning the relationship in the hcp between different modalities
+species visualizer - report and update heat maps of the distribution of animals in your area, download database to start 
+association rules instead of correlations in EEG-FMRI data 
+feature space for FMRI clustering - which attribute to cluster on? (std, mean, fourier power, etc) 
+using 'frequent item sets' for BCG classification and denoising 
+baked tree - a tree that retraces but forgets what branch it was on. 
+clustering on covariance and correlation matrices 
+statistical and linear independence - a relationship in the matrix equations?
+hockey announcer voice emotion predicting if a goal is about to be scored
+a device that cancels out the sound of your own voice
+smartwatch monitor for infants
+word plugin that allows you to structurally sort your document in a tree-like fashion 
+ranking app or rating app for picture quality, or some other attribute quality (sound picture matching etc) 
+ranking or matching app	
+app that performs SVD or ICA on all the iamges in your gallery, giving you the choice of components so you can select all images of yourself etc. 
+bodybuilding pictures - removing the backgroudn people from the shot

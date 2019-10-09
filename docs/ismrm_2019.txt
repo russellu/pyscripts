@@ -1,0 +1,10 @@
+ismrm goals:
+
+1) cardiac MRI
+	get info on state of the art cardiac sequences for inter-subject comparison
+		what can we quantify, and what is the relationship to health and disease?
+		flow, heart fiber muscle integrity, etc
+	get info on combining cardiac MRI with other modalities such as ECG and ultrasound
+
+
+2) laminar BOLD at 7T 

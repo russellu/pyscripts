@@ -1,0 +1,14 @@
+ohbm_sunday: 
+so far, RSN dynamic is crap, same as stationary, ie it is not non-stationary
+inter-subject reproducibility across tasks and states, rsn is least reproducible 
+BOLD EPI - blip phase encoding, "slow" acquisition
+lack of reproducibility - reproduction by different subject group, to test predictions (80% in depression). 
+shmuel - BOLD is LFP, but to what proportion do LFP and MUA contribute to different frequencies. 
+global signal regression is leaning towards religious fervor 
+global signal regression could be useful in simeegmri studies
+better to do ICA on volumes separately (ie don't concatenate) - get gray matter mask and look at power/weight maps
+	-check quality of each ICA decomposition separately.
+a move away from RS FMRI back towards task FMRI  to differentiate between healthy sujects
+huang empirical mode decomposition for BCG and gradient removal 
+time-frequency meta analysis
+auto-encoders for BOLD and EEG denoising (try EMD first though)

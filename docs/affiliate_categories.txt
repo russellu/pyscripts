@@ -1,0 +1,33 @@
+affiliate_categories
+
+types: 
+debt relief 3
+	general 1, rev. mortgage 1, bankruptcy 1,
+cable/internet 4
+	cable 2, internet 1, dish reseller 1,
+cash loans 10
+	lenders 2, payday 7, auto 1, 
+insurance 11
+	homeowner 1, health 4, auto 3, life 1, disability 2
+travel 1
+	timeshare 1
+repair/cleaning/utilities 25
+	ac/heating 1, pest 2, appliance repair 2, general 8, cleaning 3, auto 1, identity 1, 
+	plumber 1, waterproof 1, damage 1, solar 1, roofer 1, window 1, 
+addiction 5
+	treatment 3, drug center 1, rehab 1
+Lawyer 15
+	debt collection 2, general 3, SS disability 2, DUI 1, injury 4, immigration 1,
+	traffic 2,
+tradeperson 5
+	dentist 1, electrician 1, plumber 2, locksmith 2
+
+biggest categories: home, cash, insurance, lawyer
+my
+
+domain name - look up competitors, get their keywords, add it to your domain, try to make it general
+get a base legal, insurance, health, and household website - that should cover the majority of offers (maybe a cash/debt one too) 
+get the auto-insurance site up and running, then you should have 4 offers active and you can start running campaigns and optimizing.set your budge to 50$/day
+so 3-5 calls per campaign per day
+
+loca proxy and default user agent (firefox) 

@@ -1,0 +1,70 @@
+band-limited source localized power vs the bold signal in each voxel 
+yields a 5d image - x,y,z,time,freq of correlations
+
+step 1: data quality control: show outside components vs inside components, outside ERSP vs inside ERSP 
+ersp: first 3 seconds of stimulus, and power below 
+	high pass filtering vs low pass filtering - different gamma results - but for the resting state, what can you use? 
+	obviously gamma will be stronger if you isolate gamma before running ICA, 
+source-localized gamma power inside and outside? would be interesting to examine the spatial pattern, to see if it is preserved
+inside and outside the scanner (ie, the alpha/beta and gamma - show in source space voxels) 
+
+figure 1: inside vs outside, gamma band response, -2:3 seconds, and grand average response to all stimuli (with stimuli) 
+ability to detect differences between stimulus types and power - correlation n=7, show that more power = better discrimination
+-interesting experiment - see if you can correlate the ability to predict randomness with EEG response 
+check the ability of high-filtered gamma to distinguish between stimulus type vs low-filtered gamma, check the 
+show component topoplots, use them to re-select data, do the same for resting state continuous data. 
+	-compare components you get inside the scanner with components you get outside the scanner in resting state 
+	-power reduction due to ICA denoising? 
+	next step - source localization, and get gamma in the voxel. 
+
+source localization in the voxel - ground truth, compare time courses to multiplied time courses. 
+save the cleaned data from a single subject (alex), load the head model structure in matlab, compute the time courses and compare
+them to the time courses from the saved data
+
+quality control - gamma topoplots for ica cleaned data (all components) both inside and outside the scanner - compare occipital gamma
+with inside and outside scan in visual activation ROI (this will combine all methods together (source localization etc) 
+
+
+you need to think in terms of final analysis - you want to compare single trials, and spontaneous eeg-fmri. 
+so, you want to compare gamma across tasks and resting state, with bold in the same states. the question is how to best do this?
+high-pass filtering the eeg data before comparing to BOLD on a single trial basis is a good approach, because it increases SNR in the
+gamma band. however, this doesn't allow you to compare resting state fluctuations as effectively, because the gamma components are
+localized primarily in V1. 
+
+get the spatial overlap of gamma vs BOLD, alpha/beta vs BOLD in response to task. 
+brainstorm - export subject's head mask and 
+
+try sorting components by their single trial difference from 0% to 100% rnd
+ie, gamma differences distinguish neural components from noise 
+	-load the bv components and do the same on the source time series 
+
+
+step 1: grad/bcg denoising + ICA - compare scalp maps and ERSP inside and outside the scanner
+	high-frequency filtering and low frequency filtering - compare the ersp in response to both, and compare that to the outside
+	the scanner data 
+
+step 2: source localization of scalp space signal - compare frequency specific spatial patterns inside and outside the scanner
+
+show the ica scalp map power before and after ICA - and before/after re-referencing - the re-referencing should remove effects in the
+middle of the brain around the reference, but the power distribution should be relatively homogenous across the scalp, or maybe 
+concentrated over the occipital (depends on the components you select) 
+
+
+more stuff needs to be done for pre-processing - single trial denoising, and motion removal - improved bcg and gradient removal
+you have till the 12 of june to finish both posters however, so time to start focusing on what you have and getting final results
+what can you get out of the source space signals today? 
+one subject - inside and outside - first look at outside scanner gamma signals in V1 - reconstruct the ERSP in source space, and 
+save that as a power time series (you can run melodic on this map also) - try running melodic on broadband source space signals, ie
+sum the power averaged over many frequency bands, down into smaller bins 
+get the source space signal, get the BOLD signal, combine the two
+step #1: get gamma power in source space for outside the scanner data
+	a) remake head model (8mm) and re-register to FMRI/T1 
+	b) save sources again - this time down-sampled with less voxels
+	c) load and process in matlab, assign voxel gamma power values or save a 4d map
+		i) save a 4d map 
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+alpha-bold coupling meta-analysis? NVC meta-analysis? 
+PET vs FMRI meta analysis
+for the SSD - take both positive and negatives, to maximize the fit between the artifact and the mean
+right now, you're taking ssd as positive only. is there a way to change this so its looking at both positive and negative ssd?
+it still seems like the moving average gives the best result. probably because the gradient waveform is continuously changing over
+time, and never really gets back to its original shape. 
+nothing beats the gaussian window - just gotta optimize its size and shape, and try different window size s

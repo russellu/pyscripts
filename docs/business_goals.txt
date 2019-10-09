@@ -1,0 +1,16 @@
+business_goals
+by the time you go to cuba (october 21), ~2 months, you want to have accomplished the following:
+
+app:
+release the second app, with auto-trader and data downloads, and indicators. add in some strategies
+that work for you, and let the user customize the auto-trader parameters. 
+also, let the user customize their own signals - ie, they can auto-generate trading signals and act on them. 
+
+blog:
+20+ quality blog posts. once you get to 10-15 posts, start trolling websites for views
+you want 30k visitors a month, like they say in WSPB, to get there will require serious work however
+
+strategy:
+up and running demo accounts on both mql4/5, and jforex. find out how to obfuscate strategy or ensure that the private key works
+for it to run. 
+by the end of the week - have a profitable strategy up and running in dukascopy, at least (on the work cpu). 

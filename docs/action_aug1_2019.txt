@@ -1,0 +1,50 @@
+this week:
+never forget that your ultimate purpose at bishops is to teach. they want high quality courses ideally 3-4 per semester
+starting to get ready for the start of the semester (cs405, cs204)
+while simultaneously advancing your independent cash flow ambitions (questrade, forex, games)
+and laying ground work for next 5 years of research at bishops (NSERC)
+
+maximize information intake - don't listen to music on your walks, listen to audiobooks. 
+principle of focused effort - don't constantly switch tasks - focus on one thing until it is complete, then switch to something else
+	-example, this week focus on data mining book until you finish first pass, then do app monetization later in the week with purchases
+
+major synergies to exploit: 
+1) app design cs 230/financial - create app taking into account lessons from google dev. docs, slated for release on google play
+2) cs405 course design and algorithm understanding - use algos to analyze financial data, make students learn on your datasets
+	get common problems in neuroimaging and financial fields and have students work on developing those
+
+3) app design and NSERC application - get wearable devices, start testing/developing
+	have students work on developing wearable devices - use this to select students for msc projects 
+
+action items:
+1) get research/support funding - call business office, set up phone answering machine (done) 
+2) after (1), order some devices (apple watch, samsung watch) and a laptop for teaching your courses
+3) finish CCV and NOI, submit DG NOI (done) 
+4) release forex game on steam 
+5) add in-app purchases to apple version of forex game 
+7) finish app storage and networking slides 
+8) finish weka book 1st read-through (pg 274 on 600) (done)
+9) deposit money into questrade account (5k) - 
+10) build skeleton of app with one instrument and continuous updates/data storage
+11) gym 3x (monday wednesday friday)
+12) eliminate acne on face (done)
+13) impregnate valerie  (no masturbation) (done) 
+14) send HSI mail by express post (done)
+15) get 150$ from alex (done)
+16) continue dieting down (1500 cals, 170 by sept) 
+17) start two websites 1) for courses 2) for your finance apps (landing page also) - keep it generic (done) 
+
+tomorrow - steam + apple app store monetization. gym. 
+
+more synergy - focus app development away from finance and more on wearables 
+
+the more streams of income you have the better.
+monetary streams - house (1000$), google play (60$), apple store (0$), steam (0$)
+intellectual streams - your own brain (1 article under review, NSERC+FRQNT), students (0), graduate students (0) 
+
+eventual goal:
+passive income stream from 3 sources: 1) online business (apps, games, etc) 2) real estate 3) equities and bonds, take from 1&2 for 3
+today: stewart calculus - integrals, double integrals, partial derivatives, expected values 
+
+
+

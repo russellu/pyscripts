@@ -1,0 +1,78 @@
+goals_before_ohbm
+
+goals before june 10th 2018
+
+1) release app on apple store, and a desktop version using landing page and paid search 
+
+	fix those small bugs, create the desktop version, and make movie. release movie for app, and then work on online version. 
+	have a rough copy of the movie done tonight. 
+	Movie template: start by showing how to use the app (remove all premium stuff)
+		show some indicators, show some auto-traders. 
+		improve the video - make it start off more exciting, and put labels at each scene
+		movie - start with a multiple moving average plot. trade for a few seconds. add some indicators, remove some indicators.
+		do the auto-trader, and then go back to the main menu and show some of the options. make sure to underline everything with the mouse
+	market the app for 1 week on play store to drive downloads, and get on 3-5 forums and list it 
+	tomorrow - fix bugs in the morning, get the final desktop version working by 12. scan subjects in afternoon, and write script/generate grand average by 6pm
+	have your desktop version listed on your website with a primitive landing page (test buy yourself) by tomorrow night 
+	
+	strategy that makes money - overnight swap direction + indicators that work. feasible? 
+
+	this week - get the website setup to download and market your app. 
+	start marketing your app on facebook (5$ per day, see how many installs you can get) 
+		keep marketing in the forex facebook groups
+	condense the pitch, fix the product page, and create a better landing page with images. 
+		get all the parameters for the different strategies. 
+	
+	by friday - have people visiting your landing page, facebook ads working, and 
+		tomorrow morning - set up the laptop script to get the optimal strategies, condense the pitch, add more images to the pitch?
+		create a laundry list of buzzwords for the landing page - what are you selling exactly? 
+	fix the small bugs and release another version of the unity app
+	look into releasing a mac version (or wait till june) 
+
+	get MQL4 strategy working, continue to fine-tune in matlab. once you have an aroon strategy that can reproduce matlab results in historical testing,
+	apply it on short timeframe data and make sure it works as it should, then switch to the 15m bars, and demo test for 1 month on VPN. 
+		be able to open and close orders on the CCI. get the aroon parameters. try a similar strategy using bollinger bands. 
+
+	tonight: get the strategy working on aroon indicators. reproduce what you got in matlab. 
+
+	tomorrow - make your own aroon indicator, and try to reproduce some results on that. see if you get the same pattern of good and bad currencies 
+		ie nzdcad vs eurjpy
+	right now there's probably something wrong with the indicator because you're getting only 1/4 of the #trades you should be getting. 
+		also, try bollinger band strategy with 
+
+	once you're confident MT4 is reproducing your strategy, get all the currencies together in on strategy and then get the vpn working. 
+		test all the EAs on fxdd, then migrate to global prime when you are ready. 
+	strategies - find a new strategy that is more robust and doesn't depend so much on the parameters you choose. 
+		get as much dukascopy data as possible (From further back than just 2014)
+
+
+
+2) publish another paper using your retinotopy/orientation data (+fmri)
+	get those three subjects this thursday (francis + two others) 
+	process these subjects today, get the 5 subject FMRI average in matlab (after verifying single subject data) 
+	abstract should be done by sunday, then concentrate on the paper until you leave for ohbm in june. 
+
+3) release another small app on android (using unity) something like hungry shark or big hunter. a simple physics based game
+	find out what kind of apps people are looking to buy (spyfu) 
+	or look in a particular niche, and find what peopl care about most within that niche...
+
+
+
+
+
+
+trade exit strategies - trailing stop, bband exit, etc... 
+	you want to find exits within exits, and entries within entries. ie, once price has crossed your threshold, look for an even better exit.
+	once price has entered your entry range, look for a better entry. 
+
+
+
+
+
+
+
+
+
+
+
+

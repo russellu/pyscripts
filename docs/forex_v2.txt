@@ -1,0 +1,542 @@
+forex_app_V2.0
+
+overall app - can trade both live market, and older streams at higher pace (2-15x the speed)
+provide signals that tell users when there's a good buy/sell opportunity (will have to get this working first) 
+things to monetize - market streams - buy different streams
+		   - historical data feeds - buy different training sets
+		   - indicators - tools to help enter and exit the market. 
+
+plan layout: menu (training, live market, select instrument, options/help, stats, exit) 
+	top menu (always open) - account balance, upl, leverage, etc
+	customize your setup on the training market, and then apply to the live market 
+		(add a bunch of indicators - rainbow, macd, etc). 
+	in-app purchases: buy more streams, more currencies to train on, and restore your account balance (more training fuel) 
+	
+	things to add in this app: subscriptions, data feed (scraping from yahoo finance or whatever), and downloading data from 
+	web hosted, and indicators). timeline - two weeks (before Imeka stage starts) 
+
+new forex app - one free currency, the rest can be downloaded from your website (just enter the URL in the app, should work)
+	next step - querying data using android, and displaying that data on an app. 
+	for now, stick to indices, ETFs, futures, and forex
+	research these things - get the spreads and transaction costs for each one
+	
+scraping - from yahoo finance? looks like its going to be difficult and possibly illegal. maybe just stick to in-app purchasing
+of pitrader data? this could probably be done in a week or so
+more features - step through, or continuous. in-app purchases (access multiple instruments, access different indicators)
+scrolling buttons, in-app purchases, web queries and saving to web, sound (forex goes up/down, low/high beeps), and tone
+different tones for different types of market move
+some milestones : 1) 
+
+goal for today: add the in-app purchase (4.99) to unlock data on the free forex price action app. (should be done by this afternoon)
+then, spend the rest of the day working on the rainbow plot for the next app (should have both these goals by the end of the day)
+then by the end of the weekend hopefully the 3rd app released (stocks, indices, forex) 
+a date/time selector - choose the dates you want to practice trading on
+today: get the rainbow working on a single currency (EURUSD) 
+user the bounding box plot 
+plan the app. 
+scrollable areas - make it so the buttons are different ie they can be scrolled, they don't react to sensors in the same way.
+plan - tomorrow, main menu layout, save/load accounts, rainbow, all data parsed and on website, loading from website, rainbow
+and other indicators 
+you want to add a few improvements over the last app - trade markers (buy/sell), ability to scroll (Swiping), indicators, better 
+messages and rewards when you make a good trade, better display, display volume, different time scales (do this in matlab), ie, 
+organize by day, and maybe an auto-trader option (where you can customize your own strategies?)  
+the ability to have multi-scale plots (4 max) with different time scales on each 
+everything has to be aligned by time - so you can add different currencies etc, but they're time aligned so the current time step is 
+always the same no matter what. break up your data into 1,5,15,30,hr,4hr,and daily bars. get a momentum, and moving average for each
+(you can also use these when running matlab to see if you get any special 
+have a premium screen, when you press the bar at the bottom it lists all the benefits and you can select from premium options
+(access to all data (9.99), access to multiple screens, access to auto-trader, etc). 
+auto-evaluator - ranks your trades, and auto-corrects your trading style (hold more, let run more, etc). 
+
+also try to fix the account loading on the other app haha. 
+parsing data from the day downwards - first get the day, then recursively get hours (4,1), and minutes(30,15,5,1)
+how do you want to do this? first parse the year (separate and sort the dates by year, month, day) while saving the indices, then do
+the same for the times 
+a super easy way is just take t-x at each time point, where x is days, minutes, hours, whatever. the question is, do you want to do
+this in java or in matlab? 
+do you want to assign an hourly/daily/minutely bar to each minute point? ie, say you want to display a minute, 5 minute, and daily 
+chart. if you're displaying bars, the hour bar has to be continuously updated based on the minute data
+maybe just load the minute data, and construct the other bars on the fly (This would allow you to be more flexible as well) .
+so basically, load the minute data, then construct the hourly data and continously update based on the minute data. 
+constructing the hourly/daily bars should be fairly simple - just take the time of the current minute bar, and then go back in time 
+x minutes to reach whatever sub-list length you want, and use that. 
+so a simple goal would be to just display the minutes in one plot, and the hours in the above plot, for example. 
+
+by 12: have a rainbow on display 
+set restrictions: (only buy when x is moving down, etc)
+a constrain trade button - discipline! 
+run out of data, and then have to buy more 
+a tutorial, to explain how it all works. 
+more metrics - tells you how long to hold/exit to attain maximal profit, by examining your historical trades. 
+
+next step - dragging the recording backwards and forwards - 
+gestures are done. that was quick. 
+next, implement some simple buttons (play, pause, step) and add the gestures to control the scrolling 
+then, add the mini-map screen, and the parsing of the hour/day/etc time series. (this will be the bulk of the app done) 
+by 2: control the screen, play, pause, step buttons, 
+by 4: minimap
+by 6: download from internet + main menu account creation + saving .
+
+making the minimap - how to decide how far back to go? just take an arbitrary amount for now - 
+how to amalgamate the previous data? just take the previous n bars, if its days, take minutes*x, if its hours, minutes*Y,
+etc. 
+imagine you were using a bar chart - you have to get the high, open, low and close of every previous time point. 
+first, plot bar charts, then, worry about making them based on the amalgamated data. 
+
+constructing bars from longer time sequences? use the timing, and add a new bar every 5 minutes/hour/whatever. 
+ie, say your current minute bar is at 1:30, that means you will add to the bar the previous 30 minutes (to get the high and low,
+you alread know the open), and the then at the end take the close and add that too. 
+you starting point is always the current minute close. from that, you reconstruct the previous bars. 
+when you select the trend timescale, it builds a new array (from t=0), and then it gets continuously updated as the data progresses. 
+
+advance along all the points, every time you get forward dataScale amount, add a new bar to the float[].
+(but do it using TIME, not #points. 
+you need to get some kind of number that indexes each minute, hour, day, month, etc and then just use that to compare
+ie, 365*year + 
+
+what if you just use day and less? ie, start looping through all the dates, and every time you reach a date thats >= start+incr,
+reset and create a new bar? 
+
+put a premium subscription in the old forex price action, so the user isn't taken by surprise
+
+how to update the trend data continuously? have an update method, when you move forward, you just 
+make multiple purchases available (0.99$), or unlock all data for 9.99. monetize the account balance also. put ads. 
+want to be making 10$ a day by christmas, on avg. 
+
+how to get the active bar? 
+when the user scrolls backwards - if the maxtrend = currentmax, get the current bar. else, do what? 
+a settings panel - leverage, etc
+when the user is prompted to start the game, they can see all the instruments, but can only select one (and a limited sub-set) 
+
+moving back - candles should move back as well. 
+add some indicators to the side of the bounding box
+today: finish the charts + indicators, with trading functionality (buy/sell/step/play)
+have a current mood for them market - buy/sell (how to represent this? two icons? 
+put a moving average on the strategy chart, and use its slope? or just use the combined 
+
+the strategy - find and index that results in consistent profit - long term in one direction, short term in the opposite direction.  LOL NAH 
+let the phaggots figure that out for themselves - chances are, there is no winning strategy. 
+correlate the differences with the slopes? ie, take the differences and see if the slope can predict them. 
+or, a mv regression, where the change at each time point can be predicted based on the moving average weights? 
+its clear that there is no way to predict the market. so, now you're basically just scamming people. however, you can try to warn them about
+the randomness of the market by giving them shuffled data - ie, take the bars and shuffle them, then allow people to trade on shuffled/non-shuffled data. 
+
+index for trend strength? previous 3-5 bars, average trend. just save a distribution in matlab and load that. 
+a bar normalization method? the amount of red/green, divided by the total bar length, im the previous n bars. 
+ie, 
+start from teh main menu - play game directly, no account setup. 
+new things for this app: multiple in-app purchases, downloading from web server, 
+dragging buttons, leaderboard, sharing, review button, sounds, ads, marketing, push notifications, loading screen (wait while loading) 
+
+today: do everything that can be done without internet. (main menu, account management, etc). 
+next - add the controls - forward, back, buy, sell.
+how will this work exactly? need a play/pause button, a speed/slow button, and a step button
+option menus - for rainbow and full screen. 
+also, automate the size of the screen/buttons. 
+tomorrow - sound effects, trader tracking logic, redo all the buttons (high resolution), trade tracking visualiztion (on the rainbow), main menu,
+strategy and rainbow screen options, saving/loading 
+if you can get that done by tomorrow, wednesday you can do the in-app purchases and parsing online data (with progress bar) and the ads, and then 
+hopefully roll out by thursday or friday, and be working on a game by the end of the weekend. 
+
+the menu: make it like the rainbow puke menu, with a share button, a play button, high score button, rating button, and volume button 
+market tracker - start by visualizing trades? start by just controlling the market with the buttons (Buy/sell, slower/faster/ play/pause/step). 
+also, put an indicator at the end of the rainbow, showing where the current price is
+finished all the buttons, now add the buy/sell logic and you'll be done this part (+ trade visualization) 
+also fix the interface to look a bit more professional..make the background colors of the buttons a bit darker than the background? 
+what information to display? upl, #trades open, etc. just use the trade markers to display this for now, later, post the info at the top. 
+quit screen - show a banner add. 
+displaying the trade - need to get the line from a to b, then just cut it off if its greater than the boundingbox limits. 
+how to draw this line - get the vector between the two points, then what? draw a line from the starting point to where the vector intersects the boundary 
+try scaling the line segment if it falls outside the box? 
+today: finish the trade lines (forward and back, closed/open), add account balance and UPL display, add lines around buttons, add ad and premium button,
+add main menu, account saving/loading. 
+
+should also add a tutorial - bear, bull, follow the rainbow, etc. 
+add probability based on empirical distributions so you can exit the trade wisely. 
+sounds - low = sell, high = buy, coins = winning trade
+tomorrow - finish all offline stuff - accounts, loading/saving, upl, balance, options, sounds
+friday/saturday - online stuff (Accessing data, ads, in-app purchases), sunday roll out. 
+you definitely need to add an analytics package - analyze your trade results, if you were to hold your trades for longer/shorter. 
+you held each trade for an average of x minutes, etc. 
+
+designing the account display - start with no trades open, and the account balance. then, when a trade is opened, display the open trade with some graphics
+for visualizing UPL, and the distance from the stop/take profit. 
+options page - change leverage, instrument, stop, take-profit
+
+account setup work flow - play, select instrument, select timeslot  (make the start page better looking) 
+select instrument screen - 3 horizontal dividers, square buttons
+
+options screen - select instrument button, select stop/take profit button, select leverage, 
+unlocking purchases - upgrade to premium to unlock all currencies/etfs/futures, etc 
+next problem - how to adjust for all the different market prices and instrument types, when calculating stop loss, and profit, etc. 
+you want to add expert indicators to the app, but if you do this, you by default have  to beat the market which is impossible thus far
+try a parameter space search over std from current trend - ie, current trend is up, and std is down, is there a reliable increase/decrease?
+add a button to toggle the rainbow, and other indis
+
+adding more indicators to the chart. (Bollinger bands, RSI, MACD) and an auto-trader option. then, allow the user to automate their trading strategy by
+somehow 
+
+tomorrow - the add/subtract indicator functionality, the options page, and connecting all the functionality together 
+add three new indicators - RSI, MACD, and bollinger bands (with keyboard to select parameters). add the ability to switch between candles and rainbow
+another option would be to select trade epochs where the price action is extremely easy to predict, ie, the rainbow is predictable. 
+need to come up with a "predictability index" - ie, the average duration of each crossover. a better index is how far it moves for each cross, ie, the average
+move at each crossover. 
+still on track to release by sunday? kind of depends, on what you get done tomorrow. 
+use the 3 indicators - RSI, MACD, and bollinger bands to obtain some good strategies for each currency/future/whatever, 
+
+today: add three more indicators - RSI, MACD, and stochastic, and make the indicators customizable/add/removeable from chart.
+new goal - by the time IMEKA starts, you want to have this app released. parsing the data - add dukascopy currencies. 
+auto-trader - optimize on work cpu, and if you get a good strategy that works on the majority of currencies, see if you can get it working on dukascopy. 
+	remember - the rollover costs can hurt you, keep that in minds. at minimum you should average 3-4 pips per trade over ALL currencies and be making at least
+	3 trades a week, to completely mitigate these costs. 
+
+task 1 - options screen, show/don't show the strategy screen. 
+goal for today: make more indicators in matlab - stochastic, wma, ema, more?
+try to add a couple pips using the stochastic? may work, may not. WE SHALL SEE
+
+options button - when pressed, pop up the select indictator screen and the select options screen - below the main chart. 
+options screen: leverage, stop/tp, indicators, 
+adding indicators - put it at the top of the main screen, or under the strategy screen. set them up to be default, and then press on them to modify the values. 
+first step - just draw the raw time series. then, draw the indicators as the user sets them to the chart. 
+
+add auto-trading strategies, the user can buy more strategies, and can visualize/tweak current strategies. 
+auto trader icon - heat map with ascending profit curve. 
+drop the bottom feeders (lowest 2-5 currencies) and the average should jump up to 3.5-4 pips per trade
+
+options page: view account summary, change instrument, change leverage, 
+
+add create user screen, and save/load users. 
+on start-trading press-option to create new account or load existing (if there is one)
+analyze trades - allow users to analyze their trades - see if they should hold/wait longer for more profit. 
+
+first things first load the app and see where you need to fix and improve stuff. you want this done by the end of the weekend.
+first thing - add splash screen. (done)
+2) - toggle between on-screen indicators (Rainbow,bband) (done)
+	sub-problem - scaling indicators (make sure they all use the same max/min) - just get the max at the start. (done)
+	bollinger bands still not the smallest. why?
+	add multiple indicators to screen. (done) 
+	fix the weird jerky rainbow thing - it seems out of synch with the line plot sometimes...why? (done, just draw rainbow last)	
+	adjust indicator parameters
+3) toggle strategy screen
+	toggle strategy and indicator screens - need to add options to draw 
+4) - add macd/stoch, etc to bottom tab 
+5) - load data from online resource
+
+today: toggle strategy screen, green/red buttons (to show which indicators are present), and bottom indicators (start with vol). 
+add the stop/take profit and account settings stuff
+
+after finishing all this, the two main things will be 
+today: link account to options screen, and add the indicator bar at the bottom. 
+adding the RSI - first just add a bounding box, and draw it in blue or something, then add the data points 
+	(get all the previous bounding box shit sorted out first) 
+
+name: trading incubator, trading accelerator, market skill accelerator
+realistic trading simulator
+add a website button to you the main menu 
+
+get some historical data downloaded from your website, parse the text file, etc (combine this with dukascopy loading) 
+indictor request button 
+the bug is definitely in the create bollinger band code. try a different period and see what that does
+
+tonight: bars, candles, and volume. 
+
+finish this app by the end of next weekend, and then get another app released using unity on iphone, windows phone, and android 
+by the time you go to cuba. if you get all that done, chances are good you will be making 10$ a day come christmas. 
+
+need a smarter way to plan the MACD/VOLUME boxes - have a current box variable or something
+put all the boxes in an array, and search the array when you want to update a box? 
+how are you going to work this? 
+have an addBox() method, that takes an index and automatically re-adjusts the sizes of all the other boxes. 
+then, just update the buttons based on the new size (if there are buttons) 
+
+the simplest case - you want to add a volume indicator. what do you do?
+step 1: get the total # of available pixels. 
+step 2: get the number of active "lower bar" indicators (MACD, RSI, ADX, CCI, VOLUME, williams, spread). 
+	how? first, if the current box is one of them ,set it to true. 
+	then, cycle through the array and just sum them
+step 3: 
+
+subsume the strategy box into the indicators as well? make them all part of the same indicator panel? 
+then, you will be able to add multiple time frames to the strategy screen (also put the bear in the draw strategy screen method)
+you should also re-work the button panel, so that the buttons are larger and easier to read. 
+
+tell them when they buy against the trend or for the trend. 
+add 4h, 1h, 30m, and 15m indicators. 
+
+step1: the indicator buttons, toggle on and off, and adjust the screen size accordingly. 
+for some reason, drawing the trades twice creates a white line??
+anyways, for the rest of today, goal:
+get all the indicators working: macd, stochastic, williams, RSI, 4hr, 1hr, 30min, 15min (start with strategy) 
+scale the price chart appropriately to the indicators (1/2, 2/3 of screen or whatever, make something up)
+remove the indicator panel using options. 
+draw the price tag and trades at the end, instead of from separate methods, clean up drawIndicators by remove redundant lines. 	
+next up - the spread indicator, and adding tags to all the bar indicators 
+don't forget to clean up the drawIndicators class (Remove redundant code) 
+
+tonight: complete the strategy screens and the easy indicators, get all the indicators drawn first, with their labels, then 
+add them after. 
+
+plan for the strategy screen indicator - just have an arrayList<float[]> of bars, that you update with a new bar every minute,
+and if the %minute counter, 10 = 60,5,etc then just add a new bar. every minute that passes you just add a new bar. 
+
+new things for this app - add advertising (Remove with a premium purchase, add video) 
+
+first, just visualize the 4 hour bar chart or whatever, then finish the bar cumulating code. 
+
+bar cumulating code - how to agglomerate an arbitrary time frame into instantaneous bars, that can also be rewound? 
+simplest way - just use the % operator with a counter, every x minutes, add another bar. 
+how to keep track of the longer time-frame bars? 
+every time the minute counter advances, you add a new value to the long term bars, but how do you aggregate them to plot the total?
+its pretty simple just use the % operator and add when %tf == 0, but how do you play it backwards in time?
+you also want to be able to adjust the time frame of your main chart bars, so this is important for that also. 
+lets say you add a new bar every time, so if you're using 5 minute bars, it will look like 
+1,1,1,1,1,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5 where each number is the # of the 5m bar. 
+now, lets say you want to draw these bars. you will need an offset counter
+when not scrolling back
+what about an arraylist of bars that you compute on the fly? 
+ie, an arraylist<arraylist<bar>>? every time mod() reaches period, add a new bar. then just take the last bar from each value
+when drawing. this works super simple for moving forward, what about moving back? just use some kind of offset multiplied by the size
+of the array, should be fine. 
+so, to do this you need 
+
+how to calculate the index of the time bars? 
+need the period (60) and the index of the data feed
+
+remaining indicators: cci, adx, stochastic, RSI.
+remove ichimoku, put spread in main box, ad price tags to indicators
+
+once you have solidified the indicators, create the auto-traders by optimizing the parameters in matlab
+	sell the auto traders for 0.99$ a piece? 
+
+after finished the basic indicators, you need to make them adjustable (edit parameters), calculate them dynamically in another thread,
+and be able to add them to different time frames. 
+also add the option to remove indicator top bar. 
+
+//show trades option
+
+need to find a way to get people to do repeat purchases - only 5% of downloaders convert, so need to milk the whales for all you can
+today: finish all the indicators (aroon, + price tag and lines/boxes on cci etc (+scaling)
+
+add support and resistance + parabolic SAR, and you will be done with indicators (thats all the major ones) 
+	fuck that noise - parabolic SAR is useless, although s/r might be interesting. 
+
+
+strategies - RSI+bollinger band, CCI+bollinger band, etc. 
+
+tonight: finish adx, aroon, and atr, and finalize drawing for all indicators, tags for all indicators, spread indicators. 
+test these as filters in matlab. 
+
+support and resistance - psychological levels
+
+try writing data to binary file and reading in java - see if this is faster than text file parsing. 
+
+labels for all indicators (top left corner) + parameters
+ADX two more lines
+all indicators extreme value lines
+all indicators tags.
+sound 
+autotrader
+spread
+
+//cci, rsi, aroon, williams - 
+
+tonight - add all the sounds, add labels to the lines on cci, rsi, aroon, etc, add parameters to indicators, allow time frame to be
+any specific frame you choose (add minute/5 minute etc to main plot chart drawing), add spread indicator
+
+
+add a feature screenshot to forex price action 
+finish this game as fast as possible so you can get to work on a real money maker - rpg games (most average ones make like 5-10k 
+per month, if you crank out 5-10 games chances are good one will be a hit and you'll be set for life. 
+
+setting the indicator parameters - (After this, you're basically done + autotrader and data parsing/account management/analysis)
+another screen where you set the period and other values, create a custom keyboard that covers half the screen, and put the other 
+by tonight - finish the numerical keyboard, tomorrow finish everything to do with indicator parameters and display (time frame 
+adjustment and dynamical indicator calculation with top message) 
+
+the numericalkeypad - create it for each indicator, and then add the bottom values. 
+you will need to send marketdataholder and the number of buttons to add. 
+so basically, create a new keypad, and feed it the buttons and somehow the parameters that go with the buttons, then just use that
+as a reference when inputting the new values. 
+start with a simple one first - bollinger bands - two parameters = two buttons
+one tricky one is the rainbow - what parameters can you set on this?
+1) remove all, 2) add moving average (color automatically adjusts) 
+0.2% of installers purchase the app, which is terrible. you need to find a way to get this up to 2-5%. if you can do that in your 
+next app, and get the same amount of installers, you will be halfway to retiring on the app (currently at 30$ a month, this should 
+double at least before it levels off, and then you would be at 600-1200 a month. 
+
+ad a link to the improved version from the forex price action main menu (+ rating, + remove ads). 
+real time data link - from dukascopy? need to find a way to do this 
+
+today - finish all the indicators and time frame stuff. 
+next - calculate the indicators in another thread. 
+
+you want to calculate all the indicators on loading the account, or on selecting the currency.
+the async class should only be called when you click finalize in the adjust indicator parameters. 
+
+define the behavior of the parameter setting
+reset to default: reset the current parameter to the default
+finalize parameters - send the parameters to the indicator calculator, calculate indicator asynchronously and return to options screen
+finalize parameters - just takes you back to main screen - pressing enter recalculates the indicator 
+enter - change the value of the parameter screen button // done
+get it working on a single indicator like bollinger band, then worry about rainbow 
+
+reset to default: reset all the parameters of the current indicator, recalculate current indicator
+finalize: calculat the current indicator 
+
+indicators are working...now, need 
+for the moving average, maybe just add a simple moving average and a weighted moving average, and leave it at that (no need to adjust
+the rainbow)
+
+how to change the time-frame? just recalculate a new time-frame, and set the closedata parameter to that. 
+now the closedata is mainclosedata, and the original is minclosedata. so what happens when the user changes the main time-frame?
+-need to recalculate all the indicators (include 4hr, etc) - 
+- you want the same effect as you get when you have 30+ minute bars - ie, the bar changes in time, but to do this, will you need
+to revamp all your indicator calculations? ie, each indicator would become an array list of array list...
+
+tonight - calculate the indicators on demand, and change the current time frame. 
+tomorrow - sort out account loading/saving, keeping all account parameters fixed after loading
+
+calculate indicators on demand: don't calculate them on start up. 
+
+how to calculate the trend data, based on the new time series? 
+
+an alternative way - 
+
+next - compressing data and data manager (try to get all data compressed into binary files) 
+next - auto-trader
+next - make the parameter changing screen more intuitive or at least put some simple instructions. - put question mark on button,
+or a larger question mark at the top
+post message when switching parameters, or change the value: to enter forex 
+next - fix the RSI which appears to be broken..
+next - re-do the main menu (sucks at the moment, make it like the previous one but cooler. 
+	add new logos for new user, add cooler logos for menu buttons
+
+auto-trader, compression data loading, premium features, account analyzer, and done! 
+
+prompt users to buy premium features, and also have the menu where they can buy stuff. have a remove adds/link to premium features 
+button present at all times (until they buy something). you want to aim for 2% conversion at 10$. if you can do that, you'll be 
+earning 20$ a day + 5$ a day = 25$ a day by christmas
+
+best solution is probably to just recalculate indicators on the new time frame, and then statically update them. 
+reference every time period calculation back from 1 minute. 
+how can you get this to work with the trend data? the problem is now the trend data thinks its in 1 minute space, but its actually 
+in 30 minute or whatever 
+
+tonight: remove the indicator buttons on toggle. save compressed data in matlab and load in java. 12 more days. 
+compute indicators only on request. 
+
+for the auto-trader: optimize all parameters create specific auto-traders that work depending on the currency. 
+have the option to turn off/on the spread. 
+auto-traders: be able to change the parameters, and create your own auto-trader using predefined entry/exit criteria
+example: price > bollinger band, price < bollinger band...this may be complicated to create, save for last
+be able to email and ask for specific auto-traders, use it as a channel to acquire more customers 
+shuffle data option - randomize market data
+auto-trader lab
+
+simple things you can do before the auto-trader: compression data loader, account analyzer, account manager. 
+
+compression data loader - all currencies, indicies, etc. 
+save float open,high,low,close,volume,spread. (6 floats), 1 million data points each => 24million, 5x compression ratio 
+(keep it under 80mb) 
+
+auto-trader feature - back-test simple auto traders using the provided indicators. 
+once you get to 1000 users on the first app - put ads, and push notifications. 
+
+paid features: custom indicator parameters, trade analyzer, account summary?, more currencies/instruments
+		currency statistics
+
+step1: load the binary file without zipping it
+save the data in chunks of 100k data points, more than that and it seems to lag
+add a prompt to load more data, which will also reset the current trade parameters. 
+
+today: prompt to load new dataset, connect all user settings to marketdataholder/tracker, have two different users with two different
+datasets make sure the settings are saved etc, finish parsing all the data from dukascopy and other indices, finish data loading screen,
+organize which data sets you will be using (currencies (20), ETFs, indices, etc). 
+
+fix the popup bug, then organize the data imports (add only two of each currency to start) 
+
+by the end of the weekend - fix the forex price action according to the guys suggestions, and put ads as well as a premium button 
+and rate button in the main menu. 
+
+by the end of the weekend - have a small banner ad working int he forex price action, (put it on top) 
+things to fix: leverage/margin, pause, when buying premium, change premium features to on push of premium feature button
+
+4hr crashes when you load new dataset or when you don't start from large enough time point? 
+
+//    tools:context="com.forexgame.butr2901.forex_game.russ.forexgame.butr2901.forex_game.Main.MainActivity">
+
+old game: things to add: 
+1) start by removing the premium button, and instead add 2 buttons to the main menu: buy premium, and rate this app
+	1a) remove the buy premium button, get it full screen and set premium to false. show ads only if buy premium = false. 
+	remember to remove the is premium button if already purchased, or set it to inactive. 
+	
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+fixing the previous forex price action - gonna have to change the view screens to button composite, or implement what the guy said on
+stack overflow 
+
+tonight: focus on removing the ads from the old version, and getting it ready for release with the updated features. (no premium button, but charge users to buy
+when they click on the buttons) 
+you will ad the banner in the next version, but this version its not worth the effort. 
+
+
+for the binary gzip data - get 3 currencies, (different pip scales) 
+
+also get the hourly and 4 hour time frames etc (but make them pay for that) 
+so, this won't be done by the time you leave for cuba, but maybe you can release a preliminary version and add more features later?
+
+what kind of preliminary version can you make before cuba? cut it short to:
+trade analyzer, datasets, time frames, indicator parameters. 
+main features: currencies, time frames, account settings and tracking
+
+need to be able to load new data when reaching the end, but if you accidentally decline, how can you start again? 
+today: finish everything to do with loading data. this means multiple time frames, multiple currencies, multiple instrument types, and the currency selection screen
+sunday: trade analyzer, account summary, stop, tp, leverage, account loading/saving
+
+step1: get all the data in zipped binary format (1min, 30min, 1hr, 4hr for instruments
+	download all the data, check it in matlab (make sure you have good continuous data for all datasets). 
+
+loading datasets - next step is just loading different time frames, handling edge effects when you load 4hr 1hr etc. 
+(set the colors of the currencies according to availability
+
+next - add select time frame to options screen (change time frame) or put this in the original account set up? 
+
+need to make the trading screen depend on the user who holds the marketdataholder and markettracker 
+need to remove the gaps from the other datas (commodities, etc) 
+move the chart labels down to the bottom of the bounding box. 
+
+need to load/save all user parameters, including indicators, timeframe, etc 
+=> put this info in the markettracker or marketdataholder class, or just have the trading screen belong to the user?
+trading screen belongs to the user, try this as its much simpler. 
+improve all the buttons besides rate and buy premim which are already ok. 
+add a default user, so you can set all the parameters at the start of viewScreen. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+later: ads, auto-trader, etc. 
+
+
+
+
+
+
+
+
+
+
+
+
+

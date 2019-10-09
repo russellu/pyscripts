@@ -1,0 +1,8 @@
+reviewer_response:
+1) get the % change (done)
+2) get the SUMA map on the area boundary (to do this, average across all subjects, in MNI space, and then bring the SUMA
+map back to a native space and display on SUMA display the three stimulus types in the same angle on the SUMA brain
+3) show a subject's EEG with big fluctuations, and show the bar chart corresponding to that, and a topoplot
+
+using nibabel, get the sum of all MNI space brains and save it. then, transform those using ANTs 
+mask 10000 most significant for contrast and rnd, display on same surface

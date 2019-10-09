@@ -1,0 +1,12 @@
+goals: you need to know exactly what you want to do when you sit down. don't just start browsing the news meaninglessly. 
+sit down. work on project. go back. 
+so for tommorrow, that means: #1, get 2 subjects yourself and valerie (tuesday get two more, lyes and someone else). 
+first thing: finalize stimulus design, talk to sam, get the electrodes set up, talk to lyes, etc (find others as well). 
+stimulus: retinotopic and orientation tuning curves. 1.5s stimulus. jitter between (0.5-1s).
+after you have two subjects, go to the gym and do squats etc. 
+be at work by 11. get some consent forms off of snail. 
+hack sherbrooke - need to look at more datasets. get a better understanding of the project.  
+work on the traffic light idea. simple optimizations, and a more complex traffic flow. look at asp.net
+game? try to get back to working on the game by doing something simple like loading a map or segmenting a map in matlab
+or making sprites of some sort
+presentation: implement Kevin's comments, and add some more of your own results (EEG retinotopy among others). 

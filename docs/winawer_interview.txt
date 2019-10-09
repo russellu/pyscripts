@@ -1,0 +1,14 @@
+winawer_interview
+
+equipment: 7tesla, simultaneous ECOG-fmri, electrical stimulation, TMS, optogenetics
+money: external funding, possibility of bonus, what if i don't get funding
+timeline for grant: due mid-october, need to write proposal and complete 1-2 iterations
+projects: brain stimulation of higher order and lower order areas (with ECOG), test ff and fb hypothesis
+	structural brain image based on retinotopic responses to visual stimuli (ecog, meg, and EEG). 
+	inter-subject correlations - alpha/beta and gamma peak frequency, diffusion tractography vs PRF 
+	ECOG  investigate orientation tuning of different frequency bands, compare to BOLD (hierarchical)
+		orientation tuning of voxels with different PRF sizes 
+
+nyu job listing object recognition 
+send dates and proposal requirements 
+write 1 paragraph summary of what i want to do (feasibility of projects)

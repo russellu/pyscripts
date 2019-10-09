@@ -1,0 +1,27 @@
+powerpoint_CNS
+
+alpha rhythm - what is it
+what is neural activit? 
+
+global signal mask vs visual cortex mask when explaining global signal
+
+inside vs outside comparison	
+
+resting state only - show all states, collapse across all states. 
+emphasize final result (GSR is good)
+correlations relative to noise
+
+slide 11 more clear
+
+default mode network - define beforehand
+correlation curve (goense), electrodes, completely non-invasive
+brainstorm minimun norm estimates 
+murphy, fox neuroimage (voxel wise anti-correlations)
+
+1) choose between two correlation spectra: gsr or non-gsr (show alpha/beta blue spot)
+2) ica denoising affects results
+3) show brainvision pipeline
+4) show alpha/beta voxel-wise correlations with BOLD gs
+5) 
+
+

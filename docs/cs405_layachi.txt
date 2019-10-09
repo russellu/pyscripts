@@ -1,0 +1,29 @@
+stay away from heavy theory
+focus on algorithmic aspects, make things intuitive 
+chapter 4 - data mining techniques 
+0 - start talking about data nominal, range, etc
+0 - weka - how software works
+1 - trees and rules (classification)
+2 - bayes, bayes rule (ways to explain on youtube), use trees to explain
+3 - clustering (kmeans)
+4 - association rules, linear regression
+5 - evaluation (cross validation, bootstrap)
+
+weka, python for assignments 
+incremental assignments - start with small assignments, build up
+keep slides small dont overload slides
+cover 5 chapters of book 
+math on board - linear regression (will not ask about in test)
+
+
+Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
+
+
+
+
+
+
+https://www.spyder-ide.org/
+https://scikit-learn.org/stable/https://matplotlib.org/
+https://numpy.org/
+https://www.anaconda.com/

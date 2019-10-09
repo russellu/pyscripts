@@ -1,0 +1,67 @@
+graphical evaluation of blood to brain transfer constants from multiple time uptake data. generalizations
+summary: the method of graphical analysis for the evaluation of sequential data (tissue and blood concentrations
+over time) in which the test substance is irreversibly trapped in the system has been expanded. a simpler derivation
+of the original analysis is presented. general equations are derived that can be used to analyze tissue uptake data
+when when the blood-plasma concentration of the test substance cannot be easily measured. general equations are 
+also derived for situations when trapping of the test substance is incomplete, and for a combination of these two 
+conditions. these derivations are independent of the actual configuration of the compartmental system being
+analyzed and show what information can be obtained for the period when the reversible compartments are in effective
+steady state with the blood. the approach is also shown to result in equations with at least one less nonlinear 
+term than those derived from direct compartmental analyis. specific applications of these equations are 
+illustrated for a compartmental system with one reversible region, and one irreversible region. 
+introduction: the study of the movement of solute molecues across tissue capillaries and their localization within
+selected tissue of both animal and human subjects has been greatly facilitated by the use of tomographic machines. 
+these images can provide sequential measurements over time of regional tissue concentrations. the general test 
+protocol involves injecting a test substance into the blood, and then measuring the concentration in the blood
+and surrounding tissues over time. the data may then be analyzed by a number of methods to ascertain the desired
+parameters of the system. 
+one method of analysis that has been proposed is the graphical analysis of multiple time points, and an equation
+has been developed for a very general model. when certain measurable quantities are plotted against other 
+measurable quantities, the equation indicates that a straight line should result. the slope and intercept of the 
+line yield useful parameters of the system. this article provides a simpler derivation of the graphical analysis
+technique, and discusses its potential for more general application in systems other than the study of the blood
+brain barrier or deoxyglucose uptake. a description of how graphical analysis can be used to analyze tissue uptake
+data alone, when blood-plasma concentrations of the substance cannot be measured, and the conditions necessary for
+this analysis to be valid are given. 
+
+analysis: the system to be analyzed is assumed to be a homogenous tissue region or regions that can be reliably 
+assayed for the total amount of the test substance. initially it is assumed that the region will be perfused by a
+varying but known concentration of the test substance in the blood, and for simplicity that the plasma concentration
+represents the concentration of test substance that is exchangeable with tissue. the tissue region may consist of a
+number of compartments that communicate reversibly with blood, which can occur directly or indirectly through 
+intermediate compartments. there must be at least one or more other compartments that the test substance enters in 
+an irreversible manner. 
+the rate constant K is the steady state rate of uptake into the system (when the blood plasma level Cpo is constant)
+divided by Cpo, R = K*Cpo, therefore only equations involving K need to be discussed, since these equations can
+easily be transformed into those involving R. 
+the overall uptake rate constant K for the system described above has been shown to be:
+K = Am(inf) / integral(0->inf)[Cp(t)*dt], where Am(inf) is the amount of material in the region at infinite time,
+and Cp(t) is the blood plasma concentration at time t and represents the concentration of test substance in the
+plasma that is freely exchangeable with tissue. 
+thus, imagine the experiment continued for infinite time but with the plasma concentration equal to 0 for times>t,
+for this situation: integral(0->t)[Cp(tau)*dtau] = integral(0->inf)[Cp(tau)*dtau]. 
+since the blood plasma concentration is assumed to be 0 for times >t, the amount that is left in the system at
+infinite time is equal to the amount in the system at t minus the amount that leaves the system after t. the latter
+quantity is the fraction of the amount in the interchangeable compartments that leaves the system (ie, does not
+enter the irreversible compartments) as well as any material in the blood plasma. 
+thus,
+Am(inf) = Am(t) - VpCp(t) - f(t)*Ae(t), where Ae(t) is the amount in the reversible compartment at t, Vp is the 
+effective plasma volume of the tissue region such that VpCp is the exchangeable amount of test substance in the 
+blood, and f(t) is the fraction of the amount in the reversible compartments that goes back into the blood plasma
+and leaves the system. the fraction f(t) is is a function of the parameters of the systme and the relative amounts
+of the test substance within each of the reversible compartments.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

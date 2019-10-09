@@ -1,0 +1,26 @@
+coupling paper final version
+
+main findings: 
+1) motion contributes to gamma-bold correlations
+2) residual ballistocardiogram contributes to alpha-bold correlations
+	1&2 => global signal regression reduces artifactual NVC
+3) global signal regression decreases variability across states 
+4) narrow band gamma power vs broadband gamma changes - show specific ERSP vs noise spectrogram
+
+title: global signal regression attenuates spurious EEG-BOLD correlations
+
+abstract: obtaining neurophysiological and hemodynamic measures simultaneously is a powerful method
+
+
+results:
+
+data needed:
+1) source-localized bandpass filtered EEG power in each voxel
+2) source-localized bandpass filtered BCG power in each voxel
+3) BOLD global signal, BOLD motion parameters, BOLD time series (pre and post GSR, use 3dTproject to filter out both at once) 
+
+from this, you can get the following:
+1) source-space frequency specific EEG-BOLD correlations in all states
+2) source-space frequency specific bcg-BOLD correlations in all states
+3) quantify the motion - use motion parameters xcorr with BOLD?
+	motion param xcorr with MELODIC output? 

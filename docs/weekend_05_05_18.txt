@@ -1,0 +1,18 @@
+weekend _ may 04-06
+
+science:
+do presentation for monday
+
+gym:
+get back in gym. do more reps with less weight. 3x10 or something
+
+forex:
+goal by the end of the weekend is to reproduce matlab strategy in mt4. you have some encouraging results so far, where you are getting somewhat similar results to
+what you achieve in matlab, but you are also getting more random looking results.
+
+also, there is the problem that the profit curves don't always reproduce in non-optimized timeperiods. optimize your strategy for robustness 
+
+compare some currencies profit curves directly with the mt4 profit curves. see if you get the same bumps and dips. 
+re-run the optimizer on the full datasets, and select parameters for robustness no just max
+test deeper parameter sets like on your laptop
+

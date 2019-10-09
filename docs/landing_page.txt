@@ -1,0 +1,39 @@
+landing_page
+
+before creating the landing page, ask yourself
+1) what is the goal? in an ideal world, what would users do upon reaching your landing page? call your number of course!
+2) who am i competing against, how are they succeeding, and how can i copy their success? 
+3) who is my audience, and what are their hopes, dreams, and aspirations? the better you understand them, the more you can cater to their specific desires,
+get inside your audience's head!
+4) how did they get to my landing page? consider changing your message depending on where your users come from. try beginning with one custom landing page
+per campaign, and add from there for individual groups when resources allow. 
+
+how to make great landing pages that convert:
+-short, sweet, and uncluttered, offer all the necessary information but not enough to overwhelm the user
+-provide high quality content that inspires confidence. provide rich, useful content so long as its relevant
+-have all roads lead to rome. keep careful note of all pathways leaving your page, the goal is to funnel visitors down a desired pathway
+-make it easy to convert. the next step should always be obvious
+-have a flawless design - its important for a landing page to have a clear, crisp design that answers all questions. visitors should be able to convert in one click
+-have a clear call to action, for example, changing text from "see plans and pricing" to "get started today!" increased conversions 250%
+-create eye-catching headlines: main headline confirms offer, subheading for more information or value proposition
+	example: free facebook marketing ebook, sub-title : learn how to do x
+-create engaging copy: use specific hypnotic keywords to entrance visitors, words like "you, imagine, because"
+-make it about the visitor: showcase what you can do for them and improve their life
+-have an awesome offer
+-easy to scan at a quick glance
+-contain relevant, quality images
+-look gorgeous and act classy
+-match the corresponding ad text, the connection from ad to landing page should be obvious and natural
+-only ask for the information they need
+-use color to your advantage, need button contrast, blue, red, green, etc, paul olyslager guide on cta buttons
+-have clickable share buttons
+-show raving testimonials
+-be mobile friendly
+-follow up with thankyou page
+-broadcast trust signals
+-be fast
+-go through many rounds of ab testing
+-treat visitors like wild animals searching for a meal
+-turn on conversion tracking
+
+landing page should have the same number as the call-only ad, and should also have similar, relevant keywords

@@ -1,0 +1,18 @@
+guillaume_questions_2
+new multiband sequence vs pencil AP, when is the patch arriving, is it possible to cut down the data size
+	test a multiband vs a 3d pencil beam for functional correlations between thalamus and cortex
+	test eyes open vs eyes closed functional connectivity thalamocortical (10 mins each) 
+MEGA press and other gaba editing techniques - how is the spectrum constructed?, what is ppm?
+quantitative T1 - TAPIR, how does the sampling of the decay curve work?
+
+test the retinotopy stimulus, see what type of maps you can get at high resolution (TR=2s) 
+high resolution SWI and T1 - vascular correction, and cortical segmentation. 
+test the full field visual stimulation (10 minutes), test on and off block design (baseline coupling - driven stimulus) 
+
+test cortico-cortico-coupling, and cortico-thalamic coupling, as a function of state (ec, eo, eo stim) 
+
+can use the rotating sin wave as the continuous stimulus, and also as the block design stimulus.
+the other two - eyes closed eyes open, and retinotopy (retinotopy in the LGN? maybe...)
+dont forget the swi and high res t1. 
+first priority - quality retinotopic data, high resolution, many trials (wedge, and annulus) 
+(30 minutes) 

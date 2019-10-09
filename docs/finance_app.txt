@@ -1,0 +1,50 @@
+stock analyzer app
+
+two major parts 
+1: deciding what stats to put in the final app
+2: getting the real-time updates from google finance or similar instrument	
+
+what is the purpose of your app, and how will you monetize it? you want a subscription-based service for this app (recurring payments)
+build on graham's method of value investing, but add in technical analysis as well
+why will users pay for your app? because it allows them to achieve above market returns on autopilot
+your app must do the following:
+
+1) keep up to date (monthly) statistics on each instrument's vital signs (dividend history, p/e, etc)
+	-simfin + matlab to parse signals 
+
+2) show real time intra-day market data with technical indicators (rsi, cci, etc) 
+	-query alpha vantage, parse json, display chart
+
+3) send notifications based on fundamental and technical analysis based on machine learning and data science
+	-parse data in matlab, find what best predicts future price increases. 
+
+4) allow for fake demo trading on margin
+
+and of course, must use low battery, store data efficiently and reliably, manage network tranactions smoothly, etc
+
+first thing to do: work on acquiring and plotting data from a single stock (use apple) - and plan the overall layout of the app
+
+basic goal of app: combine technical and fundamental analysis to achieve high ROI
+why users will buy (subscribe) to your app - to obtain high quality financial information to inform their daily trading activities
+target market: retail traders looking to exceed index fund returns while hedging their risk
+
+download the top apps for your keywords, see what they can do
+
+you can't compete with investing.com as an individual - however, you can find a niche where you beat them
+	if you use the graham investing method to automatically find the best stocks, you can 
+you can focus more on portfolio experimentation - filter the stocks based on portfolio, have a buy all option, etc
+
+
+test portfolio on past x number of years - and then run a forward test as well.
+
+stock portfolio tester
+
+"Stock trading autopilot"
+
+two major -
+component 1: strategy (partially according to graham) - must have a decent return and risk mgmt
+	scan graham and extract indicators (day 1) 
+component 2: app itself - execute strategy, display results, acquire data & run in real time
+
+
+

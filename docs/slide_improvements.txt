@@ -1,0 +1,2 @@
+slide_improvements
+uniformize notation - references in italics or subscript, similar font sizes for all 

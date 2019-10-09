@@ -1,0 +1,8 @@
+in_app billing overview
+in app billing api: the application accesses the in-app billing service using an API that is exposed by the google 
+play app installed on the device. the google play app then conveys requests and responses between the application and
+the google play server. in practice, the application never directly communicates with the google play server. instead,
+the app sends requests to the google play app over interprocess communication and receives responses from the google
+play app. you application does not manage any network connections between itself and the google play server. 
+you can implement in-app billing only in applications that you publish through google play. to complete in app purchase
+requests the google play app must be able to access the google play server over the network. 

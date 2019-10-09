@@ -1,0 +1,24 @@
+===========RELEVÉ DE TRANSACTION========= 
+
+Le Bureau des Infractions et Amendes
+1200 Route de l'Eglise
+Québec
+Québec
+G1V 4X1
+Tél. : 1 877 263-6337 SANS_FRAIS
+Télécopieur : (418) 644-8486
+===========================================
+TRANSACTION : ACHAT
+COMPTE : VISA
+#CARTE : 451223XXXXXX4158
+------------------------------
+MONTANT : 137,00$
+------------------------------
+DATE/HEURE : 2017/05/19 15:11:28
+#RÉFÉRENCE : 0000000117
+#AUTORISATION : 038380 H
+#TRANSACTION : 000215104575
+#FACTURE : 000008961837
+===========================================
+APPROUVÉE-MERCI
+===========================================

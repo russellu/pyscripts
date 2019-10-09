@@ -1,0 +1,6 @@
+game_today
+
+level maker - don't need this at the moment.
+
+point and direct the creature
+	get this done before gym - create some mazes, and then direct the sprite through the maze 

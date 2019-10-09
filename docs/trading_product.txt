@@ -1,0 +1,44 @@
+trading_product
+
+landing page from google paid search: pitch to people mainly on the value of autotrader testing, indicators, etc.
+the importance of spread, 5m, 15m, etc
+
+the landing page, document, and software should form a cohesive unit
+
+pitch - cast doubt on indicators, cast doubt on trading strategies, expert advisors, etc, make people afraid
+you have the answer - with science, and computing power, looking at 5 years of most recent data over 60 different instruments 
+	market conditions change, but there are also trends and patterns that emerge. 
+
+included: 
+
+pdf with info (free) - with a download now button 
+list of the top strategies, and the currencies they work best on (forward tested)
+list of the top indicators, timeframes, that ACTUALLY WORK 
+unity game (49.99$) (down from 99.99$)
+
+in the pdf: let people in on some big secrets
+	more bullet points, less bla bla, more data (easily absorbed) 
+intro: a bit about myself: phd student, auto-traders, forex history
+	a bit of DHV without giving away too much personal info. find a way to sneak in that you trade for a living. 
+	"i'm going to let you in on some big trading secrets about how the market works because everything you know about indicators is likely wrong"
+	
+	condense it down and attune it more to the LF8	
+
+#1) lower timeframes and spread - simple does not work! why not? the spread
+	show two examples - a lower and a higher timeframe screenshot, but then show the scales 
+#2) structure of the forex market - extremely random, simple indicators like stop/take profit ratio
+	interpreting every move and taking it personally 
+#3) autotraders that actually work (buy low, sell high) 
+	how do we buy low and sell high? 
+		RSI, CCI, Williams, Stochastic, and Bollinger Bands
+
+#4) indicators: what is their purpose, and what do they actually do?
+	we assume that they tell us what will happen in the future - but do they actually?
+	average over 1000s and 1000s of trades. 
+
+do this in matlab, save the data in paint, stick it into a pdf
+
+write the pitch, then start diving into matlab. 
+
+
+

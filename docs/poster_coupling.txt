@@ -1,0 +1,71 @@
+poster_coupling
+
+power dependence: 
+main results: 
+
+EEG-BOLD coupling 
+gamma and alpha/beta during stimulus
+alpha/beta during rest/movie
+time lag difference, 
+
+power dependence of single trial and spontaneous coupling 
+trial-by-trial correlations (event related paradigm)
+spontaneous coupling (Resting state and movie)
+
+spatial extent of EEG-BOLD correlations varies with brain state
+
+resting state (eyes closed)
+continuous stimulation (eyes open) 
+event-related stimulation (eyes open) 
+
+still denoising the gradient - removing each channel separately, or using the same indices for each channel makes a massive difference
+why? when you use the same indices for all, the noise is correlated. when you don't you remove sources of common noise, or add more
+noise 
+
+alpha power extracted with gamma weights, and other alpha power? compare that to the more diffuse gamma power, in other source 
+locations. ie, coupling of narrow and broadband alpha, area dependence of this coupling.
+
+differences in EEG lead field matrice accounts for >50% of inter-subject visually induced gamma power variability
+
+more advanced BCG denoising? still finding like 4-6 BCG components in some subjects, which is not cool...although you are getting
+better alpha/beta response now than before
+multiple time-average correction? do it on small, medium, and large window time series and average teh results?
+
+
+coupling vs EEG: coupling as a function of time. 
+coupling depends on your metric - raw power, baseline corrected power, WHAT? 
+broadband? baseline corrected absolute of all frequency bands - maybe BOLD = broadband, ie is more correlated to single trial 
+broadband power than anything else...this actually matches the heuristic model (bold is negative alpha and positive gamma) 
+
+investigating the spatial correspondance between lead field correlated ICA components and BOLD FMRI functional network weight maps
+- which components match the time series of power and also have spatial overlap? obviously, occipital components and visual network
+components will overlap because they both respond to the stimulus and the localization is easy. however, what about the resting 
+state DMN vs alpha in parietal components, and lingual gyrus? 
+(if true, a possible title could be: bursts of oscillatory parietal alpha underly hemodynamic changes in DMN)
+if you can predict the strength of someone's DMN based on their oscillatory alpha correlations - a strong alpha peak in parietal
+components indicates a robust DMN - what is a strong DMN, exactly? good correlations between the hubs? 
+
+compute baseline, task, and post-stimulus separately, and show a log spectrum for each subject. fail. 
+you can just use the eegfiltfft + sum + square method, to better quantify temporal fluctuations - try averaging across the good
+components only in these tasks and see how it looks - or just look in the posterior electrodes, after subtracting out bad components.
+ideally, you would subtract out all bad components, and then source localize the remaining neural activity 
+
+the first figure - a grand average inside the scanner ERSP (vs possibly an outside the scanner ERSP?) 
+
+coupling_pipeline
+1) gradient denoising (mostly done), 2) bcg denoising (mostly done), 3) time-frequency computation (try % change?) 
+
+
+bottom of tutorials freesurfer to brainstorm
+tutorial how to simulate sources
+comparing real electrode location vs standard coordinates vs FMRI activation center of mass - gammma, alpha/beta, ERP. 
+
+simultaneous source-space power vs FMRI - state dependent HRF and spatial pattern. 
+state and area dependence of hemodynamic response function in human occipital cortex 
+
+
+
+
+
+
+

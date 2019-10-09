@@ -1,0 +1,554 @@
+imeka goals_2
+
+#1: restructure code into different files. check over the code (Read every line) and decide
+what new classes you will create based on the funcionality that you have. 
+
+classes: 	
+#1: buttons and menus
+#2: converting tracks to mesh
+#3: graphics and cameras, drawing (Renderer)
+#4: prepare anatomy (textures, meshes, etc) 
+#5: initialization 
+
+first thing: buttons and menus 
+
+create a small article and release it on open source 
+
+restructuring the user interface. what kind of functionality do you want it to support?
+
+basic functionality: 
+1) a hide squares button, where you can hide all buttons and side squares, to maximize the
+view for the entire brain. 
+2) a data manager, instead of a dropdown menu
+	sub-step #1: remove all current buttons, add back a button to disable the squares
+
+goals today: use the file manager to navigate tracks
+start the loading from file system interacting with the file manager. 
+tap on the icon to hide it, tap on the x to close the item. 
+
+use the gold to buy more tracks, get more gold by segmenting more images. 
+connect the anat to the fiber holder as well 
+
+make it fit the bottom more
+
+add track and anatomy buttons, click to enable/disable tracks (later, when you have the
+file manager working, you will switch to loading from disk files only, but for now use
+the pre-defined tractography files. 
+
+add the button to open the file browser, and search for a better file browser that will 
+work on the ipad. 
+
+add a menu on top that has a bunch of icons and functionality 
+
+by the end of the week: working gui on windows and phone with file manager that can load
+and delete multiple subjects from the interface + adjust the view and add a skeleton for all
+the functions you want to be able to perform in the future + improve the GUI layout appearance
+
+today: use the view button to flip the app full screen, and remove any reference to the 3 boxes, 
+	use ray collision on the 3 boxes + full brain so you can control each one separately.
+	add lines in the display to distinguish between UI box and 3 boxes + make coding easier 
+press it again and see only the 3 boxes, press it again and back to normal. 
+make the file list smaller, and add another that can be used to select files from the hard disk 
+make the browse button close when you select a file or press browse again
+make the 3d sphere
+scroll the correct box when the user clicks in a box - ie, the rolling camera or the sliding
+
+step 1 detect when the press is in a certain box
+
+fiber visualizer - new graphics - the selection object.
+make the selection sphere transparent
+why can't i see my selection sphere? 
+have the view cycle through all views
+
+how to structure the selection object? ie, how to locate intersections? 
+first change the color of the ball and make it transparent. 
+first thing to try: collision of mesh with the sphere, or raycast collisions of mesh with the 
+fibers 
+
+how to detect collisions between individual tracks and the selection object? 
+
+fiber selection tree: octree? a bunch of boxes that contain boxes, check recursively each one
+or, come up with your own data structure. 
+
+assume you have all the track points in some kind of vector. 
+the basic problem is finding only the tracks that are overlapping with the sphere. 
+one way would be to check a 3d grid of indices. check if in each index, there is a track and then
+enable/disable that track.
+
+use an array list for indices, and just fill it up as needed. 
+	this is possible, but you also need to disable specific tracks in the bundles
+		do this first
+
+first: fix the view switcher, so you can move between 
+full, sagittal, coronal, axial, combo 
+and on combo move the one you selected only
+	first step - remove the other code, and use only the raycast to select. (done) 
+
+next - when clicking the view button, remove the other cameras and switch to full screen mode
+
+selecting individual tracks. start by loading a single bundle, and then cycling through the
+available tracks on the bundle. 
+
+first thing to do: load a couple tracks when the app starts 
+next step: use transparency to set a bundle to active or inactive, instead of activeInHierarchy. 
+
+more boxes - demos of moving box and sliding brain slices 
+
+today: scroll through the bundles fiber by fiber, and make the quadtree thing for the selection
+object 
+
+by the time the ipad is back, you want to have a working file navigator and fiber selector.
+then, transfer it to the ipad, make sure it works (loading files somehow) and add volume renderer
+and real time graphics from the fiber selector tool 
+
+then, if you have time add the segmentation tool. 
+
+today: first goal: cycle through the tracks 1 by 1 
+need a vector of original track values (x,y,z, color) 
+
+use the random filtering to check the performance 
+or you can just add 10 to the coordinate (instead of setting to to zero and have a binary mask
+that just tells you which tracks you need to alter the z-coordinate of 
+
+add a random filter button 
+do the sample (tracks) and sample (points) 
+
+should you create a new class for all the track masking operations? 
+ie a class called track manager that holds all the variables for manipulating tracks? 
+
+filter based on color and length, and then extend this to all bundles. then add the selection 
+object 
+
+this weekend: 
+finish color changing
+finish scaling with GUI and device
+finish slider with track length
+finish selection sphere 
+fuse the bundles 
+
+need a better way of loading bundles - don't use the array indices, instead use a second list where
+you can add and remove bundles from the disk, or the file navigator. 
+
+first - re-work the GUI so you have an entire spot devoted towards controls (+ top bar)
+set it up so it automatically works in landscape and portrait, and populates the list automatically
+based on what is in the directory
+
+use the other panel as a shop 
+step 1: set the new view to have 3 brains and two shops and change to shop
+step 2: activate the button that changes the view
+step 3: stretch the view to cover whatever is left by the changing screen 
+
+IDEA: add "lessons" to the app
+next step - be able to move the file manager wherever you want using anchros and positions
+and adjust the button sizes 
+
+understand how the rect transform works, add a new panel that has all the other controls (sliders,
+etc), add borders around everything
+a different mode, where you can walk around in the tractography space? like a 3d brick breaker
+effects of the following:
+anchoredPosition: the position of the pivot of this recttransform relative to the anchor ref. point
+anchorMax: normalized position in parent recttransform that upper right corner is ancored to
+anchorMin normalized position in parent recttransform that lower left corner is anchored to
+
+keep it on view 0 for now, add the second panel, make the file manager only use half the available screen
+next - add the second panel with slider, color bar controller, etc 
+
+what UI elements do you want to have?
+what controls?
+min length
+max length
+selection object
+iso-surface
+alpha level 
+
+tonight: finish the panel resizing and repositioning, and get the colors, sub-sample, and track 
+length working with the full bundles 
+
+setup lines that go around the different compartments 
+
+
+lots of problems - background isn't black, sliders panel doesn't update, text too small 
+fix the slider position and background first
+specialize pinch zoom for all different cameras, and add a zoom reset button 
+fix the background with that residual shit
+
+fix fiber manager - don't initialize in the constructor, instead, assign the values with a later
+function (in	
+
+once the fibermanager is working, fix the indicing so the scroll shop functions as it should. 
+
+what is a better way to arrange the bundles?
+
+there is an array of bundle names. it starts empty and the user adds them one by one
+the user adds bundles by bundle name. 
+every time the user presses a button, the system searches the bundle name
+
+next: fiber sub-sample, color change, and length filtering 
+do color first - try getting the loaded color as a first step 
+
+get the color button working just so it doesn't crash (they can all have the same colors) 
+
+bug - the fiber manager color indices don't match the mesh size 
+basic problem: the last bundle indices, colors, etc are in the first index of the fibermanager
+
+next goals: small fixes, then fiber sampling, then selection object + ipad. 
+small fixes: 
+	original bundle colors (from the track file itself)
+	add other color schemes (based on distance between two points, and endpoint direction
+		mixed color scheme (bundle color + distance, bundle color + direction 
+		(4 more color schemes for 7 total) 
+
+	can do this shit later and not really necessary. actually you can add the endpoint one 
+	fix the track buttons so they go green/red when pushed
+
+	current sub-sample factor needs to be added to all new tracks, colors need to be updated
+	for new tracks based on the current color scheme 
+
+
+next fix: color scheme of loaded bundles must match the current color scheme 
+add another color scheme - the bundle color with track shading (just average the first two schemes)
+fix the endpoint color scheme because its wack (fixed)
+fix the sample points - use a different number of sample points, and continuously remove samples, 
+don't just use a different # samples - actually this is fine and can be considered a feature
+
+next: make the sliders work
+	sub-sampling slider - goes from 0-50% too fast, get a more continuous change
+fix the gui loader problems (should work on android and desktop, try to extend to ipad later) 
+
+1) display mode - increase main, hide menu (done) 
+2) fix the mask for overlap between sampling and fiber length (major todo) - but you can leave later
+3) loading tracks should display same number as current sample (done) 
+4) change the distance of the excluded points (too close, can see it) (done)
+5) increase button sizes
+6) replace sample button with options button 
+	make the sample slider only take predetermined tracks (done)
+7) shader for hiding tracks using transparency (major todo, but can be done in round 2) 
+8) add transparency to anatomy 
+
+major AFTER current version is working on ipad:
+iso surface
+selection tool
+file navigator
+
+HOW will the selection object work? 
+step 1 a controllable transparent sphere that you can click and move 
+
+
+option 1: a grid that stores references to all the track objects
+re-initialize the grid on every frame, and then activate only those tracks which ar ewithin 
+the sphere
+
+unity final project: 
+paper published, 2 apps published (with in app purchases) with the following features:
+1) volume rendering
+2) anatomical selection (regions of interest, tractography, etc)
+3) fiber selection tool
+	0: toggle the sphere with the selection object button 
+	a: be able to select and move the sphere around
+	
+	
+4) different modalities (DWI, T1, SWI, TOF, FMRI, EEG?) 
+
+other features: 
+child's brain
+elderly brain
+diseased brain
+male/female brain
+etc 
+
+add another view (big brain only) 
+make the file manager horizontal and vertical 
+have iso-surface option pop up when you select the t1? 
+
+the first step is to make sure the selection object and the tracks are in the same space - the points
+of the track do not change, but the selection object's position will change, with translation up
+and down across the screen 
+
+a 3d array of fiber manager lists, of the same size as the original anatomy? 
+how are you going to toggle the tracks? 
+
+step1: get all the indices that the sphere is currently encompassing.
+step2: cycle through those indices in the trackfilter array, get the track from some other list,
+and set it to true or false. 
+	how to know which track is in which index? its not enough to have just the fibermanager
+	reference, you need to know specifically which track is contained in that particular index
+send an index to the fiber manager when you toggle the tracks, and have another array of indices
+in each fiber manager for the specific track that you want to toggle
+
+for each pixel that the sphere encompasses, call the fibermanager with the x,y,z index, and the
+fiber manager should take care of the rest. 
+
+step 1: get the correct voxel indices for the sphere's position. 
+	need some kind of transformation between voxel indices and object space 
+	also need the world coordinates of the texture edges - 
+	the textures are made using -x, x and -y, y, etc so the world space limits are the same,
+	therefore you need to divide the range by the number of pixels (or just use a fixed size?)
+		divide range by number of pixels for now, to keep it the same dimensions
+
+	you need to fill up the 3d array with indices, and these have to correspond to your world
+	space values. 
+
+new idea: fill up the nifti data array with bogus values and see how it looks. 
+	ie,  a mesh grid from negative to positive 
+	everything seems to make sense, the top right is always the largest value so it should 
+	match the textures as well. 
+
+	every point needs a list of track indices in the fiber manager 
+
+the basic algorithm:
+1) get sphere location in world space
+2) get all tracks passing through sphere location
+3) set those tracks to visible, set all others to invisible
+
+how to get all tracks passing through sphere location? the tracks have x,y,z world space coordinates,
+so you need a fast way to see if the tracks coordinates overlap with the sphere coordinates.
+
+BASED on the sphere coordinates, you need to access the bundles and tracks within those voxels
+so you get a sphere point say 1,1,1. at fiber manager array index 1,1,1 you have a list of 
+fibermanagers which have tracks passing through that point. you toggle each one with the index, and
+the fiber manager then takes care of the rest. 
+
+the problem is you need to go from the world space coordinates of the sphere to the fibermanager
+array index. 
+
+first simple steps: be able to select a track based on an arbitrary region of interest
+(do this first without rotating the track at all) 
+
+there must be an easier way - starting with x,y,z positions of the tracks, why do you need to have
+the array index? 
+
+build a new list<Line> with the 3d positions of each line, add lines as you add more bundles
+the point is to check from the area where the sphere is currently located. to do so, you need to 
+either use updated coordinates, or find a way to normalize back to original coordinates. 
+
+what are you working with? 
+a rotating cube that changes location based on rotations, and a bunch of meshes that change location
+based on rotation as well. 
+the locations are always present in real-time, as part of the mesh. but to access the points takes 
+time. 
+
+one simple (but slow) solution - use the sphere to check all points in the mesh using a simple 
+distance formula. as soon as you find the point interesects, set that track to zero and all others
+to one (or vice versa) 
+
+get a very simple version of the fiber selector working, and try to see if you can set a mesh without
+changing all the vertices 	
+
+the whole thing flashes, which basically means its being set and reset every frame.
+it only does this when its set to exclude fibers within the sphere, when it is set to include fibers
+within the sphere, they remain blank after having moved away.
+this means the following
+1) the sphere is working correctly, it is in the correct location. 
+maybe the tracks never get set back to true? they should though, if the sphere is on top of them
+
+maybe just make a masking function that checks and sets the vertices at the same time? 
+should be faster also
+
+it must be because when you set them to false, the position is changed, so it doesn't work anymore
+therefore you need to check the position after correcting it for the offset
+
+the sphere position doesn't appear to be changing relative to the fibers, but it still moves outside
+the box for some reason? ie the fiber selector thinks it is outside the box
+output the sphere position at each frame
+
+changing hte location of the sphere manually fucks it up. why?
+the problem is the rotation - it acts like the sphere has not rotated with the bundle, or, the 
+track locations do not change somehow? 
+
+make non-visible fibers transparent 
+
+what does the octree need to identify which fiber the point belongs to? 
+needs the index of the: 
+
+the octree will not work with dynamic points, it needs the points to stay the same relative to 
+some reference.
+
+need to get the sphere in the same space as the original coordinates. ie, where is the sphere 
+relative to the original (unrotated) track coordinates? 
+
+the bundles rotate and move around in space. 
+
+fiber manager
+
+using the leaf indices to set the track mask for each fiber manager.
+need to build the index mask in the trk class, and then call each fiber manager separately. 
+
+need to have this final version by sept 15, so you can add to all applications
+
+octree provides a list of leaves, each with index of bundle, mesh, and track. 
+need this loop:
+
+how to control the tracks in the most efficient manner, and deal with all the cases simultaneously
+you want to deal with the following cases: min/max length filtering, sub-sampling, selection sphere.
+you don't want to loop over all points on each frame if you can avoid it. you want to set all the 
+points that were previously true to false, and all the points that are currently true to true
+
+simple case: set all the points that were true on the previous frame to false, and all the current
+points to true. 
+
+just store two arrays, a previous and a current point array. set the previous array to false, and
+the current array to true. 
+first get it working with the mask, period? set them to false (the ones contained in the sphere)
+
+octree is working, now need to speed it up and fix minor bugs, then move on to the iso-surface. 
+
+major features to add before finishing at imeka
+1) volume rendering and thresholding 
+2) loading from disk
+3) speed up fiber selector (profile) 
+	fixed with track sub-sampling
+	fix colors masking
+	intersect masks from different sliders
+add clear all button (and a load default button) 
+add the box that shows rotation etc (better look for default)
+change sphere size dynamically 
+
+volume rendering 
+1) try to get the volume rendering demo to work with your own code 
+	use your own load nifti and datasets 
+
+iso-surface is working, but looks like crap. how to make it look better, use lighting? 
+add in the camera rotation, so you can look at it from all angles (and test the speed) 
+
+have different buttons to select CSF, skull, white matter, etc 
+add iso surface to the shop
+
+today: link the volume renderer with the full app (final goal). 
+then, you will have the final version with all the major features that you need	
+
+you could end up with a really cool app, published online, on app store and google play
+or, you could end up with nothing, depends one how hard you work. 
+
+today: linking the surfaces to the anatomy (And the tracks, eventually) 
+	use your own brain, or someone else's, and make sure the iso-surface matches the anatomy. 
+
+tomorrow - merge surfaces with tractography. 
+
+today: merge the iso-surface with the tractography 
+	if you complete this, get more data from the b0.nii, and visualize it with colors and
+	transparency, simultaneously with the track selection object. 
+		register the veins, arteries, fmri, etc to the B0 and load it with the tracks
+		intersection of iso-surfaces with tractography? 
+	control the transparency with a slider (opacity slider) 
+
+iso surface successfuly merged with tractography
+
+now, you need to add in the rest of the surfaces (veins, arteries, etc) and allow the user to 
+control the iso-surface properties more (visible/not visible, opacity, etc) 
+add in a few more iso-surfaces, so you can structure the list, add an iso-surface control panel, 
+	
+  - Remove the ability to switch the views 
+  - Add the ability to hide the parameters (tract lenght, track sample, etc) and views should take the whole screen
+  - Remove the Imeka logo in the file manager
+  - Add min/max track length in mm
+  - Maybe have a double-ended slider for tract length filtering?
+  - You should not be able to have a max length slider < min length slider
+  - I'm not sure what I did but controls doesn't work anymore (rotation and sliding)
+  - Fix the browse option on iOS
+  - What does the "sample" button do 
+  - One should be able to select the coloring mode for a combo box or something
+  - Place the new imeka logo somewhere... like in M I-Brain
+  - Place an axis cube somewhere... like in MI-Brain
+  - The UX/UI definitely need some work. We should brainstorm on this and do some mockups before implementing anything.
+
+priorities: 
+
+unify the track masking, so the sub-sampling works for all
+currently, the problem is the masking functions do not take into account other functions such as the selection sphere. 
+	first thing to do - add and remove the sphere with the button, and adjust for tracks based on that 
+
+
+fix the browser, make sure you can save and load 
+fix the screen position out of view frustrum - how? just inactivate the cameras 
+if they are not visible, and change the size of the main one? (done)
+add iso-surface controls
+selection sphere toggling
+a multi-layered track mask? an array[] of tracks, instead of just a single one? 
+first thing you can do: check the sphere, and renew the tracks if the sphere is not covering anything
+or get the sampling/fiber length working with the sliders, then extend it to the sphere
+
+
+the array mask should start as all true, and then be updated from there. 
+
+planning the final view: small icons at the top, add the controls option
+get all the masks - need the following 
+anatomy: gray, white csf, veins, arteries
+tractography: bundles
+rois: any group of rois (masked by gray matter)
+FMRI: resting state FMRI (all networks) 
+
+you want to keep the slices, but also 
+top bar should always be a minimum, or compressed to fit screen. 
+
+view panels and controls should be independent from each other - add them and use them to control
+the scene piece by piece 
+add color legends 
+today: all the ROIs, and the GUI - swap the views, and add the controls using the top bar (all is controlled through the top bar) + new icons
+
+1) ease and comfort of control and efficiency of screen use
+1/2) style - how good does it look
+
+first, get the multi-camera working, then define the control box. 
+everything flows from the button presses on the control bar. 
+press the frame button - add or remove the multi camera view
+press one of the brain buttons - control box pops up, with options, squishes the frames 
+
+work on the frame only for now - make the control box disappear. 
+
+pressing the frame button - if no controlbox is active, add the frame with the preconditioned coordinates (lowest without control box=0)
+some small bugs in the camera switching mode, but nothing serious.
+now, add the 
+
+
+make a simpler view switching mechanism? 
+
+need to customize the controls to the screen size - stretch to top
+change the height and width of the slice boxes so they are the same, center them over the controls
+when the controls button is pressed
+
+make it squeeze the top so that it doesn't go off the edges
+camera overlays need to be fixed so that when you select an obect the cameras don't change
+
+disable the axial/coronal/sagittal views when activating the control pad, and vice versa
+finishing the GUI: disable/enable the slices when gui is pressed and vice versa. 
+
+both controls and slices shoudl shift the fullscreen view 
+this works, but portrait mode needs to have a way to disable the view when you use sliders. 
+and need a way to remove the controlbox when the slices are pressed. 
+
+do you need to revamp the entire view switching mechanism?
+
+all you want is a very simple mechanism where you can change the views by pressing on slices, and toggle controls/slices with side buttons
+you get which camera is pressed from the main update function in display(), and then based on that you toggle a view.
+if the user presses a side button, either the slices are removed or the controls are removed, and possibly replaced with another ui element. 
+	first thing: redo the simple view switching mechanism between axial, coronal, sagittal, etc 
+
+easiest way to swap screens?
+function receives current and returns current (if it changes) 
+still the mystery of the disappearing tracts...especially the LEFT cst. 
+to complete the view, you need to be able to dynamically resize the top bar, and ensure that any ui interaction doesn't also affect the plots 
+
+write labels for selected objects (tracks, rois, etc). 
+
+today: fiber selection (get the closest track), panels for ROIs and 
+
+selection sphere track sampling - when user adds the sphere, remove all other tracks. 
+	1) set all tracks to disabled, then check within the sphere to enable. 
+	2) enable all tracks
+
+today: try to make an FMRI cluster type 
+
+today: make icons for FMRI and anatomy 
+selection of ROIs - show the title of the ROI, with some information about the ROI's function
+
+today: plan the panels for FMRI, anatomy, and ROI, and get the ROI panel up to snuff 
+
+tomorrow - get the data from FMRI, T1, T2, SWI, TOF, and DWI 
+	FMRI networks - 10 minutes
+	T1/T2 - 10 minutes
+	SWI/TOF - 15 minutes
+	DWI - 15 minutes 
+
+functional connectivity ROIs - use a highly condensed version, and volume render the voxels? 
+
+

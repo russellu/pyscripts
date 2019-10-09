@@ -1,0 +1,14 @@
+resources_assignment 1
+
+
+creating the recycler view: (can copy code directly)
+https://developer.android.com/guide/topics/ui/layout/recyclerview
+
+add composite views to the recycler view (ie, two textviews + an image, etc.)
+https://medium.com/@droidbyme/android-recyclerview-with-multiple-view-type-multiple-view-holder-af798458763b
+actually, the main point of that tutorial is to show how to have multiple different view types within one recyclerview,
+but it also shows how to customize your single view type (if you want your list of emails to display both subject and author or date, etc.)
+
+adding a touch listener to your recyclerview list: (handles long press as well, to delete)
+https://stackoverflow.com/questions/24471109/recyclerview-onclick
+response by nhaarman (1st response)

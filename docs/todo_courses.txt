@@ -1,0 +1,11 @@
+todo
+
+by monday:
+finish the first assignment for the app course, and create a new lecture summarizing the assignment and introducing intents + the next lab
+get a better format for the lab, more structured descriptions/submission format 
+re-submit the nimg article
+start reading about nserc and preparing that grant
+complete the data mining assignment
+inquire more about 7k startup and 9k internal funding
+get markers set up with payment (emails)
+find a better way to submit labs on moodle/github

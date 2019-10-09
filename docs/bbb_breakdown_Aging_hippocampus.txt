@@ -1,0 +1,141 @@
+blood brain barrier breakdown in the aging human hippocampus
+questions: DCEMRI, arterial function
+
+summary: the blood brain barrier limits entry of blood-derived products, pathogens, and cells into the brain that
+is essential for normal neuronal functioning and information processing. post-mortem tissue analysis indicates bbb
+damage in alzheimer's disease, but the timing of this breakdown remains elusive. using an advanced dynamic contrast
+enhanced MRI protocol with high spatial and temporal resolutions to quantify regional bbb permeability in the human
+brain, an age-dependent bbb breakdown in the hippocampus is shown, a region critical for learning and memory that
+is affected early in ad. the bbb breakdown in the hippocampus and its ca1/dentate gyrus subdivisions worsened with
+mild cognitive impairment that correlated with injury to bbb-associated pericytes, as shown by the csf analysis. 
+the data suggests that bbb breakdown is an early event in the aging human brain, that begins in the hippocampus
+and may contribute to cognitive impairment. 
+
+introduction: neural functioning and neuronal computation require tight control of the chemical composition of the
+neuronal milieu that is maintained by the blood brain barrier. brain endothelial cells and pericytes form a barrier
+which limits the entry of neurotoxic plasma derived proteins, circulating metals, pathogens, red blood cells and
+leucocytes into the cell. studies in murine transgenic models have shown that chronic BBB breakdown leads to 
+accumulation of blood derived neurotoxic proteins in the CNS including fibrin, thrombin, hemoglobin, iron containing
+hemosiderin, free iron and/or plasmin, causing progressive neurodegeneration with loss of neurons, mediated by either
+direct neurotoxicity, oxidant stress, and/or detachment of neurons from their supporting extracellular matrix. 
+alzheimer's loss (AD) is characterized by selective neuronal vulenerability resulting in progressive loss of 
+memory. post-mortem studies have shown BBB in areas affecte by alzheimer's, including accumulation in the hippocamp
+and cortex of blood derived proteins, and degeneration of BBB associated pericytes. brain imaging studies have
+shown microbleeds and accumulation of iron in AD, particularly in the hippocampus. some studies using the CSF to
+plasma ratio of blood-derived albumin reported BBB damagae in AD paricularly associated with vascular risk factors,
+or in individuals at genetic risk for AD. At what stage bbb breakdown occurs and the degree to which it contributes
+to cognitive impairment remains controversial, however. 
+here they use dynamic contrast enhanced and post-processing with improved spatial and temporal resolutions to 
+quantify the BBB regional permeability Ktrans constant in the living human brain in individuals with no cognitive
+impairment NCI and mild cognitive impairment (MCI). compared to a previous approach limited to measurements of bbb
+permeability in the white matter, the current method allows simultaneous measurements of BBBKtrans permeability in 
+different gray and white matter regions. CSF biomarkers of BBB breakdown, injury to brain vascular cells including
+pericytes and endothelial cells, inflammmatory response, neuronal injury, and amyloid beta peptides. they found an
+age dependent BBB breakdown in the hippocampus, a region which is damaged early in AD, the BBB breakdown in the 
+hippcampus worsened with an MCI that correlated to measures of injury to BBB associated pericytes. 	
+Results: 
+BBB breakdown in the hippocampus during normal aging: twelve CNS regions including hippocampus and its subdivisions
+CA1, CA3, and dentate gyrus different cortical and subcortical regions, and wm regions. regional Ktrans BBB 
+permeability maps were generated for each individual using a modified Patlak linearized regression mathematical
+analysis. the arterial input function (AIF) was determined in each individual, from the common carotid artery, 
+instead of using the average value from the superior sagittal venous sinus to determine tracer concentration in 
+blood. individual AIF measures are particularly important if the studied population diverges by age as changes in
+blood volume and flow may affect the AIF and Ktrans measurements. unexpectedly, they found that NCI have age
+dependent progressive loss of BBB in the hippocampus, as shown by age dependent increase in the Ktrans values
+in the entire hippocampus, CA1 and DG, but not CA3. no significant BBB changes during aging were found in cortical
+or subcortical regions, except for the caudate nucleus. there was no significant age-related change in the white
+matter subcortical fibers, corpus callosum, or internal capsule, even though white matter is believed to be affected
+early by vascular changes in AD. collectively, the data suggest that early vascular leakage in the aging human
+brain begins in the hippocampus, that normally shows the highest barrier properties compared to other regions. 
+
+accelerated BBB breakdown in the hippocampus in individuals with MCI: 
+bbb permeability in young NCI and old NCI and MCI groups was compared. significant increase in BBB permeability in
+values in hippocampus and its CA1 and DG regions was noted, but not ca3, by 41,107,and 48% in older compared to
+younger NCI group, and 24,53,and 27 in MCI compared to older age matched NCI controls. there was no significant 
+difference in the BBB permeability in cortical, subcortical, and WM regions between younger and older NCI and/or
+MCI and age-matched older NCI patients, except for an increase in the caudate nucleus in older compared to younger
+NCI group. there was no significant change in hippocampal volume between the studied groups. 
+to validate the method, they studied MS cases with established BBB breakdown in the the white matter, as an added
+neurological control. younger MS patients without cognitive complaints were selected and age-matched to younger
+NCI controls. the MS patients did not show changes in the Ktrans in hippocampal or other gray matter CNS regions,
+but had increased BBB permeability in the WM, compared to age matched NCI group. 
+
+molecular biomarker CSF anaylsis: 
+a 30% increase in the CSF/plasma albumin ratio additionally confirmed BBB breakdown in MCI individuals compared
+with with age matched NCI controls, the increase in csf/albumin ratio was correlated with an increase in the ktrans
+values in the hippocampus and its CA1/dg subregions, that showed an increase in the BBB permeability in MCI compared
+to age-matched NCI controls. 
+next, correlations between ktrans and CSF levels of soluble platelet derived growth factor receptor beta. 
+PDGFRbeta is an established marker of the BBB associated pericytes, that plays a key role in maintaining bbb 
+integrity. pericytes degenerate in AD, and have a key role in BBB clearance of alzheimer's toxin amyloid beta-peptide
+pericytes die when Abeta ntracellular accumulation overrides their Abeta clearance capacity, and when exposed to
+hypoxia. both conditions are associated with shedding of the soluble form of the PDGFRbeta receptor, from primary
+human cultered pericytes. sPDGFRbeta levels were increased by 115% in MCI compared to age-matched NCI controls, 
+and there was a positive correlation between sPDGFRbeta CSF levels and the Ktrans values in the hippocampus. 
+to validate CSF sPDGFRbeta as a marker of pericyte injury in-vivo, sPDGFRbeta CSF levels in 16 month old pericyte
+deficient mice which develop 45-50% loss of brain pericytes and 16-month old Alzheimer's mice which develop an
+age dependent pericyte loss from 17% at 9 months of age to 35% at 18 months of age. there was a significant 
+289 and 58% increase in sPDGFRbeta CSF levels in the mice compared to their littermate controls, indicating that
+sPDGFR8beta is a reliable measure of pericyte injury in mice. 
+the CSF analysis revealed no injury to other cell types in the neurovascular unit, in either NCI or MCI including
+endothelial cells as shown by unaltered CSF levels of biomarkers of endothelial cell injury such as soluble 
+intercellular adhesion molecules and vascular cell adhesion molecule. 
+
+discussion: an advanced DCE MRI approach and post-processing analysis was developed resulting in improved spatial
+resolution and SNR of the Ktrans BBB maps with the analysis of the arterial input function in each individual 
+allowing for accurate measures of the regional BBB permeability in the living human brain in different gray and
+WM regions. high resolution imaging allows for quantification of Ktrans not only in hippocampus but also in 
+hippocampal sub-fields. changes in BBB permeability during tumor or stroke are typically an order of magnitude larger
+than those observed here, so these methods are not required in those cases. 
+they show that the BBB breakdown during normal aging occurs earliest in the hippocampus, a region critical for 
+learning and memory. the BBB breakdown was more pronounced in MCI than in age-matched NCI controls, suggesting that
+it may play a role in initial cognitive impairments. the data shows that BBB in areas such as subcortical or 
+cortical regions remains largely unaffected by healthy aging or MCI. there was no difference noted in hippocampal
+volume, suggesting that early increases in BBB permeability may underlie or precede hippocampal atrophy seen later
+in AD and particularly in MCI progressing to AD. this would be similar to findings in animal models with a chronic
+BBB disruption, showing that vascular leakages over time lead to hippocampal and cortical atrophy, loss of neurons,
+and progressive behavioral changes. 
+findings in murine models of a small vessel brain disease and human post-mortem AD studies have shown that BBB 
+breakdown leads to tissue accumulation of potentially neurotoxic blood-derived products that do not normally enter
+the brain, but can damage neurons when the vessels become leaky. pericyte injury and possible early degeneration
+correlates with increased BBB permeability within the hippocampus, a region known to be affected by pericyte loss
+and bbb breakdown on post-mortem tissue analysis. although the CSF biomarker analysis did not show evidence of 
+endothelial cell injury, involvement of inflammatory cytokines and/or direct vasculotoxic effects of Abeta in MCI,
+it is possible that some of these factors could play a role in magnifying BBB damage at a later disease stage. 	
+
+in summary, the results show that cerebrovascular integrity during normal aging and aging associated with MCI that
+begins in the hippocampus may contribute to early stages of dementia associated to MD. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

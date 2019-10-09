@@ -1,0 +1,4 @@
+goals by end of imeka stage
+finish coupling results
+release 2nd forex app (auto-trader + indicators, etc).
+start work on game

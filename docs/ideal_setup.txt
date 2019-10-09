@@ -1,0 +1,43 @@
+ideal_recording_setup
+
+goal: compare physiological recording with mass-application technology to gain additional information from limited recording device.
+
+main result:
+
+BRAIN ACTIVITY vs MASS MONITORING SIGNALS in simple random sample of healthy humans (age range 18-24) 
+
+EEG components/source localization (BRAIN ACTIVITY)
+	EEG power spectrum (brain activity) 
+		task-induced (record during task for performance)
+			gamma wave amplitude/peak frequency
+		baseline (resting state)
+			alpha wave shape/amplitude/peak
+
+Apple watch pulse oximeter
+	heart rate variability (HRV)
+		sleep
+		wake curve
+		RSA
+
+why? RSA, HRV linked to a variety of neurophsychological conditions, but brain activity not known (exists on spectrum)
+	also, brain signals may be more dependent on basic physiology than we realize (like BOLD FMRI) 
+
+performance vs apple watch (and relationship to brain waves)
+needs task
+
+an example of two metrics you will compare? RSA amplitude vs alpha peak frequency, or heart rate vs peak frequency
+simple random sampling - without replacement, and follow another group more long-term, but perform same recording in all
+300 SRS subjects, 30 subjects followed weekly 
+
+<30 minute experiment from sit-down to get up. just name the recording and go. assembly line type shit. 
+offer 10$ recordings - get high variance subjects - use them for subsequent apple watch/MRI study 
+
+voluntary and involuntary eye movements task experiment
+autonomic nervous system recording metrics?
+
+
+
+
+		
+
+

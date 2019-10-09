@@ -1,0 +1,9 @@
+tests tomorrow with cap on in scanner
+1) optimize MBME with cap (sub second TR with 3mm isotropic, 3 echoes)
+2) optimize MBME without cap - like above but slightly faster
+3) test stimuli for modeling paper - 5 randomization, 5 contrast, 40 trials each
+	2 second presentation, 4-8s ISI, (10s per trial average) => 10*10*40 = 66 minutes => 7 10 minute scans (doable) 
+4) test dual echo UTE on cap 
+5) test SWI with cap? 
+
+

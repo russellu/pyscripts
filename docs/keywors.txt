@@ -1,0 +1,25 @@
+keywords
+gym: 31,52
+fitness 44 65, fit 25 66, 
+workout 47 55
+tracker 5 60, planner 54 55
+timer 50 56
+custom 5 45
+free 74 57
+fast 20 67
+quick 29 53
+body 20 58, soul 20 50 
+daily 20 44, day 20 65, 
+routine 18 59
+coach 22 54
+home 56 64
+abs 20 53, chest 28 58, 
+smart 21 55
+awesome 21 64
+trainer 5 49 
+man 21 62
+pro 20 59
+book 42 62
+dream 26 43
+brain 34 60
+

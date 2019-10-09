@@ -1,0 +1,162 @@
+affiliate_goals
+
+tomorrow:
+create a bing adwords account (supposedly cheaper and better than google adwords)
+apply to and create websites for 10+ campaigns.
+(got 5+ for Palo, fill in some content and apply, message Gene). 
+go through the email from astoria and get that campaign up and running with a website
+	got the number, now set up the website and start bidding on keywords
+avenge offers - go through these and create some insurance websites
+	use the 844 number
+surge calls - pet insurance, fire/water damage, garage doors, tubs, home security, testosterone
+
+start some ad campaigns on google try to get your first conversion by early next week
+
+create fire damage and water damage and insurance repair landing pages tonight, start campaign
+
+got some SKAGs up and running in adwords and BING, copy the call only
+
+right now your max daily spend is 10+15+7+5+10+10 = 59$...remove one Campaign (Pip Science Skag)
+
+you can test permutations of different ads and SKAGs, average SKAGs across all ads. 
+
+goal today: automate SKAG creation in google and bing, create large skags for all campaigns that you have numbers with 
+check out semrush adwords tool - for keyword discovery. ubersuggest is also good for long phrases
+create matlab script which automates broad match modifier keyword creation - still need to think about how you will modify this.
+don't forget to install matlab downstairs before you leave
+broad match modifier with city/town keywords. 
+check out advertising fundamentals (google certification)
+
+adwords editor - put the city/state in the description
+
+if there is no other way, you can create strings from matlab and save them as excel...for example each ad has the following:
+you want:
+	location (town, state), and insert zip for IVR, pick shorter keywords (more human-friendly also) 
+	just put: find experts in : x town, state
+	call now! need only your Zip
+24/7 + location + experts on hand
+do it for a single geo that you know responds (testosterone is down atm, use fire/water) 
+
+ads, ad extensions, 
+
+sort them by reach and remove the small ones? or show only the small ones? 
+
+watch your queries for negatives - prune the traffic to get only the leads most likely to convert
+
+simple task - create a list of the largest cities, use broad match modifier in combination with keywords for headline 1&2, use same
+description for all
+
+(do all this in matlab, and prune cities so you only get from the state you want) 
+
+then, for each keyword (50 or so, take the top 50 cities (50*50 = 2500), and create that many ad groups, or use only 10 keywords and
+10 cities (100 ad groups). problem with 2500 ad groups is you won't have enough data, of course, you can average over keywords or 
+areas.
+
+to start: just restrict it to the different states, and advertise all your keywords with some description
+
+Great Rates for First Time Buyers!
+First Time Buyers Welcome! Call Now
+24/7, 7am-5pm, etc
+
+experiment #1: with and without location data. 
+without: keywords only, restrict to states but no location on ad or in keyword
+with: create a bunch of keyword permutations where the location is part of the keyword
+
+you can automate campaign creation as well as ad group creation 
+got the ad group up and running, now do the same for fire damage. 
+change the adgroup to reflect the phrase that you insert. use the keywords as normal though. 
+
+goal today: get your first conversion, create ad campaigns for all available offers, apply to more offers
+
+before you smoke: apply to all health insurance offers for palo, set up the auto insurance ads
+
+today: continue running car insurance and fire/water, 
+
+make a matlab script that automatically creates the campaign based on keywords, just enter the values as strings.
+
+new plan: spyfu+matlab, auto create large campaigns, look for auto correction
+get better at spyfu and full automate campaigns
+make sure your ad text is getting through to users, for less dropped calls. 
+confirm hypertarget network 
+set up offers to run for health insurance and other water/flood damage, have 5 more running by tonight (pause and then set them all up
+to run 15$ a day or something). 
+get facebook ads up and running, start a campaign in bing with something you know works (might need to improve the landing pages also)
+get the creative for pet insurance 
+
+need to be pickier with keywords - filter out all non high intent buyers (any infographic etc ads), and ad locations to get the long 
+tail conversions. 
+try this with the mold campaign - just use a very simple campaign, with very clear and direct message, and put a BMM keyword for all
+locations, as well as the most commonly searched mold removal term. (call the number first, as always) 
+
+do 2-3 more campaigns tonight (location only) and then tomorrow see whats working and get setup with Bing 
+
+once you know which campaigns kind of do and kind of don't pan out, you can start getting more systematic.
+you need more data. pick a campaign with a smaller payout and run it for 2 weeks straight. use a single campaign, but vary the 
+parameters in a systematic way
+ex: keyword match type: broad, bmm, phrase, exact
+
+now, you see how the market operates - bids on page position
+you want to apply filters to your clicks - get only the clicks that are likely to convert - that way you pay less and your profit
+goes up. 
+
+spyfu -estimated clicks/month, 
+
+get the highest performing keywords in the highest performing cities and combine those for 1000 ads per campaign 
+(10 keywords, 100 cities), so its just keyword + city. 
+start with flooding, and try different permutations
+
+
+try broad and phrase with water, flood, fire, and mold. 
+then, use the keywords only (no locations). so you will have 12 campaigns running simultaneously 
+
+correlation between affiliate marketing and the stock market? better to run some offers at certain times than others? 
+
+need to better organize your campaigns - get a standard keyword format, and get all your campaigns into that format
+	this will also allow you to better transfer over to bing
+bing - landing page is more important (not just call only), so put more work into those. 
+
+start working on other campaigns like health insurance and auto insurance, do more spyfu research, competitors + locations?
+you need to target high call intent long tail keyword phrases only - save your money that you're wasting on no intent keywords like
+"water damage" or "mold". you may get less impressions but the conversions should go up. 
+use broad, exact, and phrase all in the same ad group
+
+new plan: high converting keywords only, copy ads, use 3 match types, standardize the naming convention, use retreaver, 
+multiple callout extensions (vary length), automate ad creation (multiple ads per ad group). 
+organize your folder into a bitbucket account, back up your progress every night. 
+get more keywords than just spyfu's servpro
+
+first things: naming convention for adwords campaigns
+you have the following fields:
+affiliate network (palo, astoria, etc), 
+offer (home repair, flood damage repair, etc),
+split/landing page (specific subtypes of the offer) 
+
+each campaign will hence be the following: 
+network_offer_split_phone# 
+
+retreaver allows you to place a different number in your ad, and it then routes the call to the network after, so you can track and
+record calls. 
+so, just create a 1:1 mapping between your network numbers and your retreaver numbers
+
+need high commercial intent keywords
+
+next experiment - use servpro ads, use commercial intent keywords only, rotate ads.
+create a single campaign, cap it at 50$/day, and run it for an entire week. 
+step 1: set up retreaver with fire and water damage number (astoria) (done)
+step 2: get high commercial intent keywords for water, flooding, fire, mold, and all other types of fire/water damage 
+root keyword filters: fire, smoke, water, flood, mold, and mask with intent (done)
+step 4: remove previous campaigns and start from scratch (done)
+step 5: create campaign using locations, import keywords and ad groups (done)
+step 6: create call-only ads using matlab  (done)
+step 7: post campaign and wait for results, tweak ad groups as impressions/clicks arrive - waiting
+
+still need to add multiple ads to each ad group (later)
+
+
+
+
+
+
+
+
+

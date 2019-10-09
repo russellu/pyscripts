@@ -1,0 +1,96 @@
+a new method for fast multi-slice T1 mapping
+abstract: a sequence for T1 relaxation time mapping which enables high resolution multislice imaging in short acquisition times is presented.
+the sequence is based on the look-locker method, and employs a magnetization preparation module prior to data acquisition with a banded 
+k-space data collection scheme. the accuracy of t1 maps validated by phantom is <3% for slow relaxing compartments and <1% for fast relaxing
+compartments (T1<=1200ms). an acquisition time of approximately 8min was achieved for a T1 map, which in principle can provide whole brain
+coverage, with 25 slices, 256x256 matrix size, and 12 time points. the speed of the sequence is derived through optimized interleaving of 
+slices and time points, together with the acquisition of multiple echoes, which are used to fill a 3-segment k-space. 
+
+introduction: the measurement of the spin-lattice relaxation time T1 using MRI is becoming increasingly popular in applications such as
+quantitative tracer kinetics, radiation dosimetry, and the response of tumors to therapy. previous techniques which were either too 
+technically demanding or required long acquisition times are now feasible. 
+the advantage offered by the acquisition speed of multislice, inversion recovery EPI method (ER-EPI) was originally lost due to the fact 
+that EPI was not a widely available method. snapshot FLASH and EPI based methods are based on the spectroscopic look-locker method, and employ
+multiple radiofrequency pulses during magnetization recovery to sample several time points and therefore track the recovery of the 
+magnetization. a relaxation time mapping scheme is thus acquired which is faster, less prone to movement artifacts, and more time efficient
+than the simple IR spin echo techniques. additionally, multiple point acquisition facilitates the mapping of bi or multi-exponential decay
+curves, which require more than two points. though signals which show a mono-exponential decay curve can be quantified with two points 
+(M0, and one point on the recovery curve, for example), the relaxation time mapping of such signals in the presence of noise is more accurate
+if multiple time points are sampled. the original snapshot FLASH approach is essentially a single, slice by slice method with low temporal
+resolution. 
+in this work, a new method for quantitative T1 mapping, based on the look-locker approach, is presented. the method uses a magnetization 
+preparation scheme and utilizes readout gradient reversals to acquire multiple lines of k-space following a single excitation pulse. this 
+new method allows multislice, multi-time point data acquisition through the re-ordering of acquired k-space data prior to reconstruction. 
+the principle of interleaving slices and time points allows for extremely efficient data acquisition and allows the recovery curve to be
+sampled with much higher temporal resolution than IR-EPI, snapshot FLASH, or segmented snapshot FLASH. the sequence employs a banded k-space
+approach with magnetization prepration and has been termed TAPIR (t1 mapping with partial inversion recovery). 
+
+concepts: in a look-locker style T1-measurement, multiple low flip angle pulses are employed to sample several time points of a T1 recovery.
+the influence of these low flip angle pulses during the recovery period affects the magnetization recovery, and the apparent T1 values differ
+from the true T1 values. to understand this, the small fraction of the total longitudinal magnetization that is excited by each small flip 
+angle pulse must be considered. following inversion, each excitation pulse reduces the available longitudinal magnetization, and therefore 
+thus recovery following a given alpha pulse begins with a smaller magnetization value than that which would exist in absence of the 
+excitation pulse. this leads to an effective longitudinal magnetization time which is smaller than the true T1 value. 
+it has been shown that the measured T1* is smaller than the actual T1, and depends critically on the flip angle alpha and repetition time 
+TR between successive RF pulses. the effective relaxation time constant T1 is then given by: 
+1/T1* = 1/T1 - (1/(nslices*TR))*ln(cos(alpha))
+under most circumstances, a precise knowledge of alpha at all points in the sample is an intractable demand, however if multiple measurements
+have been made, T1 may be obtained from a 3-parameter fit as described below: following the application of a large number of excitation 
+pulses, the longitudinal magnetization mz(t) as a function of time can be expressed as follows: mz(t) = m*0-(m0+m*0)*e^(-t/T1*), where
+m0 is the equilibrium magnetizations. since TR << T1*, apparent equilibrium magnetization may be written as m*0 = m0*(T1*/T1). therefore,
+a three parameter fit of the measured time points circumvents the need to know the flip angle, and mz(t) = A - B*(e^-(t/T1*)). these 
+derivations also hold for the magnetization preparation scheme used here, which has also been termed saturation recovery. the true 
+longitudinal magnetization constant can be calculated by solving the following equation: T1*[1-exp(-tau/T1)] = T1'*[B/A-1]
+in general, the choice of the optimal flip angle for the maximum steady state signal is based on the ernst formula however for the look locker
+method the flip angle alpha should be as small as possible to ensure least perturbation of the magnetization as it recovers. 
+in other words, modulation of the T1 relaxation by the sampling process should be held to a minimum to avoid inaccuracies in the measured
+T1 values. the low flip angle approach is SNR limited, but the arbitrary use of large flip angles is also undesireable as it would unduly 
+modulate the T1 relaxation. 
+phantom measurements were performed to optimize the flip angle and the interpulse delay tau, for the expected in-vivo T1 values for gray/white
+matter compartments respectively (T1 = 900ms, and T1=600ms respectively). 
+
+methods: 
+the effective window with which the inversion recovery curve is sampled is given by Ts = n*TR, where n is the number of slices and TR is the
+repeat time of the alpha module.
+the multi-slice, multi-echo TAPIR sequence: a nonselective 90deg pulse is followed by a nonselective 180deg pulse and a crusher gradient, 
+which is applied to dephase residual transverse magnetization arising from pulse imperfections. a time delay tau between the 90 and 180deg
+pulses ensures that sufficient longitudinal relaxation time takes place before inversion. the inverted magnetization is then sampled by 
+the immediate application of a slice selective, low flip angle excitation, which results in the acquisition of the outer-most line of k-space.
+the readout gradient is then reversed twice to enable the acquisition of two further echoes. the phase encoding scheme is such that the 
+additional echoes are encoded for different bands of k-space, this procedure is repeated until these three lines for all slices have been
+acquired. thereafter, the whole slices loop is continually repeated until the alloted time deltaT, the time allowed for recovery, has been
+filled. in this way, the highest spatial frequency lines of each k-space band are acquired repeatedly with a temporal separation of Ts. 
+following the permitted partial recovery, the whole procedure is repeated for the next set of k-space lines. compared with other methods
+such as snapshot FLASH and IR EPI, the major advantage of TAPIR sampling scheme is the high apparent temporal resolution with which the 
+recovery curve may be sampled. 	a time reversal of the central band echoes must be performed followed by realignment and phase correction. 
+phase correction of the k-space data was performed by use of a 3-echo scan with no phase encoding, these reference data lines were 
+Fourier transformed, normalized, and the complex conjugate was taken and applied to correct the acquired imaging data. 
+
+fitting: the fitting of the measured data points for the magnetization prepared method was performed using two different software packages
+and the fitted values were then compared. all fitting was based on the magnitude images of the reconstructed data sets. 
+measurements: 
+phantom experiments: standard spectroscopic measures of each part of a multi-compartment phantom were carried out, the phantom consisted of
+eight tubes of water diluted with different concentrations of Gd-DTPA, plus an additional tube with distilled water. 
+
+discussion:
+the largest advantage of the TAPIR sequence over others is its increased sampling density along the relaxation curve. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

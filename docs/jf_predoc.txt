@@ -1,0 +1,7 @@
+question from jf
+gamma frequencies and mechanisms of gabaergic inhibition 
+recent studies have shown an important divergence in measuring gabergic mechanisms with MRS and with TMS. 
+considering that the EEG gamma band is also presumed to be associated to inhibitory gabaergic mechanisms,
+1) what is the relationship between the gamma frequency band and markers of gabaergic processes in the human?
+2) what pattern of gamma responses can be expected in populations with decreased gabaergic processes including
+fragile x-syndrome or autism? 

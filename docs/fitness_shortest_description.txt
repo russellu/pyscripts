@@ -1,0 +1,14 @@
+fitness_shortest_description
+
+take control of your workouts at home and in the gym with this quick daily exercise workout fitness planner!
+establish a routine, and customize it to fit your needs!
+
+create customized sessions for different days of the week, or body parts (chest, abs, glutes, etc)
+track your progress using a timer, and strive to always beat your previous best!
+
+3 basic types of activity
+1) simple activity (ex: number of pushups, calories consumed per day, etc)
+2) multi-set activity (ex: bench press 3x8, 135x8, 155x8, 185x8)
+3) timed activity (ex: plank 60 seconds, 5km run 25 minutes) 
+
+can be used to track anything, not just fitness goals!

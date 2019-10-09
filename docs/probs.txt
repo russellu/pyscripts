@@ -1,0 +1,305 @@
+new_forex_strategy
+
+you have a histogram for each increment - ie, the number of times the price moved x distance in y minutes.
+based on this, you can construct probablility distributions, saying price will move a certain amount 
+constructing the pdf - price is at 1.0005, when 5 minutes ago it was at 0.9995. that means it has moved 10 pips in 5 minutes
+which is quite alot. so, the probability at that time point, in the 5 minute range, is low. 
+using this to construct an indicator - each time point has a vector for n ranges
+to get the value for each point in the vector, look at the difference from that point to the range point, and get the cumulative 
+distribution for that value. 
+low probability evens are definitely followed by more activity, ie, larger variability across epochs
+
+whats a simpler way to do this? standard deviation +/- of the previous scores
+
+indicators 
+RSI relative strength index
+MACD - moving average convergence divergence
+rainbow moving average
+bollinger bands
+average directional index
+parabolic SAR
+
+new strategy: 
+mvg doesn't seem to affect it much - try stds.
+after optimizing stds, what else can you add? 
+RSI, moving average, maybe a different bollinger band? stochastic, parabolic, RSI (tomorrow try RSI) 
+try to optimize them independently, and then combine them to see if you get an improvement (instead of running them all in a giant loop
+ 
+how to improve the strategy? filter with a moving average? 
+can also use a weighted or exponential moving average to plot the bollinger bands. probably won't affect much, but worth a shot
+the minimum you need in live testing is a SMOOTHLY ascending average profit curve 
+combining stochastic and bollinger bands - set an overbought/sold threshold, and only enter the trade if that threshold is reached
+
+things to optimize - moving average period of stochastic, smoothing period of stochastic,mvg period of bollinger band, std of 
+bollinger band, stochastic threshold, stochastic threshold direction...
+need to combine these in a way that lets them have many trades (ie, not discrete entries). 
+parabolic SAR for exit? 
+
+bollinger bands:
+mvg period, stdthreshold, price entry/exit (cutting down/cutting up) 
+so far - price hits the upper band at std ~3.5, sell, and vice versa seems to be optimal. 
+test 4 configurations - cutting up, cutting down, buy, sell. save in a spreadsheet. 	
+cut up sell - lots of trades, smoothest profit curve - how to adjust this to make it even better? maybe a macd to indicate its in
+a range? 
+
+adding in the MACD, and using it as a filter (-3, +3), seems to help quite a bit - now you you need to get the number of trades up
+to around 1000-1500 (lower the filter to -3 or -2, and play with the period a bit, and you should hit your goal of 20 currencies,
+1500 trades, average 2.5 pip profit (after spread annd comission). 
+
+stochastic: 
+period, mvg smooth, stochastic entry/exit (cutting down/cutting up)
+stochastic doesn't appear to help at all. 
+
+williams %r - supposed to tell if it is trading near a previous high/low or support/resistance. 
+
+cci - commodity channel index - like a price macd divided by the standard deviation. 
+
+average directional index
+upmove = current hight - previous high
+downmove = previous low - current low
+if upmove > downmove & upmove > 0, +dm = upmove, else +dm = 0.
+if downmove > upmove & downmove >0, -dm = downmove, else -dm =0. 
+
+pivot points: high + low + close/3
+
+support and resistance: 
+R1 = 2*p - low
+S1 = 2*p - high
+R2 = p + (high-low), R3 = p+ 2*(high-low)
+S2 = p - (high-low), S3 = p- 2*(high-low)
+
+tonight: optimize stochastic period, and bollinger band mvg. 
+tomorrow - optimize RSI and MACD, and add oscillator box to the trading window. 
+other things to try - bollinger bands less than or greater than as a filter, and then use the crossover as entry. 
+
+next steps: 
+0) find a strategy in matlab that gives >2.5 pips in >1500 trades over the top 20 pairs AFTER subtracting spread and comission. 
+	you can consider this the minimum needed to beat spread, slippage, comission, and swap rates 
+	this will be 1500*2.5*20 = 75,000 pips over the last 5 years = 15,000 pips/year. 
+	some other general criteria - profit curve can not have any extended flat/decrease points (ie, >2 months)
+				    - stop should be less than 150 (to avoid UPL effects), r>0.985
+1) draw in java (offline) and reproduce results. then, visualize the trader in action with indicators. 
+2) load code into dukascopy, repeat on historical data up to current point, code email queries etc. 
+3) forward test for 2-3 months 
+4) go live 
+
+a new paradigm - if you're selling strategies, you can relax these criteria quite a bit. ie, all you need is the appearance
+that your product is successful, over the trial period (2 weeks) - and you also don't want it to lose money for the customers,
+ie it should be roughly break even, or make around 5-10% a year. 
+
+do three things in parallel - set up your website with the forex auto-trader sales pitch, add the auto-trader to your app, and
+get the auto-trader working in dukascopy demo account, so you can start playing with your own money in the future. 
+
+after optimizing on the bollinger band mvg length, optimize the macd mvg lengths. 
+
+today: consolidate all the existing dukascopy and java code, get it running on your new laptop, optimize indices, 
+** test the strategy on bid as well as ask data - should give the exact same results, if it doesn't, you have a problem. 
+parse all the data (use pitrading for futures and ETFs, use dukascopy for indices and currencies) in matlab, create directories
+int 25mb chunks
+4 total directories (currencies, etfs, indices, futures) 
+=> should have around 80 instruments total. 
+sorting the forex data - have two modes, small (compressed) and full? if you save only the close data, you can make the files smaller
+get the overnight swaps and work that into your trades - # nights*swap rate. 
+goals today: get the strategy working in java and complete one blog post (buy a new domain that matches your business)
+domain ideas - datadrivenforex, forexscience, tradescience, mathtrader,forexmath, forexbot, mathbot, pipbot,pipscience,autopips,
+robopips, easypips, foxtrader, autofx, pipacademy, 
+have different accounts trading different strategies? 
+try to average 2 blogposts a day- once you have 50 blog posts, start buying some traffic. 
+remove the take-profit parameter, as it adds more complexity and doesn't necessarily help  
+tomorrow - finish the java version and run it on all currencies to make sure its working - email dukascopy for unlimited account
+write another blog post or two (one on moving averages, one on MACD) 
+keep tinkering with the strategy in the other matlab window - try to get a profit curve above 0.995, use volume
+
+one way you could possibly squeeze more profit out of the 
+looks like you'll need to add another pip or so to the spread, to make sure its in line with oanada spreads (dukascopy is fine, but
+most of the clients buying your strategy will probably be from mt4). 
+so far, the best seems to be a take profit and stop, combined with the bollinger band exit (about 100 pips better than the bb only)
+however, you still haven't managed to produce a smooth profit curve from start to end. 
+volume seems to help quite a bit...interesting. adds 800 pips (at least) to average profit, and smooths out profit curve quite a bit.
+seems to work best when you exclude high volume events...maybe because thats when the bollinger bands get smashed and price goes
+straight through? you're essentially using a retrace strategy, when price hits the band, you wait for it to bounce back..
+adding another pip to the transaction costs - lets see how this turns out.
+can still make some decent profits, but obviously not nearly as good as without the extra cost.
+adding one pip makes it about even with other platforms such as oanda, and you also have to take into account slippage, so its probably
+a more accurate assessment of what to expect during live. 
+IF you can reproduce the 0.995 profit curve with 1.55 transaction cost + spread, you can consider it good enough to move to the next
+step. 
+
+another option is the trailing stop - a smarter way to exit trades...any other options to improve profit? you want higher mean profit
+ie pips per trade, and a smoother profit curve. 
+whelp, it appears as if std 3.75 and mvg of 50 is the best configuration after all (even with volume). 
+are there any other filters that could be useful? MACD, stochastic, etc are all crap. maybe a std filter applied to the entry,
+ie, if the standard deviation is < 10,20,30, pips etc, execute a trade. 
+tomorrow - std filter (enter only if std is < or > than a certain amount. (can optimize this on different periods and mvgs)
+also, implementing a trailing stop/take profit - if in a trade, and price is going in your favor, exit.
+	-this is something that should be optimized separately. ie, you should be able to do the random entry and see if you can
+	optimize this.
+today - test the trailing stop, test std on previous 5 bars
+trailing stop - simple, just take something like the square root of the current difference, (with a static stop) and if it gets below 
+that, exit. 
+
+adding in the std filter helps a bit, but the number of trades is pretty low (ie, an average of 150 per 5 years which is like 1/2 weeks
+which isn't in itself a problem, except if the trades go longer, then you have issues with the rollover rates. 
+check the average trade duration - and divide that by the average rollover rate - assume worst case 2/3 of trades are in the opposite
+direction to the rates, and average overnight swap is 0.25 pips.
+
+by the end of today - validate the strategy in dukascopy historical data. 
+tomorrow - launch the demo (with emails) 
+first - just get the data, and launch visualize some values from a single currency
+today - get a jframe that takes up the whole screen, and you can switch between currencies, and display trades. 
+switching between strategies? you'll have a bunch of buttons that allow you to switch the currently subscribed instrument
+also, make it so you can maximize the window. 
+
+what you need now - first, just get the previous x data points (maybe 1 month or something), and do it for all the currencies.
+then, feed all the currencies data and switch between them. 
+lastly, add the real entry/exit and slippage control etc. 
+first, test it one last time on as much data as you can get 
+seems to work on all the data, recent data, and distant data.
+got everything working with the buttons and display, tomorrow, the placing of actualy trades (switch to 10s bars)
+and the email notifications
+
+stuff remaining for JForex strategy - 
+input data - from the onBar() method, check volume > 0
+send emails - send each time a trade is triggered, with account balance etc
+	have a summary email (where you send summaries to each person on the list, and another one where you send updates for all)
+check the spreads, if < 2 || < mean spread*2, trade, else don't trade. 
+add a leverage checker - keep it under 30:1 at all times. shouldn't be a problem as the algorithm only makes 3 trades/day on avg. 
+load the parameters from a text file - so dukascopy can't f you over and steal your strategy 
+fix the spread thing - calculate the sell exit based on the bid, and the buy exit based on the offer. 
+
+
+leverage 100:1 during week, 30:1 during weekends. so if you have 10k, you can have 300k max
+
+different strategies - if you can get complementary strategies that would also be good, ie, strategies that work better at different 
+times of year, which would further smooth out the profit curve. 
+should add a zoom in bar to the screen, 
+
+what do you know about the strategies so far? it looks like volume is a good indicator, and buy low/sell high (based on bollinger 
+bands) is also a good indicator. is there a way to improve the bollinger band paradigm? 
+another type of indicator? what about another metric for variability? variance instead of standard deviation? 
+what about an indicator based on the rank of the previous price, ie, the # of points up/down
+optimize over - rank length and rank threshold
+another metric - weighted rank, ie, rank*#pips moved 
+
+next step is obviously to migrate the code to mt4/mt5, to access more brokers. 
+by the end of today - have a simple mt4 strategy working on a demo account
+
+by cuba trip - live account at dukascopy, be making 10+ dollars/day with apps, 3rd app released, and strategies finalized in
+mql4/jforex, and some smaller live accounts at other brokers. 
+
+start up an email service on your blog, that allows you to get subscribers to your signals, to start building up a subscriber base
+(add this to your app as well) 
+
+whats another bollinger band-type indicator?
+you still need to find something that makes a lot more trades than 300 on average over 5 years.. maybe bollinger bands with lower
+std threshold and a stronger filter? 
+other indices: zscore thresholds
+add bid-ask to simulations. 
+
+combining z-score with bollinger bands AND moving average? 
+
+new strategy - z-score + bollingerband + mvg + volume - aim for 500+ trades, 1500+ pips profit, .995 profit curve
+averaging strategy curves - 3-5 good strategies, should smooth out the profit curve quite a bit
+add the bid/ask. 
+first - re-test the bollinger band only with bid/ask
+bid/ask epic fail - negative everywhere - now, try using the volume threshold and the spread threshold to see if you can get positive
+values.
+
+buying the ask, and selling the bid - but not including the spread in the simulation. does this make sense??
+the spread is already implicitly included, because you buy at a higher price...its the same as if you entered at a lower price,
+and subtracted the spread. so yes, it should make sense...
+the reason you get better results when you do this? probably because of the fact that the market would eventually reach your goal,
+but subtracting the spread just puts you at a disadvantage because you don't wait as long and you automatically lose money. 
+
+different strategies - how to gauge their complimentariness? isolate small sec
+a pip throwing party - candle reversal patterns, near bollinger bands (search for an ""occurence" near the bands
+sell auto-trading strategies - that allow people to visualize trades 
+
+macd seems to give the best results, but still not very smooth. 
+
+how to make a smarter stop/take profit? 
+what parameters can you optimize after entering a trade (Randomly)
+obviously, the bollinger band is one, which works well (buy at a local low, sell at a local high), filter with volume. 
+what if you just optimize stop/takeprofit on exit only? hasn't been tried
+another thing to look at - is price more likely to hit a value that it has been at recently, than one it hasn't been at recently?
+ie, if price is moving in a trend, is it more likely to reach previous values than new values? how to quantify this? 
+the bollinger band strategy - seems to work better if you wait for a big move up/down, after a certain range of bollinger band motion
+
+a simple 5 minute strategy? try just waiting for high/low points difference from mvg
+alternatives to STD? combining the MACD with the pipthresh strategy? too few trades when you have too many conditions operating..
+volatility index? the max-min of previous n datapoints (range)
+
+at home: hull moving average (+bollinger bands - or another turning point indicator)
+kaufman moving average
+
+
+calculating the probablity of price reaching a certain point. 
+first - find out if 
+using a moving average on the upl probability? 
+ie, if the upl probability reaches a certain low/ high, after 
+see if the percentage of winning/losing trades is proportional to the stop/takeprofit
+
+correlate the nwin/nloss with the tp/stop - should be 1. 
+probability should be 99% if the stop is 100 and the tp is 1. 
+	can you change the probabilities by adjusting the entry parameters? 
+
+using the hull mvg to define local minima/maxima? 
+
+
+this weekend - validate the new stop/tp in java/dukascopy, and start it running on sunday night. 
+
+see what works best on the re-test - specific parameters, or the individual parameters. 
+
+assuming the market is completely random - is there any way to consistently make profit off of it?
+check your historical price idea...if price was more recently at one level, what is the probability it will go back to that level
+vs a new level, and how do you even quantify this? 
+ie, check the price's "memory"... or support/resistance is also similar. how to quantify previous highs and lows? 
+one more thing to try before you move on - the MACD currentdiff
+
+different thresholds you've tried - outside bollinger bands, and i-(i-1) > x, what else is there? 
+what about a simple crossover strategy - except use a bollinger band as the take profit? 
+so far, the best strategy has been to just use bollinger bands and bounce between them. ie, buy low, sell high. 
+you should try to improve on this strategy to filter out the bad trades. 
+it seems that the strategy performs better in a low-volume scenario - this is probably because more volume = more trending, so
+the bands get broken more easily. what other indicator correlates with volume? 
+
+another thing to try would be to restrict the trades during the typical bollinger band to a certain spread threshold - try that
+and see what happens. 
+
+the other strategy you had was actually quite decent, if you can just make some modifications to make it work better on the real
+market you could be ok.
+
+cci strategy - optimize over mvg period, cci threshold, and what else? try the +/- pipthresh strategy with a cci filter? 
+cci seems to give overall 2 pips advantage vs random entry, 
+buy low sell high - does this make sense in a completely random context? 
+test the strategy on shuffled data as well. 
+
+average 2 pips per trade due to selling jumps/buying dips, 
+what does it mean that the shuffled data doesn't work as well as the non-shuffled data?
+the sequence of 
+
+combine cci with bollinger bands? they're kind of the same, but combining them might give better trades (test simple bbands first) 
+using the aroon in conjunction with any of these other indicators? its complimentary to a bunch of indis 
+
+strategy idea: combining cci, diffthresh, and stop/tp? or just cci and diffthresh? 
+
+get the baseline case (bbands only) 
+the test the effects of adding other indicators such as cci, spread, volume, aroon, etc. 
+baseline - epic fail only 3 currencies profitable. (no volume, spread <2). 
+
+some other things to try - 10 second bars, 
+
+so far, the best you have come up with is using the pip thresh and bollinger band with volume threshold. 
+
+	next steps - optimize this, and then test on various filters (aroon, cci, etc) 
+
+
+
+
+
+
+
+
+
+
+ 

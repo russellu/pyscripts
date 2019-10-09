@@ -1,0 +1,6 @@
+ohbm coupling poster
+
+neesd: text, FMRI and jessily EEG
+
+do text on this computer, run FMRI and jessily, save, then merge figures with text	
+also needs: stimuli images under/around the figures. 

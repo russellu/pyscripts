@@ -1,0 +1,66 @@
+android_core_topics
+
+INTRODUCTION TO ACTIVITIES
+the way activities are launched and put together fundamental part of platform's application model
+android initiates apps using activity instance (Rather than conventional main) by invoking specific callbacks corresponding to stages of its lifecycle
+
+concept of activities: user experience does not always begin in the same place (like with desktop app)
+interaction with email app - open from home screen, get list of inbox, open from another app, get email composing screen. activity class is designed to 
+facilitate this paradigm. when one app invokes another, it calls an activity in the other, not the app as a whole. the activity serves as an entry point for the
+apps interaction with the user. the activity is typically full screen or floating and provides a window for the app to draw its UI.
+the main activity starts when the app is started. from there, other activities may be initiated. there is usually minimal dependence between activities within an app
+and they are modular enough to call activities and be called from activities in other apps. 
+
+to use activities in your app, you must register information about them in the app's manifest, and you must manage activity lifecycles appropriately
+
+CONFIGURING THE MANIFEST: 
+
+declare activities:
+add an <activity> element as a child of the <application> element. android:name specifies the class name of the activity. you can specify other attributes such as
+label, icon, and UI theme.
+	*do not change activity names after publishing your app, you will break functionality such as shortcuts
+
+declare intent filters:
+intent filters provide the ability to launch an activity using an implicit request instead of only explicit request
+	explicit request: "start the send email of gmail app"
+	implicit request: "start send email in any app that can do the job"
+you can declare an intent filter under the <activity> element in the manifest, this element contains an action element and optionally a category and/or data element
+the default <category> element enables the activity to receive launch requests
+activities that you don't want to make available to other apps should have no intent filters, and you can start them using explicit intents
+
+declare permissions:
+the <activity> tag can also control which activity can launch an activity. a parent activity cannot launch a child activity unless they both have the same
+permissions in the manifest, if you declare a <uses-permission> element for an activity, calling element must have the same <uses-permission> element
+
+MANAGING THE ACTIVITY LIFECYCLE
+over the course of a lifetime, the activity goes between states. a series of callbacks can be used to transition between states:
+
+onCreate() - must be implemented, fires when system creates your activity. should initialize the essential components of your activity (create views, bind data
+to lists, etc). this is where setcontentView() is called to define layout for activity's user interface. next callback is always onStart()
+
+onStart() -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

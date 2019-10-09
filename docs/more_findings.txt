@@ -1,0 +1,65 @@
+more findings for the poster:
+
+remove all files from desktop - should have around 200gb afterthis
+reinstall neurodebian, freesurfer, fsl, afni, mrtrix etc 
+get the files you will need to run the structure analysis (capybara + your own gamma subjects) 
+send the capybara subjects to freesurfer 
+get electrode locations for all subjects
+get dave's coupling subjects do some processing on them 
+
+ttest across voxels - coupling ttest different from zero, use this to mask correlations (p-values)
+plot surfaces for different frequency bands
+more findings:
+
+get the ROI where you have the best correlations between alpha/beta and gamma and the stimulus, roi based
+look where you have peak correlations, and make coupling matrices in that region. ie, across different states
+
+otherwise, for the different bands find the highest correlating voxels in the mean across all states, and back-project those
+to single subject space ROIs? 
+
+for the coupling - look in the voxels that responded best to the stimulus, see how coupling in those voxels changes as a function of
+state - first you have obviously the block design where you'll see the typical correlations
+	step 1: get coupling kernels in gamma task for top voxels - should see the typical narrowband correlations 
+	step 2: get coupling kernels for movie and rest - plot mean for different bands, get peak difference 
+
+after ohbm - sukhman + karl + retinotopy all subjects
+
+simple analyis: cross correlations, mean BOLD in V1 ROI vs different frequency bands xcorr
+
+timeline:
+tonight: coupling results, all subjects all states, kernel images in V1
+	 coupling results, all subjects all states kernel images in RSNs (DMN, lateral vis, lingual, occipital, executive, motor
+		group ICA, select components, back project to single subject spaces, select voxels within specific components 
+		epic fail - components look weird AF. just get the components in the single subjects and use those
+			design this figure - different DMN hubs in mean overlay, and show RSNs emanating from each one
+	 coupling results, spectra in all states and areas (instead of time course, look at spectra at a specific time) 
+	 structure results: finish EEG pre-processing (Capybara and synchrony), t1s on freesurfer (synchrony + capybara + hippo) 
+	
+
+today (Tuesday) - coupling:
+		- get the final coupling figures - coupling in different networks, kernel and time series for different frequency bands
+		- get the inside vs outside figure - ERSP in response to one stimulus type, and time series alpha/beta vs BOLD (intro/methods)
+		- get the ICA denoising figures - noise components vs signal, and grad/bcg denoising figures as well 
+		- need something a bit more quantitative also - how can you quantify these coupling results? 
+	1) gradient/bcg/ICA denoising
+
+structure - try to get to the point you were at earlier when you made the previous figures 
+	  - remember there are two populations - 7 subjects simultaneous, and 22 subjects separately recorded. 
+
+wednesday: 1) get all gamma subjects cleaned EEG data. (power in electrodes, trial denoised, save mean stimulus types). 
+	   2) get all white norms using greg's script for all gamma subjects. 
+
+
+some findings: movie stimulus has the same delay in alpha/beta as event-related stimulus, which has the same delay as gamma
+for rest, the delay changes by around 2.5 seconds in alpha/beta, getting longer. also, for rest there is a significantly higher positive correlation in beta
+than in movie which is suppressed. 
+# of voxels movie vs rest - more full brain correlations in alpha for movie than rest, more theta correlations in movie/block than rest (whole brain) 
+positive DMN-gamma correlations in rest but not movie or task
+network correlations with the hrt - 
+significant zero-lag correlation with alpha - increased alpha causes decreased bold, or vice versa? 
+resting state beta correlations with DMN - much stronger at 0s time lag (positive) than hrf delayed negative correlations 
+
+
+
+
+

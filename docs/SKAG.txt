@@ -1,0 +1,24 @@
+SKAG single keyword ad group
+need root keywords and adword editor
+
+root keywords are the shortest tail of keywords that you're willing to bid on
+for example, an online college could have "online college", "online degree", "online school", etc
+then use synonyms: web college, digital college, internet college, etc
+
+use broad, phrase and exact. why?
+even if someone searches for a longer tail version search term triggered by phrase or modified broad match, your ad will still
+be the most relevant possible ad in your account
+if you split up your skags into 3 adgroups, you further dilute your data collection and testing will be even harder
+set all the bids at the same amount, then adjust them later based on performance 
+
+creating ads rules: keep the keyword in the headline and the path (display url), which will make the ad more relevant to the 
+searcher leading to a higher CTR, leading to a higher quality score and other benefits
+quality score - click through rate is the most important factor
+how to improve quality score? do keyword research, including using long tails, perform keyword organization by splitting your 
+keywords into tight, organized groups that can be more effectively tied to individual ad campaigns, refine ad text, optimize landing
+pages, and add negative keywords 
+
+anything your write in headline 2 and the description is up to you, you just want to make sure that the ads are different enough
+to split test. 
+
+you can then clone ad groups, and make new SKAGs with the synonym

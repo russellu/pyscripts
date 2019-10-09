@@ -1,0 +1,20 @@
+fiber_visualizer_jan
+
+(keep it under 100 mB) 
+
+integrate both subjects into the app with a change subjects button
+downsample bundles using mr_resample, convert bundles to iso-surface (for selection tool)
+	add small description to each bundle (with a little information symbol beside it)
+add FMRI ROIs and surfaces for both subjects
+add venous and arterial images (assuming you have both) 
+fix any small lingering bugs - selection sphere and color changes when adding new tracks 
+
+finish all the image processing first (make sure its less than 60 mb) then do the final bug fixing and feature addition
+
+get the RSNS
+get the veins/arteries
+get the anatomical areas (freesurfer)
+get the BET surfaces (skull, scalp, etc) 
+add functional connectivity mapping? 
+
+remaining today: create iso-surfaces for all your new ROIs and cortical regions. 

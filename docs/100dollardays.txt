@@ -1,0 +1,52 @@
+the path to 100 dollars a day via app-store purchases 
+
+---------------- tier 1
+
+step 1: make 1$ a day (already almost here, once you get to ~80 downloads a day on average you should be making this consistently
+step 2: make 10$ a day (by november) release the 2nd version of FPA (before cuba), with ads, and premium version
+step 3: make 20$ a day (by early 2018) release (using unity) a multi-platform version of the forex price action game
+	this is a big step - getting released on iOS, should more than double your revenue (2-3x revenue using IOS)
+
+by the end of tier 1 (end of 2017), you should be adept in the following categories 
+	a) multi-platform 2d application design (using unity) - have an app released on app store, google play, and windows phone
+		(and possibly others as well)
+	b) app store optimization - using keywords, icons, and screenshots to get a high ranking in the app store
+	c) driving paid traffic to the app using services such as inmobi - drive 5-10k installs for each new app (500$)
+		(you want to consistently get your app into the top 5 for your category, to drive >100 organic installs per day. 
+	d) integrating app store optimization into the app itself, using ratings, facebook, twitter, etc. 
+	e) multi-platform advertising and in-app purchases, removing ads using in-app purchases, etc. 
+
+---------------- tier 2
+
+step 1: make 150+$ a day (by mid 2018) will have to come up with more ideas - more data visualization and wrangling ideas
+	criteria: developed in unity (cross-platform) or android, relatively fast to develop, ads value to peoples lives
+	idea 1: hacknslash rpg (top down, sprites, unity, content maps) hack 'n slash
+	idea 2: google heat maps -tracks where you have been and displays a heat map overlay on your location. 
+		heat maps - optimal living location, sort by grocery stores etc. 
+	idea 3: landlord game 5 million downloads for real estate tycoon, so lots of potential 
+	idea 4: something similar to x-ray scanner (ultrasound, light detector, etc)
+	idea 5: sound messaging (text the sound and it gets sent to someone in the vicinity, who also has the app installed). 
+	idea 6: brain minecraft game - segment brain in a dungeon-keeper like fashion. (use a time of flight for blood) 
+		braincraft - mine the brain and isolate structures. 
+		brain surgery game - cut open the brain
+	idea 7: 3d picture renderer - take an image and transform it to a 3d surface. 
+	idea 8: a game like flippy knife - simple yet challenging and addictive. hmmm...darts?	
+	open data visualizer - find open data online, and create a bunch of aps that sell visualization of that data 
+	crime stat heat map - where to avoid in different cities 
+
+
+once you are making 150+$ per day, you can focus solely on the app creation business and scaling your business into other areas
+	(look for medecine ideas)
+
+
+
+before cuba - release the 2nd forex app, and put ads in the first app, with the option to remove ads and purchase
+	    - ad the rating option to the 1st forex app. 
+
+
+
+
+
+
+
+	

@@ -1,0 +1,7 @@
+today: 
+finish eyetracker methods (email to greg)
+plan coupling paper, should overlap with Kevin's presentation
+finish selection sphere code for imeka, start the volume rendering code 
+	fix residual fibers showing, fibers showing on color change
+	fix sphere not being selected when pressed, and press threshold being too short
+plan experiment with greg (simultaneous)

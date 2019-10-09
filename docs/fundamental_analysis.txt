@@ -1,0 +1,148 @@
+fundamental analysis:
+
+look for things that can be automated
+look for trends
+reits (look for real estate that will increase in the future) 
+
+sustainable competitive advantage is provided by:
+1) a unique competitive position
+2) clear tradeoffs and choices vis a vis competitiors
+3) activities tailored to the companies strategy
+4) a high degree of fit across the activities (it is the activity system, not the parts that ensure sustainability
+5) a high degree of operational effectiveness
+
+management: attend conference calls and listen for candor or beating around the bush
+the majority of the company founder`s wealth should still be in the stock
+the industry: red flag if company serves only a small number of customers
+industry growth - is the industry expanding? keep an eye on technological trends
+
+financial statements: a gold mine of information
+the balance sheet represents a record of the companies assets, liabilities, and equity at a given time.
+assets = liabilities + shareholder's equity
+the income statement measures a company's performance over a given timeframe: revenues, expenses, and profits 
+statement of cash flow: a record of the company's cash inflows and outflows over a given time period: 
+	1) operating cash flow, generated from day to day operations
+	2) cash from investing (CFI) cash used for investing in assets, and proceeds from sale of other businesses or assets
+	3) cash received or issued in the borrowing of funds
+
+cash flow is a more conservative, harder to manipulate metric than earnings, which accountants can tweak
+
+10k and 10q: the SEC requires periodic filings detailing financial activities including the above. all this can be found in 10q or 10k
+manager's discussion and analysis of 10k: 
+	1) how candid and accurate are the manager's comments?
+	2) does management discuss significant financial trends over the past few years?
+	3) how clear are the comments? do the yhave something to hide?
+	4) do they mention potential risks moving forward?
+
+auditor's report: recounts the responsibilities of auditor, and parts of financial statements that were audited
+lists how generally accepted accounting principles were applied, and where
+provides the auditor's opinion on the financial statements of the company being audited
+
+footnotes list important information not included in the actual ledgers, such as outstanding leases, maturity dates of outstanding debt
+
+the income statement:
+the first financial statement you will come across in a quarterly or annual SEC filing
+	contains revenue, earnings, and earnings per share.
+shows how much money the company generated, how much it spent, and the difference between the two
+lets investors know how well the company is doing - whether or not it is making money. high profit margins signal strong fundamentals
+sales growth is the best way for a company to increase profits. the best revenue are those that continue year in year out
+
+expenses: two most common are costs of goods solds (COGS) and selling, general, and administrative expenses (SG&A) 
+
+PROFIT = REVENUE - EXPENSES
+gross profit is revenue minus cost of goods sold. high gross margins means more money for R&D and marketing
+
+be on the lookout for downward trends in gross margin rate over time
+operating profit is equal to revenues minus the cost of sales and SG&A
+operating profit measures how much cash the company throws off, and some consider it a more reliable measure than net earnings
+
+net income is the bottom line, and the figure people refer to when they use the word profit or earnings
+companies with low profit margins can get wiped out in a downturn
+
+increasing sales is the first sign of strong fundamentals, rising margins indicate increasing efficiency and profitability. look for 
+significant changes in revenues, cost of goods sold, and sg&a to get a sense of the company`s fundamentals
+
+the balance sheet: the balance sheet highlights the financial health of a company and is an integral part of financial statements
+tells you how much the company owes and how much it owns, the differences is shareholder equity or net assets
+
+the big 3: assets, liabilities, and equity
+
+assets: current and non-current, current are likely to be used up or converted to cash within one business cycle or 12 months
+three important current asset items are 1) cash 2) inventories 3) accounts receivables
+lots of cash is a good sign, means protection in tough times, and more options for future growth, increasing cash reserves is a strong sign
+`stale` cash may also be a bad sign, signaling less investment opportunities, or poor management
+inventories are products that haven`t sold, inventory turnover (costs of goods sold / average turnover) measures how quickly the company
+is moving goods through the warehouse to customers.
+if inventory grows faster than sales, it is almost always a sign of deteriorating fundamentals
+receivables are uncollected bills, if its taking too long to collect, could be a bad sign
+
+non-current assets are anything that aren't current assets such as property, plant, and equipment. its possible for companies to inflate this
+number. 
+
+liabilities: current (must be paid within a year) and non-current (bank and bondholder debt)
+falling debt levels are a good sign, as is having more assets than liabilities. 
+
+the quick ratio: subtract inventory from current assets and divide by current liabilities. if >1, company has enough cash and liquid assets
+to cover its short term debt obligations
+
+equity represents what shareholder's own, is often called shareholder's equity. equity = total assets - total liabilities
+the two important equity terms are paid-in-capital and retained earnings
+paid in capital: the amount of money shareholders paid when stock was first offered. retained earnings are a tally of the money the company
+has chosen to re-invest rather than pay to shareholders, look closely at how it is put to use by the company
+
+the cash flow statement:
+how much cash goes in and comes out of the company in a year or quarter
+the difference between the cash flow statement and income statement is accrual accounting. the income statement includes non-cash revenues
+or expenses. 
+
+the cash flow statement is crucial to understanding a company's fundamentals, shows how company can pay for its operation and future growth
+one of the most important features is a company's ability to produce cash
+
+three sections of the cash flow statement:
+
+cash flow from
+1) operations
+	cash from sales of goods less the amount required to produce goods
+	good sign when cash flow from operations goes up, watch out for widening gap between reported earnings and operations cash flow
+2) financing
+	selling stock or bonds, or borrowing from a bank, paying back a bank, or dividend payments
+3) investment
+	the amount of cash spent buying new equipment, other companies, etc
+	should re-invest at minimum the rate of depreciation, otherwise, the cash flow is artificially high
+
+cash flow statement considerations:
+savvy investors are attracted to companies that produces plenty of free cash flow (FCF) 
+free cash flow is the excess cash produced by the company, and can be returned to shareholders or re-invested without hurting operation
+
+the most common method of calculating free cash flow is: 
+net income + amortization deprectiation - changes in working capital - capital expenditures
+company should be able to pay for the investing figure out of operations without having to rely on outside financing
+the company's ability to pay for its own operations and growth signals to investors that it has very strong fundamentals
+
+valuation: the current value of a company is simply the present value of future cash flows attributable to shareholders
+discounted cash flow is a valuable metric used to calculate a company's value, and make investment decisions (under/overvalued)
+
+ratio valuation: financial ratios are mathematical calculations using figures mainly from financial statements, used to gain an idea
+of a company's valuation and financial performance. some of the most well known valuation ratios are price-to-earnings and price-to-book
+price-to book compares the company's book value to the price per share
+
+conclusion: never blindly invest in a company. always understand what it does, its market, and the industry in which it operates. the financial
+statement is one of the most important areas to look when making investment decisions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

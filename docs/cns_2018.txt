@@ -1,0 +1,9 @@
+sleepdata_cns
+
+sleep data processing for CNS: 
+
+combine the FMRI with the EEG in a single subject, send it to the group. 
+time-lag correlations during different sleep stages, and predicting the NVC relationship based on 
+raw voltage vs BOLD 
+step 1 get the triggers (find the start and end times of the scan
+step 2 filter, downsample, rectify EEG 

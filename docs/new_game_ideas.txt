@@ -1,0 +1,10 @@
+game_new_ideas
+
+an arcade style hack n slash - short levels (And chained levels) with a map/armory stage and a main menu/character selection screen
+
+the map editor - how are you gonna make the levels? you should create a palate editor in matlab, to 
+
+get a higher resolution camera - 10000x10000 pixels should make for some nice big levels. your character is around 50x50 pixels,
+so if the level is 10000x10000, that means
+the screen surrounding the character should be around 10x the size, so 500x500 pixels, which means around 20 screen shifts up and
+down etc. thats about the size of a normal baldur's gate level, should be enough. 

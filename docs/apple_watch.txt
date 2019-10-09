@@ -1,0 +1,14 @@
+modeling perfusion and RSFC based on apple watch 
+
+apple watch: ecg, pulse rate, respiration (maybe), activity (gps)
+-ecg on different parts of the body? 
+
+spontaneous coupling in the healthy human
+spontaneous population wide coupling - neurological disorders all exist on a spectrum or range that we also inhabit. 
+
+MS patients before a flare up
+
+pacemaker and myocytes have different shaped AP 
+hyperkaelemia - too much potassium in blood 
+baseline vagal tone used as potential predictor of behavior and sign of mental health
+ASD children exhibit higher vagal tone 

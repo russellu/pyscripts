@@ -1,0 +1,87 @@
+modeling tracer kinetics in Dynamic Gd-DTPA MR imaging
+three major models (From tofts, larsson, and brix) for collecting and analyzing DCE-MRI Gd-DTPA data are examined. all models use compartments
+representing the blood plasma and the abnormal EES, and they are not intercompatible. all measure combinations of three parameters:
+1) the influx volume transfer constant, or permeability surface area product per unit volume of tissue between plasma and EES, 
+2) ve the volume of EES space per unit volume of tissue (0<ve<1)
+3) kep the efflux rate constant which is the ratio of the first two parameters (k/ve).
+kep is the simplest to measure, requiring only signal linearity with Gd tracer concentration or, alternatively a measure of T1 before 
+injection of Gd. To measure the physiologic parameters k and ve, separate requires knowledge of T10, and of the tissue relaxivity R1.
+
+introduction:
+there is increasing use of DCE-MRI to characterize abnormal capillary leakage, but there is a confusing plethora of approaches that differ 
+in three major ways: 
+1) the data collection procedure varies (eg is plasma concentration measured or not, is a bolus or infusion injection used, what MRI sequence
+is used?)
+2) both the presentation of theoretical models and which parameters are actually extracted vary. many models are heuristic, with no 
+relationship to underlying physiology. most meaningful models give parameters that are either equivalent to a) the influx volume transfer
+constant k or permeability surface area product per unit volume, and b) the ees or c) their ratio the efflux rate constan kep. 
+3) the names and symbols used to describe these parameters vary, 
+
+the aim of the review is to reconcile the various models and to show the relationship if any to physiological variables. the review focuses
+on Gd-DTPA tracer, but the kinetic principles can be applied to other tracers, provided an appropriate plasma curve Cp(t) is used. 
+the mixing phase, during which the injected bolus is mixed into the blood plasma and other closely couple compartments lasts up to 2 minutes.
+bolus tracking during this phase has been used to measure blood volume, using either T2* or T1 weighted sequences, but this phase cannot be
+described properly using compartmental analysis, and is so not considered in this review. however, if the local AIF (plasma concentration)
+can be measured, it may be possible to characterize leaking into the surrounding tissue during this early phase. 
+
+early models: 
+early work in tracer kinetics before the advent of non-invasive in-vivo imaging, was carried out by physiologists in animals using radioactive
+tracers that were then killed to measure the tissue concentration in the areas of interest. the application of diffusion theory to the 
+transport of tracers across a capillary wall, and the knowledge that the flux (flow rate) is proportional to the concentration gradient
+led to the notion of a permeability constant, defined as the flux mmol/sec per unit concentration difference and per unit area of 
+semi-permeable membrane: flow of tracer = P*S*deltaC*Mt, where S is the area of the membrane per unit mass of tissue, deltaC is the 
+concentration difference across the membrane, and Mt is the mass of the tissue concerned. the units of P are cm/sec, and since S is typically
+unknown physiologists the product of permeability and surface area per unit mass of tissue or the PS product. in early studies, the PS 
+product was found by injecting tracer into the arterial blood supply using an infusion or bolus. the proportion of tracer that left the 
+bloodstream and entered the tissue in one pass of blood through the capillary bed was called the extraction fraction E and is related to PS 
+by E = 1 - e^(-PS/F), where F is the capillary blood flow per unit mass of tissue, and backflux into the capillary was ignored. if the 
+permeability is high enough to extract most of the tracer in one pass, then the extraction fraction is close to unity, and PS cannot be 
+determined (since transport across the membrane is then flow limited and independent of PS). the venous concentration is then considerably
+less than the arterial concentration, and the concept of a well mixed plasma compartment does not apply. on the other hand, if extraction is
+low, the flow is sufficient to replace tracer lost by transport through the capillary wall, and the blood plasma compartment has a well 
+defined concentration, and PS is equal to EF. 
+in 1978 a two-compartment model was published for the distribution of carbon 14 (14C) labeled compounds of low molecular weight between the
+plasma and the brain in rats after a bolus injection. the plasma concentration Cp was represented as the sum of n decaying exponentials
+(typically three) which were determined from blood samples Cp(t) = sum(t=1:n)[Ai*e^(-mi*t)]. the tracer uptake in the EES in unit mass of
+tissue is dCt/dt = PS*rho*(Cp - Ct/Ve), where Ct is the tissue concentration, rho the tissue density, and ve the EES per unit volume of
+tissue. the extracellular concentration Ce = Ct/Ve and the concentration difference Cp-Ce is driving transport of tracer across the 
+capillary wall. ees is used to specifically exclude the blood space. 
+in 1983, Patlak et al published a generalized analysis of tracer compartments and a graphical method (multiple time graphical analysis, MTGA)
+for determining PS from the initial uptake portion of the curve, however backflux is ignored (Assumed unidirectional) and only the early part
+of the enhancement curve can be used, as backflux is not accounted for. this method was used in MRI studies of rat gliomas, and estimates
+of blood to tissue transport constant Ki are PS values in units of ml/kg*min)
+
+general assumptions in any model: basic assumptions related to concepts in tracer kinetics and NMR theory:
+1) compartments exist that contain the well-mixed tracer in a uniform concentration throughout the compartment
+2) linear intercompartmental flux, the flux between two compartments is proportional to the difference in concentration between compartments
+3) time invariance - the parameters describing the compartments are constant during the time that data are acquired.
+4) there is a blood plasma compartment, with tracer concentration Cp, units mMole, or mMole/L
+5) a lesion EES compartment, with tracer concentration Ce, and and volume ve per unit volume of tissue. 
+6) constant relaxivity, the increase in NMR T1 relaxation is rate is proportional to the concentration of Gd-DTPA tracer
+7) fast exchange of all mobile (nmr visible) protons within the tissue, so that the tissue relaxes with a single t1 value, even though the
+Gd-DTPA is concentrated in the EES and plasma. 
+
+modeling MRI data:
+Tofts and Kermode (26) model: permeability was assumed to be isodirectional, ie the same in both directions, which is the case for simple
+diffusive transport. it is conceivable however that Pin and Pout may be different, due to a variety of mechanisms. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

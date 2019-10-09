@@ -1,0 +1,22 @@
+the contribution of folding to the EEG signal. if you have two areas that are more folded, or whose folds are cancelling
+each other out, does this play a role or not? at what distance do folds cancel each other out? maybe at some point, they
+just don't affect each other very much, like across hemispheres. 
+
+30 2 minute rotations => 30 trials/angle, 40 angles, 30*40 = 1200 trials (better than 96 trials)
+120/3 = 40 angles, smooth the EEG power with a gaussian 3 seconds each. 
+continuous rotation, 10 minutes of data per scan
+
+synchrony subjects: check relationship between alpha/beta and distance using raw signal (in good subjects only) or 
+after subtracting only a few bad components. 
+	obviously, within a single subject distance is going to play a huge role just based on the scalp topographies and
+	the way that EEG responds best in the occipital lobe. but can folding also be used here, to separate their 
+	contributions? distance within/across subjects will not have the same correlations (can put this in your 
+	presentation as well). 
+	so for example, you have subject #1 (you, for example) where up to cpz you may see at least some gamma power, 
+	whereas in subject #2 you won't see ANY gamma power even in electrode oz. what gives? 
+	how to quantify this? 
+
+in a single subject, you can expect an inverse-squared relationship between distance and folding. check this in all the
+current subjects you have available (n=8 and n=22) 
+
+weird components. need to make sure you are denoising propery (ie, get the bad components out). 

@@ -1,0 +1,83 @@
+plan: finish book once, update all math (1 week), read book again, understanding everything (1 week), update math again (1-2 days) and start making lectures (aug 22)
+
+decision tree learning 210 info function?
+
+training set for weather: day, outlook, humidity, wind, and play - all attributes
+stocks - p/e, dividend, financial condition, beat market
+
+youtube guy - watch his lectures, and learn from him. you should be able to deliver 1.5 hours in a constant flow with good slides matching the tempo of your voice
+
+concepts:
+decision tree
+naive bayes
+divide and conquer vs separate and conquer
+disjunctive normal form
+frequent pattern tree
+ball trees for fast k-means
+support vector regression function
+least squares linear regression
+model tree, model tree induction 
+cross validation
+logistic regression 
+error correcting codes
+generalized linear models 
+
+probability:
+random variables, probability distribution function
+product rule, sum rule, joint probability, marginal probability
+bayes - likelihood, prior, posterior distributions
+likelihood, log likelihood, iid, maximum likelihood
+bayesian networks and graphical models
+gibbs sampling, simulated annealing, iterated conditional modes
+bayesian networks and generative models 
+EM algorithm, latent dirichlet allocation, markov random fields
+sum product, max product, and EM algorithms 
+
+appendix A.1 - mathematical background
+
+calculus:
+chain rule, partial derivatives, integrals 
+chain rule and derivatives of vectors and matrices 
+
+weka appendix math examples:
+matrix algebra: inner product, outer product, matrix multiplication, tensor product, hadamard product, invertability, singular, determinant, orthogonality
+derivatives of vector/scalar functions: vector gradient, jacobian matrix, gradient matrix, chain rule, chain rule for vectors, 
+computation graphs & backprop: decomposing partial derivatives, 
+derivatives of functions of vectors and matrices
+vector taylor series expansion, second order methods, learning rates, L-BFGS, hessian, nonconvexity
+eigenvectors, eigenvalues, covariance matrices: diagonalization, matrix factorization, svd
+probabilistic methods: expected value of discrete random variable, conditional expectation, probability density function of continuous random variable,
+expectation of function of continuous random variable, variance of random variable, double integrals, covariance of random variables, covariance matrix
+conjugate priors: 
+bernoulli, binomial, and beta distributions: binomial coefficient, beta distribution
+categorical, multinomial, and dirichlet distributions: 
+estimating parameters of a discrete distribution: log-likelihood, lagrange multiplier, dirichlet prior,
+gaussian distribution: maximum likelihood estimate of mu, sigma. matrix notation for 2d gaussian. linear gaussian models
+probabilistic PCA, eigenvectors of covariance matrix: 
+exponential family of distributions: gaussian, bernoulli, binomial, beta, gamma, categorical, multinomial, dirichlet, chi-squared, exponential, poisson
+exponential family form
+variational methods and EM algorithm: variational bound, log marginal likelihood, kullback-leibler divergence, fully factored variational approximation
+
+
+
+
+nonlinear instance space - andrew doyle example (251)
+re-read all chapters and add these to slides when making slides 
+a linear model is just a hyperplane
+using SVM to learn gray and white matter in brain 
+
+STUDENT RESEARCH
+assignments - use for neuroimaging ideas. 
+tree based learning for vascular segmentation 
+trying different analysis methods to decompose EEG data - have each student do a different algorithm and publish the results 
+
+
+patrickJMT - even if he doesn`t understand, can still explain properly if he is prepared
+
+lavrenko slides: top = concept, bottom right = example, bottom left = explanation of example. 
+random forest - a game where the forest is randomly generated according to the random forest algorithm 
+random forest decision tree combined classifier with deep learning for predicting cardiac variability 
+the likelihood of tim horton's donuts combination? 
+"if i had given this course 10 years ago, we would be dismissing neural networks and talking about SVMs"
+what are some more real-world problems (besides finance/stock market/forex prediction) that the students could work on (and monetize) 
+will spot play? what is the probability that spot will play? 

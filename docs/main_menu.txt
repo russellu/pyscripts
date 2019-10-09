@@ -1,0 +1,112 @@
+main menu
+buttons
+button composite
+you want to make it as modular as possible, and also have cool things like labels and such that you can create and put on the button
+
+the basic button constructor:
+	Button(size,color,location,outline color,background)
+	Button composite(size,n_x,n_y,...)
+the button draws itself, (drawself)
+
+how to check for intersections with the tap? right now, you have a main menu, a button composite, and a button. 
+one option is to iterate over all "active" button composites, and check them one by one - 
+
+main components of the mainmenu app: 
+
+create new profile
+create new life category
+	numerical, timed, etc 
+create a drawing tool pad - color and shapes 
+sketch pad - choose from 3 primary colors (Red, green, blue)
+have it automatically update the new score based on the old (++, etc) 
+
+keys: buzzwords in the title 
+buzzwords: life sketchpad - you sketch a label for each different activity, and it is added to your activity bar. 
+
+next: get the keyboard working, so the player can create a new user. 
+create load user screen
+get buttons working
+
+goal is to have this done by next weekend, with the in-app purchases implemented as well.
+then, time to start working on the game in earnest. (re-do the physics engine collisions first, then implement the maps)
+figure out how to scroll using a drag
+
+buck with the backspace - string is modifiable when you return from exiting, but not when you return from a previous screen
+problem - when you switch views, it fucks up the keyboard. why?  WHY?
+
+tonight: add the users (remove the dummy accounts) 
+add the message display at the top (synchronization stuff - copy from other project)
+add the title to the top of all the menus (1) done
+add the text box, in place of the title menu done
+add the centered text on the buttons (done)
+add the scroll bar, and the static button size 
+
+once you have this done (hopefully by the weekend, release it on two other app stores (amazon and the other), then start to work on
+an actual game. 
+
+will have to redo a bunch of stuff - setContentView sucks balls and doesn't work with the keyboard. not recommended. FAIL. 
+what can you do instead? 
+how to use the buttons without switching the view?
+
+
+use the button composite somehow, ie, switch between active button composites (change the title to be part of the composite) 
+now, re-do the top label (for each button composite), and make the buttons for the loading and new item menus
+
+planning the user interface:
+once you create a user, what do you do next - the user has plenty of activities, each activity has its own screen, and thats basically
+the app
+so, you need to just have an activity selection screen for each user
+
+next - add another user. 
+
+saving users - finish this by tonight, and you should be able to work on it without internet for a while 
+(finished by sunday?) you want the basics finished by sunday. 
+loading and saving - save a list of all user accounts, and load the list first. then, load all accounts on the list. 
+how to work this? first, check for the file. if the file doesn't exist, create it. then, overwrite it in following sequences. 
+
+saving users seems to be mostly working, just need to delete the extra user added each time you restart. 
+	saving is done - what next? the x-s on the button - have a sub-button search for each button, when the overall button is 
+	pressed, the sub-button search gets triggered, and then either the major button or the x gets triggered. 
+	keep this inside the button itself, so you don't have to mess around with searching up other buttons or masking them/w.e. 
+or, have a more generic overlay option, that you can select from, that somehow masks the rest of the buttons while it is active. 
+
+have a generic user that you define a bunch of historical data for (example_user), and use them in the tutorial/readme
+a drawing pad, that you can design a custom icon with (3 colors, 200x200 pixels or whatever)  
+charting options: bar chart, goals, etc. (goal surpassed)
+keep in mind the eventual goal of this is to re-use the code as the main menu for a game. 
+
+the x button - you want to remove stuff from the menu using the x-button.
+check within the button first, to see if the x was pressed. (done)
+now, need to set the close button to be optional, and pop up the confirmation button when its pressed. (done)
+for the confirmation screen, do you want to pop up a whole new menu? might as well, because its simpler
+
+got user deletion and saving working, now, just need to add the activity screen, charts, and timed activity, and you'll be done!
+need to add button subtexts, max text sizes, and change the user name to something else like activityGroup or something	
+
+activities:
+first, switch to the activity screen using load user or create new user. 
+come up with a new name, instead of "user", maybe "activity group", 
+create the test user, many activities (and side bar also). 
+a different user activity object for each user? how to handle the user screens? 
+also, what kind of activities will you have? 
+1) timed activity, 2) simple activity (2+ sets) 
+need an edit button as well
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

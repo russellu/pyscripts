@@ -1,0 +1,46 @@
+app idea
+
+maslow's hierarchy of needs
+
+homeostasis: food, water, sleep, shelter, sex
+safety: personal, emotional, and financial security, health and well being, accidents/illnesses
+social belonging: friendships, family, intimicy
+
+weather app
+stock, gps, games, workout, podcast, free music, scanner, news, photo editing, fitness, keto, maps, 
+hurricane tracker, fortnite item tracker, stats tracker
+
+betting odds tracker?
+
+a trivia game, world geography, what else? 
+flags, capitals, famous people, sports? 
+
+try to use some of these datasets to create a trivia game
+
+app ideas
+
+games - simple games like the sphere or rainbow puke could be easily made 
+games - simple games like ant colony digging, or dungeon keeper type games
+
+	try to make a simple dungeon keeper type game, this is ideal for mobile
+
+start with a scrollable map that you can select quads from to destroy. then add the imps 
+just a bunch of cubes that you can select with a touch. 
+
+goals for today: proper lighting, uv, and be able to select individual cubes and add many cubes in multiple meshes
+test the limits of the android device for # cubes with textures
+
+each tile is a cube with textures. you can create the tilemap so that it looks continuous from one part of the cube to another
+
+most basic thing to start with: a floor with a tile of cubes, you select the cubes to remove them and reveal the floor.
+use the same type of camera ask dungeon keeper uses, ie almost top down, but you can rotate and zoom. 
+
+
+
+
+
+
+
+
+
+

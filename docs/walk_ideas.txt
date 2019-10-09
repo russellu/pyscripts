@@ -1,0 +1,4 @@
+walk_ideas
+
+1) blowing people's mind with the BOLD explanation - go from swi to vein to low resolution to functional
+2) using eye tracking to define attentions through brain rhythms and reaction to stimuli - new experiments and a ground truth for brain rhythms

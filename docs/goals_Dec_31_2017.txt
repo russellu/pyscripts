@@ -1,0 +1,69 @@
+goals by 2018 
+ULTIMATE GOAL = be completely self supported, by your online mobile app business, by the time you graduate your phd. 
+to do this, you will have to be making 40-50$ per day minimum. 	
+you want to write a minimum of 1000 lines per day (text and code combined) 
+another way to phrase this: you want to be making more from your online business than through your phd salary by the time you graduate
+IMEKA - talk to the person there about starting a business. 
+
+what do you want to have accomplished by 2018?
+
+-------fitness/health------
+cardio: rowing 20 minutes > 1100cal/hr (400 calories in 20 minutes)
+lifts: bench press 225x10, military press 155x10, 30 chinups, 30 single-legged squats, 50 incline situps
+weight ~180, lose body fat, gain muscle
+marijuana/alcohol - avoid entirely (by December 31, it will be 6 months no weed, you should have recovered completely by then)
+	see how you feel on no weed? remember how much you accomplished before you started smoking again - its like night and day
+	you accomplish literally 3-5x as much when you don't smoke weed. just keep that in mind whenever you get the urge to smoke. 
+	all those ideas you thought up when you were high, they basically went up in smoke. 
+meditation/yoga? nah...instead of meditating 20 minutes a day, focus on the think and grow rich idea 20 minutes a day or 10 minutes
+supplements - try alpha brain, get green supplements as a bare minimum 
+diet - avoid eating out so much. intermittent fasting (don't eat till 2pm minimum), buy only healthy stuff at the grocery, avoid bread
+clean your room and wash your clothes, get some better outfits, look sharp, keep clean, smell good, basic stuff etc 
+clean your car and get it checked out in november (5 months from now) 
+avoid blasting your ears, or putting point objects in your ears, picking your nose, scratching your head, etc, all these bad habits 
+
+-------hobbies--------
+rpg game 
+	re-work physics engine for collision detection - still getting the occasional crash, and not sure why, also, the fact that
+	its still crashing when you have tons of quick fixes and crappy patch ups is a bad sign that it needs to be re-worked
+	for the game - maybe once the physics engine is working properly, just concentrate on making a very simple hack and slash
+	points gaining game, instead of a more complicated RPG 	
+forex game (put adds, or sell it straight up (easier just to sell probably, just put a price on it and sell it straight up)
+	things to finish for this: 
+	major fixes: test it on another platform (ie, on an emulator) to make sure it works as it should on different screens
+	fix the account loading/saving bug - doesn't always load/save properly, ie, it doesn't properly save the account as it should
+	maybe switch to a completely text based loading/saving scheme, so there's no confusion with the objects? 
+	add an indicator - simple moving average should be fine. 
+	mostly just fix the loading/saving bug, and then put it online for a fixed price (5$?) 
+another misc app (to practice making money from adds, and work on your interface) 
+	maybe just a random game with fancy buttons? or some kind of image based game..
+	an agenda type timer app - you can add custom activities, with custom icons, and create a list that allows you to save your
+	time and score for each iteration of that activity. then it also gives you stats and stuff by "averaging each activity" and
+	plotting your progress. 
+	progress tracker - create arbitrary icons, average them, and track them over time 
+think and grow rich - re-read, and practice what it says to accomplish your goals
+	ie, fix in your mind an image of what you want to become, and spend 20 minutes per day focusing on that image. 
+website - start posting your apps and science stuff on your website - articles, and apps, and photos, start learning some web prog.
+
+-------financial--------
+5k in the bank, all debts paid off, clean credit card. 
+be making money off of you google play account - release the forex app, sell it for 1.99 or something (won't ma	ke much but first step)
+done - app released...now we wait. 4.99 to play, probably won't get very many downloads but w.e, its just a test. got the first app
+released. 
+
+release a free version of forexprice action: disable timeslot, currency, and news events, release just one currency
+put your app on the amazon app store as well
+
+another algorithmic trading app? 
+--------work/science--------
+structure paper published (submitted by august)
+	right now at 1373 words, methods are 1/2 done (Another 500 words), results are 2/3 done, still have to write introduction
+	and discussion and add references. should have a rough draft for kevin by next tuesday-wednesday.
+	
+coupling paper submitted by december, and submitted to ISMRM (Dave+your own results)
+	denoise Dave's data (work on the gradient subtraction algorithm some more) - and compute the same results as you did for 
+	your own data (source localize, coupling in each voxel, etc). 
+at work - avoid WASTING so much time on POINTLESS shit ie conor mcgregor vs floyd mayweather, bodybuilding forum, facebook, etc. 
+	at the bare minimum, instead of focusing on that shit just read some wikipedia articles or something about web design. 
+today: finish all the results (Get the actual numbers) and finish the figure 1 also. (design and finish). 	
+

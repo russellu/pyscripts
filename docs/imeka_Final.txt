@@ -1,0 +1,11 @@
+final version:
+
+tractography color change bug
+icon
+google play
+left/right hemisphere bugs
+put the button down sensor on sidebar icons as well. 
+an auto-rotate button that rotates around in x, y, and z dimensions 
+a button to hide all tracks 
+add a zoom button for desktop
+add icons 

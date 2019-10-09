@@ -1,0 +1,136 @@
+game
+
+first task: get sprite sheets working. see how many you can draw, how fast,
+and how much space they take up.
+
+space: 256 kb for a 512*512 = 64 animations with 64 pixels
+make it 32x32 => 256*256, 16 animations = very small
+
+speed: fast - 40*40 textures (1600), at around 50fps.
+framerate shouldn't be a problem. detecting and resolving collisions was
+always the bottleneck, however. and getting the normals 
+
+next - collisions of sprites. make many different objects. rectangles, 
+circles, and cubes. and some irregular shapes. 
+	first get the rectangular box collision working, then get pixel perfect	
+
+use unity 2d physics engine - approximate 
+
+first step - use a polygon collider and make two objects collide
+
+by the end of today - a walking, attacking sprite that can generate collisions with 
+other sprites. 
+
+test a bouncy ball pen like you had before in android. 
+
+tomorrow - test squares that you can control - see if collisions work properly 
+
+basic problem - make a sword swinging animation, and have the collisions function 
+according to the instantaneous velocity of the object 
+	update the weapon's instantaneous velocity with saved values. 
+
+using the polygon collider on tile sprites..switch the collider and renderer at runtime?
+	create an array in startup, or just swap dynamically (test fps). 
+
+	the simplest attack animation - a horizontal bar moving upwards or towards the
+	object you want to hit. 
+
+	save the object's instantaneous velocity (0,1) and then rotate it according to
+	the sprite's rotation. then update the speed of the sprite before the collision 
+	occurs (or every frame before any collision has time to occur) 
+
+	simple framework: a sphere or square for a body, and a moving bar for a weapon. 
+	should be easily generalizable to your other sprites. 
+
+	carry the weapon around when you walk, and keep the body when you move the sprite
+	the weapon and the body (and the shield eventually) will always be on different
+	sprite sheets, even when not attacking. 
+
+tomorrow - sprite collisions working with weapons. (done)
+now, get the controls working for phone. landscape mode, with move on left and attack on right. 
+
+make a class that updates all this stuff automatically (done) 
+	collisions are kind of working, but the velocity isn't being applied properly (ie, the sprite has no velocity) 
+		work on this later.
+
+by the end of the week - have a character who can run around, slick controls, hit stuff, get hit by stuff, and battle another character in a simple 1v1. 
+	first - slick controls 1) place the two pads in the bottom left and right quadrants respectivel, and control the player 
+	2) place the pads based on the user's hand touch
+
+by tonight: control a sprite idle, running, and stabbing (on the phone) 
+
+controls - how should they work?
+	check the dungeon hunter controls for inspiration.f
+
+dungeon hunter - basic controls - move pad distance from center speed, attack overwrites the motion (but doesn't move the player or rotate) 
+
+you can always overwrite the motion with the 
+
+what is the simplest way to capture this functionality?
+
+assign a touch to attack pad and movement pad. 
+a boolean value for attackpaddown and movementpaddown
+remove the control class for now, to make things simpler (Add it back later) 
+
+first step: make it so the attack pad doesn't change the orientation
+
+how is this gonna work?
+
+take a simple case: you start moving with the motion pad, and then you attack. you want the movement to stop, and the attack to continue in the same direction
+that the person is currently facing. 
+
+starting with motion and moving to attack works, but starting with attack and moving to motion doesn't. 
+
+character does not move after the attack pad has been lifted, when starting with attack. 
+after starting with the attack pad, lifting the attack pad, and then putting down the attack pad, it no longer rotates properly with the motion pad.
+starts with attack pad=0
+
+so basically the problem is that touch 2 stays as touch 2 and doesn't get downgraded to touch 1. (done)
+
+motion seems to be working well. try to make the code more concise and encapsulated though.
+	also, create a second mouse/keyboard control where you control with the keys and attack/rotate with the mouse (for easier testing)
+		once this is done, good to start working on sprites. 
+	also, create repo and push existing code
+how should the test controls work? keyboard + mouse on attack pad
+actually, just use the mouse on the control pad, and the space bar to attack
+
+step 1: encapsulate controls, step 2 set up second type of controls
+
+
+next step 
+streamlining the sprite editor - its kind of slow right now 
+	some improvements: use the mouse click to label stuff, right click and left click
+	when making the sprite - fix the phone in place using tape or something, and do background subtraction. you can probably do this yourself, and use a video
+	editor later to segment it. for now just work with the sprites that you have. 
+
+tomorrow - after angelina, before alex's EEG - get a bunch of sprites (Enough for a primitive game) 
+next on the agenda - make the collisions actually have some velocity. 
+
+some simple types of creatures
+zombies
+skeletons
+werewolf
+orc 
+ogre
+monkey (gorilla)
+bear (wolf) 
+
+weapons 
+club, staff, axe, sword, 2-handed sword, sword+shield, mace, maul, dual wielding 
+running, jumping, walking, idle, back jump (dodge)
+
+terrains - need a way to make the terrains match the objects that you will be placing on them - cartoonish segmentation
+
+level making - draw over top the images? what kind of level design are we looking at anyways - big open spaces, or small dungeon crawling type levels? 
+how to quickly and easily design levels?
+
+character creation - wearing different colored clothes - go to estrie aide and get a shirt, pants, hat, gloves, and shoes. 
+
+
+
+
+
+
+
+
+

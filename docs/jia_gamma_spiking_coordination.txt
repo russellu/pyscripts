@@ -1,0 +1,36 @@
+gamma and the coordination of spiking in V1
+summary: gamma components of the local field potential are elevated during cognitive and perceptual processes. it
+has been suggested that gamma power indicates the strength of neuronal population synchrony, which influences the
+relaying of signals between cortical areas. however, the relationship between coordinated spiking activity and gamma
+remains unclear, and the influence on corticocortical signaling largely untested. these issues were investigated
+by recording from areas in v1 and v2 of anesthetized monkeys. they found that visual stimuli which induce a strong
+coherent gamma rhythm result in enhanced pairwise and higher order V1 synchrony. this is associated with stronger 
+coupling of v1-v2 spiking activity, in a retinotopicall specific manner. coupling is more strongly related to the
+gamma modulation of V1 firing than to the downstream V2 rhythm. these results show that elevated gamma power is 
+associated with stronger coordination of spiking activity both within and between cortical areas. 
+introduction: gamma band activity has been proposed to be an important coding mechanism in the brain. one suggestion
+posits that gamma band spiking activity links the distributed representation of sensory stimulation with a cortical
+area. under this view, the coordination of ensemble spiking activity in the gamma band leads to more effective drive
+to downstream networks. a related but distinct proposal is that gamma routes signals between neuronal populations,
+particularly those in distinct cortical areas. the communication through coherence proposal suggests that the 
+efficacy of synaptic input to a target area can be modulated by its timing relative to the phase of the local gamma
+cycle, so efficacy should be maximal for inputs arriving at a gamma phase when inhibition is weakest relative to
+excitation in the target area. 
+early studies in the visual cortex focused on spiking activity and provided evidence both for and against the 
+modulation of spiking activity by the gamma rhythm. recent studies have used gamma power in the LFP and the coupling
+between the LFP and spiking activity as a potentially more sensitive measure of shared, weak fluctuations in a 
+distributed neuronal population. however, how altered LFP measurements reflect the temporal coordination of spiking
+responses in a distributed neuronal population remains unclear. because only a small fraction of LFP power is in 
+the gamma band, altered gamma power or LFP-spike coupling may not indicate a substantial change in spike-timing
+coordination. further, neurons in a distributed population may have different phase relationships to gamma or be 
+modulated in different epochs, reducing ensemble coordination. since spikes relay signals between networks, it is 
+necessary to understand how LFP-based measurements are related to the coordination of spiking activity in a 
+distributed neuronal ensemble. a second issue is whether gamma coordination can be significant enough to to affect
+the relaying of signals to distant networks. cortical recordings have shown conditions under which interareal 
+field-field or spike-field coordination is elevated, but how this is reflected in the coordination of population 
+spiking responses in distinct cortical areas is largely unknown, as is the relative importance of gamma fluctuations
+in the source and target areas. 
+
+
+discussion: spiking activity was more coordinated on trials with higher gamma power, although no differences in 
+rate were apparent. 

@@ -1,0 +1,4 @@
+martin_question
+describe how dynamic contrast enhanced MRI and how it can be used to assess bbb in human participants
+describe how ultrasound and two-photon fluorescence microscopy can be combined for visualizing changes in BBB integ.
+what are some of the health complications associated with a leaky BBB? 

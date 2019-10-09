@@ -1,0 +1,27 @@
+a practical guide to robust GABA detection in the human brain by j-difference spectroscopy using a standard volume coil
+abstract: GABA is the major inhibitory neurotransmitter in the human brain and has been implicated in several neurpsychiatric
+disorders. in vivo human gaba concentrations are near the detection limit using MRS (1mM), and overlap with more abundant 
+compounds, therefore spectral editing is generally necessary to detect GABA. in previous reports, GABA spectra detected by 
+j-difference spectroscopy vary considerably in appearance. the factors that affect GABA spectra and the conditions necessary for
+for robust acquisition of j-difference spectra from arbitrary brain regions has been evaluated.  variations in spectral quality
+can be explained in part by the incoherent addition of transients that results from shot to shot frequency and phase variations.
+an automated time-domain spectral alignment strategy that enables the reproducible acquisition of high-quality gaba spectra at 3t
+with a standard 30cm T/R volume coil is presented. representative GABA spectra from human frontal lobe, an area where susceptibility
+induced frequency and pase variations are especially troublesome, are presented, demonstrating the robustness of the acquisition
+and data handling strategy. 
+
+introduction: routine detection and robust quantification are complicated by overlapping co-resonant peaks including creatine
+and the macromolecular resonances. direct quantification of gaba therefore is generally not feasible. additional methods such 
+as spectral editing have been proposed, which explot j-coupling of GABA C-4 resonance of interest at 3.01 ppm to the GABA c-3
+protons at 1.91 ppm. j-difference editing or multiple quantum filters can be used, j-difference spectroscopy is inherently more 
+sensitive to experimental factors such as instrument instability or physiologicall induced frequency and phase variations, than
+single shot methods. these experimental imperfections also result in cumulative errors that diminish the advantage of coherent 
+averaging. even with surface coils, studies typically require hundreds of acquisitions. this article outlines the practical 
+requirements for reproducible acquisition of high-quality data consistent with known features of the GABA spin system from a 
+standard 3T research scanner. in addition to the needs of accurate timing and adequate crusher gradient areas, the importance
+of acquiring independent phase-cycled shots and implementing an adequate post-processing strategy to minimize the impact of 
+frequency and phase variations is emphasized. it is shown that some part of the broad component at 3.01 ppm that is typically 
+attributed to co-edited macromolecules is suppressed with this approach, suggesting this contamination is partly an avoidable
+consequence of incoherent average. 
+
+theory: 

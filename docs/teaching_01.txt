@@ -1,0 +1,6 @@
+3 things for the courses
+
+1) timing- start at 11:31, end at 12:19. start at 12:31, end at 1:19. 
+2) bullet points - talk to match your bullet points - bullet points appear as you talk
+3) look at the class while you talk
+4) don't get lazy - demonstrations in numpy are fine, but whenever you can, present the core theory instead. 

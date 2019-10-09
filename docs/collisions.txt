@@ -1,0 +1,35 @@
+weaponNoWeapon.size() is too small
+weaponNoWeapon is still the previous sprite's array? and now its on the new sprite which has a larger number of points?
+
+
+basic version of weapon collisions is working now, and it works pretty well. 
+some things to do: 
+	1) need to reduce the number of points on the weapon (speed it up, right now it has like 600)
+	2) change the collision part so that it actually only hurts at certain points on the weapon (ie if the guy gets
+	hit by the side of the weapon it shouldn't hurt or should hurt much less). DONE
+	3) add some animations showing where the collision took place (a 'BLAM' or whatever animation) 
+		this will also show when the weapon is hitting something or when its just colliding with a normal body (DONE)
+	4) make it so when the rigid body detects the collision, the same calculation is carried out as when the character
+	detects the collision (STILL NEEDS TO BE DONE)
+	5) when a collision is detected, you want to use the normals on the weapon, so you will have to save a batch of
+	normals for each point on the enlarged weapon indices and then use that to index the normal of that particular
+	weapon point - STILL NEEDS TO BE DONE (BIGGEST PROBLEM)
+	6) have the "active indices" working so it only does a weapon collision when the weapon is active so to speak
+	7) add more animations (2-3 more weapon animations) 
+	8) add a target so you can see where you are attacking DONE(KINDA)
+
+WHY is it not updating the crosshair when you move the controls?? 
+
+next things to do: 
+landscape
+attack button (don't control orientation with attack, but control attack type) 
+	=> you can also place some other buttons around the main attack icon 
+
+adding more stuff to the attacks...once you get the attack pad working, with 3 different types of attack, and test the new
+rotation scheme (make it more like dungeon quest, where the movement controls the orientation and the attack controls
+only the attack type/special ability) and the pull-back should be to enter guard mode (so the sprite blocks more often)
+once this is all working, you can go back to fixing the attack indices, and the weapon collisions. 
+
+by the end of this, you should have the controls AND the attack animations all pretty much set in stone. 
+goal is to have this done by the end of february, then you can start creating real content.
+the first content to create will be adding another character and having battles (Actually this is an extension of controls)

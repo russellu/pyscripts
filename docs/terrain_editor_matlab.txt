@@ -1,0 +1,4 @@
+terrain editor 
+terrain editor for matlab (create a new github project as well) 
+
+you want to create cartoon-like looking levels, with realistic morphology however (ie, based on real images, but fake colors/contours)

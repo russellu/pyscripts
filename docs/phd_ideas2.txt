@@ -1,0 +1,66 @@
+phd_ideas
+
+idea #1: structural basis of EEG power variability - all frequencies 0-100Hz (specifically, gamma and alpha/beta and possibly theta)
+	this has to be >= 1/2 of the acquisition. ideally, an experiment before the scan using the eye tracker, 40 minutes of
+data acquisition withint the scanner (simultaneous EEG-FMRI retinotopy) and an experiment before/after the scan during the
+resting state. 
+
+you want to have all the data available to infer things about subjects based on their out of scan resting state EEG alone.
+so basically, you need resting state inside/outside the scanner, and a more specific mapping paradigm, also inside/outside the  
+scanner (retinotopy). 
+
+then, using out of scanner data only, try to reconstruct functional/structural measures derived from FMRI based on EEG alone. 
+so 20 minutes EEG before, 35 minutes retinotopy during, and then a continuous stimulation and a resting state inside the scanner
+to examine coupling during stimulation and rest. (10 minutes for both - use a fast multiband sequence with decent resolution). 
+
+if you can get 35 minutes of retinotopy, that should be pretty good SNR for the wedge. rotate both ways, and then combine
+
+alternating eccentricity to control gamma peak frequency - effects on the BOLD response. 
+
+a task inside the scanner - systematic motion, to see the effects of inside the scanner motion on gamma band activity
+a discrimination task before the scan, outside the scanner only. how to distinguish between two populations
+for OHBM poster - add more stats, like cortical surface area, cortical thickness, etc
+
+cortico-cortical and cortico-thalamic coupling as a function of state
+
+alpha-bold coupling to investigate structural basis of alpha? where do you see strongest coupling with BOLD-FMRI, and how is that
+related to each subject's individual alpha rhythm. 
+
+you want to solve the riddle of the components - all the components have different spectral signatures and spatial maps, can you 
+explain their origin, in order to infer things about subjects with strange or bad components. 
+
+you want to use coupling to infer anatomical or hemodynamic parameters from EEG data alone
+
+what about controlling peak frequency on an intra-subject level? you can do that with contrast, but what is the functional analog? 
+an FMRI response to reduced contrast is probably just a decreased %change in the same voxels as before. 
+
+two basic experiments: coupling, and retinotopy. you need at least 30 minutes of retinotopy to ensure adequate SNR. 
+for the coupling, you want to do 30 minutes 10 minutes each of continuous stimulation, baseline, and eyes closed. (rotating grating
+for the continuous gamma stimulations). compare the coupling during continuous, eyes closed, and resting eyes open. 
+
+gradient denoising: take gradients in proximity which are similar to the gradient you are currently subtracting, average this diff
+across many electrodes and select top % for subtraction. use squared weighting for subtraction indices (probably doesn't matter)
+seems to give the strongest gamma you've seen yet. 
+bcg denoising: what about a non-local means denoising that uses spatial information? a spatial NLM that subtracts mean of similar 
+spatial patterns (based on the frequency range of interest) 
+
+another paper - based on the denoising (if spatial BCG works) - spatial nlm bcg subtraction and selective gradient artifact 
+subtraction yields high quality gamma acquired simultaneously with multiband BOLD
+doesn't seem to work so well - is there a reason this type of spatial correlation wouldn't go well? 
+
+temporal nlm, but again, combining the indices from all channels simultaneously to select the epoch to subtract (anything else
+seems to mess up the data). 
+temporal nlm seems to work better, also, it seems to work better the more you reduce your comparison window size.
+
+
+
+
+
+
+
+
+
+
+
+
+

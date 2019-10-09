@@ -1,0 +1,10 @@
+networking goals: 500+ connections by christmas (40 days) -> 8 new connections per day
+	-> this will take around 45 minutes of time per day spent on networking 
+
+work on elevator pitch (3 seconds max) 
+
+use tips from the TCS including:
+1) personal compliments
+2) treat as colleagure, someone you want to work with, exchange value
+3) compliment their work
+4) ask for informational interview, then get referral at end

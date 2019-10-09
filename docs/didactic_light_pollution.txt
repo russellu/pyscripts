@@ -1,0 +1,48 @@
+didactic_light_pollution
+
+topic: 
+effects of light pollution on animal physiology
+
+intro:
+circadian rhythm
+endogenous melatonin (indolamine melatonin, which is a neurotransmitter)
+	first isolated from the bovine pineal gland, structure highly conserved across taxa
+	circulating concentrations vary throughout 24h cycle, highest during dark, seasonal shifts
+	melatonin - also a amphiphilic antioxidant
+	
+control of CR - how is it linked to light?
+	exposure to LAN reduces melatonin, immune function significantly lowered in quail
+
+cricket interpretation - we are in a deficit, so melatonin treatment may be effective in humans 
+melatonin - THE HORMONE OF DARKNESS 
+
+papers:
+
+no effect on oxidative status 
+fecundity in drosophila
+light pollution affects behavior sleep physiology
+
+today: understand circadian rhythm and how it is linked to light 
+finish the first paper (crickets + melatonin methods + intro), finish another paper on the effects of light pollution (in humans) 
+
+final paper: 
+Let there be no light: The effect of bedside light on sleep quality and background electroencephalographic rhythms
+
+so you will have 3 articles to critique, and the meta analysis to start it off. 
+show wikipedia LX chart 
+
+melatonin an anti-oxidant -> relationship to cancer incidence and light pollution? 
+invent a question: what is melatonin, how is it produced/regulated by the brain/environment, and how are effects of light pollution mediated by it?
+
+today: finish null result article, and make a critique slide for each article that you have 
+finish the global change article 
+re-read all your slides, and create outline
+put together a presentation based on the outline and images. 
+
+
+
+
+
+
+
+

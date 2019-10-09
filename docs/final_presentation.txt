@@ -1,0 +1,7 @@
+final presentation
+
+1) merge 25 and 26 (break in presentation)
+2) remove synchrony, add a better figure
+3) put kerkoerle and others in supplementary
+4) switch order of a and b in slide 48
+5) slide 51 have a better conclusion for the alpha-BOLD coupling and a better transition from 1 to 2 

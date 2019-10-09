@@ -1,0 +1,53 @@
+denoising_paper - with future subjects, or with current subjects - 
+
+more ways to improve the denoising: right now, its the best its ever been - but how to improve it further?
+use all electrodes for the mean difference comparison? 
+use a smaller/larger window size for the subtraction window?
+use a smaller increment for the advance window? (doesn't seem to help) 
+use more/less averages for the subtraction? (less seems more optimal, around 20)
+
+try a comparison to the outside scanner data - 
+
+is there a way to combine reconstructed time series from two different ICA filtering approaches? 
+IE, filter in low, reconstruct time series, and filter in high, and reconstruct time series based on that? 
+
+serotonin dominance hierarchy
+
+steps to dominance:
+1) denoise the data completely - remove gradient, BCG, and all else using ICA. back-project non-noise alpha components
+	display all components from a single subject - power spectrum and topoplot - remove based on power spectrum and topoplot
+	sort with "good" and "bad" component labels (bcg power spectrum, etc). 
+
+2) compute head model and sources in brainstorm, spontaneous source localization and MNE 
+
+more gamma during head motion due to poor artifact subtraction?
+
+removing residuals using min-differences post sliding average subtraction? seems like it could help in some cases, to remove 
+the extra peaks left over after the sliding average (which doesn't work well in instances where there's rapid head motion or start/stop
+scan effects?
+
+building up the average artifact from the top x artifacts? (fitting an artifact based on other artifacts?) 
+
+
+problem: low frequencies get subtracted out too much, high frequencies don't get subtracted out enough.
+how to address this issue with average artifact subtraction? essentially, average artifact subtraction is imperfect because of the
+frequency specific response to averaging, ie, averaging artifacts over a longer time stretch doesn't reduce the high frequency content
+of the artifact as much, while averaging over a smaller time period reduces the low frequency artifact completely, ie, it somehow
+creates a notch filtering effect in the power spectrum - you should check brainvision frequency resolution first, to make sure the
+effects you're observing are not just due to your own denoising procedure (99% sure they will be in BV also). 
+can you subtract the artifacts in a different space? like frequency space? 
+it should be possible to completely remove the artifact...but aas is an imperfect technique obviously 
+
+frequency specific averaging windows? ie, when subtracting from higher frequencies, use a shorter averaging window, when subtracting
+from lower frequencies, use a longer averaging window? you will have to make sure you can actually perform that kind of fft filtering
+on the signal, in order to make sure signals are identical when you average at different frequencies 
+
+subtracting residual gradient artifact - mean difference across all epochs, sort and take top mean differences, subtract their mean
+from signal 
+spatial ICA -  to compare BCG and FMRI components? also, spatial ICA to remove noise from eeg recordings. 
+
+testing source localized global signal vs BOLD global signal - which correlates best with which? 
+check how functional connectivity and coupling are correlated within voxels? 
+
+
+

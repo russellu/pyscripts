@@ -1,0 +1,14 @@
+new_strategy: 
+
+new strategy: buy the dips, sell the peaks, sort them into the lowest and highest possible bins, and then take the n bins from the
+top and bottom, and use those
+
+next step: get the threshold, and then run it through a simulation using the threshold - see if it gives the same result
+(results will be slightly different obviously, because their are duplicate trades in the original, but it should be roughly
+the same. if all is good, then repeat it in java eclipse, and finally, in dukascopy. forward test in dukascopy, then demo for 2
+months, and if all goes well, go live. 
+
+step 1: build a strategy that works, ie, find some attribute of the market that makes it predictable 
+step 2: simulate the strategy using real time trading 
+	simulating the strategy: just try to run it through, if it doesn't work, try to get the previous results first
+

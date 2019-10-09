@@ -1,0 +1,26 @@
+protrader:
+
+interactive brokers
+wedbush
+dorman
+cannon trading
+ninjatrader brokerage
+direct FX
+DeCarley Trading
+TradePro
+GFF Brokers
+oanda
+fxcm
+lmax
+fxmtf
+
+dukascopy europe
+dukasopy japan
+MT Bank
+Moscow Industrial Bank
+Blue Orange Bank
+vPE Bank AG
+AFT FX
+Forex FS
+NSFX
+Atom 8

@@ -1,0 +1,16 @@
+resume: neuralink wants people who have a strong history of working on projects that are successful, as well as a code base on github
+you need to prove that your projects are a) important b) successful and c) technically demanding with the skills that they covet
+start collecting all your code from your various projects and put that on github 
+(unity game, android game, matlab, python, etc)
+list of all coding projects you have worked on/completed:
+
+1) forex demo trading game (java) 
+2) forex brain trainer (c#) 
+3) fiber visualization app (c#, opengl) 
+4) bcg denoising (numpy) 
+5) UTE electrode segmentation (matlab) 
+6) PhD work: (matlab, numpy), neurovascular coupling and TF decompositions 
+
+frame yourself as someone who gets shit done fast and well. a strong history of completing complex coding projects while simultaneouly
+conducting ground-breaking neurophysiological research. 
+

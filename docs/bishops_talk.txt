@@ -1,0 +1,347 @@
+bishops talk
+
+main concepts to convey: 
+
+preference will be give to candidates whose research and teaching support data science development at bishops
+successful candidate will be expected to particpate in teaching at undergrad and graduate, and lead independent research
+program and submit funding proposals to relevant agencies at provincial and federal levels
+
+begin presentation with personal background, mentioning what you can bring to the position and the university 
+you cannot be over-prepared. make a video and rehearse. 
+
+sample teaching - they may be interested in seeing how you engage with students
+
+sit-down interview questions:
+
+1) why are you interested in this position?
+	a) i want the opportunity to continue my research, but develop my own lab and follow my own research agenda	
+		i see the opportunity to bring different faculties together synergistically, for the benefit of all
+	b) i enjoy the culture and personalities at bishops, i enjoyed my 4 years here, got along well with all profs,
+		i believe i would fit in well and could have a long productive career
+	c) i see teaching as a way to continually expand my own domain of expertise and enhance my research, and i believe
+		i have a lot to offer, as someone who came to computer science from a non-technical background
+		i have an innate curiousity about computer science concepts and theory 
+
+2) which of our courses do you want to teach?
+	a) i would be happy to teach any of the introductory courses (data science, intro to programming, intro to compsci)
+	b) i'm also a very hands on person, and would like to create/revive a new course (machine learning/AI)
+	c) i would also be happy to teach either of the app courses, computer vision, 
+	d) big data courses, either with a cluster or an online cluster like amazon web services 
+
+3) discuss a time you had a conflict with a supervisor or colleague
+	i am very conflict averse, so the instances are rare. 
+	i tend to get annoyed when people take up too much of my time/space without offering anything in return 
+	one time a guy annoyed me so much i had to block him on facebook
+
+4) how does your knowledge and experience prepare you for this position?
+	1) i have been performing data science type work for the past 5 years. i consider myself an expert in numpy and matlab
+	2) i have an undergraduate degree from bishops with a concentration on many of the core courses, i learned from the best
+	
+5) talk a bit about the theory that guides your practice and the authors who influence your work
+	1) give clear notes, lots of examples, and challenging homework assignments
+	2) i learned from a variety of profs at bishops, jensen/layachi clear notes and lectures, bruda/vouliouris tough assignments 
+		
+6) do you have any questions for us?
+	computing resources - clusters, etc 
+	what happens during the summer? research focused, or time off?
+	possibility of internal grants? 
+	is there any interest in purchasing cloud computing or computing clusters, collaborating with physics/environmental science? 
+	how much collaboration is currently going on between compsci and psychology/business/exercise science departments?
+	which courses do you need profs for most at the moment? 
+	what is the vision for the department over the next 10 years? how many of the new MSC students do research?
+	ask to see a lab or workspace, ask if they have a research office, for help writing grants etc 
+	how do decisions about which course to offer get made? 
+	how would you describe the culture? 
+	what are the biggest challenges/obstacles currently?	
+	What are the students like here?
+	(Older faculty) How has the department changed since you’ve been here?
+	(Younger and mid-career faculty) What was the tenure process like for you?
+	How much do people collaborate here?
+	How is the [insert resource you need for your research — subject pool, fMRI facility, whatever]?
+	What new directions or initiatives is the area/department/university moving toward right now?
+	What’s your favorite thing about living in this town? What do people do for fun around here?
+	how often do you go out for beer? 
+	is it considered strange to stay late? 
+
+
+
+
+from reddit:
+1) why did you apply here? why would you be a good fit?
+	i applied here for three reasons
+	1) i have a lot to offer with respect to research and data science collaborations, but i also want to start my own lab and be more independent
+	2) i see bishops as an ideal environment due to proximity, collegiality, and family ties
+	3) i have a lot of experience handling large datasets, in particular medical imaging dataset, and writing vectorized code in matlab/python 
+
+2) what would you need to get started? 
+	1) around 10000$ and a small room 
+	2) OR, if a computing cluster exists, i could get started on online databases
+	3) OR if allowed to i could collaborate more with USherbrooke to start while waiting on grants 
+
+3) what sources of funding would you target?
+	NSERC discovery grant (25-40k/year) to start, student scholarships, eventually CIHR once i have some pilot data, and companies like fitbit
+	
+4) what would your initial graduate projects focus on?
+	building up the infrastructure for low cost experiments, creating open source code repositories (a lot of hardware has proprietary software)
+	validating and testing the equipment
+	performing cutting edge neuroimaging research on publically available datasets 
+
+5) what are your teaching interests, what courses would you build
+	machine learning and AI, game design, app design
+	i would build a hybrid game/app design course using unity, for creating AR and VR games (as well as ordinary games)
+		this could then later be merged with eyetracking and 	
+
+6) specific questions relating to proposal in terms of impact/funding etc
+7) philosophy on graduate student mentorship?
+	maximal independence, but keep them on track with deadlines and goals, ie by x date have y accomplished. if they exceed expectations so much the better
+	never write code for someone trying to learn to code, or at least, do so sparingly 
+8) what tools would you implement in the classroom?
+	hands on combined with blackboard - theory + implementation
+	i think the classroom is mainly for theory, and opening up new concepts. the lab/assignments are for writing code 
+	ie, the goal should be to blow their minds every time you give a lecture, and then have them go home to meditate on what they've learned 
+
+9) what strategies would you take to ensure you get funding from x agency?
+	collaborate with researchers from the CHUS, target important diseases and disorders, acquire pilot data, proof of concept 
+	
+10) tell us about a conflict you had with a student and how it was resolved?
+	blocked francois on facebook 
+
+questions i can ask:
+1) what is the vision for the department for the next 10 years?
+2) what is the expected teaching load for new faculty?
+
+make your answers short and to the point (no rambling)
+give a solid, compelling talk - practice practice practice!
+do your research, don't ask about anything you can find online
+go over your notes in the bathroom, before each new phase of the interview day
+DO NOT TOUCH YOUR PHONE - turn it off and leave it off
+
+treat every single person you encounter as a member of the search committee 
+
+memorize key points, convey congeniality, that you've done homework about position and insitution, and the
+potential contributions you can make based on your unique knowledge/skills/experience and ability to secure funding
+
+treat the in-between like informal interviews. do your research so you can make informed small talk. read key publications of hiring
+members, scour university and faculty websites for their mission, vision, tradition, and long-range plans. be ready to say how you can
+achieve the goals of the faculty and university. 
+
+will probably be asked to outline your first grant 
+	outline first grant: NSERC discovery grant - cardiac imaging combined with high density electrophysiology 
+
+they will ask about your research agenda, how will you proceed over the next 5-10 years, etc
+	FMRI questions - resting state networks, EPI imaging, etc 
+
+
+
+meeting with head of dpt:
+ask about internal funding, what balance is expected in terms of teaching/research/admin
+
+always have questions to ask, and tailor them to who you are talking to
+-do they work collaboratively, what are expectations for tenure, research/teaching expectations
+-ask targeted questions relating to the work they do ie 'i see that your work is in x, can you tell me more about that?'
+	-show that you have interest in learning about your colleagues and the school 
+
+eeg grants
+if you were to write a science or nature paper, what would its title be? 
+
+highly polish: questions about understanding of department, future research goals, and classes you would like to teach 
+show subtly that you know them well - their courses, know what drives the institution, faculty, department, and colleagues. 
+know their research interests. create post-it notes on each faculty member, with research highlights and other interesting facts
+
+more detail on the questions:
+1) why do you want this job?
+-be confident, specific, and well structured.
+-be specific 'there are 3 reasons i see myself as a good fit'
+
+2) whats your best paper? have a sound rationale for your response. 
+
+3) why do you work on x? surely y is more important? the reason i work on x and not y is...
+
+4) what will you do if something goes wrong? (Grant rejected, experiments fail, etc)
+-they want to know how you handle setbacks, and plan to overcome predictable hiccups
+-talk about how you were persistent in publishing your neuroimage article 
+
+5) where do you see yourself in 5-10 years time? 
+	-think achievements rather than status, whats the next big question that you hope to have solved?
+
+6) how does your work fit with the group/dpt/university?
+	-identify the ways your work aligns with their needs and priority. think about particular specialisms, research 
+	clusters, possible collaborations, undergraduate/graduate curriculae, interdisciplinary links to other dpts, 
+	give specific tangible examples.
+
+7) describe a course or topic that you would teach
+	-think in terms of outcomes and learning objectives, what will the students get, how will it be assessed, what skills?
+	-how will the course complement the rest of their studies?
+
+8) what does good collegiaty mean to you?
+	-working relationships are on the interviewers minds
+	-what kind of colleagure are you going to be? 
+	-how are you going to help others be successful? 
+
+	good collegiaty means being considerate of other people's time and resources, being generous with your own time/resources
+	having a complimentary skillset to your colleagues, so you can achieve the most possible 
+	a healthy competition
+	a willingness to take on teaching loads/courses when others may not be available, 	
+
+
+9) if we offered this job, would you accept it?
+	yes
+
+	
+10) do you have any questions for us? 
+	-bad questions are selfish (annual leave, benefits, entitlements)
+	-ill informed (things you could easily find out through the website)
+	-naive 
+	-GOOD questions should be very specific to the post/department, 
+		-possibilities of collaborations with other departments?
+		-what are the regular working hours? 
+
+
+	more GOOD questions 
+		-the trajectory of the department - learn about the unit's history and goals
+			-why are the current courses/disciplines now present amoung the faculty?
+		-why are they hiring at this time, are more open positions expected? in what areas?
+		-is the size or composition of the student body changing over time? 
+		-what initiatives are currently underway in the department, is the position related to any of these?
+		-how are interdisciplinary enterprises handled? 
+		-are there any jointly appointed faculty members, cross-listed courses, or joint degree programs with other dpts?
+		-are there core or topical research centers co-sponsed with other dpts?
+		-how will the holder of the new position be expected to contribute to the college's relationship with partners?
+		performance:
+		-how is faculty performance assessed each year? does this relate to evaluations for reappointment and promotion?
+		-how is teaching quality evaluated? what kind of evidence is considered?
+		-what separates a good faculty member from a great one at this institution? what kind of attitudes or work habits make for success?
+		settling in:
+		-how are new faculty oriented and mentored in their first year?
+		-what kind of guidance is provided about tenure and promotion process?
+		-what are currently the most popular courses, what type of extra-curricular activities do students enjoy? 
+
+
+
+
+what WOULD your first grant be about?
+	heart monitoring with fitbit type signals?
+	EPI heart imaging? 
+	some type of collaboration involving bishops neuroscience and mri/eeg? 
+	something to do with neural networks/machine learning and medical images? 
+	develop some sensor that you can put in a pillow, bathtub, etc and start doing large scale epidemiological studies
+	start developing the basic validation studies behind this.
+
+	should be something more closely related to your own research - heart vs brain? 
+		-reconstruction of structure from electrophysiological signals - involve deep learning, MRI, and ephys 
+
+stalking profs:
+
+Bentabet
+Bruda
+Jensen
+Allili
+Khouzam
+
+maximize the signal to noise ratio of the questions you ask the interviewers - you want to get as much info about the position as possible,
+with the fewest possible questions. to do so requires that you know your own goals up front. 
+
+goals:  1) use students to advance your own research
+	2) prepare students for the job market/further education	
+
+find a way that you can complement the current group at bishops
+
+be more didactic in your research talk, explain the algorithms in depth 
+
+look at people who ask questions, and take time to answer correctly and thoughtfully 
+questions for students if you interact with them:
+	which courses do you prefer and why? 
+	which courses would you like to see offered in the future? 	
+
+
+more questions:
+
+How would you want to contribute to the campus community outside of your teaching and research?
+Tell me about a specific moment from your early education experience and how it informs your teaching
+teaching philosophy: what goals do you set for your students?	
+pedagogy: how do you run your classroom? descibe a typical class session?
+hyoptheticals: how would you address _____ in a class?
+specifics: how do you work with students with learning disabilities? non-majors? etc.
+course-specific issues: how would you teach _____? 
+What challenges do you foresee developing a competitive research program, and what would you do to overcome them?
+What resource will you need to be available to you?
+How do you plan to attract grad students?
+
+• What is my preferred style of teaching?
+• Would I use new technology for teaching?
+• How would I prepare myself to teach a new course?
+• What would be my biggest challenge in teaching a new course?
+	getting a firm grasp of the theory so i feel confident explaining it in an offhand manner 
+• Would I be interested in developing my teaching skills further and which skills would I put
+emphasis on?
+• What kind of leadership experience do I have?
+• Which leadership skills would I need to develop in the future?
+• Where do I see myself at the end of the contract for assistant professor?
+• What was the main contribution of my thesis?
+• Who are my professional connections?
+• Why do I want to leave my postdoc position?
+• Several technical questions regarding my research, proposals I worked on, and papers I
+wrote.
+• From the chair: "What courses can you teach and what courses would you like to teach? I
+hope you get the difference"
+• From a Faculty: "Will you compete with your past advisers?"
+• How quickly could you set up your lab? How much space would you need?
+• Would you be willing to share equipment and space?
+• How would you attract postdocs into your lab?
+
+Why did you choose this school during your job search?
+Where do you see this department/school/college in 5 years?
+What's the teaching load like?
+What's the tenure process like?
+Which courses need teaching?
+What kind of start-up package do you think I should negotiate? (Ask this of junior faculty.)
+What's the overhead on grants? (This question tends to impress deans.)
+How much does it cost to fund a Ph.D. student for 12 months?
+
+1. Why does this position exist — what was the impetus for creating it?
+2. What would a successful first year in the position look like? How will the success of the person in this position be measured?
+3. How would you describe the culture here? What type of people tend to really thrive here, and what type don’t do as well?
+4. What is your timeline for a decision, and when can I expect to hear back? What’s best way to ask for an update if there’s a delay?
+5. what happened to mohammed 
+
+
+short, medium, and long term plans for research
+how big their ideal group would be, and how much it would cost equipment-wise to get started 
+you were planning a postdoc before this job came up - not going into industry. 
+
+office to office talks - you need to be ready to discuss people's research 
+
+the chalk talk - you need to be better prepared for this. act as if you will need to give a chalk talk at some point, even if you don't
+
+rehearse your job talk 10 times before giving it for real 
+add back the slides about summarizing contributions to the field 
+have your over the next 5 years elevator pitch ready to go
+
+PhysioPostDoc, why don’t you outline for us how you envision the three specific aims of what will be your first R01 application?
+who is your main competition in this field? 
+
+
+Going into the chalk-talk, you should be prepared to go through your first R01 application 
+(but you knew that from your previous reading, right?). Based on my experiences, you should 
+actually have reasonable plans (with timelines) for 2 R01 applications. You need to be able to 
+demonstrate that you have thought about how graduate students and postdocs will have projects 
+that will get your shit done. And that you know how to split these projects up into Aims for 
+grants that will be fundable. Make it clear that you have thought about the timeline to get
+preliminary data, publish papers, etc. in order to be able to submit competetive grant applications.
+
+Be prepared to answer these kinds of questions (in addition to attacks of your science, as in CPP):
+-What will your first graduate student work on?
+-What are the first papers that will come out of your lab? (hint: they better be preliminary data)
+-When do you plan to write your first grant?
+-Who would want to fund your research? (NIH? which institute?)
+-How is your field? What makes your research unique in your field, and how can you compete 
+against established labs (including your postdoc mentor)?
+
+why do you want the job?
+1) continue research in collaboration with sherbrooke, repeat the experience i had with sherbrooke, and branch out on my own.
+2) the culture and life at bishops, and lifestyle of a tenure track professor appeals to me. 
+3) i hvae a strong interest in computer science concepts and theory, and see teaching as a way to expand my skillset (socially and theoretically) 
+
+
+
+

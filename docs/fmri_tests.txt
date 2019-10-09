@@ -1,0 +1,53 @@
+next test with guillaume - go back to the shorter TR (1.9-2s) and slightly lower spatial resolution, test the stimulus again
+rotating wedge and see if you can get a good gray matter segmentation and masked properly with the wedge. 
+also, try to mask the screen or the inside of the coil, to get rid of the flickering effect. (try to think of a way to do this,
+use sam's papers or something else like a felt sticky pad or something
+
+other things that can come out of this experiment:
+ 
+the vein thing: modeling the flow of deoxyhemoglobin from the veins to the cortex, using gradient echo bold and high resolution 
+swi - is it possible to separate the contributions of the different folds to the draining vein signals?
+
+electrode locations - before and after the experiment - see if they move. 
+electrode locations - what else can you do, that others can't with precise locations? 
+	- you can do enhanced source localization - compare the sources you measure with reconstructed sources based on precise locs
+	- quality of source localization as a function of retinotopic area? do an SSVEP in each region 
+
+
+before and after MRI gamma band response - 30 trials of the inward-moving annulus, before and after and inside the bore. 
+30 trials or 4 minutes of gamma or something - just find a way to measure it before, during and after the MRI 
+the effect of the other sequences on the EEG cap? using them to get some kind of measure like electrode location or something
+based on how the electrodes are affected by the sequence - or to get some parameter like head size? try to correlate these 
+artifacts to other measures for example, during the T1 maybe the artifact is different depending on the slice...
+
+resting state correlations - functional coupling between thalamus and v1, vs eeg paremeters
+thalamo-cortical coupling as a function of EEG state and EEG power - test this next time with guillaume
+	(resting state correlations between thalamus and cortex, in eyes open, eyes closed, and gamma) 
+		see if thalamo-cortical correlations are dependent on EEG power or EEG state 
+
+papers you can already write: 
+1) inside vs outside scanner - frontiers
+2) inter-subject vs curvature, distance - neuroimage
+3) eeg gamma tuning - jneur or neuroimage 
+
+2 main focuses for this experiment: retinotopic mapping (30-40 minutes and resting state (20-30 minutes)
+for the 'resting state' coupling, maybe have a stimulus that induces gamma power over an extended period, to see if you can
+get spontaneous coupling with gamma in the resting state, and compare that to the gray screen or movie, ie, have 3-4 different
+states and see if you can expand on the power dependence. 
+
+linearity of gamma, alpha/beta, in response to different sized cortical patches
+left, right, up, down ,quads  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+game: viking commander - similar to mech commander, but with vikings 
+longship mode and raid mode - land the longship on the beak, and complete the mission. 
+salvage weapons/gold and capture slaves
+you have one main guy that you control, and the rest follow in formation. 

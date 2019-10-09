@@ -1,0 +1,8 @@
+goals for today July 15 2017
+refactor the main menu code, so that you have a menu only app, and save it on bitbucket
+finish and re-read the methods section of your article, put all the result values into the results section, plan+finish figure 1/2
+	-tomorrow - introduction and discussion
+get your credit card working again (Call rbc)
+
+20 minutes a day: 
+

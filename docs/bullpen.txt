@@ -1,0 +1,26 @@
+bullpen
+
+melee creature combat, live + turn based
+
+select melee creatures, go into combat against other creatures
+different types of creature have different benefits, which allows them to exist in certain combinations.
+
+creatures have fundamental stats:
+
+range - how far away can they attack from?
+attack force (strength) - how much does the attack affect the enemy velocity?
+attack frequency - how often does the creature attack?
+mass - how heavy is the creature?
+position - where is the creature?
+orientation - what direction is the creature facing?
+
+creatures can block damage based on their orientation, shield, and attack mode (animation index)
+
+a very simple level:
+1) select creatures from list and equip creatures
+2) start combat
+3) heal creatures and create new creatures (to adapt)
+
+ie, start with a barracks to create basic creatures. can create x creatures per game, to match enemy's output. 
+use the red-alert qeue to create units 
+tunnel through the level dynamically, like dungeon keeper but more dynamic 

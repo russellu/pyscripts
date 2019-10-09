@@ -1,0 +1,5 @@
+final_tuning
+denoise all the subjects (get their ICA + remove bad trials), and then plot the tuning curves for each subject, 
+get the correlation matrix, the tuning curve, and the selectivity index 
+
+plot the 4 subject average (by tonight) for all of these metrics. 

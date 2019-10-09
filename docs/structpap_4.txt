@@ -1,0 +1,28 @@
+amplitude vs SNR - divide by baseline to get SNR, subtract for difference. should give similar results? 
+
+first figure has to be a topoplot vs a fmri ROI overlay 
+
+gamma snr is so much lower than alpha/beta, and is near the snr detection threshold. 
+
+check the inverse-squared alpha (As a function of electrode) 
+
+build the entire figure in matlab - don't move it around much in illustrator
+
+try to have figures 1,2,3 done by tonight. 
+
+todo: add in peak frequency to the distance plot, make the curvature plot, and re-write the text.  should be good to go by the end of monday. 
+
+inot vs #voxels vs alpha/beta/gamma amplitude
+
+goal: have 3 more papers published by the time you apply for grant money (5 first author papers, 3 in high impact journals) 
+
+figure 4 - inot - alpha/beta appears to be more related to i0 than gamma, though still not significant. 
+is there a way to show that alpha is more spatially distributed than gamma? check the significant differences across trials for alpha/beta and
+gamma, see how many electrodes are significantly activated for alpha/beta and gamma
+
+figure 5 - need this to be a strong concluding figure, not just some mash-up of previous results.
+candidates: peak frequency (no need can just put them in the results), distance vs curvature, effects of distance and curvature on gamma 
+amplitude (combined). 
+
+1a correlate distance with i0.
+1b examine the combined effects of distance and I0. 

@@ -1,0 +1,29 @@
+spatial localization in nmr spectroscopy in-vivo
+summary: spatial localization techniques are necessary for in-vivo nmr of heterogenous organisms. localization by surface coil NMR 
+detection alone is generally inadequate for deep lying organs due to contaminating signals from intervening surface tissues. however,
+localization to preselected planar volumes can be achieved using a single selective excitation pulse in the presence of a pulsed 
+magnetic field gradient, yielding depth resolved surface coil spectra (dress). within selected planes, dress are spatially restricted
+by the surface coil sensitivity profiles to disk shaped volumes whose radii increase with depth, notwithstanding variations in the
+NMR signal intensity distribution. nevertheless, dress is a simple and versatile localization procedure that is readily adaptable to
+spectral relaxation time measurements by adding inversion or spin-echo refocusing pulses, or to in vivo solvent supressed spectroscopy
+of proton metabolites using a combination of chemical selective RF pulses. the spatial information gathering efficiency of this 
+technique can be improved to provide simultaneous acquisition of spectra from multiple volumes by interleaving excitation of adjacent
+planes within the normal relaxation recovery period. the spatial selectivity can be improved by adding additional selective excitation
+spin-echo refocusing pulses to achieve full, three dimensional point resolved spectroscopy (PRESS) in a single excitation sequence. 
+alternatively, for samples with short spin-spin relaxation times, DRESS can be combined with other localization schemes, such as 
+image selected in vivo spectroscopy (ISIS) to provide complete gradient controlled 3d localization with a reduced number of sequence
+cycles. 
+
+localization strategies: the great promise of in vivo nmr spectroscopy lies in its ability to provide chemical information about 
+physiological function, its perturbation by disease, and its restoration to health via therapy. although proton nmr spectra from living
+cells was reported as early as 1950, and natural abundance phosphorous spectra were acquired from blood cells and excised rat muscle
+nearly two decades later, human NMR spectroscopy was not feasible till the advent of larger bore superconducting magnet systems capable
+of accomodating the human limbs, head, and full body. small, circular flat NMR coils positioned on the surface of the body were crucial
+for providing the first access to spatially localized P NMR spectra. surface coil localization has a major problem however, which is
+significant contamination of NMR signals from important deeper lying organs of significant interest such as the brain, liver, and
+heart. figure 1 shows 1h surface coil nmr images acquired from a single turn 6.5 diameter surface coil located on the head above the
+temple. the proportion of signal derived from the brain can be increased by increasing the NMR flip angle beyond pi/2, but substantial
+surface tissue contributions are inevitable. to address this, and improve the control and definition of spatially localized regions 
+for spectroscopic analysis, many spatial localization schemes have been proposed, which employ either RF, static, or time dependent
+magnetic field gradients to restrict data acquisition to single or multiple selected volumes, these techniques can be used with surface
+or volume coils, depending on the depth of the desired volume. 

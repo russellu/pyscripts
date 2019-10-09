@@ -1,0 +1,8 @@
+imeka_ideas 
+-make the heart pump to sound and moving the vasculature/rsfmri
+	make it pump louder when there are more voxels
+
+-select resting state networks automatically once certain voxels are tagged (do the same for tractography) 
+allow users to 'find' tracks and resting state networks, the tracks then light up and are added to a list (same for RSNs)
+have some interesting animation that shows the tracks and RSFMRI as a function of time 
+animate the ventricles, veins, arteries, etc 

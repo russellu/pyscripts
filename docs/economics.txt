@@ -1,0 +1,32 @@
+economics textbook: 
+
+only write down things that will help you make trading decisions based on fundamental analysis 
+
+the basic economic problem: how to satisfy infinite desires with limited resources?
+
+four factors of production:
+1) land
+2) labor
+3) capital
+4) enterprise
+
+the concept of margin: ice cream example: the marginal cost of an ice cream is the additional cost of making one additional ice cream
+can be found by finding the difference in total cost at the new output level from the total cost at one unit less than that 
+a lot of economic theory is based on the assumption that people make decisions based on marginal changes 
+
+markets are where goods and services are bought and sold
+
+demand is the quantity of a good/service that consumers are willing to buy at a given time for a certain price
+movement along the demand curve is caused by changes in price
+competitive demand: increase in the price of one good increases demand for a competing good
+complementary goods are those whose demand increases together (ie strawberries and cream)
+there is also composite and derived demand
+
+price elasticity of demand is a measure of how the quantity of a demanded good reacts to changes in price of the good
+there is PED, YED, and XED (price elasticity of demand, income elasticity of demand, and cross elasticity of demand). 
+
+PED = percentage change in quantity demanded / percentage change in price 
+if a good has elastic demand, raising its price will reduce revenue
+
+
+

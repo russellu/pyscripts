@@ -1,0 +1,79 @@
+understanding ultrasound induced sonoporation: definitions and underlying mechanisms. 
+abstract: there is a lack of consensus on the biophysical and biological mechanisms to bbb opening via FUS and MB. sonoporation
+is the formation of temporary pores in the cell membrane. this review categorizes the mechanisms contributing to sonoporation 
+according to 3 ultrasound settings 1) low intensity ultrasound leading to stable cavitation of microbubbles 2) high intensity
+ultrasound leading to inertial cavitation with microbubble collapse and 3) ultrasound application in the absence of microbubbles. 
+using low intensity ultrasound, the endocytotic uptake of several drugs could be stimulated while short but intense ultrasound
+pulses can be applied to induce pore formation and the direct cytoplasmic uptake of drugs. ultrasound intensities may be adapted to
+create pore sizes correlating with drug sizes. small molecules are able to diffuse passively through small pores created by low
+intensity ultrasound treatment. however, delivery of larger drugs such as nanoparticles and gene complexes will require higher 
+ultrasound intensities in order to allow direct cytoplasmic entry. 
+due to their gas filled and hence compressible core, microbubbles can respond to ultrasound pressure waves. this process of 
+alternating growing and shrinking is called cavitation, at low ultrasound intensities stable cavitation occurs where the 
+microbubbles repeatedly grow and shrink, at higher intensities inertial cavitation may occur which results in microbubble implosion
+and stronger biophysical effects. 
+the interaction of ultrasound with tissue can induce 1) mechanical effects 2) chemical effects and 3) thermal effects, depending
+on the ultrasound setting, which can in turn lead to several bio effects. the scope of this review will be limited to the 
+mechanical and chemical aspects of ultrasound induced drug delivery. 
+
+mechanisms contributing to ultrasound induced sonoporation: 
+cell membrane permeabilization by stably cavitating microbubbles. 
+biophysical aspects of stable cavitation: at very low acoustic pressures, microbubbles oscillate in a symmetrical, linear way, 
+meaning that their expansion and compression are inversely proportional to the local ultrasound pressure. at higher US intensities
+they behave nonlinearly, with a lengthening of the expansion phase as the bubbles are more resistant to compression than expansion.
+this phenomenon is known as stable or non-inertial cavitation. during stable cavitation of the microbubble, there is a gas influx
+during expansion and a gas efflux during compression. in the case of symmetrical oscillations, the net gas influx over one 
+compression/expansion cycle is zero. however, when the expansion phase is extended, there is net gas influx into the microbubble.
+for this reason, the microbubble grows until it reaches its resonant size, whereupon it demonstrates stable, low amplitude 
+oscillation. these stable oscillations create a liquid flow around the microbubble, referred to as microstreams, which creates 
+shear stress when the microbubbles are in the close vicinity of cells, which can range from 100 to 1000Pa, which is relatively high
+compared to the stress related to blood flow (0.1-4Pa). 
+biological effects provoked by stable cavitation: although it was initially believed that inertial cavitation of microbubbles was
+required to enhance uptake of low molecular weight drugs there is now mounting evidence that these stable oscillations may also
+stimulate the intracellular delivery of macromolecular drugs and nanoparticles. at these lower intensities, two mechanisms have 
+been postulated to contribute to the uptake of cell impermeable molecules namely (1) the formation of small pores and
+2) endocytosis. endocytosis was more extensive for larger molecules, while pore formation was the main mechanism for smaller 
+dextrans. 
+it was also shown that stable microbubble oscillations can lead to chemical stress by inducing the formation of free radicals. free
+radicals play an important role for increased permeability
+cell membrane permeabilization by inertial cavitation
+biophysical aspects of inertial cavitation: at higher ultrasound intensities, the oscillation amplitude of the microbubbles can
+grow rapidly during the low pressure phase, until the microbubbles collapse due to the inertia of the inrushing fluid. this results
+in the fragmentation of the microbubbles into many smaller microbubbles. during this collapse, shock waves can be generated in the
+fluid and jet formation can occur. when a collapsing microbubble is located close to a surface like a cell membrane, an 
+asymmetrical collapse takes place and results in formation of a liquid jet towards a nearby surface. 
+biological effects provoked by inertial cavitation: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+how to register the FMRI points with the anatomy?
+first, just try to create the triangle cloud in the same space as the brain.
+then you can handle scaling issues etc with the real FMRI 
+
+today: finish the RSFC, and functional connectivity object, then the app will be pretty much complete and you can go back 
+to writing the biorxviv paper
+
+functional connectivity:
+1) make the sphere and get it so the sphere can select voxels
+	use the same mask on all images
+	test correlation speed	
+	get indices for all FMRI x,y,z voxels
+	activate the indices based on a selection box 
+
+		get the brain with 10 points of highest variance, use those to drive correlation (if other method is too slow)
+			test the correlation speed first
+	to do the correlation:
+	1) create a new vector 
+
+	the next step (and the hardest probably) - display only the voxels within the selection object 
+		once this is done, the rest is easy 
+	the FMIR Point octree requires the voxel index (in the voxel tree) and the mesh index 	
+	need to compartmentalize the voxel vertices into an index list
+	the octree is populated by the center index of each voxel. 
+	an underlying array links the center index of each voxel to the vertex indices in the mesh 
+	the voxel vertice indices - need to know which mesh, and which voxel
+
+	done - now time for the correlation. 
+
+2) average correlations within the sphere, and set voxels accordingly 
+
+set loading message, and load only when user clicks 	
+
+cleaning up the correlation map
+increasing speed: show gray matter voxels only (try to get it under 5k voxels) 
+increasing speed: use a faster correlation metric
+improving visualization - make it opaque, increase size of the quads 
+can speed up the correlation by using pre-defining all the important sums
+reduce the 
+remove the RSFMRI (too slow for app, doesn't add much value) 
+remove resting state functional connectivity
+remove white matter voxels
+reduce number of time points 
+funcitonal connectivity only button 
+
+bugs: 
+a few voxels outside the selection sphere remain active (nans?)
+fixed
+need to improve the rendering speed, instead of setting it to translucent, change the vertex position? 
+
+
+
+
+

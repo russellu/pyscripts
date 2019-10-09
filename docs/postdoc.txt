@@ -1,0 +1,25 @@
+post-doc ideas 
+variational auto-encoders and deep learning, combined with simultaneous EEG-FMRI
+deep learning and BCIs
+
+post-doc: you want to do things that will lead to an expansion of your skillset, and likely a professorship sometime in the near future.
+something BCI related, something invasive, something outside your field but still close to neuroscience and imaging. 
+sleep is also an area of potential interest. maybe something invasive, and sleep-related, or something in animals and sleep related. 
+or, just look for a well-regarded lab that does high impact research and try to get some high impact papers, such as the pascal fries lab
+gamma and perception for example. 
+what would you like to study? sleep, and BCIs, and the thalamus. preferably sleep and the thalamus if possible. 
+
+sabine kastner, michael halassa, lazslo acsady
+
+relationship between thalamus and EEG, studied invasively then later set up your lab to study non-invasive 
+the effect of RV or HR response across populations? is there a way to measure this without actually measuring the physiological parameters? 
+ventricles/CSF? or some other mask. correlate the respiratory response function or the global signal contribution across populations? 
+correlate the global signal during resting state and other states, test for significant diffences
+or just use a vascular correlation, ie find where the std is highest and correlate that region
+
+
+pascal fries lab study visual gamma and alpha/beta mua
+layer specific FMRI and EEG to investigate frequency specific laminar effects (scheeringa) 
+
+
+

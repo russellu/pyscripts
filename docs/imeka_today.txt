@@ -1,0 +1,40 @@
+today_imeka
+
+add all rois, anatomies, etc 
+get selection working for all rois and anatomies 
+
+finish veins/arteries with button
+finish subcortical/cortical selection
+finish selection with labels 
+finish hemisphere selection 
+
+remaining:
+
+finish left/right hemisphere selection
+toggle subcortical/cortical areas on/off, and make it so the buttons turn green
+finish the selection for both ROIs and tracks
+
+for the selection rois, need to do the following:
+1) only select when a click or a tap happens (not when it clicks and drags)
+2) downsample the ROIs to use less cpu power on the collider but use the real ROIs to display the cortex
+3) add the tractography ROIs 
+	only show the bundle name if it is active
+4) only activate the click when the hemispheres are active (otherwise it will occlude the subcortical ROIs)
+	when either the hemispheres are active, OR the ROI itself is active
+	or, check the ROI to see if it is active, and ignore those which are not. 
+5) add more legible names for all the areas/bundles (in the list) 
+
+a background color option? - black/white/gray/green/red/etc 
+
+first thing: make it so it only senses taps (done)
+if the left/right cortex is active, show the region of interest
+if not, show only if the subcortical 
+bug when changing colors (makes all the tracks disappear) 
+add functionality to the show all buttons
+remove ROIs that were previously active 
+
+the final problem will be syncing up the toggled lists with the tracks and subcortical ROIs
+make it so the selection sphere takes precedence over all other selectable objects 
+
+
+

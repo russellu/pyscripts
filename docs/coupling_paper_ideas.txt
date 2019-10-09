@@ -1,0 +1,21 @@
+coupling_paper_ideas
+
+instead of computing power, comput resting state connectivity across all areas in all subjects? 
+check this in a single subject - correlate all gray matter voxels with each other in all states, average the CC. 
+
+source localization + kernel - test coupling using different parameters in a single subject - try beamformer and others (though this
+is probably not what results in poor coupling, its probably more the way coupling is computed. in any case, do this on alex's data
+and make sure you get the nice rest coupling you had before
+
+possible culprits are the time-frequency method, and the method for computing cross-correlations
+
+1) try to reproduce what you had earlier with the ohbm coupling results. 
+2) try different source localization with gamma ersp (beamformer, etc) to see which is most accurate 
+
+coupling idea - functional connectivity as a function of ALFF 
+
+global signal regression - coupling with/without GSR. effects of GSR on NVC 
+effects of GSR on NVC differences across region and task - does it become more or less consistent? 
+
+
+need to blur the FMRI, and don't bandpass filter (do that in matlab). 

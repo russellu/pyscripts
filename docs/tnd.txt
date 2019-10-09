@@ -1,0 +1,27 @@
+tnd
+start:149
+
+vtm 
+	hcm: 12/500
+cmb
+	pnp: 19/189
+phl: 
+	mla: 24/300
+ind 
+	syr 40/400
+	
+thd
+
+sng 
+	27/400
+myn
+	yng 33/250
+
+fr
+	prs 0/400
+br
+	rdi 3/400
+mal
+	klp 305/400
+
+

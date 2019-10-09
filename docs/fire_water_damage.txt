@@ -1,0 +1,5 @@
+fire_water_damage
+
+fire: plastic, paper, fire, wood, and cloth (Class A), flammable liquid/solid (B), flammable gasses (C), combustible metals (D), 
+E) electrical F) oil/fat
+primary/secondary : primary due to flames, secondary due to smoke and corrosive substances

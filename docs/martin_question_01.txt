@@ -1,0 +1,27 @@
+martin_question_01
+describe dynamic contrast enhanced DCEMRI and how it can be used to assess BBB in human participants:
+part 1: DCE MRI sequence
+assessing leakage of a contrast agent following injection
+dynamic imaging during the passage of a peripherally injected bolus of a paramagnetic contrast agent, using a T1
+weighted MR sequence. 
+saturation recovery gradient recalled sequence both for initial T1 measurement and subsequent dynamic imaging
+each slice was acquired after application of a nonselective saturation prepulse with a saturation time delay.
+echoes were read with a radiofrequency flip angle of 30deg, pulse repeition time of 3.82ms, echo time of 1.9ms, 
+centric phase ordering, scan matrix size 96x61, SENSE factor 2, 240x182mm, and four slices of 8mm thickness
+the T1 measurement was performed by varying the TD value, (120,150,300,600,1000,2000,4000,8000,9000,10000). 
+the passage of the contrast bolus was imaged using a TD of 120ms, low TD has been previously shown to minimize the
+effect of water exchange in such measurements. the most caudal slice was placed orthogonal to the internal carotid,
+based on an MR angiography, in order to obtain an arterial input function, with minimal PVE. in total, 180 frames
+with a time resolution of 1s were obtained. the automatic bolus injection was started after the 10th frame, the 
+dose of contrast agent was 0.05mmol/kg, the magnitude of the dose based on a compromise between increasing the CNR
+for a higher dose, and the possibility of inducing a T2* effect or truncation of the bolus peak of the arterial 
+input function. 
+the MR signal is not linear in contrast agent concentration, but the change of R1 is proportional to the contrast
+agent concentration with regard to both blood and tissue. when using centric phase ordering, the MR signal s(t) as
+a function of time t and deltaR1(t) and concentration C(t) are related by 
+s(t) = M0*sin(alpha)*[1-exp(-TD(R1+deltaR1(t)))], deltaR1(t) = r1*C(t), the relaxivity r1 of Gd-DTPA at 3T was set 
+to 4/sec*mM, equal relaxivities were assumed for the intravascular compartment and the tissue in general. 	
+
+simulations: 
+
+part 2: post-processing to quantify 

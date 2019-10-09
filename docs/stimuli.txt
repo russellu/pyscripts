@@ -1,0 +1,25 @@
+stimuli - size, orientation, contrast, randomization. 
+size - full field to fovea (2deg). 
+orientation - 0-360deg
+contrast - 2% to 100%
+randomization - 0% to 95% 
+
+TR = ~2s, (high resolution 3d over occipital lobe)
+5 minute scan duration, 2 scans/stimulus type, ~45 minutes total functional MRI
+
+30 stimulus "types" per parameter, 10 minutes per parameter => 20 "trials" per parameter/type
+
+higher peak frequency => more surface area? actually, it means more functional activation - so subjects with larger functional
+activations have higher peak frequencies. how does this relate to larger stimulus size=> lower peak frequency? 
+maybe subjects whose cortices exhibit more widespread activation 	
+
+gonna have to add 4 cycles instead of just 2, cause you'll probably have to scrap the first cycle. 
+
+adam salvail berard
+
+why would peak frequency correlate with BOLD activation - ie, more extensive BOLD activation = higher peak frequency? 
+excitation/inhibition - higher peak frequency = more excitation or stronger input = higher BOLD activation. 
+muthu's results are better explained by BOLD %change, showing that E/I balance.
+higher contrast => more BOLD activation => higher peak frequency? subjects that perceive a higher contrast grating may also have
+higher peak frequencies? the fact that %change or #voxels as well as peak frequency is so easily modulated across stimulus types
+may affect this. (looking at inter-subject correlations in peak frequency may help to address this) 

@@ -1,0 +1,103 @@
+spatial frequency - lower in V2 (foster)
+temporal frequency - the same in both regions (foster)
+temporal frequency - low pass
+directional sensitivity - high temporal and low spatial tuned neurons are more likely to be directionally sensitive (foster)
+
+v1 and v2 - similar spatial frequency bandwidth, but different spatial frequency range (Foster)
+v1 and v2 - temporal frequency - similar range, but different bandpass tuning
+
+higher circular variance => more spikes/second (Ringach)
+
+contrast sensitivity - reduced contrast selectivity for different orientations
+contrast sensitivity matches gamma peak? more sensitivity at vertical orientations, similar to orientation?
+actually, we show oblique preference which reflects global gamma
+
+different sensitivities vs different spectral responses - does a subject visual acuity match their gamma? 
+
+what are some behavioural effects you could measure? 
+
+contrast sensitivity peaks at 3-5cpd ... is that also where you get the most gamma? could correlate contrast sensitivity with gamma
+what about orientation sensitivity? ie, distinguishing oblique from cardinal
+
+a before and after orientation discrimination gamma experiment? similar to what muthu did...
+
+link alpha/beta and gamma activity to behavioral changes and visual processing
+	what do we know so far? gamma oblique preference, gamma cpd/cps preference, alpha/beta cpd/cps preference, BOLD
+BOLD retinotopy to isolate V1 and V2, compare alpha/beta and gamma tuning to V1/V2 tuning
+isolate v1 and v2, compare BOLD tuning in different areas. see if spatio-temporally the two signals match up
+BOLD block design 8s on, 12 off. 
+
+1) find stimuli that preferentially should activate different bands
+	(spatio-temporal frequency, orientation, #components, color of plaid (affects gamma not alpha/beta), 
+
+figure and background segregation - when the background is in the rf, a pronounced low frequency oscillation
+alpha indexes the suppression of irrelevant information, more alpha means weaker mua response
+putting the orientation orthogona square in a certain hemisphere should suppress alpha in that area. a better way to do 
+EEG retinotopic mapping? 
+also, examine the shape of the alpha oscillation in different hemispheres and see if you can relate that to cortical structure. 
+curve tracing task - monkeys trace target
+understand the difference between low and high frequency responses. 
+linearity of responses? retinotopic a+b+c+d = e. quadrants, halves, etc. 
+additive and multiplicative response of alpha/beta and gamma frequencies. 
+orientation selectivity = 1-circular variance
+
+need to get a static presentation (2-4 orientations, horizontal, vertical, 45, 135) to make sure you're doing it right
+less inhibition underlies the oblique effect? 
+find more V1 neurons tuned to cardinal because pyramidal cells are larger
+
+MT+ better tuned for cardinal, while V1 better tuned for oblique motion (two orthogonal gratings) (Schluppeck)
+center reading letter task to maintain fixation
+flickering sine vs drifting sine - effects on gamma response? 
+optimal spatial resolution is 2mm^3 
+BOLD orientation decoding - vascular effects? 
+
+the point of the project - use orientation tuning and FMRI to investigate differen EEG frequency bands
+answer the following questions: 
+1) do orientation tuning curves of alpha/beta and gamma differ, and which rhythm prefers which orientation?
+2) if alpha/beta and gamma orientation curves differ, how is this related to BOLD tuning in each voxel?
+	(voxel-wise correlation of tuning curves between alpha/beta and gamma). 
+3) what are the implications of these effects for the interpretation of EEG rhythms?
+	alpha/beta prefers cardinal => feedback? why would feedback be related to cardinal? excitatory cells are the ones
+	that synapse on other areas? 
+
+why would higher gamma for oblique be associated to worse contrast discrimination? 
+why would lower gamma, for that matter? maybe gamma is the background rhythm of cortical computation, similar to alpha/beta? 
+more gamma means more inhibitory action - more inhibition for oblique effects? 
+
+
+wave-form of the alpha rhythm - what does this tell us about the size/location of the area? similar to wave form of geniculate cells
+vs pyramidal cells	
+distribution of orientation bandwidths shows most between 20-60deg. could this underlie the oblique gamma effect?
+complex cells more broadly tuned than simple cells, due to no orientatino preference
+high spatial frequencies exhibit more oblique effect, low spatial frequencies are equal. 
+median bandwidth does not explain more cardinal orientation selective cells
+optimal negative response at 45deg from optimal positive response - effects of inhibition? 
+so basically, more inhibition at 45 degrees due to oblique effect => more gamma, more low spatial freq. bold? 
+
+fast oscillations display sharper orientation tuning
+
+get orientation detection threshold, make sure you have the oblique effect, then combine fmri and gamma to explain why
+sequential grating presentation - clockwise or counter clockwise? 4 orientations, 
+
+more inhibition of other orientations when oblique orientations are activated => more gamma rhythm
+if you can somehow match gamma to inhibition, alpha/beta to excitation ,that would be cool
+also, excitatory/inhibitory can be measured using mri techniques (BOLD, CBF, GABA), everyone is interested in how gaba correlates
+with gamma, what about how alpha/beta correlates with glutamate or something else?
+
+comparing motor gamma with visual gamma across subjects?
+
+stronger orientation tuning with more gaba (Yang)
+cheyne, ferrari, movement related gamma (2013)
+
+
+
+
+
+
+
+
+
+
+
+
+ 

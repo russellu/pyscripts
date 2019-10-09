@@ -1,0 +1,54 @@
+skull thickness
+
+resources: 
+guillaume, maxime, brainstorm, freesurfer
+
+get the average skull thickness using a T1. 
+
+step 1: isolate the electrode
+step 2: create a sphere around the electrode
+step 3: correlate the cylinder passing into the brain with EEG power in each voxel
+	(slice-wise comparison)...can do the same over V1 ROI as center of mass ROI) 
+
+step 1: get surface layers in head below electrode
+step 2: align and average (align along normal to head COM)
+
+scalp layers rather than cortical layers determine inter-subject human eeg variability	
+
+a simpler thing to check is average distance from electrode to gray matter voxel in each subject 
+you can also examine posterior scalp anatomy by averaging tissue under electrodes in the occipital lobe 
+
+break distance up into two metrics - brain surface-ROI distance, or electrode-brain surface distance
+
+use the gray matter mask, and draw vectors between electrodes to gray matter, and gray matter to ROI. 
+
+you can then define these two different distance metrics as 
+electrode to brain surface 
+brain surface to activation
+
+correlate those two separately with gamma 
+
+electrode to brain, and brain to ROI center
+voxel-wise curvature metrics and Robson ROI
+read reviews again and look for anything else, re-submit to neuroimage 
+
+first result - correlate distance between all scalp - cortex values with ERSP. \
+second result - brain-roi distance vs ersp .
+
+break up distance into two metrics:
+1) scalp-brain distance (average across electrodes, proxy for skull thickness). 
+2) scalp-ROI distance 
+
+average the scalp-brain distance across all electrodes, which is a proxy for skull thickness 
+
+then get the voxel-specific curvature metrics and re-write/add a few figures and results if you can 
+show distance in permuted electrode coordinates, or mention in methods to ensure no specific electrode was driving correlation
+(or show correlations across all electrodes to further avert this objection) 
+
+
+
+
+
+
+
+ 

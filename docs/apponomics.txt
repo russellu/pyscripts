@@ -1,0 +1,17 @@
+apponomics
+
+basically, you need to create a strong physics engine and perfect it, then just work on pumping out a ton of games until one becomes
+popular, try with different controls, and themes, until you really hit it big with one. 
+
+making fast levels - matlab + image processing. 
+
+idea: gold collector - the rocks are gold, guarded by evil minions 
+goal: to be making 25$ per day on average through mobile apps by the end of your phd
+
+chapter 1 main points:
+1) gaming apps continue to break records and exceed expectations, and there are opportunities in health/fitness apps as well.
+2) chances of creating a killer app depend on the category - successful game developers create many highly varied produces and release
+them quickly, non-game apps better to focus on a single app and work to improve it. 
+3) harness cross-platform tools to take the hassle out of making apps for many platforms. 
+
+chapter 2 getting discovered: 

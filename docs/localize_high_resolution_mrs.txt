@@ -1,0 +1,35 @@
+localized high resolution NMR spectroscopy using stimulated echoes: initial applications in-vivo
+water suppressed localized nmr spectroscopy using stimulated echoes has been succesfully applied in vivo to detect metabolites. 
+the STEAM spectroscopy sequence allows single step localization by exciting three intersecting slices. water supression is achieved
+by preceding chemical shift selective (CHESS) pulses. high resolution (0.05ppm) proton NMR spectra of healthy volunteers have been 
+obtained on a conventional 1.5T siemans MRI system. volumes of interest of 4x4x4cm were localised in the occipital region, and
+spectra were recorded within measuring times from 1 min to 20 min. resonance assignments include aspartate, n-acetyl aspartate, 
+glutamine, gaba, glutamate, asparate, creatine and phosophocreatine, choline containing compounds, taurine, and inositols. cerebral
+lactate was found to be at a maximum concentration of 0.5mM when assumying n-acetyl aspartate in white matter to be 6mM. 
+
+introduction: there is still great hope for biochemical tissue characterization in-vivo, although phosphorous NMR allowed insight into
+the metabolism of high energy phosphates in-vivo, and contributed to the understanding of some muscle diseases, its applications often
+suffer from the limited localization capabilites of surface coils, topical magnetic resonance or ISIS techniques in combination with
+short repetition times. furthermore, even for large VOI the acquisition of a single ISIS-localized phosophorous spectrum requires 
+times up to 30minutes. proton NMR spectroscopy bears the possiblity of obtaining access to a much larger number of metabolites. 
+detailed biochemical information can be obtained not only on the energy metabolism (ie, lactate production), but also on free amino 
+acids, fatty acids, and neurotransmitters. moreover, the STEAM sequence is available which provides both spatial localization and
+water suppression with only 4 90deg RF pulses. this paper describes the implementation of a STEAM NMR spectroscopy sequence on 
+conventional 1.5T MRI scanner. the experimental procedures are outlined in detail, along with the first results on a live human brain.
+
+technical aspects:
+stimulated echo (STEAM) spectroscopy: figure 1 shows the schematic for a stimulated echo rf and magnetic gradient pulse sequence used
+for water suppressed localized proton NMR spectroscopy on a standard 1.5T whole body MRI system. three 90deg slice selection RF pulses
+with a bandwidth of 3400Hz result in 4cm slices. for a chemical shift range of 5ppm, or 320Hz at 1.5T, the applied bandwidth 
+corresponds to a chemical shift uncertainty in the position of the voi of less than 4mm. 
+
+magnetic field gradient switches: the actual gradient waveforms were optimized according to three conditions: 1) generation of a 
+stimulated echo, 2) dephasing of unwanted echo responses and 3) reduction of signal attenuation due to motion and diffusion. 
+the unambiguous generation of a stimulated echo relies on the presence of dephased transverse magnetization before the application of
+a second rf pulse. in steam imaging, dephasing is achieved by application of the read gradient between the first and second RF pulses.
+in spectroscopy versions, dephasing in the first interval is achieved by proper switching of the slice-selective gradient, however if
+the third slice selection gradient is refocused after the third rf pulse rather than before the second rf pulse, the spectrum obtained
+from the stimulated echo signal would exhibit a sinusoidal amplitude modulation depending on the echo time TE, resonance offsets, 
+and phase angle of the RF pulses. 
+second, the gradient waveforms selected for STEAM spectroscopy ensure proper dephasing of unwanted echoes by the application of gradients
+during tm. 

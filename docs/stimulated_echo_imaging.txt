@@ -1,0 +1,73 @@
+stimulated echo imaging
+a new form of NMR imaging is described using stimulated echoes. the technique, dubbed STEAM (stimulated echo acquisitin mode) 
+is a versatile tool for multipurpose NMR imaging. stimulated echoes can be excited by a sequence of at least 3 RF pulses, which 
+in the basic experiment have flip angles of 90deg or less. thus, no selective or non-selective 180deg pulses are needed, which 
+eliminates a variety of problems associated with such pulses in conventional spin-echo NMR imaging. further advantages of STEAM
+imaging are concerned with the functional flexibility of an imaging sequence comprising 3 pulses and 3 intervals, and possibility
+of storing information prepared during the first interval into the form of longitudinal magnetization during the second interval.
+in general, the applied RF power is considerably reduced, as compared to spin-echo based imaging sequences. the general principles
+of the technique are outlined, and first application of multislice imaging to directly neighbouring slices are demonstrated. 
+subsequent papers will be concerned with modification of the basic STEAM sequence, which, for example, allow multiple chemical
+shift selective imaging (CHESS) complete imaging of the spin-lattice relaxation behavior, diffusion imaging, and single shot
+real time imaging. 
+
+introduction: except for the very first attempts involving free induction decays, nmr imaging has been based on the acquisition
+of spin echo SE nmr signals excited by rf pulse sequences of the form 90deg - 180deg - SE. these sequences provide the maximum
+signal available for reconstruction of an image, and yield excellent anatomical and diagnostic details. nevertheless, NMR 
+experiments employing 180deg pulses are limited in particular respects, particularly when applied to human subjects in-vivo. 
+i) the use of selective 180deg pulses in combination with a slice selective gradient raises problems for the proper refocusing of
+the excited spin moments, a solution requires increasing the bandwidth of the 180deg pulse but distorts magnetization immediately
+on both sides of the wanted slice. moreover, in most cases a second compensation experiment is needed to eliminate magnetization
+components contributing from outside the slice. the first effect degrades the use of multislice imaging, while the second effect
+prolongs the measuring time by a factor of two. 
+ii) SE NMR sequences are entirely based on transverse magnetization and can be excited only once and used in a short time with 
+respect to T2 under the assumption of multiecho formation by means of a sequence of 180deg pulses. for a more quantitative imaging
+it is a disadvantage that the attenuation of the spin echoes results from a variety of processes which together destroy the phase
+coherence of the spin moments. in vivo the simultaneous presence of t2 relaxation, diffusion, and flow make a clear separation or
+discrimination of contributions almost impossible. further, since no longitudinal magnetization is involved, spin echoes do not 
+contain any T1 information. in SE NMR imaging, therefore, T1 contrast has to be acquired in a rather time consuming way by 
+performing multiple experiments with different repetition times or by means of recording multiple inversion-recovery images with
+different relaxation delays. 
+iii) to provide a maximum of information within the measuring time of a single NMR image, SE techniques have been extended to 
+multiecho and/or multislice versions using a large number of 180deg pulses. these sequences however become a problem in high 
+field NMR imaging at field strengths of 1.5T or higher, because of the considerable increase of rf power distribution in the body. 
+
+here, a new form of MR imaging using stimulated echoes and free from the above drawbacks is proposed, by avoiding the use of a 180
+deg pulse. although the stimulated echo intensity is only half that of a spin echo taken at the same readout time, the advantages
+of STEAM and its modified versions will compensate for for this partial loss in SNR. STEAM imaging experiments in the future will
+be described which often are without SE-NMR alternatives including simultaneous chemical shift selective (CHESS) imaging of 
+multiline spectra, simultaneous imaging of complete spin-lattice relaxation curves, imaging of self-diffusion coefficients, and
+single shot real time imgaing with variable spatial resolution. 
+
+stimulated echoes: the basic RF pulse sequence that gives rise to a stimulated echo signal signal at t3=t1 is:
+90deg-t1-90deg-t2-90deg-t3(STE), where the pulses may have arbitrary phase relations. it was first proposed by hahn in 1950 and
+later used for NMR diffusion measurements. more recently, STE signals have been observed with certain 2d and quantum NMR 
+experiments. in general, 5 echoes may be observed by the application of 3 pulses. assuming t2>t1, the primary echo signals are the
+SE signal at t2=t1, created by the first two pulses, and the STE signal at t3=t1, due to the action of all 3 pulses. secondary
+echoes occur as spin echoes excited by the third pulse which mirrors the primary SE to yield a second SE at t3 = t2-t1, the FID
+following the second pulse to yield a third SE at t3=t2, and the FID following the first pulse to yield a fourth SE at t3=t1+t2. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

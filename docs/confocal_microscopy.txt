@@ -1,0 +1,31 @@
+how does a confocal microscope work? 
+fluorescence: what is fluorescence? if you shine light on some molecules, you may see light of a different color emitted from those
+molecules, this is known as fluorescence. the molecules absorb high energy light (blue, for example) which increases their energy.
+some of this energy is lost internally, and the molecule then releases a photon with less energy (green for example). the color of
+light emitted is material dependent, and likewise, the excitation light wavelength depends on the material. the advantage of 
+fluorescence is that you can attach specific fluorescent dye molecules to your sample, to selectively image different parts of
+the sample. you can also use more than one type of dye, so by changing the excitation light you can change the part of the sample
+that is being imaged.
+how does a fluorescence microscope work? a dichromatic mirror is used, which allows light of a certain wavelength to pass, and 
+stops shorter wavelength light (reflects it). epi-fluorescence uses the microscope objective to illuminate the sample, rather than
+illuminating it from the other side, which would be trans-fluorescence. 
+what does this have to do with confocal microscopy? 
+imagine there are some lenses inside a microscope that focus light from the focal point of one lens to another focal point. 
+normally the sample is completely illuminated by the excitation light, so all of the sample is fluorescing at the same time. of 
+course, the highest intensity of the excitation light is at the focal point of the lens, but nonetheless other points of the sample
+do get some light and they do fluoresce, which contributes to the background haze in the resulting image. adding a pinhole/screen
+combination solves this problem. because the focal point of the objective lens of the microscope forms an image where the pinhole
+is, these two points are known as conjugate points (or alternatively, the sample plane and the pinhole/screen are conjugate planes)
+the pinhole is conjugate to the focal point of the lens, thus it is a confocal pinhole. 
+how does a confocal microscope work?
+put all the ingredients together: a laser is used to provide the excitation light (in order to get very high intensities). the 
+laser light (blue) reflects off a dichroic mirror, from there, the laser hits two mirrors which are mounted on motors: these 
+mirrors scan the laser across the sample. dye in the sample fluoresces, and the emitted light (green) gets descanned by the same
+mirrors that are used to scan the excitation light (blue) from the laser. the emitted light passes through the dichroic and is
+focused onto the pinhole. the light that passes through the pinhole is measured by a detector ie a photomultiplier tube. 
+there is never a complete image of the sample at any given instant, only one point on the sample is observed. the detector is 
+attached to a computer which builds up the image one pixel at a time, in practice this can be done 3 times a second for a 512x512
+image. the limitation is in the scanning mirrors. 
+what is the advantage of using a confocal microscope? the microscope is efficient at rejecting out of focus fluorescent light, the
+practical effect is that the image comes from a thin sample of the tissue. by scanning many thin sections through the sample, a 
+clean 3d image of the sample can be built up. 

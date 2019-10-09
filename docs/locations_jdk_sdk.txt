@@ -1,0 +1,8 @@
+android sdk location
+C:\Users\butr2901\AppData\Local\Android\Sdk
+
+jdk location
+C:\Program Files\Android\Android Studio\jre
+
+ndk location
+C:\Users\butr2901\AppData\Local\Android\Sdk\ndk-bundle

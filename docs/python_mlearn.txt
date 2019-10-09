@@ -1,0 +1,114 @@
+mlearn
+
+autencoder - try to encode eeg time series in the same way you do the mnist digits. 
+machine learning - play around with it a bit more and get more familiar with keras. try to build a network from scratch.
+	a simple classification problem, that may also be useful. 
+
+steps: load data, split into input and output datasets
+fully connected layers are defined using the dense class
+	number of neurons (1), initialization method (2), activation function (3)
+fitting, testing. 
+
+what can you test this simple type of network on?'what kind of data do you have 
+EEG, fmri, responder/non-responder? 
+gray/white/csf voxels, based on surrounding neighbourhood. 
+eeg components - scalp map and fft, noise or 'good' component? 
+bold frequency spectrum - noise or not? 
+eeg trials - predict whether or not a stimulus is active at that time point, 0 or 1. 
+bcg denoising?
+see if you can predict left vs right hand tapping? or hand motions vs visual stim
+get the spectrogram of 
+
+estimating ica weights based on data distributions? ie, learning weights without using data. 
+
+machine learning cortical structure based on response to visual stimulus 
+
+plot the denoising auto-encoder output, understand the example, and adapt it to the 1d case for EEG data (try to denoise) 
+
+how to apply the denoising auto-encoder to EEG data? you don't have a ground truth, 
+
+try the denoising auto-encoder with some MRI image slices (noise and no noise)
+you can try averaging multiple brains
+
+the problem with using the auto-encoder on bcg-corrupted EEG is that there is no ground truth. for the gradients, you have a bit more
+ground truth but the gradients aren't really a problem anyways...
+
+autoencoders - pre-whitening, and fourier domain transformation 
+how to train in the fourier domain? reconstruct frequency spectra from different time segments and all channels? might help it to 
+learn better. 
+first, make sure you can deconstruct/construct the frequency domain properly in python. 
+
+an auto-encoder to remove gradient artifacts? try saving some gradient-denoised data, and then train an auto-encoder to remove
+the gradients automatically 
+
+
+see if you can get the auto-encoder to learn an ICA decomposition? 
+ie, save the original data, save the ICA decomposition, and train the autoencoder on the ICA decomposition
+learn:
+remove gradient artifacts
+perform ICA decmomposition
+perform low/high pass filtering
+
+low pass filter data - save < 1Hz
+
+neural networks as bandpass filters? 
+using neural networks to pass through different stages of electrophysiological recording
+
+neural networks for classifying forex? predicting an output from time series data, what kind of output do you predict? 
+
+it appears as if it is possible to learn the weights of an ICA decomposition, but you can't do filtering 
+
+using neural networks to predict responses to new types of stimulus? ie, gamma plaid, and what else? 
+
+next step - reconstructing output based on the linear weights. try with a simple 1-layer autoencoder network	
+
+you can reconstruct the input using an auto-encoder, but that doesn't guarantee that it will give any interesting results
+try to reconstruct an ICA decomposition using a single layer NN. 
+
+sort some forex time series randomly - does price go up, down or stay the same? 
+
+l1 kernel regularizer seems to work best. what about adding one to both layers?
+authors suggest using max norm with dropout, large decaying learning rates, and high momentum 
+
+some more stuff to try: use the fft complex and imaginary, try it on BCG data, other subjects...
+
+next - change input to work on windowed data frames, or fft. 
+
+tomorrow - get the convolutional neural network working for keras, then apply it to EEG data. 
+
+try something else - add the bcg artifact from one scan to the outside the scanner data and try to learn a filter from that,
+then apply the neural network to the corrupted BCG data
+
+removing BCG using autoencoder - reconstruct based on ICA components only, and model the noise as the EEG signal. 
+
+how to accentuate the 'BCG-ness' of the signal? filter out all bands besides the BCG? 
+how to maximize the bcg removal from the autoencoder - train on many different bcg samples? train on bcg epochs only? 
+the question is, is it even possible to estimate a weight set that will remove the bcg from each channel without also regressing out
+"good" data? 
+
+one way to accentuate the bcg would be to epoch them all together and then just save the average epochs, or save a sub-set of 
+clustered epochs, so average out all other types of data, and save a windowed average BCG epoch? then run the autoencoder on that
+and apply the weights
+
+windowed average BCG - epoch bcg, smooth across epochs, and then replace the time series data with the bcg smooth time series, run
+autoencoder/pca/whatever on that, and remove resulting components. 
+
+distance covariance as a regularizer? 
+smoothness constraint? subtract the distance between the largest weights, and normalize based on that
+
+try to get smooth components based on the distance cost function in the autoencoder
+
+you still fail to remove the BCG - try getting trials (in python)and run PCA on trial vectors (for each channel) 
+still failing epically. need to get rid of the bcg
+
+
+
+
+
+
+
+
+
+
+
+

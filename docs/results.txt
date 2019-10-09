@@ -1,0 +1,29 @@
+results_needed
+first - make script that does all the analysis in one script, one for the small group, and one for the large group.
+	save this script and the output figures, so you can go back to it to update figures during writing
+
+figure 1
+	EEG gamma responses - variability across subjects, and stimuli, strong, medium, and weak responders (to 3 stimuli) 
+		show single trial gamma response time series, etc 
+	show topoplots to show individual topography, maybe mask out electrodes with no significant gamma response? 
+	FMRI BOLD responses - correlation maps (strong, medium, and weak correlation maps, show electrodes with distance, and I0)
+	show electrode coordinate images 
+	
+figure 2
+	group 1 and group 2, all electrodes errorbarxy vs gamma power at each electrode - show inverse-square law, but show also
+	that within the posterior electrodes, there is variability as in, deviation from the inverse-squared law (ie, zoom in on post.)
+	high/medium/non-responders - can also cluster your subjects using k-means, to distinguish between medium/low responders
+	this will give an additional effect - pretty much the same as a correlation, but a different way of showing it. 
+
+figure 3
+	fibernav image of electrode vs center of mass of V1 ROI, and another way to visualize I0
+		ANOTHER type of correlation - closest 50-100 normals to each electrode, cancellation? 
+	group correlation for group 1 and group 2 - scatter plots of mean distance vs 
+	THIS is the main result of the paper - two groups, same pattern of correlation in both groups, similar magnitude correlations,
+	around 50% of inter-subject variability explained by distance and curvature combined
+	maybe show two fiber-nav images, highest and weakest responder, with distance from electrode to brain. 
+
+figure 4 - modeling? combining distance and curvature to better predict inter-subject EEG gamma power variability
+	gamma power = b + distance*x + curvature*y - see if you can show that distance and curvature contribute independently
+	also, do a simple simulation showing that event-related power can be affected by distance, due to cancellation from random
+	fields (Random field cancellation effect) 

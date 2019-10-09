@@ -1,0 +1,6 @@
+android class: services and imageview with asynctask
+lab 4: use async task to load an image and publish progress then display the image in an imageview
+talk about services (introduce next lab) and the imageview, show lab 4 and status bar
+assignment 2 will use firebase (introduce firebase in lab 5)
+
+tomorrow: lecture 13 (data mining) + 45 minutes for app design lecture + finish the lab + practice midterm 

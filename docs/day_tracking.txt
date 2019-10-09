@@ -1,0 +1,79 @@
+day tracking: hours
+goal: 6hrs science, 6hrs money, 2 hrs leisure
+routine: wake up 8am, at work by 8:45am, science till 2:45pm, switch, money 2:45-8:45, 8:45-9:30 gym, home. 
+pay-per-call - you need to commit to this, you will spend the next 6 months and 9,000$
+
+2017-12-31 - new years eve, relax
+science 0
+money 
+leisure : 12
+
+2018-01-01
+science: 3
+money: 4
+leisure: 5
+
+2018-01-02
+science: 3
+money: 6
+leisure: 4
+
+2018-01-03
+science: 4
+money:6
+leisure:4
+
+2018-01-04
+science:0
+money:10
+leisure:4
+
+2018-01-05
+science:0
+money:10
+leisure:3
+
+2018-01-06
+science:0
+money:10
+leisure:0
+
+2018-01-07
+science:0
+money:1
+leisure:12
+
+2018-01-08
+science:1
+money:9
+leisure:0
+
+2018-01-09
+science:1
+money:12
+leisure:2
+
+2018-01-10
+science:1
+money:13
+leisure:0
+
+2018-01-11
+science:0
+money:12
+leisure:2
+
+2018-01-12
+science:0
+money:0
+leisure:0
+
+2018-01-13
+science:0
+money:0
+leisure:0
+
+2018-01-14
+science:0
+money:0
+leisure:0

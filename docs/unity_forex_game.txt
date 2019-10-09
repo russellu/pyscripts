@@ -1,0 +1,110 @@
+unity version of forex game - applicable to windows phone, and many other platforms
+
+need to start with the user in mind, so you don't have to go back and fuck around with all that code. 
+
+next - scrolling with touch, then add main menu and user, and basic trading functionality. 
+gl.lines - could do around 50k lines with decent framerate. 
+here, assume you maximize the 
+
+add indicators - each indicator has a drawSelf method, select the drop-down menu (which fills up the plot screen when clicked),
+and then creates an initialization box (options grayed out if you don't buy), 
+
+today: creating/saving the user, and trade logic (buy/sell etc). 
+first get the buttons working with play/pause. 
+
+start new game - first transition to the plot screen to make sure scene switch works. 
+load game - how to save stuff in unity? 
+
+start new game screen - select instrument, select starting balance, proceed to plot screen
+
+once you get to create new game, you've officially passed the previous version
+
+goal - by the time you're done at imeka, release two apps, on two platforms - the fibervisualizer, and the forex game, on 
+
+difficulty levels - easy (no transaction costs), beginner (comission only), realistic (spread + comission), rigged (spread + comission + slippage). 
+
+persistence is pretty much done. yay! 
+
+tomorrow - try to improve the dropdown menu, so its easier for the user to navigate
+add loading messages when the user selects stuff, so they don't get confused 
+integrate the loaded user with the plot - display settings, etc. 
+add select difficulty dropdown in new user tab 
+
+http://cattrapstudios.com/blog/unity-ui-tutorial-canvas-and-scalability/
+
+change all the dropdowns to a single dropdown prefab, increase the menu size 
+dropdowns are donzo. next? 
+next thing is to integrate the user with the trading screen, ie, save the users account balance etc. 
+then, add indicators (just copy/paste from android studio), then trade analyzer, account summary, auto-trader, and purchases. 
+add splash screen also. 
+you want to have this released on two platforms by the time you leave imeka, so, in less than two weeks. then its back to slowly
+working on your phd while you making the top-down rpg game. 
+
+game controls - add text views at the top of plot to show account balance and other things (Currency, etc). 
+
+tonight - add upl text view, and then implement trading controls (buy/sell, etc). don't let user scroll past current point. 
+also, update the scrolling area, and make it so dropdown movements don't affect scrolling 
+draw upl, limit chart size a bit, 
+
+add a chart speed control slider 
+
+tomorrow - finish account loading and user management, make sure loading/deleting works properly, finish UI overhead, add some more currencies 
+(add a 30m, 1hr, 4hr, etc, and one of each type eurusd, eurjpy, etc, display timeframe and leverage
+// finish UI overhead - currency, time frame, leverage, (add leverage dropdown) 
+// change main menu to text titles (remove crappy labels) 
+// add remove indicator button (meh) 
+// fix text size on buttons - scale it to screen width 
+// increase label size on dropdown menu 
+// reformat leverage text boxes, have only 4 boxes at top, put time frame on chart, change colors for all drop downs, and the UI will be pretty much done
+// add the reset to the select/delete indicator, remove populate list from remove indicator, change play button text size
+1st: select leverage
+2nd - loading data based on user selection preferences - folder, name, etc 
+change the dropdown menu labels, once you select an item
+fix the bug where you try to delete shit and it doesn't work - fixed
+fix the account display on load/delete
+
+next - fix the scrolling dropdown issue //fixed (childcount) 
+next - add indicators, add account summary (by tomorrow night) 
+next - add auto-trade, trade analyzer
+next - pretty up UI //mostly done (black/dark gray color scheme), can set this to user preferences 
+next - integrate banner ad, in-app purchases
+next - release
+
+
+draw lines on the top bar
+fix the fucked up delete menu thing in load user screen - da fuck is going on here
+
+add indicator screen - a new scene? or some kind of popup menu
+fix the scrolling back issue - screen turns black instead of just stopping when it gets to the limit 
+make the select leverage bar half as wide, replace with speed control slider
+//add tap to advance one bar, add barchart, candles, and the ability to select them
+add all the current indicators and link them to the account settings somehow
+add the tap to advance one bar 
+need to use the panel for the indicator settings
+// draw trade markers, stop the UPL from calculating on past data when you scroll. 
+goal for today: add all the fancy chart stuff, and add 1 indicator. 
+add a stop loss and take profit dropdown 
+tomorrow - finish the panel and add indicators, fix small things like saving account state and some clicking bugs 
+goal is to release this puppy by the end of Imeka stage (before Dec.) 
+
+// tonight : finish all the indicator panels - dropdowns, buttons, parameters, etc
+tomorrow - add the actual indicators. 
+moving average panel - moving average type, moving average period. 
+change the tap to only the far right part (change th color slightly), add text, tap/tap and hold to advance data 
+increase the top size so it looks better in landscape 
+remove the start trading texture, and make it text. 
+
+premium features - account summary/trade analyzer, more currencies, more time-frames, customize indicator parameters, 
+
+find a way to display flashing message
+add a cancel button to add indicator, make the accept button universal (find a way to keep it static) 
+	keep the parameters as private static fields, and have a switch statement in the accept button listener, to create the
+	respective indicator using the parameters that the user set. 
+
+toggle the parameters shown on screen (tp, stop, timeframe, etc) 
+
+//indicator drawself function? how to abstractly draw all the indicators with a simple call 
+	=> use a bounding box, and just have a draw TimeSeries function, 
+once you finish the bollinger band panel, add the indicators themselves and make sure it works for all 3
+next things to do - finish all box indicators (and all indicators in general), and fix the minmax scaling according to indicators. 
+add a little control button on the far right, to control the size of each indicator box 

@@ -1,0 +1,50 @@
+april 03 2018
+by end of day
+skeleton for auto-trader, trade analyzer, and account summary panels complete
+fix currency misalignment bug, fix text labels and account name labels (done) 
+fix leverage, pip scale, spread (difficulty level),  upl text color (done) 
+fix negative account balances, and restrict leverage based on account balance 
+	implement this when buying/selling (if margin becomes <0), and check margin during checkUpl
+start testing auto-traders in matlab (create some strategies)  
+show trades on/off (done) 
+advance increment on/off when selecting options
+finish CV and send to philips (done)
+
+by end of week
+release app for android (complete with IAP and ads) 
+adding in some rewards - doubling the account, tripling, 4x, 5 trades in a row, 10 trades in a row, etc. 
+
+today:
+margin calls - add up all the trades (done)
+equity/margin (done)
+sound 
+skip flats 
+skeletons :
+	account summary:
+		main chart showing equity as a function of trades, close button
+		other stats - #trades, #wins, #losses, winning%, average win, average loss, elapsed time, account %change, others?
+	
+	trade analyzer: 
+		average buy, average sell (ERP) + error bars + single trials, 
+		find optimal stop/take profit, find optimal wait time after entering
+
+	auto trader: 
+		choose from different indicator combinations (auto trader names) and tweak the parameters
+		be able to submit a request for an auto-trader
+
+tonight: blank panels for these three skeletons + each in their own class. 
+
+matlab auto trader
+	use the spread and the higher timeframes. first, align low and high timeframes, try some basic strategies
+	strategies: moving average crossover, bollinger band, biased bollinger band, RSI, biased RSI, cci, biased CCI, etc. 
+	personalize parameters for instrument and timeframe, or just use 15m for everything (for app, re-do for desktop version)
+	allow the user to skip through (auto-trader mode) or watch as the price unfolds. 
+	simple auto trader - take-profit, stop loss
+	simple 2: tp/stop in mvg direction, etc	
+	once you have 10 strategies, stop and add to the app, then finish all the other stuff (analyzer, account summary, sound, flats) 
+		
+
+another feature - entry expert advisor? 
+
+goal today: ignore everyone and say no to everything. 
+

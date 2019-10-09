@@ -1,0 +1,13 @@
+Dynamic contrast enhanced MRI studies in oncology with an emphasis on quantification, validation and human studies
+MRI, after administration of an extracellular, gadolinium based contrast agent, can be used to detect and 
+characterize human tumors. the success of DCEMRI is dependent on its ability to demonstrate intrinsic differences
+between a variety of tissues that affect contrast medium behavior. 
+
+T1-weighted imaging: extracellular contrast media readily diffuse from the blood into the extracellular space of 
+tissues at a rate determined by the permeability of the capillaries and their surface area. T1 relaxation time 
+shortening caused by the contrast medium is the mechanism of tissue enhancement seen. the early phase or first pass
+includes the arrival of contrast medium and lasts many cardiac cycles, in this phase the increased signal seen on
+t1 weighted images arises from both the vascular and interstitial compartments. over a period lasting several 
+minutes to half an hour, the contrast agent diffuses back into the vasculature from which it is excreted, contrast
+medium elimination from slow exchange tissues such as fibrosis and necrosis occurs more slowly, explaining the 
+persistent delayed enhancement characteristic of some tumors. 

@@ -1,0 +1,152 @@
+synaptic mechanisms of synchronized gamma oscillations in inhibitory neural networks 
+gamma frequency oscillations are thought to provide temporal structure for information processing in the brain. they contribute
+to cognitive functions, such as memory formation and sensory processing, and are disturbed in some psychiatric disorders. fast
+spiking, parvalbumin expressing, soma inhibitory interneurons have a key role in the generation of these oscillations. experimental
+analysis in the hippocampus and neocortex reveals that synapses amoung these interneurons are highly specialized. computational
+analysis reveals that synaptic specialization turns interneuron networks into robust gamma frequency oscillators. 
+
+introduction: oscillatory activity is a hallmark of neuronal activity in brain regions such as the olfactory bulb, hippocampus, 
+and neocortex. the frequency of these oscillations covers three orders of magnitude, from the delta (0.5Hz) to alpha to high gamma
+range (200Hz). within this spectrum, gamma oscillations have received particular attention because their link to cognition is
+particularly evident. gamma oscillations have been proposed to represent reference signals for temporal encoding, sensory binding
+of features into a coherent percept, and storage and recall of information. conversely, disruption of gamma rhythms could underlie
+some psychiatric illnesses such as schizophrenia. 
+to understand how oscillations contribute to higher brain function, it is necessary to first consider the underlying mechanisms. 
+a key requirement for the generation of network oscillations is regular and synchronized neuronal activity. if a neuron fires 
+action potentials in a regular manner, rhythmic fluctuation of output synapses generates a periodic fluctuation in the intracellular
+potential of all postsynaptic cells. if several neurons fire regularly and synchronously, this fluctuating output signal is 
+amplified, defining temporal windows of increased and reduced excitability in a target population of output cells. at the same time
+the rhythmic synaptic activation pattern results in a fluctuating field potential signal, which can be easily measured using 
+extracellular electrodes. the divergence of synaptic outputs leads to a high level of spatial coherence of network oscillations,
+such highly coherent oscillations might be ideal reference signals for temporal encoding and sensory binding in large neuronal 
+ensembles. 
+although gamma oscillations occur in all cortical areas, they are particularly well studied in the hippocampus. first, the power
+of extracellularly recorded oscillations is higher in the hippocampus than other regions, owing to the simple laminated 
+architecture of the hippocampal circuit. second, gamma oscillations in the hippocampus are evoked under specific behavioral 
+conditions such as exploration when they typically coexist with theta oscillations. third, as the hippocampus is involved in 
+spatial navigation episodic memory, the relevance of network oscillations for coding, storing, and retrieving memories can be
+investigated. although hippocampal gamma oscillations have been studied for decades, underlying neuronal and synaptic mechanisms
+have only recently come to light. this article aims to summarize the synaptic mechanisms of gamma oscillations in the cortex, with
+primary focus on hippocampus. the dependence of gamma oscillations on synaptic inhibition, and the role of fast spiking, 
+parvalbumin expressing GABA containing interneurons. how mutual inhibition leads to oscillations in inhibitory network models is
+explained. the properties of GABA synapses between interneurons are revealed, and it is shown how these properties increase the
+robustness of oscillations when incorporated into interneuron network models. finally, interneuron excitation by gap junctions and
+fast glutamatergic synapses is investigated and how extended network models incorporate these effects. 
+parvalbumin: a calcium binding protein. in the hippocampus, parvalbumin is selectively expressed in fast spiking basket cells and
+axo-axonic cells. its expression is a reliable marker for interneuron identification. 
+
+reliance of gamma activity on inhibition: intuitively, phasic excitement seems to be an ideal mechanism to generate synchronized
+oscillatory activity. however, this might not be the case for gamma oscillations. the contribution of excitation and inhibition
+to the generation of gamma oscillations can be systematically investigated in acute hippocampal slices in vitro. 
+gamma oscillations can be evoked in vitro by agonists of various metabotropic or ionotropic receptors: metabotropic glutamate
+receptors, muscarinic acetylcholine receptors, and kainaite receptors. they can also be induced through the application of a 
+potassium rich solution. however, gamma oscillations evoked under these conditions differ in their reliance on excitation and
+inhibition, mglur induced gamma oscillations in ca1 are completely blocked by gabaa receptor antagonists, but are maintained
+in the presence of ampa antagonists. 
+therefore, gaba mediated inhibition is necessary and sufficient for the generation of gamma oscillations induced by mglur or
+kainate receptor receptor activation, whereas it is necessary but not sufficient to generate gamma oscillations after carbachol
+application. carbachol induced activation requires a combination of phasic inhibition and excitation. regardless of the means of
+induction, the power and frequency of gamma oscillations can be modulated by substances that modify gabaa receptor gating, such as
+benzodiazepenes and barbituates, underscoring the importance of gaba synapses in gamma oscillation generation. 
+
+the differences in the reliance of gamma oscillations on fast inhibitory and excitatory synaptic transmission, depending on the
+method of induction, can be understood in terms of synaptic connectivity and the localization of receptors that activate the
+network. there is an extensive system of glutamatergic recurrent collateral synapses in ca3 but not in ca1, it is therefore
+possible that phasic excitation is more important in ca3 than ca1. furthermore, mglurs and kainate receptors are expected to 
+preferentially activate interneurons, whereas machrs are believed to be mainly located on principal neurons. as a result, mglur 
+and kainate receptor models do not require phasic excitation, because interneurons are activated directly, whereas machr models
+depend on phasic excitation, as interneurons are activated indirectly by pyramidal neurons. application of a potassium rich 
+solution is likely to depolarize both principal neurons and interneurons, which is why potassium induced oscillations have 
+intermediate properties. 
+finally, gap junctions seem to be important for some in-vitro forms of gamma oscillation. carbachol induced oscillations in the ca3
+region are inhibited by the non-specific gap junction blocker octanol, and potassium induced gamma oscillations in the ca1 region
+are reduced by the presumably more specific gap junction blocker carbonoxelone. gap junction coupling increases the power of 
+gamma oscillations, though it is not necessary for their generation. 
+in summary, mglur and kainate receptor dependent forms of gamma oscillation rely exclusively on fast inhibition mediated by gabaa
+receptors. by contrast, machr-dependent types of oscillation require both fast inhibition and excitation. although the diversity
+of in-vivo types of gamma oscillation may be unsatisfactory from a reductionist perspective, all forms are likely to be relevant
+in-vivo, possibly reflecting region and state dependence of mechanisms underlying hippocampal gamma oscillations. 
+
+role of basket cells in gamma oscillations: the predominant reliance of gamma oscillations on gabaa receptor mediated inhibition
+led to the view that a mutually connected network of inhibitory interneurons is a major generator of gamma oscillations. in a 
+simple analogy the interneuron network acts as a clock, providing a timing signal to the principle cell ensemble. but do all
+interneurons participate in gamma generation, or only a sub-set? GABA containing interneurons are diverse and differ in their
+functional properties, axonal arborization, and expression of molecular markers in both the hippocampus and neocortex. 
+interneurons can be broadly classified as fast-spiking and non-fast-spiking, and soma-inhibiting vs dendrite inhibiting cells. 
+moreover, interneurons can be subdivided into largely non-overlapping sets according to the expression of calcium binding proteins
+such as parvalbumin, and neuropeptides such as somatostatin. on the basis of these criteria, 16 different subtypes have been 
+identified in the hippocampal CA1 region. 
+several lines of evidence indicate that fast spiking basket cells that express parvalbumin are essential for the generation of
+gamma oscillations both in-vivo and in-vitro. first, parvalbumin expressing basket cells are abundant, in the hippocampus 
+representing up to 20% of all GABA containing interneurons. second, fast-spiking, parvalbumin expressing basket cells both form 
+an extensive, mutually connected interneuron network and have highly divergent output to principal neurons. this means that
+inhibitory synapses between basket cells could synchronize action potential activity within the basket cell network, whereas
+inhibitory synapses between basket cells and principal cells could distribute this synchronized activity to the principal cell
+population. third, gamma activity is associated with alternating current sources and sinks in the perisomatic region, consistent
+with the involvement of basket cells which innervate this region. fourth, the fast signaling properties of basket cells, 
+particularly the fast spiking action potential phenotype, and the high intrinsic resonance frequency, seem to be optimal for the
+generation of gamma oscillations. finally, basket cells are highly active during gamma activity. action potentials are generated
+at a rate of 1 per gamma cycle, and precisely phase-locked to the oscillations. this activity pattern is very different from that
+of principle neurons, which fire at a lower rate and with less precision. 
+in addition to fast spiking parvalbumin expressing basket cells, other types of interneuron might contribute to the generation of
+gamma oscillations. for example, cholecystokinin expressing basket cells could be involved. agonists of cannabinoid receptors, 
+known to suppress gaba release from synaptic terminals of these cells, reduce gamma activity in vitro. other types of interneuron
+which inhibit the dendritic domain may also contribute. however, the quantitive contribution of these subtypes to the generation 
+of gamma oscillations remains to be identified. 
+
+build it, and you understand it? 
+how can networks of inhibitory cells generate synchronized gamma oscillations? one way to address this is to develope network 
+models. the simplest possible model is a system of two synaptically connected neurons. if single neurons are described by 
+integrate and fire models, their synchronization properties can be determined analytically. in such a two cell model, if the 
+synaptic effects are instantaneous, excitatory coupling synchronizes the neurons very efficiently. however, if synaptic 
+events arise more slowly (a biologically more plausible scenario), mutual inhibition is the better synchronizing mechanism. 
+does this conclusion also hold in more complex systems with a larger number of neurons represented by conductance based models?
+the oscillatory behavior of larger networks of interneurons has been investigated numerically, these models make the generalization
+that inhibition between two neurons is weak, slow, and hyperpolarizing, and that the network is homogenous. furthermore, network
+structure was not implemented. these studies conclude that inhibitory interneuron networks can generate coherent oscillations in 
+the gamma frequency range if the neurons are exposed to tonic excitatory drive. coherent oscillations are also generated if a 
+random train of phasic excitatory events instead of tonic drive is used to activate the network. 
+as with many models, however, the devil is in the details. early models such as the wang-buzsaki model showed that synchronization 
+is sensitive to changes in kinetics of synaptic conductance, connectivity, and synaptic reversal potential. synchronization was
+also shown to be extremely sensitive to heterogeneity in the tonic excitatory drive, which translates into variability in the 
+intrinsic action potential frequency, because of the monotonic relationship between firing frequency and driving current, therefore
+heterogeneity in the drive will desynchronize the network. in the w-b model, synchronized oscillations are abolished if the 
+coefficient of variation of the tonic excitatory drive exceeds 5%, and this requirement for minimal heterogeneity is inconsistent
+with experimental data. robustness against heterogeneity can be improve substantially by incorporating fast and strong rather 
+than slow and weak inhibitory synapses, however under these conditions a larger excitatory drive is needed to counterbalance
+the increased inhibition. 
+fast inhibition between basket cells: the ideal experimental strategy to address whether the properties of synapses between 
+basket cells are consistent with the assumptions of network models is paired recording in acute brain slices. this approach has 
+two main advantages 1) it allows the experimenter to record unitary inhibitory postsynapic potentials and inhibitory postsynaptic
+currents, which are generated by the activity of a single presynaptic neuron. second, if combined with biocytin labelling, 
+paired recording allows the researcher to identify the presynaptic interneuron on the basis of its morphological properties and 
+expression of molecular markers. paired recording experiments in vitro have shown that basket cells are highly interconnected in 
+both hippocampus and neocortex. for example, the probability of finding a chemical synaptic coupling between two closely spaced
+fast spiking parvalbumin expressing basket cells in the dentate gyrus is 50%. an independent measure of connectivity shows that
+each basket cell is connected to atleast 60 others in the immediate vicinity. furthermore, paired recording analysis showed that
+synapses between basket cells have specialized functional properties. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

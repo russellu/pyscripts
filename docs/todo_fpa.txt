@@ -1,0 +1,14 @@
+todo: FPA
+forex price action todo: 
+1) monetization
+2) show currencies which are available/not available (locked/unlocked) 
+3) fix account loading 
+4) find an indicator that works - and that you can demonstrate in real time 
+a regression between the pattern of the moving average, and the future price - how to find the most HP pattern? 
+strong price action effect due to sorting of the k-means patterns 
+when price above the mvg, its slightly more likely to continue upwards and vice versa. 
+and there's a small undershoot effect, ie, the longer term trend is the opposite
+when short term price is above the moving average, and long term price is below, its more likely that it will go up. 
+
+how to find the optimal mvg parameters???
+try to cluster based on the outcome...and then take only the parameters that are consistent in testing data? 

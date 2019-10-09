@@ -1,0 +1,14 @@
+more stuff for the tuning:
+need 5 more subjects (n=10), with atleast 2 more using the eye-tracker (analyze the eye-tracker results before you do 
+more eye-tracking subjects). 
+
+find a way to get single trials in response to each orientation (combining the indices in single trials? => 60 trials/type
+
+get a better orientation tuning index. 
+
+tuning index - the largest t-test difference in that band. 
+
+plot orientation tuning for all subjects (each subject has their own tuning curve) => plot single subject 4 bands
+plot retinotopic tuning for the same 
+plot grand average and single subject ERSP for retinotopic and orientation tuning 
+plot d' for all subjects and error bars  

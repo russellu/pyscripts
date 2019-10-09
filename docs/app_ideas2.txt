@@ -1,0 +1,4 @@
+app ideas
+
+financial betting site - provide liquidity, and provide real time bets (like a broker)
+amalgamation of real time quotes and demo trading (+simulation) 

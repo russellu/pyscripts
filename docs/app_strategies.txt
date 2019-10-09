@@ -1,0 +1,34 @@
+auto-trader workshop
+
+strategy #1: random entry, random exit
+strategy #2: random entry, stop/take profit exit 
+strategy #3: price crosses mvg entry, price crosses mvg exit 
+strategy #4: price crosses mvg entry, stop/take profit exit
+strategy #5: price crosses bband entry, price crosses bband exit
+stragety #6: price crosses bband entry, stop/take profit exit 
+
+or - just have an entry trigger and an exit trigger, and then adjust the parameters of these
+
+entry triggers: mvg crossover, bband crossover, momentum (RSI, CCI, MACD)
+exit triggers: same as entry but reversed, stop and take-profit 
+
+looks like anything below 10-15 minute bars is going to get chopped up by the spread/noise. 
+
+testing in matlab:
+1) isolate a single currency (eurusd)
+2) create condition matrices so you can test multiple strategies automatically
+	have a vector of buy trigger values, sell trigger values, buy exit trigger values, sell exit trigger values 
+3) you have vectors of 0, 1, and -1 for nothing, buy, and sell conditions. now test them against each other 
+	try a single parameter first: against bband enter, against bband exit. 
+4) found some strategies that seem to work pretty well - next step, get profit curve, (make sure its continuous) and then visualize
+
+so basically the only thing that stands a chance of working is the bollinger band negative and possibly the bollinger band negative combined with aroon,
+although they give pretty mmuch the same results. try optimizing these (with take profit and stop as well) and if you don't get a smooth profit curve, go back
+to the app. 
+got a decent overall average correlation (0.35 max) but not that reproducible. you can try using a more recent time period to see if that reproduces better.
+also, try sorting or at least eliminating some of the worst currencies. 
+
+get the correlation map across all time periods, and see if there's any significant predictive power in the correlation pattern from point a to point b
+there actually appears to be some temporal consistency - whether this is due to the smearing effect or what, no idea, but worth trying a WFA to test.
+
+use the close to calculate the profit/loss, but the high/low to calculate the exit

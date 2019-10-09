@@ -1,0 +1,40 @@
+overview: last week before classes starts
+theme: you are in the final stages before launch: everything must be good to go, leaving nothing to chance/tomorrow
+NEED MORE IDEAS FOR CS230 - use the final version of the messaging app to build up smaller versions of easier apps 
+DATA MINING NOTES - keep it clean, clear and concise - restrict the text to your notes. font 26 and above, lots of pictures 
+
+objectives:
+primary 1) first 2 weeks (3x 230, 5x 405) lectures, FULLY PRACTICED AND READY TO GO
+	this includes the initial lecture
+	this includes NOTES 
+	including all labs for cs230 
+	start making notes in word and print them out before class. 
+		combine the notes with the slides, this will allow you to put less detail on the slide and talk more
+	notes - bullet points for every word document paragraph
+		ie, have a bullet point in the slide, and a paragraph in the word doc that you can ramble on about 
+primary 2) frqnt complete application (7 pages) (Almost done) - spit out last 2 pages tomorrow, refine, and then continue down frqnet
+	feedback process between application writing and note taking
+	need a lot more emphasis on the long-term monitoring component
+	
+	
+
+
+list:
+0) finish 3 lectures cs230, 5 lectures cs405
+1) finish grant for internal deadline 
+2) read book on cardiac MRI/clinical MRI, take notes (Jan Bogaert pdf) 
+	finish your overview of all the chapters, look for sentences to put in your grant
+3) finish psychophysics notes
+4) read about stroke/vascular imaging/clinical
+5) back up all grants, courses, etc on github  (done)
+6) finish all lecture outlines (230 + 405)
+7) start rehearsing algorithms in your head. should be able to recite the covering, decision tree, linear regression, association, and others 
+
+today: completed large part of first lecture (finish all this tomorrow)
+tonight: either continue working on 230, or switch to grant (organizing the outline into coherent sections) 
+230 - finish the tic-tac toe project (give solution) and put more detail in the initial project todos 
+grant: should basically flow very smoothly, no weasel words, maximum information transfer
+write out a high level notepad document of headings that the proposal will adhere to 
+
+
+

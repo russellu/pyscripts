@@ -1,0 +1,87 @@
+MRS basics: basics of MRS with emphasis on clinical applications are covered, detailed analysis of physics and chemistry that make
+the techniques possible are out of the scope however.
+overview: the most widely used MRS protocol 1h proton spectroscopy is an FDA approved procedure. other methods such as 
+phosphorous-19, and carbon-13 are available, but proton spectroscopy dominates the literature because it is readily available on 
+clinical MRI scanners. 
+
+what can be measured with magnetic resonance spectroscopy? MR imaging maps the distribution and interaction of water with tissue.
+in contrast, 1H MRS analyzes the signal of the hydrogen protons attached to other molecules. whereas for MRI only a single peak
+(water) is being mapped, the output of MRS is a collection of peaks at different radiofrequencies, representing proton nuclei in 
+different chemical environments, the spectrum. because of the low concentration of MR-detectable chemicals, MRS is restricted to
+the analysis of individual ROIs much larger than the resolution of MRI. the typical spatial resolution for MRS is 1-10 cm^3, which 
+is a thousand times larger than what is typically achieved for MRI (1-10mm^3). 
+only small, mobile chemicals with concentrations > 0.5uMol/g can be observed with in-vivo MRS, which leaves most nts out of reach
+for MRS, besides perhaps gaba, glutamate, and aspartate. large immobile macromolecules such as myelin, proteins, RNA and DNA are
+rendered invisible to MRS. the network of small molecular weight amino acids, carbohydrates, fatty acids, and lipids that can be
+measured is tightly controlled in the brain by enzymes and all but a few key molecules are kept at remarkably constant concentrations.
+it is for this reason that reproducible MR spectra of the brain can be obtained when robust methods are applied. in sequentially
+studied individually healthy controls, the single greatest variable may not be biological or diet imposed variations, but the 
+practical and unavoidable inaccuracy of subject positioning, problems with identification of a previously selected region of the 
+brain, and imperfect stability of MR hardware. the biophysical fingerprint of a region will be abnormal when there is structural
+damage, altered physiological conditions, and biochemical or genetic problems. 
+
+principles of in-vivo mrs: the main ingredient is the strong magnetic field (B0) created by a superconducting magnet, which causes
+net magnetization to develop in any tissue brought into that field. this magnetization vector can be tipped out of alignment with
+the main field, after which it will precess around the equilibrium direction with a characteristic frequency.
+chemical shift: the resonance frequency of the protons is in a first approximation a function of the main magnetic field strength.
+however, the electronic environments of molecules causes a small modulation of the main magnetic field. if the electrons are close
+to the proton there is a shielding effect and and the proton experiences a minimally smaller magnetic field, which results in slightly
+different resonance frequencies for protons in different molecules, or even for protons in the same molecules, but at different
+positions within the molecule. for in-vivo mr spectroscopy, analyzing chemical shifts has been the main method for peak assignment.
+j-coupling: in addition to chemical shifts, the spectrum is also modulated by j-coupling, or scalar coupling. j-coupling is the result
+of an internal indirect interaction of two spins via the intervening electron structure of the molecule. the coupling strength is
+measured in Hz and is independent of the external field strength. j-coupling between the same species of spins, ie proton and 
+proton, is termed homonuclear coupling, whereas j-coupling between different species of spins ie proton and phosphorous is termed
+heteronuclear coupling. j-coupling results in a modulation of the signal intensity depending on sequence type and acquisition 
+parameters, particularly the echo time TE. 
+echo and repetition time: the main contrast mechanisms in MR imaging are T1-saturation, T2 relaxation, T2* relaxation, diffusion,
+and proton density. these properties and acquisition parameters also affect the appearance of the spectrum. however, each proton in
+each molecule has its own set of characteristic MR properties. metabolite resonances may be prominent with one acquisition scheme,
+whereas the peak amplitude is different when another scheme is used, despite spectra being acquired from the same ROI. therefore,
+changing sequence parameters or introducing different acquisition sequences should be done with great caution. 
+the most important parameter is the echo time TE, indeed, MR spectroscopy can be separated into long and short TE. TE is the time
+the magnetization is in the transverse plane after an excitation and before the readout. during this time, the signal from each 
+metabolite peak relaxes with its own characteristic T2 relaxation time. in addition, the signal amplitude of j-coupled protons is
+modulated. choosing long echo times simplifies the spectra because the number of peaks in the spectra are reduced, and the available
+peaks become larger. historically, long TE (TE>135ms) has been used in the clinic because of a flat baseline, and because the three
+peaks (Naa, creatine, choline) can be unequivocally separated. long TE mrs is also less sensitive to hardware issues such as 
+eddy currents. short TE allows for more metabolites to be measured, and has a higher SNR. other acquisition parameters that have an
+impact on the spectra are relaxation time (tr), and mixing time (tm). TR is the time between each initial excitation of the 
+magnetization, if absolute quantitation is required, it is easier to quantify spectra that were obtained with long repetition times.
+the mixing time TM is the time delay between the 2nd and 3rd 90deg RF pulse in a STEAM sequence, TE and TM are different parameters.
+during TM, the magnetization in a STEAM acquisition points along the field and there is no signal decay due to T2 relaxation. 
+editing: editing techniques exploit homo/heteronuclear j-coupling properties of molecules, many editing sequences utilize the fact 
+that in an echo sequence the phase of j-coupled spins is modulated during the echo delay. a series of spectra acquired with different
+echo times each may allow the separation and identification of overlapping signals from different molecules due to their different
+j-modulation. 
+data acquisition: planning a magnetic resonance spectra: quality control at the time of data acquisition is essential for MRS. 
+manufactureres generally provide PRESS (point-resolved spectroscopy), STEAM (stimulated echo acquisition mode) and isis (image
+selected in-vivo spectroscopy), the sequences differ in how rf pulses and gradient pulses are arranged in order to obtain localization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

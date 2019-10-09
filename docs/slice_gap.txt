@@ -1,0 +1,55 @@
+today: fix the gap issue, and if you get that done in time, start writing the papers for your didactic
+to correct the slice gap, you need to first build a vector of all average artifacts, and then slice by slice
+correct the gap between them
+
+when performing the subtraction, you need to make sure that the last time point from the previous epoch's average
+artifact always aligns with the first time point from the next epoch's average artifact
+the problem with subtracting the previous slice difference is that it doesn't take into account the corrections
+you made previously. you have to do it in a step-wise fashion, ie, correct it one slice at a time, slice byslice
+
+mostly done - need to remake a couple functions, and speed it up a bit.
+
+things to finish: speed up artifact correlation - take only artifacts within a certain distance
+		remove the spikes from the plateau (saturation)
+
+you need an objective and a timeline to accomplish a goal
+
+1) what is your objective? 
+	ex: denoise EEG and compare sources to FMRI
+
+2) how long do you have to accomplish it? (level of detail or error)
+	ex: two weeks (will have to compromise on generality, correctness)
+
+#1 THE OBJECTIVE: to obtain clean, source-space EEG time series aligned with clean FMRI voxels 
+
+need to start putting super basic stuff like epoching and slice time finding into another file
+
+ideas for implementing machine learning
+
+10 ways in which you can implement machine learning into the gradient denoising:
+1) component selection (classify eeg components as neural or noise)
+2) bcg denoising (remove bcg using auto-encoder)
+3) classifying bad epochs - train it to distinguish between gradient and non-gradient
+4) learning FMRI from EEG and vice versa - which frequency band best models BOLD?
+5) finding the initial onset
+6) lstm modeling of gradient artifact to predict and cancel
+7) linear modeling of gradient artifact
+8) sleep state classification 
+9) linking sleep state and spectral content to BOLD
+10) predicting the EEG data based on the past data
+
+some basic information necessary for it to work: 
+minimum basic information needed
+1) start time (index) of FMRI gradient pulse 2) # slices per volume 3) multiband factr 4) TR
+	instead of start time, you can also provide a trigger value for example 'R1' 
+
+never forget your ultimate goal: to merge EEG and FMRI automatically, and robustly. 
+for now, you always have gradient triggers, so just assume that is the case. some setups may not, in which case you can get creative
+
+define a %difference metric gradient artifacts - the sliding window approach should be wary of these 
+create some pandas code for loading the vmrk separately 
+
+by the end of the weekend, you want to have correlation matrices IN PYTHON between BOLD and EEG and a pipeline that can be applied to 
+further datasets 
+
+today: a complete gradient denoising pipeline (with comments) - sliding window, and ssd averaged. compare the results

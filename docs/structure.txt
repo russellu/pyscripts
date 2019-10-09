@@ -1,0 +1,20 @@
+structure vs gamma paper:
+
+structural measure #1: distance from electrode to active cortex
+structural measure #2: cortical cancellation index - over ROI, possibly scaled by size of ROI? 
+structural measure #3: size of ROI - #voxels exceeding a certain correlation threshold 
+	3 key elements that determine a single subject's EEG gamma response
+
+subjects with large, open-field cortices closer to electrode will have a stronger gamma band response
+the inter-subject differences in gamma response are mostly due to macroscopic structural differences 
+
+by tomorrow night: inot, and distance, vs gamma power, for both groups, main figures, as well as log fit
+another structural parameter: breaking up distance into cortical tissue (gray/white) and skull/skin, quantifying these in various
+subjects, and correlating those to see which contributes most on its own (ie, distance from cortex to electrode, skull, etc) 
+
+tonight: get i0 for badger subs, and quantify the tissue using the vector method. 
+
+introduction: EEG, brain rhythms, visually induce gamma, peak frequency and amplitude.
+relationship of these measures to various cognitive and psychiatric disorders
+relationship of these measures to anatomical variables in the healthy human
+what this study will address.

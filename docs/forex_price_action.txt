@@ -1,0 +1,259 @@
+forex_price_Action_game:
+make it web-based, or native android/ios? 
+native android first, then port to IOS (should be simple enough). 
+game features: 
+currency pair (Eurusd, eurjpy, etc)
+speed (ticks/sec)
+timeframe (tick, 1m, 5m, etc)
+time of day (specific times - 5am, etc) 
+indicators (start with 3 basic ones: MACD, MMA, and bollinger bands, local min/maxima)
+
+adding strategies? 
+
+basic functions (free) : buy, sell, leverage, different currencies, save account, account settings, indicators
+premium - more currencies and other instruments, live data feed, more indicators, expert analysis (auto-trader), more
+time scales
+
+put the UPL visualization on the left side (based on stop loss and take profit - if they don't exist, figure something out
+
+by tonight: have a working game, where you can select leverage, timescale, and other factors such as timeslot 
+randomize => close all trades, and select a new timepoint to trade from. 
+ForexPriceAction
+set max stop loss (in $) and trailing stop (trail stop), show #trades 
+
+free, premium
+
+free: buy/sell, 1 currency, 1 leverage, 1 timeframe, no indicators, all speeds, all #points 
+premium: all currencies, all leverages (10,50,150,200,300,400), all time frames, all indicators, speeds, npoints
+ability to select time slots (open, etc), live trading
+indicators : rainbow, MACD, bollinger bands, CCI, stochastic, etc (try to get 20+ so you can advertise) 
+
+HOW TO Do the zoom properly? 
+the screen should always be full #1
+when you max out the zoom, it should just go to the last data point available 
+
+free:
+- one month of data
+- one currency pair
+- one leverage (10x) and timeframe (1min) 
+
+premium:
+- select and trade specific time slots
+- access over 20 different currency pairs
+- access different indicators such as MACD, stochastic, and bollinger bands
+- save and review your trades
+- access all leverages (10:1,50:1,100:1 etc) and timeframes (tic, 1min, 5min, etc) 
+
+
+stuff remaining to do: 
+more currencies (Add button) 
+more timeframes (download dukascopy data)
+add trade indicators on chart
+faster loading (how?) -> parse and save as a more quickly loaded file?
+save as a predefined format (text file, with each line a data point, but you know the order before hand so its easy to read
+ie, save each as a string with indices should be much faster to read 
+
+next big step: popup keyboard, to customize stop/tp, and indicator parameters
+a way to make it cover the screen from all the other buttons
+
+you consistently do worse than chance. this means you can also do consistently better than chance
+
+stuff remaining: premium, and simple
+menus - currency and time selection
+parsing the time-slots, and saving that information
+persistence (Accounts)
+indicators (customizable)
+also find a way to isolate the non-farm payroll and other news events (news)
+
+6 days deep = > more than half done - try to have it released by sometime next week (next friday as the deadline) 
+
+a new forex strategy: buy, and wait for it to go in your favor. if it does, close (After a certain amount of time)
+if it doesn't, wait for a bit, and then look for an opportune time to exit (ie a local high) - try this later 
+
+success = handling objections 
+
+cardiac intervention lab atrial flutter ablation
+
+app idea: offline crawler
+
+main menu: enter account name and balance
+the button visibility controller - controls which buttons are on top and which ones are on bottom, ie, in what order they
+get drawn, and which ones are active/not active (can add this later to the main game screen). 
+
+problems: still have keys showing up when you press the menu butotn, and still having a problem with the close button
+being pressed at the same time as the menu button. a timer would solve both these issues, it seems. 
+
+set up a background behind the menu (a cool picture of the stock market) 
+
+stuff to do - faster read-line (parse and read quickly) 
+put the background image on the mainMenu screen
+finish the account set up, save, and loading - and create multiple accounts 
+get emulator working, and test buttons in tablet mode - re-do buttons with icons (zoom, etc) 
+finish 3/4 of those by tomorrow 
+
+by wednesday - server loading and tic data parsing
+
+by friday - release 
+
+next step: finish the account loading, and display the message (finish the menu tonight) - loading, and saving, even after
+exiting application. clean up the top of the game screen at the same time, with the UPL and account name etc 
+
+start the application - show the main menu.
+create/load an account - show the game screen, and load the data at that time (also show a loading data screen) 
+put error messages in red, and success messages in green, waiting messages in yellow. 
+put a slowly moving trace behind the menu (partly translucent) 
+main menu is basically done. now, time to move on to something else
+what needs to be finished about the menu? finish the account loading/saving (permanence, after you exit the app)
+
+things to display at the top: account name, currency, equity, upl, leverage
+
+how to do the loading accounts properly?
+have a name arraylist, and an account arraylist corresponding to the name arraylist
+load the name arraylist first, and then in a try/catch block, load the accounts after. 
+
+loading and back buttons on menu working
+now, get the accounts working with the right currency data files, and saving the account balance properly
+	add more fields (current currency file, current time point, etc) 
+then work more on the display (add leverage, and improve the colors)
+then do the account summary
+add info to the account loading screen (account balances)
+add the ability to delete accounts (when you press load, you load or delete)
+find how to put icons on buttons and re-organize interface 
+organize the account loading screen better (put a scrollbar, and make the size automatically a certain height) 
+	something is wrong with this, it is randomly deleting accounts (fixed, was due to serialization) 
+add a random noise option 
+when loading account, set option to 
+need to change up the buttons - set it to onACTIVATE OR SOMETHING (sTILL having issues with the back)
+show number of lots active 
+add button click sounds
+add market sounds, add frequency specific humming to the market (Candlebars) 
+add yearly ROI
+add shaded account buttons
+get it working with different currency pairs (fix all the constants) 
+add some messages on the leverage and timeslot and currency selecting 
+
+next : shaded account buttons, and option to delete accounts (load/delete) 
+things to fix: time series running over the loading screen
+fix the ending time series error 
+add shaded account buttons 
+
+make the account loading screen look a bit nicer (tighter button text, restrict the size of the buttons) 
+
+add a heartbeat signal, and a brain signal
+more debugging, use admob
+
+the app is a lot harder to work on because it has less of a short term gain
+
+things left: fix the back button (done)
+get an emulator and test the buttons
+add button labels, rearrange the buttons 
+add time slot selection code 
+add news events (purchase news events, and purchase different currencies) 
+	=> add all time slots, and 
+add an ad or in-app purchases
+simpler to separate them all into their separate views? a view for the account load screen, a view for the account creation screen, a view for the main menu
+and a view for the game itself then you could just call switch views when you wanted to go to a different view
+the trade tracker - place a green or red bar where you buy or sell, and follow the price with the bar. if it goes outside the range, set the bar to be the max. 
+then also have lines connecting the bar to the current point. 
+add the random noise thing
+make the icons, and rearrange the order
+parse some news events, and put them in their own files
+
+4:13 est = 8:13 utc
+just find the matching string, and then take 240 points further in the dukascopy data. 
+
+how to organize these events? pick the most impactful events, and epoch all those
+nonfarms seem to be correct. can assume all the others are as well, i guess...
+epoch them, then go home, and smoke 
+
+tonight, add the epoch to the app, and practice trading some news events (See if its predictable) 
+add different currencies
+
+the trade tracker can't containt the data, because then it will always try to save it. 
+
+today: add news epochs, and save a bunch of different news events from a bunch of different currencies
+today: select 8 final currencies to use, and have 1 yr of 1min data each (20mb), and 5-10 different news events each
+today: select the time slot also
+today: fix the buttons on the emulator (txt size + button size) 
+monday night: release app on play store 
+
+payment model: interstitial when loading/creating account, and in-app purchases
+icons almost done - need to improve the labels for the current icons (use matlab) and make new labels for the other
+icons
+then, get the currency flag icons
+improve the news trading a bit 
+have one sample currency, and one sample news release to trade
+add indicators 
+
+MAIN THINGS TO FINISH: 
+1) add all currencies, and fix all constants, fix account loading/saving of variables
+2) fix all problems with news trading (starts too early, not enough events, no event labels, no switching, etc)
+3) finish all buttons and fix button layout/full screen mode
+4) add rainbow mode and volume indicators
+5) in app purchases: indicators, other currencies, and more news events 
+ free = non-farm payroll, gbp jpy, and candles 
+
+
+today: put all buttons, improve news display (line in middle, etc), do full screen enhancement
+full screen
+news enhancement (buttons + line in middle + more information) 
+getting all the news events: find the top 20 events, for each currency, based on how much the market moves after 
+each event, so sort each 
+add scroll buttons for news
+Jed Meshew
+summarize account at the end of news
+put back and summarize at top/side 
+
+
+price resets to zero tp and stop when you switch trading modes...
+put a small test currency, after selecting all the currencies you will use ... all the core game functionality
+should be in place by tomorrow: (news events + account summary + time slot + multi-currency).
+then on monday do the monetization shit and release it 
+
+next step = news trading (all currencies) + menu
+1) organize the currencies you will be using (same ones from the data you bought)
+need to save each currency with its own parameters (news events it is sensitive to) 
+currencypair(name), spread(line 2), news events (other lines), then just load the events from the click 
+
+for the news trading - sort according to average impact, and save only the top impacting news events => will cut 
+down on space and confusion, done
+also, save the number of events and the event stats => ie, expected, and actual , done
+change leverage so that every time you trade a news event it doesn't reset, done
+borland team audit
+
+still need to add random noise, indicators, account summary, and improvements to buttons, then you should be good
+to go to monetize and release! 
+rest of the effort should be spent on releasing it in different stores (get it featured in 3-5 different stores)
+crashing on new markets
+
+formulate a strategy for trading news events - that actually works, and put that in to the indicators as well 
+
+the price is roughly correlated with the news - check all currencies, all news events 
+newsepochs size is always max and always the same - why? 
+
+need another metric - 
+find a strategy that works on the news events - simple moving average? 
+need an indicator that actually WORKS that you can add to the app. 
+strategy: find the crossovers, and epoch around them
+
+stop not advancing towards your goal. your goal is to put this app out by the end of the week, and then move on 
+to the next app (the fourier image app) 
+tomorrow: finish all the shit with the different currencies and loading accounts...saving accounts and loading 
+accounts properly. this is the last step (and the leverage etc) 
+remaining: time-slot epoching, and the spread calculation (also put a spread display) 
+time-slot epoching, put the lines on the screen
+save the indices, or put them in some kind of array, so that you don't run the same timeslot twice in a row
+finish the pip value for the currency pairs. -> done
+randomization of time series isn't working correctly...why
+
+some stats for the summarize account: -> done
+remaining: add the stat calculation to the tradetracker, finish the account saving/loading properly, and then
+do the monetization (pay for additional currency pairs) 
+
+problem - when you switch currencies using the randomize button, it resets the currency but doesn't reset the 
+tp? or rather, just when you switch to news trading, from normal trading after switching currency 
+
+
+
+ 
+

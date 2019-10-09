@@ -1,0 +1,20 @@
+overall goal: 
+
+find out if neurovascular coupling changes as a function of sleep stage
+find a general relationship between NVC and EEG/BOLD power spectrum 
+
+today: get source-localized EEG signals and align them with FMRI 
+
+0) remove bcg & gradient artifacts
+1) compute ICA
+2) denoise channels
+3) compute sources
+4) 
+
+OR
+
+0) remove bcg & gradient
+1) compute ICA, denoise channels
+2) filter
+3) down-sample & convolve
+4) correlate with BOLD 

@@ -1,0 +1,8 @@
+goals tomorrow:
+finish methods figure for orientation paper
+add more results: show gamma tuning is contrast invariant while alpha/beta changes
+go to clsc and get documents to renew medicare card
+pay the driving license fee
+write abstract for fiber visualizer and decide features you want to have by the end
+work on quad tree and getting a better fiber selection tool
+

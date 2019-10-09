@@ -1,0 +1,28 @@
+modeling stimulus induced EEG using deep neural networks 
+from image (stimulus) to eeg response, through a neural network
+from neural network to eeg response
+from stimulus to neural network
+
+predicting the next 1s of brain activity based on the previous 1s
+	use neural networks to predict 
+	use sparse autoencoder to predict BCG artifact 1s in advance
+	predicting EEG 1-2s in advance - apply TMS pulses 
+	predicting EEG - for BCI - compare keystrokes with EEG activity 
+	predictive autoencoding for EEG denoising - predict a time series that optimally decodes
+	the stimulus of interest? 
+	optimize the stimulus contrast using deep neural networks. how would this map to a typical
+	DNN architecture? 
+	you could map to a one-hot encoding of stimulus type, but this wouldn't give you a time-series
+	you could map to a filtered representation of the time-series
+	or predict using the rectified gamma time series. 
+	creating a windowed TF using neural network architecture
+	autoencoder over phase and magnitude, rather than time domain
+	reconstruction of heartbeat from electrode rather than vice-versa
+	ground truth - easy for visual stimuli, harder for hand movements etc
+	convert T1 to swi and vice versa 
+
+day predictor app - app that tracks your movements, and predicts what you will be doing from day
+to day.
+
+generative models to create stimuli from neuronal spectra and vice versa - explaining the double
+peak. 

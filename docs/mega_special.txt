@@ -1,0 +1,66 @@
+efficient gaba editing at 3t without macromolecule contamination: mega special
+abstract: the MEGA PRESS technique is one of the most common ways to quantify GABA within the human brain. however, accurate 
+quantification of GABA using megapress is complicated by spectral co-editing of macromolecular resonances. this article proposes
+a new pulse sequence enabling gaba editing while removing macromolecular contamination. this sequence combines the mega editing
+scheme with the special localization technique. simulations and phantom experiments indicate a superior performance to mega-press,
+and in-vivo results demonstrate effective removal of macromolecular contamination. in a study of the occipital lobe of 5 healthy
+volunteers, the macromolecule corrected GABA/creatine ratio was found to be 0.093 +/- 0.007, whereas prior to macromolecule 
+correction it was found to be 0.173 +/- 0.013. 
+
+introduction: gaba is the primary inhibitory nt in the human brain, and its function is regulation of neuronal activity. 
+unambiguous in-vivo detection and quantification of gaba by conventional 1h spectroscopy is difficult, because of large overlapping
+metabolite resonances. a variety of spectral editing techniques have been developed to enable the selective observation of GABA
+by partial or full cancellation of overlapping resonances, amoung the most commonly used is the MEGA PRESS technique, which 
+combines mega editing with PRESS localization to achieve localised observation of the C4 GABA methylene resonance at 3ppm. 
+although favored for its simplicity and ease of use, MEGA PRESS has a few well known drawbacks that limit its ability to resolve
+GABA accurately. the first is the problem of macromolecule co-editing, which results in significant contamination from macromolecules
+in the edit gaba signal at 3ppm. this co-editing arises as a result of an MM resonance at 3ppm, which is coupled to an mm resonance
+at 1.7ppm, close in frequency to the c3 gaba resonance at 1.7ppm, where the gaba editing is applied. several methods have been
+proposed to separate the mm contribution from the edited spectrum, to improve the accuracy of GABA quantification. one method
+involves the acquisition of a metabolite nulled spectrum to enable measurement of the mm contribution, which can then be subtracted
+from the total gaba edited + mm spectrum. this is unsuitable in practice because it doubles scan time, and metabolite nulled spectra
+are sensitive to the T1 relaxation rates of both mm and metabolites. a second method for mm correction known as the henry method
+involves careful selection of the editing pulse frequency such that mm are not co-edited by the spectrum. specifically, rather
+than applying the editing pulse in a conventional on/off fashion, the editing pulse is applied symmetrically about mm1.7 in both
+even and odd acquisitions. as a result of this symmetry, the mm1.7 resonance is equally affected in both the edit on and edit off
+cases, and mm co-editing is inhibited. this approach is favored because it does not require additional scans and is insensitive
+to changes in t1 of mm or metabolites. the henry method is more difficult to use at 3t, however, due to the reduced spectral 
+dispersion at lower field strengths. a second limitation of megapress is that, as a result of the chemical shift displacement
+of the slice selective localization pulses in the PRESS sequence, the scalar evolution of the c4-gaba multiplet is highly 
+spatially dependent. this article presents a new pulse sequence for GABA editing at 3t, combining the conventional MEGA editing
+scheme with the SPECIAL localization scheme. the sequence contains longer, more frequency selective editing pulses than megapress,
+enabling the use of the henry method to remove mm contamination when sufficiently narrow-bandwidth editing pulses could not be
+obtained. the use of special spatial localization is also expected to reduce intravoxel spatial variations in the edited GABA 
+signal, as the echo time contains one less refocusing pulse than in press localization. 
+methods: 
+background: when using the henry method at 3t, the frequency separation between the c3-gaba resonance (1.9ppm) and the edit-off
+pulse (1.5ppm) is approximately 51Hz. appropriate difference editing requires that c3-gaba resonance is unaffected by the edit-off
+pulse, therefore spins at a distance of 51Hz from the center of the editing band should experience less than 1% inversion and
+the editing pulse inversion profiles should have a half-width at 1% maximum of less than 51Hz. 
+for GABA editing, the MEGA PRESS sequence is normally implemented with a te of 68ms, corresponding to approximately one half-cycle
+of scalar evolution of the c4-gaba multiplet (J ~ 7Hz). during te, two slice selective refocusing pulses and two editing pulses
+must be applied. as a result, the approximate duration of each editing pulse is limited to between 14 and 20ms. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

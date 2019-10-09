@@ -1,0 +1,105 @@
+graham_indicators 
+1) obvious prospects for physical growth in a business do not always translate into profits for investors
+2) experts do not have a reliable way of selecting and concentrating on most promising companies in promising industries
+
+-minimize odds of suffering irreversible losses
+-maximize the chance of achieving sustainable gains
+-control self-defeating behavior that keeps most investors from reaching full potential
+
+-must thoroughly analyze company and soundness of underlying business before buying its stock
+-deliberately protect yourself against serious losses
+-aspire to adequate, not extraordinary performance
+
+-must never delude yourself into thinking you're investing when you're speculating
+-speculating becomes mortally dangerous the moment you begin to take it seriously
+-must put strict limits on amount willing to wager
+
+anti-inflation:
+-REITs
+-TIPS: treasury infation-protected securities
+
+stock market's performance depends on 3 factors:
+1) real growth (rise of company earnings and dividends) +1.5-2% + 1.9%
+2) inflationary growth (general rise of prices throughout economy) + 2.4%
+3) speculative growth (increases or decreases in public's appetite for investment) 
+= 2+1.9+2.4 = 6.3%
+
+Robert Schiller index - price over earnings, 22.8 is high, but it was 44.2 in dec 1999
+
+common stock component rules:
+1) adequate though not excessive diversification (10-30 stocks held)
+2) each company large, prominent, and conservatively financed. 
+3) each company has long history of continuous dividend (beginning in 1950)
+4) limit on price paid for a stock - 20 or 25x average earnings 
+
+enterprising investor:
+1) buying in low markets, selling in high markets
+2) buying carefully chosen 'growth stocks'
+3) buying bargain issues of various types
+4) buying into 'special situations'
+
+you can control:
+1) brokerage costs - trade rarely, patiently, and cheaply
+2) ownership costs - don't buy mutual funds with excessive annual expenses
+3) expectations - use realism not fantasy to forecast returns
+4) risk - decide how much of assets to buy with, diversifying, rebalancing
+5) tax bills - hold stock at least one year and 5+ if possible
+6) your own behavior 
+
+financial scholars are unanimous on the following points:
+1) average fund does not pick stocks well enough to overcome research and trading costs
+2) the higher a fund's expenses, the lower its returns
+3) the more frequently a fund trades, the less it earns
+4) volatile funds are likely to stay volatile
+5) funds with high past returns are unlikely to remain winners for long
+
+fund operating expenses should not cost more than the following:
+taxable and municiple bonds - 0.75%
+US equities (large) - 1.0%
+junk bonds - 1.0%
+US equities (small) - 1.25%
+foreign stocks - 1.5%
+
+cap rate formula for growth stocks - value = current earnings * (8.5 + 2x expected annual growth rate)
+
+price of a stock (p/e) depends on following:
+1) company's 'general long term prospecs'
+2) quality of management
+3) financial strength and capital structure
+	increasing cash from operations over past 10 years -owner earnings per share increase 6-7% for past 10 years
+	owner earnings =                   reported earnings (net income from income stmt)
+					   + depreciation, amortization (cash flow smt)
+					   +/- other on cash charges (cash flow stmt, things like employee stock)
+					   - average annual maintenance capex (
+					   +/- changes in working capital
+	capital structure - long-term debt should be < 50% of total capital
+	
+4) dividend record
+5) current dividend rate
+
+statistical requirements to include company in your portfolio: DEFENSIVE INVESTOR 
+1) adequate size - 50-100+ million in annual sales
+2) strong financial condition - current assets 2x current liabilities (2:1 current ratio). long term debt < net current assets
+3) continued dividends for past 20 years
+4) no earnings deficit in past 10 years
+5) 10-year growth of at least 1/3 in per-share earnings (3% annual earnings growth)
+6) price of stock no more than 1.5x asset value
+7) price no more than 15x average earnings of past 3 years
+
+calculate p/e as current price/average earnings of past 3 years
+
+multiply p/e by price to book ratio, should be < 22.5
+
+ENTERPRISING INVESTOR:
+1) financial condition: current assets > 1.5x current liabilities, debt < 110% net current assets
+2) earnings stability: no deficit in last 5 years
+3) dividend record: some current dividends
+4) earnings growth: last years earning were greater than those 10 years ago
+5) price: less than 120% net tangible assets 
+
+ROIC = return on invested capital = Owner earnings / invested capital
+
+
+
+
+

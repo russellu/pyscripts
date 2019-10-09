@@ -1,0 +1,152 @@
+multiple origins of the cortical gamma rhythm: whittington and traub
+abstract: gamma rhythms are a near ubiquitious feature of neuronal population activity in mammalian cortex. their
+dynamic properties permit the synchronization of neuronal processes to sensory input within spatially distributed
+networks, transient formation of local neuronal 'cell assemblies' and coherent response patterns essential for
+intercortical regional communication. each of these phenomena form part of a working hypothesis for cognitive
+function in cortex. all forms of physiological gamma rhythm are inhibition based, being characterized by rhythmic
+trains of inhibitory postsynaptic potentials in populations of principle neurons. it is these repeating periods
+of relative enhancement and attenuation of the responsivitiy of major cell groups in cortex that provides a 
+temporal structure shared across many millions of neurons. however, when considering the origin of these repeating
+trains of inhibitory events, considerable divergence is seen depending on the cortical region studied and the
+mode of activation of gamma rhythm generating networks. here, they review the evidence for involvement of 
+multiple subtypes of interneuron and focus on the different modes of activation for these cells. most massively
+parallel brain regions have different mechanisms of gamma rhythm generation, different mechanisms have distinct
+functional correlates, and switching between different local modes of gamma generation may be an effective way
+to direct cortical communication streams. finally, they suggest that developmental disruption of the 
+endophenotype for certain subsets of gamma generating interneuron may underlie cognitive deficit in psychiatric
+illness. 
+introduction: electrical activity in the EEG gamma band is almost continually present, to some degree, on all
+recording electrodes in most behavioral and cognitive states including slow wave sleep, early observations
+showed that gamma activity could be significantly enhanced by sensory input, in a sensory modality specific 
+fashion. evidence for a functional role for these rhythms began to emerge in late 1980s. in an attempt to link 
+the activity of millions of neurons in the primary sensory cortex to the properties of the stimulus itself, it 
+was proposed that coherent or precisely synchronized rhythmic activity served to link or bind together the
+outputs of all neurons coding for a certain feature of an object in the sensorium. the idea that the output from
+a subset of neurons has particular significance if it occurs synchronously with the output from other neurons
+forms the basis of the neuronal assembly hypothesis, and has much wider implications for cognition in general. 
+gamma rhythms are also particularly implicated in active sensory processes involving attention, and short-term
+memory processes. in each case, what is of likely functional importance is the ability of the gamma rhythm to 
+limit in time the probability of output generation in any given set of neurons. such a role makes sense, given
+that the precise timing of inputs from one cortical region to another is critical for the flow of information
+through the cortex. this phenomenon provides a basis for the communication through coherence hypothesis as a 
+fundamental component of cortical function. one particular mechanism of gamma rhythm generation appears to be an
+ideal substrate for such a functional framework: a combination of feedback from active principal cells back unto
+proximal local circuit interneurons and projections to distal interneurons in other oscillating regions provides
+a means by which the relative timing of outputs from each region can modify the period duration of each local
+gamma rhythm, and impart synchrony despite long conduction delays. However, this is only one of three main modes
+of local circuit gamma rhythm characterization using in-vitro models. each mode shares the property of trains of
+gamma frequency, phasic inhibitory events unto principal cells, but the mechanism of recruitment of interneurons
+into the gamma rhythm, and perhaps the nature of the interneurons themselves, are rather different. here, we
+consider the mechanisms and cellular substrates underlying each of these forms of gamma rhythm, and discuss their
+possible physiological significance. 
+
+modes of gamma rhythm generation: three distinct but interrelated forms of gamma rhythm have been characterized
+in mammalian cortex: with appropriate experimental conditions they can all be seen in relatively simple cortical
+circuits such as those in hippocampus cornu ammonis. in each case, the rhythm is an emergent property of the 
+local neuronal network, but differs in terms of interneuron recruitment, principle cell involvement, and basic
+dynamic properties. 
+
+interneuron network gamma: the simplest form of gamma rhythm can be seen in networks of interneurons alone. 
+pharmacological isolation of neurons from phasic excitatory neuronal input, coupled with tonic depolarization of
+these interneurons, readily produces a local circuit gamma rhythm characterized by trains of inhibitory 
+postsynapic events in quiescent principal cells and fast spiking interneurons. in this mode of gamma generation,
+the frequency of the rhythm is sharply dependent on the magnitude of tonic excitation received by interneurons
+and the kinetics and magnitude of inhibitory postsynaptic events generated by a recurrent interneuronal network.
+despite its elegance and simplicity, a number of problems occur when attempting to elucidate both underlying
+mechanisms and physiological relevance of this type of gamma rhythm. 
+1) the highly labile nature of frequency under different drives imparts a sensitivity to drive heterogeneity. in 
+computational models of interneuron networks connected with phasic synaptic inhibition (but without gap junctions)
+even a small variability of tonic drives to each interneuron in the local recurrent circuit has a detrimental 
+effect on gamma generation. despite this, experimental observations showed that such a rhythm is highly robust. 
+the reason for this dichotomy appears to be the presence of gap junctions between fast spiking interneurons. 
+such non-chemical synaptic connections act as low pass filters, effectively sharing slow changes in membrane
+potential. thus, blocking gap junction conductance during interneuron network gamma (ING) in preventing the 
+equilibration of membrane potential and synergistic interactions between the electrical and chemical synapses
+between interneurons detrimentall affects the generation of this mode of gamma rhythm; network simulations
+of ING that include gap junctions are also robust to heterogeneity. 
+2) the original studies on ING implicated perisomatic targeting, fast spiking interneurons as the substrate for
+the interneuron network. of all the interneurons fitting this criteria, parvalbumin immunopositive basket cells 
+appeared to be the most likely. during experimentally induced gamma rhythms and earlier computational models the
+decay constant for IPSCs onto interneurons was seen to be in the range of 4-10ms, with the frequency of the 
+network gamma oscillation exquisity sensitive to this parameter. in contrast, precise biophysical measurement of
+decay time constant in basket-basket connections, albeit in nonoscillating tissue, showed considerably faster
+kinetics with time constants as low as 1-2ms. such values could still generate ING like rhythms in the gamma 
+range in simulations with alterations in other interneuron properties. the difference is large however and it may
+be possible that the basket cell network alone is not responsible for ING in hippocampus. interneurons form 
+dense heterogenous local networks involving many different subtypes, the involvement of other interneuron 
+subtypes is a recurring theme when attempting to explain experimental observations of the gamma rhythm. 
+3) with one exception, all experimental studies on ING have used highly non-physiological conditions to expose
+this mode of gamma rhythm generation. specifically, the presence of ING can only be established using manipulation
+of tissue bathing media to pharmacologically block fast, ionotropic glutamatergic excitation, which leads one
+to question whether ING is of any physiological relevance at all. However, in cerebellar cortex both 
+principal cells and and most of their local circuit interneurons are GABAergic. here, cholinergic activation via
+nicotinic receptors generates a gamma frequency local field potential oscillation that is independent of any 
+kainaite, AMPA, or NMDA receptor activity. the cerebellar cortex contains vast numbers of glutamatergic neurons
+(Granule cells) but in the absence of any afferent input in the in-vitro slice preparation, these neurons appear
+irrelevant to the continuous gamma rhythm generated by nicotinic neuromodulation. 
+along with absence of a role for glutamatergic excitation, the cerebellar circuits shows a number of similiarites
+to experimentally induced ING in other cortical circuits. spontaneous purkinje or principal cell firing is 
+markedly reduced, and temporally uncorrelated spiking is transformed to sparse highly correlated spiking, with
+the underlying mechanism the existence of gamma frequency trains of IPSP in both principal cells and interneurons.
+both hippocampal and cerebellar ING require gab junction connections between neurons, in the hippocampus this
+coupling involves only low frequency coupling of interneuron membrane potential, however in cerebellar neurons
+gap junctional coupling combined with intrinsic membrane properties results in action potential coupling also. 
+
+pyramidal interneuron gamma: reciprocal interactions between principle cells and interneurons are thought to 
+underlie the sensory cortical generated gamma rhythm. the predominant mechanism underlying this mode of gamma
+rhythm generation is the phasic excitation presented to interneurons via fast AMPA receptor mediated post 
+synaptic potentials following orthodromic spike generation in principle cells. at spike rates in tens of Hz,
+the massive convergence of local excitatory inputs onto interneurons (1500:1) is sufficient to overcome
+frequency dependent and metabotropic receptor mediated attenuation of post-synaptic responses, and produce 
+large 2-10mV EPSP. the resulting divergence of outputs from individual interneurons back to the principle cells
+leads to temporally modulated principle cell output, as with ING neurons, provided of course that different 
+interneurons fire synchronously. the requirements for high principal cell spike rates is reflected in the case where
+pyramidal interneuron network gamma PING is seen. pressure ejections of glutamate depolarizes both principle cells
+and inteneurons, resulting in spike rates around the gamma frequency. similarly, intense tetanic excitation and
+transient elevation of extracellular potassium also generate a PING rhythm, which may persist for several seconds
+following stimulus termination. in computational models, PING may exist entirely independently from ING, with no
+requirement for tonic interneuron depolarization or reciprocal interneuron network activity. experimentally however
+it is much harder to separate these two modes of rhythm generation. the three main models: tetanic stimulation, 
+extracellular potassium increase, and glutamate pressure injection can all still generate gamma when principal cell
+outputs or inputs to interneurons are experimentally ablated. continuous, intense activation or hippocampal circuits
+with carbachol or kainaite may also generate a PING like rhythm, which may also coexist to some degree with 
+interneuron network activation. in-vivo, specific optogenetic drive of fast-spiking interneurons in layers 2-6
+enhances cortical gamma, suggesting a critical role for interneuron drive, and activation of principal cells in 
+layers 2 and 5 did not generate gamma although these layers are not part of the main gamma circuit. gamma rhythms
+associated with visual sensory responses significantly improved spike timing precision without increasing principal
+cell spike rates. 
+from the above observations, it remains difficult to separate ING from PING at a functional level in physiological
+conditions. nevertheless, having reciprocal dynamical interactions between principal cells and interneurons has at
+least three important consequences for nework dynamics. first, when compared to ING frequecny becomes more stable
+in the face of changes in network excitation. second, allowing principal neurons to modulate interneuron spike
+timing provides a robust mechanism for establishing long-range synchrony between spatially separate gamma-generating
+local circuits. finally, the nature of synaptic plasticity at excitatory synapses unto interneurons provides a 
+powerful means by which to modulate and stabilize distributed network activity. on the basis of in-vitro studies,
+it seems reasonable to assume that PING and ING exist predominantly as transient phenomena in cerebral cortical
+networks, occuring during or immediately following brief intense periods of principal cell activity. an alternative
+mechanism for the more persistent gamma (PG) rhythms must be sought, which is associated with sparse principal cell
+background activity, anticipatory cortical states, and on-going rhythmogenesis during sequential cognitive tasks. 
+
+persistent gamma: models of gamma rhythm involving tonic activation of muscarinic, kainate, and metabotropic 
+receptors generate oscillations that persist for many hours. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

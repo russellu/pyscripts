@@ -1,0 +1,13 @@
+tomorrow: saturday january 5
+
+start: preparing to write your thesis - get a rough outline of what it should look like, read Dave and Mike's thesis (skim them)
+	get the outline from the gestform UdeS, find out the requirements 
+
+work on app - get trimmed SWI and TOF images from your dataset, register all images to T1, and load surfaces into app
+	    - get the freesurfer segmentations off of cbrain
+
+email andrew - go through his contacts, and find people you want to work for/companies you may want to work for
+	     - search for data scientist positions in vancouver/toronto/ottawa/bc
+	     - add more stuff to your git (try to think of which repositories you are missing)
+	     - unity stuff? 
+	     - keras code

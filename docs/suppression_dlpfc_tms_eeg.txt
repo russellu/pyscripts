@@ -1,0 +1,95 @@
+suppression of gamma oscillations in the dorsolateral prefrontal cortex following long interval cortical inhibition:
+a TMS-EEG study
+abstract: gamma oscillations represent important electrophysiological measures, which are generated through the execution of
+higher order cognitive tasks (eg working memory) in the prefrontal cortex (DLPFC). By contrast, cortical inhibition CI referes to
+a neurophysiological process in which GABAergic inhibitory interneurons selectively suppress the activation of other neurons in the
+cortex. recently, abnormalities in both CI and gamma oscillations have been associated with various neuropsychiatric disorders
+including schizophrenia. animal research suggests that suppression of gamma oscillations is in part mediated through GABAergic
+inhibitory neurotransmission. however, no such evidence is present in humans, partly due to technological limitations. recently,
+novel methods of recording CI from the DLPFC through TMS combined with EEG have been reported. the aim of this study was to examine
+the effects of gabergic inhibitory neurotransmission on the gamma rhythm by combining TMS with EEG. long interval cortical 
+inhibition, a paired TMS paradigm, was used to index GABAb receptor mediated neurotransmission in the motor cortex and DLPFC of
+healthy individuals. gamma oscillations were significantly inhibited by LICI in the DLPFC but not in the motor cortex. such 
+specificity suggests that modulation of gamma oscillations may represent an important neurophysiological process that may, in 
+part, be responsible for optimal DLPFC functioning in healthy human subjects. 
+
+introduction: cortical inhibition refers to a neurophysiological process whereby gabaergic interneurons inhibit or attenuate the
+activity of other neurons in the cortex. previous studies have shown that ci can be studied by the application of paired-pulse 	
+tms over the motor cortex and measured through the attenuation of the motor-evoked potential in the peripheral muscles as recorded
+through electromyography. several studies have examined ci in the motor cortex through a paired-pulse tms paradigm known as long
+interval cortical inhibition, in which applicaion of a conditioning stimulus (cs) within a 50-200ms interval before a test 
+stimulus suppresses the amplitude of the mep following the ts by about 50% compared to a single ts alone. several lines of study
+suggest that lici reflects gabab receptor mediated inhibitory neurotransmission. for example, the fact that lici inhibits another
+inhibitory paradigm (sici) which relates to gabaa receptor mediated inhibitory neurotransmission, is consistent with the suggestion
+that presynaptic gabab may inhibit the release of gaba with a concomitant decrease in gabaa receptor mediated inhibition. also,
+lici is evoked with a high intensity cs that produces longer intervals of ci, consistent with the finding that gabab receptor
+mediated responses have higher activation thresholds and their inhibitory influence is longer lasting. furthermore, the 
+administration of gabab receptor against baclofen was found to potentiate lici. 
+during the past few decades, numerous EEG studies have examined the functional roles of cortical oscillations in various brain 
+regions. for example, it has been demonstrated that theta, alpha, and beta are more closely related to movement phenomena. 
+short lasting beta oscillations have been observed following voluntary hand movement, whereas low frequency oscillations such as
+delta have been linked to sleep. by contrast, cortical oscillations in the gamma frequency band recorded from the dorsolateral
+prefrontal cortex and hippocampus represent important physiological processes, associated with higher order cognitive tasks 
+including working memory. for example, increases in working memory loads have been associated with increases in the power of 
+induced gamma oscillations in the dlpfc of healthy subjects, and gamma oscillation abnormalities have been associated with working
+memory deficits in patients with schizophrenia. 
+to date, several in vivo and in vitro studies have demonstrated that the activation of gabab receptors supress the stimulus 
+induced or spontaneous gamma oscillations. animal studies have shown that administration of gabab receptor agonists such as 
+baclofen eliminates gamma oscillations in rat hippocampal slices, whereas the blockade of gabab receptors has been shown to 
+enhance the gamma oscillation in the hippocampus of behaving rats. consistent with these studies, stimulus induced attenuation of
+gamma oscillations was enhanced following the injection of tiagabine. 
+recently, novel techniques of combining EEG with TMS to measure lici in the dlpfc and motor cortex have been developed. using these
+methods they endeavour to compare the modulatory influence of lici on cortical oscillations across the 5 frequency bands delta, 
+theta, alpha, beta, and gamma in the motor cortex and dlpfc of healthy subjects. 
+
+methods: 
+participants: 14 healthy, right handed volunteers (mean age 35). 
+experimental design: TMS was administered over left DLPFC and motor cortex of all subjects. inhibition was measured through lici
+and indexed through emg and eeg. lici involves pairing of a suprathreshold cs followed by a suprathreshold ts at long isi (100ms).
+lici is recorded optimally at 100ms, and as such this interval was used in the experiment. both the cs and ts were suprathreshold
+and adjust to produce a mean peak to peak mep amplitude of 1mv. 100 tms stimuli were delivered per condition (paired and ts only),
+repeated every 5s. to control for the effect of tms click induced auditory activation on cortical evoked potentials, single and
+paired pulse sham stimulation was administered in a sub-set of 10 subjects. all conditions were randomly counterbalanced between
+subjects to avoid order effects. 
+data recording: a 7cm figure 8 coil and two magstim 200 stimulators, connected by a bistim module. lici in the motor cortex was
+examined through simultaneous emg and eeg recording, and in the dlpfc through eeg only. 
+localizatoin of dlpfc: neuronavigation using t1 weighted mri. stimulation was directed at the juncture of the middle and anterior
+1/3 of the middle frontal gyrus corresponding with posterior regions of brodmann's area 9, which overlaps with the superior section
+of ba46. 
+emg recording: 
+eeg recording: 64 channel cap, ocular, 20khz sampling rate. 
+data analysis: in the motor cortex, lici was monitored through both EEG and EMG, in the dlpfc, through eeg only. 
+EMG measure of inhibition: for each subject, the EMG measure of lici100 was indexed by comparing the area under the rectified curve
+of average mep following the single pulse with the area under the curve following the paired pulses, and inhibition was obtained
+as the following: 1-area under cs / area under us * 100
+EEG measure of inhibition: eeg data was segmented -1000:1000ms relative to stimulus. epochs were baseline corrected, and the 
+baseline corrected post TS intervals which were not contaminated by TMS artifact were extracted and digitally filtered using 1-100hz
+bandpass filtered, and noisy trials removed. to quantify the EEG measure of lici100, frequency windows were defined and power was
+computed, the inhibition index was calculated in the same manner as with the motor evoked potential. electrode af3 was used to 
+represent activity in the dlpfc, and c3 for the hand area. 
+
+results: 
+motor cortex: consistent with a previous study, there was a significant suppression in the mean area under the rectified emg 
+curves. similarly in c3 there was a decrease in the area under the curve for delta, theta, and alpha, but not for beta or gamma.
+dlpfc: unlike the motor cortex, all rhythms were suppressed, and 11/14 subjects showed inhibition in the dlpfc. 
+comparison of motor cortex to dlpfc: there was a greater suppression in the dlpfc than in the motor cortex. 
+
+discussion: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

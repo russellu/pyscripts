@@ -1,0 +1,5 @@
+cns_presentation 
+
+whole brain neurovascular coupling in healthy human: implications for FMRI analysis
+
+finish all the slides, and then break up the multi-figure slides into multiple slides

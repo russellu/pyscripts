@@ -1,0 +1,5 @@
+name of app: "location, location, location"
+rental property calculator
+
+proximity to: wal-mart, restaurants, schools, universities, hospitals, nursing homes, crime,
+shopping, nightlife, parks 

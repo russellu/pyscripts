@@ -1,0 +1,25 @@
+today: january 23 2019
+
+current trends: phd research seminar, phd thesis, fibernavigator app, linked in networking/job search
+
+research seminar:
+methods (6 slides)
+EEG underlying physics for how signal on scalp is measured (2 slides)
+	emphasize how distance and orientation play a role
+	emphasize how difficult it is to interpret scalp measurements
+FMRI underlying physics for how BOLD signal is observed (2 slides)
+	emphasize the spatial resolution
+MRI underlying physics for how T1 signal is observed (2 slides)
+	emphasize gray/white matter boundary
+	talk about BET, skull segmentation
+UTE MRI underlying physics for how UTE is observed 
+
+phd thesis - same as the above, but more detail (20 pages)
+
+fibernavigator app
+	-quads (done) 
+	-speed up correlation with higher resolution		
+		(how?) 
+		check where its slowest, try to optimize those parts
+
+linkedin: talk to andrew, and other people from vancouver/ottawa 

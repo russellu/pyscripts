@@ -1,0 +1,22 @@
+feedback_day1
+
+cs405/505
+
+people want to know what material will be on the midterm, and what the assignments will be composed of
+people want to choose their own final project, or know what is on the final project
+feel like i spoke too quickly
+people want to know what the assignments will be
+try to talk more slowly, explain examples more clearly, and have more pictures on slides and less text 
+remember to ask the students for feedback (ie, if you talk to fast etc) 
+try to be more prepared - make sure you have the lectures timed correctly (full 50 minutes) 
+
+
+
+
+cs230
+final project - people want to know what will be required 
+take it slowww with the lectures - have a project that is downloadable to get everyone up to speed
+
+next lecture: give a short presentation (15 minutes about xml and layout best practices)
+	have them work on the current lab, show a few starting points for the next lab/assignment
+	first assignment - pull data off of a website and display it using a listview 

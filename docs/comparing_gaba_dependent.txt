@@ -1,0 +1,263 @@
+comparing GABA dependent physiological measures of inhibition with proton magnetic resonance spectroscopy of GABA using ultra-high field MRI
+abstract: imbalances in glutamatergic (excitatory) and gabaergic (inhibitory) signaling within key brain networks are though to underlie
+many brain and mental health disorders, and for this reason there is considerable interest in investigating how individual variations in 
+localised concentrations of these molecules relate to brain disorders. MRS provides a reliable means of measuring these concentrations 
+in vivo, which can then be correlated with brain function and dysfunction. an issue of much debate is whether the GABA observed and 
+measured using MRS represents the entire pool of GABA available for measurement, or is instead limited to only some portion of it. GABA 
+function can also be measured non-invasively in humans through the use of TMS techniques that can be used to measure cortical excitability
+and GABA mediated physiological inhibition. to investigate this issue further they collected in a single session both types of measurement
+ie TMS measures of cortical excitability and physiological inhibition and ultra-high field MRS measures of GABA, glutamine, and glutamate
+from the left sensorimotor cortex of the same group of right handed subjects. they find TMS and MRS measures are largely uncorrelated
+with each other, save for the plateau of the TMS IO curve that was negatively correlated with MRS-Glutamate (Glu), and intra-cortical
+facilitation that was positively associated with MRS glutamate concentration. these findings are consistent with the view that GABA 
+concentrations measured using MRS largely represent pools of GABA that are linked to tonic rather than phasic inhibition and thus contribute
+to the inhibitory tone of a brain area rather than GABAergic synaptic transmission. 
+introduction: gaba is the main inhibitory neurotransmitter in the brain, present in 20-50% of synapses, and has a critical role of
+regulating excitability throughout the brain. dysfunction in gaba signaling is also core to many neurological and psychiatric conditions,
+including developmental disorders such as tourette and autism. post-mortem investigations of tourette syndrome patients have shown that
+there are substantial decreases (<50%) in the number of inhibitory interneurons in the striatum, and PET studies have demonstrated 
+widespread alterations in GABAa receptor binding throughout the brain in TS, including in the striatum, thalamus, and insula cortex. most
+importantly, with respect to the focus of the current study TMS studies of physiological inhibition have repeatedly demonstrated reduced short
+interval intra-cortical inhibition (SICI) in TS, and as SICI is thought to be predominantly dependent on GABA-A receptor activity these 
+findings have suggested a role of dysfunctional GABAergic signaling in TS. 
+non-invasive in-vivo investigation of localised gaba concentration within the brain is possible using proton magnetic resonance spectroscopy
+(MRS). detection of some neurometabolites such as 1H MRS can be challenging due to low concentration and signal overlap with more 
+concentrated metabolites. ultra-high field offers the possibility of increased spectral resolution and SNR, compared to lower field 
+strengths. in the context of the current study, it is of interest to note that MRS studies of GABA concentration within the cortical motor
+areas in TS have reported either no differences in GABA concentration or increased levels of GABA relative to age-matched controls. 
+the findings outlined above in relation to TS illustrate an apparent contradiction, specifically while multiple TMS studies have demonstrated
+that GABA-A mediated physiological inhibition is substantially reduced in TS, recent MRS studies have reported either no difference in GABA
+concentration, or increased GABA concentrations within the SMA that are associated with decreased gain in motor cortical excitability, a
+finding that has been widely reported in TS. however, these are only contradictor if we assume that GABA-mediated inhibition as measured 
+through TMS is the same as GABA concentrations as measured through MRS. it is widely accepted that TMS measures of GABA mediated physiological
+inhibition such as SICI are likely to be indexing the operation of low-threshold, transiently activated, cortical GABA interneurons. 
+in particular, pharmacological studies suggest that SICI measured using inter-stimulus intervals (ISI) of 1.5-5ms are largely dependent on 
+GABA-A receptor activity. by contrast, it has been argued that the GABA observed and measured using MRS largely represents extracellular 
+concentrations of GABA that are linked to the 'tonic' GABA-ergic inhibitory tone of a localised brain region. if this is inded the case,
+than it would be unsurprising that decreased transient 'phasic' inhibition and increased 'tonic' inhibition could be observed within a 
+particular patient group, particularly if the latter can be viewed as the consequence of an adaptive compensatory response to the former, as
+has been argued. 	
+two recent studies sought to address this issue directly, by investigating the relationship between TMS measurements of SICI and MRS 
+measurements of GABA within primary somatosensory cortex collected from the same individuals. both studies acquired MRS data at conventional
+field strengths and one study investigated GABA concentrations using a GABA-edited sequence (MEGA-PRESS). the results of these studies are
+inconclusive. Stagg et al reported that MRS GABA concentrations in the PMC were uncorrelated with 2.5ms SICI measurements, but significantly
+correlated with the slope of the 1ms SICI curve. the physiological mechanisms underlying 1ms SICI effects are thought to be distinct from 
+those occuring at later ISIs, and although these mechanisms are not fully understood, it has been suggested that the effects may reflect 
+axonal refractory periods. Stagg also suggests that MRS measures extra-synaptic, tonic inhibition and that GABA that may be associated to the
+duration of the refractory periods of neuronal axons. 
+Tremblay et al also reported that MRS-GABA concentrations within PMC were uncorrelated with any TMS measurements, including 3ms SICI, but 
+they did not measure 1ms SICI. 
+the stagg and tremblay studies also differ in the associations that they reported for TMS/MRS metabolite pairings, partially due to the use
+of different TMS measurements. Stagg reported that a general measure of cortical excitability (the slope of the TMS recruitment (IO) curve)
+was significantly associated with glutamate concentrations within the PMC, tremblay reported a significant positive correlation between 
+Glx (a composite measure of glutamate and glutamine) and the duration of the cortical silent period (CSP). 
+furthermore, in addition to differing on which particular TMS measure to relate to MRS measures of cortical excitability and physiological
+inhibition, the above studies also differ in that one used a GABA-edited MRS sequence, and the other did not, which may have important
+implications for the measurements obtained, particularly as both studies were conducted at conventional field strengths. 
+the advantages of high field (7T) are the greater chemical shift dispersion and increased SNR, which improves the detection sensitivity and
+efficiency of metabolites, especially those with low concentration such as GABA. greater chemical shift dispersion increases the separation
+of signals with similar resonance frequencies, allowing a more accurate identification and quantification of each metabolite. for instance,
+due to spectral overlapping the differentiation of GABA, Glu, and Gln signals are difficult in H1 spectra at field strengths of 3T or less,
+and Glx is reported instead. by contrast, GABA, Glu, and Gln become separable at field strengths of 7T and above. also, gaba-edited 
+(j-difference editing) sequences rely on subtraction to remove overlapping signals from the spectrum, this technique is therefore particularly
+susceptible to motion-related errors that are less of an issue for non-edited MRS sequences that can be utlized at 7T. 
+in the current study, they investigate this question by comparing a wide range of TMS measurements of motor cortical excitability including
+TMS recruitment curves and paired pulse measures of intra-cortical facilitation and physiological inhibition with MRS measures of GABA, glu,
+and gln acquired at ultra-high field 7t using a non-edited STEAM sequence. 
+subjects: 29 healthy right handed adults (19-27 participated in the study, all participants were free from neurological or psychological 
+illness, and any contraindciations for MRI or TMS. of the 29 participants, two were excluded one due to poor quality TMS and one due to 
+poor quality MRS.
+MR acquisition: 7t philips achieva system, 32 channel RF coil at the university of nottingham. foam pads inserted between the participants
+head and the coil to minimize and control head movement and a pair of prism glasses to allow the participants to view a screen outside
+the magnet bore. 
+at the start of each imaging session, 1H image localiser and B0 maps were acquired, followed by BOLD FMRI T2* weighted images which were 
+acquired to guide placement of the left primary motor cortex spectroscopy voxel in the MRS scan. eight blocks of bimanual finger to thumb
+opposition tapping were acquired in a blocked-trial paradigm. T1 weighted anatomical images were then acquired with an MPRAGE sequence
+for tissue segmentation. 
+in-vivo H1-MRS data were acquired from a voxel of interest placed over the hand area in the left M1, using a STEAM sequence, 
+(TE/TM/TR=17/17/2000ms), sample size = 4096, spectral bandwidth=4000hz, phase cycle= 8, 288 averages, 9.6min. water suppression was performed
+using multiply optimised insensitive suppression train (MOIST). prior to this, a non-suppressed water reference spectrum from the same VOI 
+was acquired for eddy current correction and quantification. B0 shimming of the VOI was performed automatically by the philips pencil beam
+algorithm, in order to increase B0 field homogeneity. 
+
+test-retest reliability and reproducibility of MRS measurements: the test-retest reliability of the MRS data was examined. an additional
+dataset was obtained from a sub-set of participants selected randomly from the original sample. this was collected on the same day,
+approximately 3h after the original data set collection. the ICC of GABA/tCr was 0.62, of Glu/tCr was 0.61, and Gln/tCr was 0.44. 
+
+TMS measuring and EEG recording: on average, the time between the TMS and the MRI measurement was 30 minutes.a figure 8 magnetic coil was
+held tangentially to the scalp, and positioned 45deg from the midline resulting in posterior-anterior current flow. neuronavigation software
+was used in conjunction with T1-weighted anatomical images to aid coil placement. all TMS measures were obtained from the motor hot spot
+identified for the first dorsal interosseus muscle, defined as the location that yielding the largest MEP amplitudes for the FDI. 
+Motor evoked potentials were recorded using disposable Ag-AgCl electrodes attached to the right FDI muscle in a belly-tendon montage. the 
+signals were amplified and bandpass filtered, 10Hz-2Khz, and digitized using brainamp ExG. intra-cortical inhibition and facilitation were
+investigated using a range of TMS paired pulse protocols, with a range of ISIs including 1,3,10, and 12ms. a 100ms ISI was also measured,
+all paired pulse measures and unconditioned trials were randomized and presented within the same session. 
+threshold determination: resting motor threshold (RMT) was determined as the lowest intensity needed to yield an MEP with peak to peak 
+amplitude of >50uv in the relaxed FDI muscle with a minimum of 5-10 trials. a 1mV threshold was also determined by calculating the lowest 
+intensity needed to evoke an MEP of 1mV in 5 of 10 consecutive trials. 
+input output curves: TMS intensities at 100,110,120,130,140,and 150% of RMT were used, 10 pulses at each of the 6 intensities were delivered
+in a randomized order. 
+unconditioned trials: a total of 30 unconditioned trials were measured at SI 1mV. 
+short interval intracortical inhibition: SICI was measured using 1 and 3ms ISI. the selection of conditioning stimuli CS intensities was
+informed by a pilot study which revealed 1ms SICI to have a lower threshold than that of 3ms SICI. this confirms previous research, and
+therefore CS intensities of 45,50,55,60% RMT were used to measure 1ms SICI whereas 60,65,70,and 75% RMT were used to measure 3ms SICI. each
+CS was followed by a suprathreshold test stimulus (TS) of SI 1mV, delivered to the same location. ten trials were measured for each CS-TS 
+pairing for both 1 and 3ms ISIs. 
+long interval intra-cortical inhibition: a single ISI of 100ms was tested using a suprathreshold CS of 110%RMT and a TS delivered at SI 1mv.
+a total of 20 trials were measured. 
+intracortical faciliation: 10 and 12 ms ISIs were measured using a CS at 75%RMT followed by a SI 1mV TS. 20 trials were measured for each ISI
+results: 
+analysis of MRS data: in-vivo h1 spectra were fitted and modeled using LCModel software package. the basis set used for quantification 
+included an experimentall acquired macromolecule spectrum, and a model spectrum of 20 metabolites. the LCModel analysis was performed within
+the chemical shift range of 0.5-4.2ppm. water scaling was performed using the non-suppressed water reference. the LCModel control parameters
+were based on previously published parameters, the absolute concentration for each cerebral metabolite is reported in institutional units. 
+metabolites with cramer-rao lower bound >30% were rejected from further analysis. mean +/- SD CRLB for Glu was 2% +/- 0%, for Gln
+6.98+/-2.76%, and for GABA 9.9+/-4.4%. the line width of the in-vivo spectra were 10.35 +/- 1.99Hz. Total Cr was used as the internal
+reference for quantification due to its relatively high and stable concentration in the human brain. the group mean in-vivo spectrum 
+acquired from the VOI is presented.
+analysis of TMS data: all trials were visually inspected, and trials where there was evidence of pre-contraction of FDI were removed. for the
+remaining data, peak-peak amplitudes were computed using in-house software. when analyzing individual participant data, median values were
+calculated to indicate average MEP amplitude in response to a particular stimulator output. the mean of median values was calculated across
+participants for each dependent variable, any significant outliers in group mean values were identified and removed prior to analysis using
+Grubbs test. 
+resting motor thresholds (RMT): the group mean RMT was 45.7 +/- 6 of maximum stimulator output. the group mean for the 1mV threshold, ie the
+lowest threshold needed to evoke an MEP of 1mV in 5/10 consecutive trials was 55.3%. the group mean MEP amplitude for a TMS pulse delivered
+at SI 1mV was 1365.3 mV. 
+TMS recruitment (IO) curves: single pulse TMS IO curves were by calculating for each individual the median MEP amplitude for each given
+TMS intensity (100-150% RMT). four parameter sigmoidal fits were then applied to the resulting values, and the maximal slope and plateau of
+the curve were calculated. the sigmoidal function used to fit curves to the individual datasets was: 
+MEPs = y0 + MEPmax/(1+10^(S50-S)*k), MEPmax is the maximum MEP measured, S50 is the TMS intensity need to produce 50% of the maximum MEP, 
+k is the gradient of the maximum steepness of the curve and y0 is the minimal MEP response, which was set to 0. group IO curve data are 
+shown, indicating that increased TMS stimulator intensity let to increased MEP amplitudes. this was confirmed by statistical analysis using
+a one-way ANOVA, which yielded a significant effect of stimulator intensity. two measures of interest were taken from the sigmoid curve, the
+maximum slope of the curve and the plateau of the sigmoid. 
+paired pulse data: paired pulse trials were analyzed by calculating for each individual the median MEP amplitude for each CS intensity at 
+each ISI. these values were then divided by the median MEP amplitude for unconditioned trials to create a ratio measure. linear slopes were
+fitted to 1ms and 3ms SICI measures, and a median value was calculated across the different CS intensities to yield the average level of 
+inhibition. individual median MEP values were also calculated for ICF trials. this shows that SICI paired pulse trials led to a large 
+reduction of the MEP produced by the test stimulus, the ICF trials led to a large increase in the MEP to the test stimulus. these data are
+consistent with the inhibitory and excitatory effects of SICI and ICF paired pulse TMS stimulation. statistical analysis using a one-way 
+ANOVA revealed that a significant effect of stimulator intensity on MEP amplitudes for both the 1ms SICI curve and 3ms SICI curve. paired
+sample t-tests confirmed that the values for both 10ms ICF trials and 12ms ICF trials differed significantly from unconditioned trials. 
+following initial analysis, it was determined that data from LICI trials would not be analysed further. this was based on the large 
+percentage of participants who exhibited floor levels for this measure, ie a complete inhibition in the MEP for 8/27 participants. while 
+this indicates that the LICI paired pulse TMS procedure was highly effective, it reduces individual variability in the LICI values, and
+therefore makes the correlation analysis less effective. 
+
+correlations between MRS and TMS measures: the key objective of this study was the examine the association between TMS measures of 
+physiological inhibition (assessed by TMS stimulation of the hand area of the primary motor cortex of the left hemisphere) - with MRS 
+measures of GABA concentration, acquired from a voxel centered over the hand area of the PMC of the left hemisphere. to examine this 
+association, pearson correlation coefficients were calculated for the entire set of TMS measurements against a measure of PMC gaba conc.
+for completeness, correlations are reported without correction for multiple comparisons, where coefficients are statistically significant,
+the adjusted statistical threshold (alpha) is calculated for multiple comparisons using the Holm-Bonferroni method for each NT separately. 
+the TMS measurements used in the analysis consist of the following ten measurements for each individual: the resting motor threshold, 
+(RMT 50-100uV), the median MEP for a single, unconditioned TMS stimulus delivered at that individual's RMT (med MEP), the stimulator output
+(%) required to produce an MEP of approximately 1mV (SI 1mV), the linear slope of the TMS IO curve (IO curve), the median inhibition value
+(%) observed for 1ms SICI trials (1ms SICI), the linear slope value for 1ms SICI trials (1ms SICI slope) the median inhibition value (%)
+observed for 3ms SICI trials (3ms SICI), the linear slope value for 3m SICI trials (3ms SICI slope), the median value (%) observed for 10ms
+ICF trials (10ms ICF) and the median value (%) observed for 12ms ICF trials (12ms ICF). 
+the ratio of GABA to total creatine was used as the measure of GABA concentration. for completeness, and to maintain comparability with 
+previous studies including their own, they also investigated the ratio of GABA to NAA, which yielded similar results to the tCr ratio data
+and are not included here. in addition, while the primary focus was to examine the association between TMS measures of physiological 
+inhibition and MRS measures of GABA, they also report the relationship of their TMS measures with MRS measures of glutamate (Glu), 
+Glutamine (Gln), and the ratio of glutamine to glutamate. 
+
+association of TMS measures with GABA: 
+GABA/tCr: all effects failed to reach conventional levels of statistical significance (p<0.29). 
+association of TMS measures with glutamate: 
+there was a significant negative relationship between the IO plateau and Glu/tCr, r=-0.74, p<0.0001, but not for IO or RMT. a significant
+positive relationship was found between Glu/tCr and 10ms ICF, however this did not survive Holm-Bonferroni correction. 
+association of TMS measures with glutamine: 
+Gln/tCr: no significant correlations were found. 
+
+multiple regression analysis: multiple regression analysis confirmed that the magnitude of the median MEP obtained at RMT was predicted by
+a combination of the Gln/Glu ratio and GABA/Glu ratio. the model also revealed that 10ms ICF was predicted by Glu/tCR ratio, and in addition
+to this Glu/tCR was found to significantly predict IO plateau. 
+
+Bayesian statistics: to overcome the limitations of conventional correlational analysis, a bayesian hypothesis test was conducted. this was
+used primarily to evaluate if there was evidence in favor of the null hypothesis, ie, that a metabolite bore no relationship with NT function
+as assessed with TMS, and further allowed to quantify the strength of the relationships found. Bayes factors were calculated, bayes factors
+above 1 show support for H1 whilst below 1 show support for H0. the bayesian hypothesis test showed that there was decisive evidence that
+Glu/tCr is related to IO plateau, and substantial evidence that ICF 10ms is related to Glu/tCr. 
+
+discussion: imbalances in glutamatergic (excitatory) and GABA (inhibitory) signaling within key brain networks are thought to underlie many
+brain disorders including schizophrenia, depression, chronic pain, and TS, and for this reason there is considerable interest in using MRS
+to measure in-vivo concentrations of brain molecules that can be correlated with brain function and dysfunction. while it is tempting to
+equate the GABA measured using MRS with NT function and with physiological or behavioral inhibition, it is important to note that any moment
+in time only a fraction of MRS-GABA will be neurotransmitter, and increased MRS-GABA concentrations do not necessarily mean there is 
+increased physiological or behavioral inhibition. furthermore, it is currently unclear whether MRS-GABA represents the entire pool of GABA
+available for measurement (metabolic, intracellular, and extracellular), or instead as some have argued, represents extracellular, 
+extrasynaptic GABA that is unrelated to the synaptic transmission of GABA. 
+In the current study they compared directly, in the same individuals, MRS-GABA measured in a voxel located in the sensorimotor cortex with
+TMS measures of cortical excitability and GABA-mediated physiological inhibition measured from the hand area of the primary motor cortex. 
+using these techniques, they obtained high quality MRS data and replicated each of the previously reported TMS effects ie TMS recruitment
+curves, 1ms SICI and 3ms SICI curves, and 10/12 ms ICF effects. the main results of the study are summarized below:
+1) individual measures of MRS-GABA were unrelated to any TMS measurements, including general cortical excitability (ie TMS recruitment slopes)
+GABA mediated physiological inhibition (ie 1/3ms SICI).
+2) individual levels of MRS glutamate (Glu) were significantly negatively correlated with the plateau of the IO curve, a measure which is 
+thought to reflect the balance of excitatory and inhibitory components of the corticospinal volley. the relationship suggests that as levels
+of MRS-Glu increase the maximum MEP amplitude predicted by the model reduces. multiple regression analysis revealed Glu/tCR to be the only
+significant predictor of this measure. 
+3) MRS-Glu was found to be marginally correlated with 10ms but not 12 ms ICF. the multiple regression analysis confirmed that Glu/tCr was a 
+significant predictor of 10 but not 12ms ICF. 
+4) there was some evidence of correlation between glutamine (Gln) concentrations and median amplitude of the MEP response to TMS stimulation
+delivered at the RMT. 
+
+MRS-GABA and physiological inhibition: the findings, that individual levels of MRS-GABA are unrelated to GABA mediated physiological
+inhibition, as measured by 3ms SICI replicates previous reports for 3 and 2.5ms SICI. the physiological mechanisms that underpin both 2.5 and
+3ms SICI effects are well established, and thought to primarily involve post-synaptic inhibition mediated through GABA-A receptors. although
+SICI has been found to be modulated by neurotransmitters such as dopamine, the contribution that such transmitters make to GABAergic
+neurotransmission is complex and beyond the scope of this article. the primary source of MRS-GABA is unlikely to be the same as that 
+associated to GABAergic synaptic inhibition, but instead most likely relates to concentrations of metabolic GABA and levels of ambient
+extracellular GABA that contribute to tonic GABAergic activity and therefore to the GABAergic tone of a brain region. 
+in a previous study, stagg and colleagues reported a significant correlation between MRS-GABA concentrations and 1ms SICI slopes. it is
+important to note that the underlying physiological mechanisms for the 1ms SICI effects are thought to be different from those associated
+with longer ISIs such as 3ms SICI effects, however the exact mechanisms underlying 1ms SICI are unclear. some have proposed that the effects
+may relate to the refractor periods of inter-neurons, whereas others have argued that synaptic mechanisms play a role. 
+MRS-glutamate and glutamine and cortical excitability: 
+TMS recruitment curves are thought to reflect cortical excitability and the strength of cortico-spinal projections. however, different 
+physiological processes may contribute to the TMS recruitment curve across the different stimulator intensities used, and various NTs and
+neuromodulators including GABA and glutamate may contribute the the effects observed. furthermore, different aspects of the recruitment
+curve may relate to different mechanisms. it may be that measures of the slope of the curve are distinct to measures of the plateau. 
+prior literature describes that the maximum plateau of a recruitment curve does not simply reflect the maximum output of the corticospinal 
+system, but may instead reflect the intrinsic balance of excitation and inhibition in the PMC. 
+
+finally they demonstrate that individual MEP amplitudes were predicted by a linear combination of the ratios of glutamine/glutamate and
+GABA/glutamate. glutamate exists in several metabolic pools in the brain, and these pools serve as the source of glutamate for 
+neurotransmission. glutamate removed from the synaptic cleft is converted to glutamine within astrocytes, and astrocyte derived glutamine is
+then used as a precursor for the synthesis of GABA within neurons, this process is highly dynamic and thought to account for 80% of cerebral
+glucose consumption. for this reason, it is likely that tms changes in cortical excitability may be indexed by subtle changes in the balance
+between glutamate and glutamine. 
+the findings presented here are consistent with the view that GABA concentrations measured using MRS largely represent pools of extracellular
+gaba that are linked to tonic rather than phasic inhibition and thus contribute to the inhibitory tone of a brain area rather than GABAergic
+synaptic transmission. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

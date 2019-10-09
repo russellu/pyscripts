@@ -1,0 +1,270 @@
+dungeon manager
+
+today: 
+get the basic tile system working
+have an overlying sprite, and an underlying floor
+break it up into grids (using matlab), and then select those grids with a mouse
+
+*tip - try to keep your functions isolated, so you can reuse them easily in other games
+	this will also make it easier 
+mii
+try this: set up a bunch of quads (2500 to be exact), and set each one to have the sprite of one of the tiles 
+
+since it seems you can't put multiple sprites on a mesh, you will have to 
+
+you can set up 4000 game objects, or you can use a single large sprite and draw over it
+
+start by just drawing the square sprite over the full texture 
+you can work out other details later
+
+setup quad with click
+
+basic clicking is complete. 
+now, need to make it look good when it transitions from overlay to underlay
+ie, a realistic breakdown. part of this will come from the graphics...maybe you can make shadows etc? 
+the other part will come from the transition animation
+
+the ground should always be dirt. maybe some brown matlab sprite smoothed etc 
+consolidate the functions, add boundary case
+add more interactive functionality (Scrolling, zooming) 
+test on phone 
+
+add sound effects
+add some kind of blending interface between the two materials
+add a hover material (for the tagging) 
+the blending interface should help alot with the crappy appearance
+have one for horizontal, vertical, and 4 corners 
+
+by the end of today: have the blendy interface in place, with an imp that runs around and destroys walls 
+
+you can use the adjacent rock to interpolate the pixels along the edge of the tile
+
+create a box for all possible combinations, and just remove the one box at a time. 
+
+you can use the sidebars as reinforced or wooden walls, also
+
+create a list of all indices, and iterate over that list (should work for all?) 
+
+tomorrow: 
+improve the animation for when the block is cut
+	-minor, can be done later.
+create the imp, who runs around and cuts blocks
+	this is a big step, involves pathing
+	once this is done can add more creatures and rooms
+	combine your existing sprite with the current map 
+	goal for today: have creatures walking around and interacting with the current map 
+			
+		step0: consolidate current code into a new class, make sure everything works as it should (done)
+		step1: get the player inside the game (done)
+		step2: test walk and attack around using controls (done) 
+		step3: add collisions with walls 
+		step4: add pathfinding  
+			create a "move to" function for your character
+		step5: starting off the game with pre-generated levels? 
+
+improve the borders, wood, dirt, stone, steel, etc. 
+	-minor, can be doen later
+
+create a panel to select between spells, rooms, etc
+
+map out a path from the current state of the game to release:
+
+first goal should be to implement a playable game, you can add details later
+1) implement pathfinding, allow creatures to move from point a to point b
+	a* algorithm is working
+	now, need some kind of 'moveto' function, ie the creature moves between squares 
+	plot a line from the center of your current square, to the next square. 
+	get the player's location tile first 
+		then get the vector from that location to the center of the next tile 
+
+
+	try to just make the character move in a straight line to start. 
+	how to setup the walking path? 
+	you are given a central location (of the tile)
+	you are given the tile index - you need to get the 2D position from this
+	then, calculate the vector from your postion to the next tile. 
+	then walk that path (as a start) 
+	walk from point a to b 
+		character should continuously try to move in the direction he wants to go. 
+		have a margin of error, and update the position until the character is within that margin. 
+		problem is that if the sprite bounces off something on the way to the objective he never reaches the waypoint
+		and thus never gets to continue the journey 
+		works better with smaller sprites, because it doesn't hit the corners as much and lose the path
+		a* is definitely finding the right path, but the problem is that 
+			a) doesn't go in the proper direciton initially ie it finds a starting square then goes
+			b) doesn't go in a straight line (need to interpolate between grids points?) 
+			c) loses the path easily..if it gets bounced
+		diagonal seems to work best for some reason
+		still need to be able to traverse diagonal tiles
+		light up the tiles that the sprite will traverse
+
+
+
+2) implement a reason for them to move (Green blocks)
+	have your creatures move to the blocks and destroy them, to create a path 
+	tomorrow, have the creature moving to the blocks and attacking by the end of the day
+	for now, work on moving to the green object, attacking it, and then moving on to the next. 
+	would also be nice to be able to go in straight lines 
+	
+	to attack the green tiles, needs to do the following
+	1) move to the tile
+		make sure the tile is reachable 
+		once the tile is reached, start the animation
+		how to check if it is reached? 
+		
+	2) initiat the attack animation
+	
+	need to move the sprite closer to the wall while it attacks
+	need to remove the wall once the attack animation is finished, and automatically plot the course to the next tile 
+
+	use a stack for the tiles that you press on? 
+	have a 'tagged tile' dictionary, where you put tiles that you click, and find the path to the tiles on each iteration?
+	have a tagged tile dictionary with all the tiles, and another structure with accessible tiles only. 
+	have an inaccessible pile and an accessible pile. every time a tile is destroyed, re-check the inaccessible pile, and if any of
+	the tiles have become accessible, add them to the new pile 
+	need to add the game objects by name, and then find them using their names to destroy them later. 
+
+	there is a bug when the character tries to run to a tile which has a collider, it appears to be blocked
+	start by naming the tiles, and then see what you can figure out
+	maybe its not deleting the old one properly?
+
+	remove the collisions for now, maybe for good. 
+	next step should be to move from tile to tile. 
+	move from tile to tile, and then work on getting it working with removing tiles and selecting the next closest
+
+	untoggle the toggled
+
+
+you should probably test with more than one character at some point also
+easiest thing: just get the sprite moving between available tiles 
+
+next: multiple sprites, add sounds, add animations to the attacking square
+
+
+once this is done, the next step will be combat between different creature
+3) combat between different creatures
+4) UI, and different panels for spells, rooms, etc
+5) content for the game itself 
+
+
+your goal is to have a playable game as quickly as possible, then you can add more features. 
+
+today: low hanging fruit 
+	- move to closest tiles (done)
+	- play sound every time staff hits rock (done)
+	- add sprite overlays to show cracks in rock - change translucency of tile with every hit? (done, but can be improved)
+	- fix the bug where he walks directly onto tiles that are tagged but not unveiled (done) 
+	- test on device
+
+more difficult:
+	- alter the a* algorithm so it passes in straight lines through empty territory (search for right turns?) -
+		-this should actually be ok, its not really a big deal. if you need to you can always increase the resolution of the a* grid
+		later
+	- alter the path so that it moves directly to next tile rather than first finding center of tile (done, just set start index to 1)	
+	- adding multiple characters (imps) 
+		-they end up going on top of each other - how to make this a bit more random so they aren't becoming mirror images? 
+
+		
+	- encapsulate the gameobject tile to a new class 
+		- the point of this is because you will have different types of tiles, and they will have different strengths etc, 
+		some will be more easily destroyed than others depending on how many hits they take. 
+		- each tagged tile needs to have a certain amount of life, that gets degraded when it is hit
+
+
+right now you have a single imp who can run around and hit tiles
+	once you get multiple imps working, you can start working on more interesting aspects of the game
+	like: combat between creatures
+
+once you have multiple creatures and multiple imps running around and hitting tiles, the basic game mechanics will be complete
+then, it will be about adding content and making it look good. 
+	right now, you need to focus on linking the tile object to the imps, so they stop hitting when it runs out. 
+	do this with a single creature first, then move to multiple imps 
+	instead of passing the imp a tilebehavior, it should only have access to a single tile? 
+	the problem is the imp doesn't get updated when another imp destroys his tile. 
+	the imp needs to hold a reference to the tile it is currently working on, and the tile needs to have an HP counter 
+
+multi-imp implementation is complete. 
+next, you need to work on getting two creatures to fight each other
+	start a new class for this, a non-imp class
+	so you will have an imp class and a fighter class
+	
+once you have two creatures that can attack each other, you will be able to create the first mission
+in creating the first mission, all the other things that you need to do will become apparent. 
+
+one small problem - untoggling seems to generate an error now - fixed, simple naming bug
+
+you need to keep reusability in mind at all times - things you can reuse from your current app?
+a* algorithm and cubic design
+sprite manager, fighter sprites
+tile manager, algorithm to check surrounding tiles and merge into larger floor plan
+
+keep thinking up 2d game ideas 
+
+next step - have the red sprite run around (random walk) and have the green sprite chase him and attack periodically 
+	this will solve the updating position issue, and the random (idle) walk issue
+
+add scrolling controls for phone 
+
+tomorrow:
+
+	finish combat between two creatures (Creatures walk around and attack each other until one dies)
+	make imps go to tiles that aren't already occupied by other imps
+	adjust the creature's range so he restarts his route when the other creature moves out of range
+
+		
+
+	start working on first level. create it in matlab? 
+
+	plan it now: 
+		first level: gain portal, build hatchery, treasury, and lair. 
+		defend against creature incursion from the outside (A few small creatures) 
+		imps will need to claim tiles and reinforce walls and collect gold 
+		notifications when a new creature enters your dungeon 
+
+	will need gui to switch between modes (creature panel, building panel to start) 
+
+once you have a working level one, you want to make it look as good as possible
+	that includes:
+		better background and foreground tiles
+			maybe just make everything darker and more binary/cartoonish (using image processing in matlab)  
+		making each tile unique (using your pictures that you've taken) combined with a tiling effect
+		better sprites obviously and a wider array of sprites (you want ~20 'subjects' 
+		weapons : staff, fist, sledgehammer, axe, sword, double sword, sword+shield, bow and arrow, crossbow, stones, spellcaster,
+		pickaxe 
+		set this up at home on your desktop (or on laptop) 
+		
+		every animation should have the following: idle, walk, run, attack, get attacked, die
+		imp should have the tile animation and dig animation
+
+		how should pursue work? recalculate on every frame? 
+		if the currentTarget has moved tiles, recalculate a new route
+		if the current target is within 1 tile just move directly towards them and attack them 
+		screwy motion when it starts off, whats that all about? 
+		
+you need to allow people to bring their creatures into the next level, or at least have some type of continuity so they keep coming back 
+once you fix the bullcrap freezing after attacking, add a small collider to each sprite so they don't pile up so much
+
+	problem is onattack() is called 
+
+adding a small collider on each sprite so that the characters don't overlap so much? 
+adding the small collider definitely helps with the overlap, but makes it more difficult to move between rally points
+ie, the character moves too far and loses the direction, then can't get back on track
+leave it out for now, it isn't helping you progress 
+
+next step - build the first level and then fill in the blanks to get it working 
+also, you want the map to show up in the editor so you can work on different scenes/levels in unity 
+
+matlab map editor - add gold, gems, portal location, water, impenetrable rock, etc 
+add blood droplets when a hit occurs
+
+start with the basic floor plan - a 64*64 image in matlab (or paint?)
+
+tomorrow: get the first level working. 
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+retinotopic mapping and orientation tuning stimuli: 
+you want to compare the tuning curves of alpha/beta and gamma to do this, you should have at least 30 orientations
+and 30 different retinotopic locations. 
+the rotating wedge can be broken up into different areas quite easily, but it would be nice to have the discrete locations
+as well. 30s rotations, 40 trials is just 20 minutes. do that first while they are fresh. 
+30 orientations, and 30s of rotation, and the 20 different areas
+50*2.25 = ~35 trials in one hr, for 60 different stim types. drop the plaid.
+
+compare the tuning curves: alpha/beta and gamma orientation and retinotopic selectivity functional specificity blah blah
+see if the different frequency bands share tuning properties. see which bands are most informative about retinotopic 
+locations. 
+
+spatial linearity score: gamma quite good, alpha/beta weak, although the overall strength of the alpha/bet correlated well
+with gamma (distance?) 
+compare gamma band due to monocular or binocular? 
+
+retinotopic selectivity : alpha vs gamma and all freqs correlation
+orientation selectivity : alpha vs gamma and all freqs correlation (show mid gamma also) 
+
+Retinotopic and orientation selectivity of EEG alpha/beta and gamma power
+Russell Butler, Pierre-Michel Bernier, Kevin Whittingstall
+
+Abstract: low (alpha/beta, 8-25Hz) and high (gamma, 40+Hz) rhythms of the EEG signal are thought to play different
+functional roles in visual processing, but their relative sensitivity to basic features such as retinotopic 
+location and stimulus orientation remains unknown. We non-invasively measured alpha/beta and gamma retinotopic 
+and orientation tuning, finding that gamma is better tuned to both orientation and retinotopy. Furthermore, the gamma scalp 
+topography closely followed known retinotopic organization, while alpha/beta was less spatially specific. However, alpha/beta
+power did show some tuning to retinotopic location in terms of raw power. These results support the 
+hypothesis that gamma is due to local processing while alpha/beta involve interactions with higher visual areas. 
+The orientation selectivity of the gamma band is likely due to a shared preferred orientation across sites in the visual cortex, 
+which is known to create global tuning. The lack of orientation tuning in alpha/beta is likely due to the fact that changes 
+in alpha/beta are manifested as suppression of feedback oscillations between visual areas. 
+Taken together, these results help confirm the feed-forward hypothesis of visual processing, suggesting that feedback effects 
+as measured through alpha/beta rhythm are not as functionally relevant to visual processing. 

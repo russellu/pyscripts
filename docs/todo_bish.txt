@@ -1,0 +1,32 @@
+todos 
+
+friday: lecture data mining 
+	more eye contact with class
+	more emphasis on words, better tonality (don't raise voice at end of sentences), more confidence etc. 
+	move the mouse when you speak. periodically check audience to see if people are following. ask at least 3 questions to the class, per class 
+	you need to improve your public speaking skills every class. make a joke (ie, 10 points to gryffindor)
+
+technical stuff: tonight - go over the slides, make it smooth, large, and comprehensible. see if you can time it to 48-50 minutes. 
+get python working with the visualizations for the weather data decision tree (do an iris dataset as well if you have time) 
+talk a bit about the assignment at the start of class to answer any questions (what will be on the midterm, which chapters, etc.) reiterate the assignment structure
+talk about the textbook (if you want to read ahead go ahead but the slides will only be posted after), also minimum number of students 
+talk about midterm date (Wednesday October 9) and first assignment due date. 
+
+weekend + next week:
+
+frqnt grant
+go over samia's corrections of your grant, have a new version to send back by tuesday. 
+get your detailed contributions (add the nimg + lyes) 
+find a way to add your apps to the detailed contributions 
+find out more about how to get the money (Startup grant) and the pdf 
+
+cs230
+first assignment
+second lab 
+mark first lab
+lectures 4 and 5
+
+cs405
+first assignment
+lectures 6 and 7
+python tutorial (numpy, scikit-learn) 

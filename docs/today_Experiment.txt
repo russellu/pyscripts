@@ -1,0 +1,66 @@
+today experiment with greg: 2-5pm - do greg's experiment first (1hr), and then run some different retinotopy experiments (mainly, the discrete, continuous, and SSVEP)
+so you want to run the discrete grating retinotopy, the continuous grating retinotopy, the discrete SSVEP retinotopy, and the continuous SSVEP retinotopy.
+do 30 minutes of each, should give 2 hrs of good retinotopy data. run the wedge in 2 minute blocks, and maybe try a rotating quadrant as well. a rotating quadrant
+and a rotating octant should be the first two, then try the discrete SSVEP and the continuous SSVEP
+other things? maybe try the annulus as well as the bars, for better PRF estimation? 120/2TR = 60 areas, /3TR = 40 areas, etc. 4 runs, 5 circles/run, 20 trials/area,
+60 areas = 20*60 = 1200 trials. keep in mind also the EEG data can be smoothed. 
+for discrete grating, do a full field as well. then, see if you can get a linear summation in different frequency bands (right + left = full, quads1+2+3+4 = full,etc)
+
+greg's experiment: should be 16seconds/trial -> baseline, jitter, stim, rest, blink.
+
+2 minute rotations => can this gamma retinotopic mapping be replaced by a different more continuous stimulus? could be another interesting thing to study. 
+ie, watching movie vs gamma retinotopy. 
+
+future experiments => receptive fields, but in a different space (concept space - trump, taylor swift, etc). 
+
+today - different peak frequency, due to different orientation?? probably. 
+what about different retinotopic areas? and different contours? 
+
+distance dependence of EEG gamma power modulation 
+across electrodes, visual areas, and subjects (n=64,25,12) 
+ie, within closer electrodes, what causes it to vary more? does curvature have a significant contribution?
+do different hemispheres cancel out? apparently not, in the gamma range. 
+2 electrodes at equal distances in different subjects - still different gamma power -> distance plays a role but is not the only factor. 
+ie, in alexandra you have electrodes as far away as the CPs registering gamma power increases in response to a visual stimulus, but in other subjects
+such as alex you have no gamma power even in electrode Oz. 
+so obviously, other factors play a role. skull thickness?  
+
+what the FUCK is going on with the baseline subtraction of the power?
+higher peak frequency in global gamma rhythm for vertical gratings? WHY? 
+see what is different in BOLD response? 
+
+vertical grating...orientation columns oscillate at a higher frequency for vertical orientations? why? 
+inhibitory interneuron firing rate is higher? global gamma rhythm is the sum of all gamma, and is highly dependent on orientation tuning. 
+orientation preferences - over-representation of vertical orientations? how would that lead to a higher peak frequency? 
+
+across electrodes => inverse squared relationship
+across cortical areas => ?
+across subjects => linear?
+
+simple EEG experiment: tomorrow, you can be the first subject
+1) orientation tuning 16 orientations, 2s trials, 16*2*50 = 26 minutes
+2) retinotopic tuning full+l/r+u/d+quad+oct = 1+2+2+4+8 = 17 areas, 2s trials = 17*2*50 = 28 minutes (and one catch condition)
+=> <1hr experiment, get the following: alpha/bet and gamma orientation/retinotopic preferences
+					linearity of alpha/beta and gamma responses
+show a few things 1) gamma adds linearly to retinotopic stimulation, alpha/beta does not
+		  2) gamma power and peak frequency depend on orientation, alpha/beta does not
+		  3) 
+
+how to modulate alpha/beta without affecting gamma? is this possible? 
+
+title: orientation and retinotopic tuning of EEG alpha/beta and gamma rhythms
+abstract: EEG alpha/beta and gamma rhythms both exhibit strong narrow band responses to grating type stimuli, but the functional selectivity
+of these different rhythms is poorly understood. 
+
+fixed effect vs non-parametric
+
+
+
+
+
+
+
+
+
+
+ 

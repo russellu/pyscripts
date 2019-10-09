@@ -1,0 +1,8 @@
+devofinance
+
+.featured-img-box .entry-date {
+	font-weight: 700;
+	text-transform:uppercase;
+	color:#fab526;
+	font-size: 14px;
+} 

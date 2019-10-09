@@ -1,0 +1,32 @@
+ICA decompositions to source space - and then denoising further in source space? 
+what does it mean to run ICA on source space signals? you can isolate different components, but is it actually separating signal from noise?
+also, how can you combine all the frequency bands into a spatial ICA? 
+
+
+the next step - source space EEG vs source space resting state FMRI - voxel-wise comparisons, examine coupling at each voxel
+-> upsample EEG power to FMRI space, register to FMRI
+
+
+comparing sources with FMRI - the best way would be to get your FMRI into the same space as your grid, and then just compare on a voxel by voxel
+basis in matlab so you wouldn't have to save each source image to disk and run those correlations...but then you run into the problem of the grid being too
+large for the FMRI comparisons - upsample each source time point to the same resolution as the FMRI? 
+or somehow get a transformation direction from source to EPI and transform them in afni. 
+
+
+first thing to do - get gamma, alpha, and BOLD correlation maps with the stimulus design time course - grand average for each subject
+-> compare those to the grand average power in alpha/beta and gamma frequencies. show that gamma and alpha/beta have different spatial extent of their correlations,
+and compare those to BOLD 
+
+correlate the continuous gamma time series with the stimulus design time course and save the correlation maps - 
+get openmeeg head model with 6mm voxels, compute correlations with gamma and bold in each voxel, compute first correlations with gamma and timeseries in each voxel
+if you can localize it well to the occipital, it should correlate with BOLD also...
+
+source correlation maps look wack - could this be due to the source estimate method, or some other factor? 
+try using a beamformer that you estimate noise/data covariance with using signals and copy it to the other dataset 
+
+beamformer appears to give much nicer results - still a bit odd in the alpha/beta range, however.
+	this strangeness is due to the fact you take the mean of the x,y,z components - don't do this, compute them separately and 
+	average the results 
+by the end of tomorrow, you want the following:
+1) beamformer source localizations in all subjects
+2) correlations of alpha/beta and gamma with stimulus design in all subjects 

@@ -1,0 +1,26 @@
+list of figures: 
+
+fmri ROI
+EEG gamma topoplot
+22 subjects ersp + topoplots + ROI (suppl.)
+stimuli (gray image)
+average stimuli ersp 
+average subjects/stimuli ersp (show box around gamma), grand average topoplot
+grand average FMRI ROI overlayed on average EPI 
+2 subjects (strong and weak responder) with ERSP, topoplot, and average ROI 
+show ERSP or show mean freqs?
+
+scatter plot distance vs gamma
+scatter plot i0 vs gamma
+scatter plot intrinsic/extrinsic/gaussian/foldind vs gamma
+topoplot distance vs gamma (corr) at each electrode
+topoplot slope at each electrode
+scatter plot slope vs distance all electrodes (slope of scatter plot)
+scatter plot power vs distance all electrodes (inverse-squared)
+
+need to show the plots from where you actually get the data. ie, the raw gamma plots. then re-do the correlations using those
+raw gamma plots, so the entire paper can be coherent. 
+
+
+
+

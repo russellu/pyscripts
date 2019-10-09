@@ -1,0 +1,93 @@
+february_2018
+no distractions, straight to the point - diablo 2 speedrun style
+
+tonight: 
+
+finish the article and send to kevin
+email creative for all new campaigns to astoria (all home improvement campaigns)
+download search terms and add more negative keywords to all your campaigns 
+work out
+
+today: first update hours for windows campaign (done, 24hr)
+next - create 3 more campaigns (done by noon at latest) - adt, replacement siding, garage door
+smoke, think about new ideas for generating campaigns
+work on didactic/coupling paper (Vague - download all the possible articles you can use in the didactic and pick the best ones)
+start working on app again.
+
+new routine: do the heavy lifting in the morning (hardcore programming, c# unity), do 3-4hrs straight without break, then take the rest of the
+day to do easier tasks such as writing or making figures, preparing talks/posters, etc. 
+
+today: do 2 more indicators, and set up 2 new campaigns. record EEG in response to different spatial/temporal frequencies in yourself (get matrix) 
+and analyze results. start thinking about ways to write up the orientation paper.
+
+tomorrow: eeg experiment, finish all indicators, add more campaigns, pause keywords that suck, prepare poster idea for create. 
+make timeline for app - 45 days from now (end of march) - released
+
+long term
+release unity version of new forex app (aim for 10-15$ purchases)
+	landing page + online sales pitch + app store - 
+publish structure paper and get draft of coupling paper
+start new eeg experiments with jessily
+	start piloting this next week, talk to kevin, find a stimulus that affects alpha/beta and not gamma, and gamma but not alpha/beta
+	orientation tuning, spatial/temporal frequency tuning, etc 
+consistent profits with pay per call (1 new offer per day on average)
+complete didactic
+
+new routine: money 4 hrs+, work 4hrs max. 
+so, spend 3-4 hours on science/phd per day, and spend 4hrs or more on growing your business and making money.
+first thing to do - release the unity version of the forex app, make sure it works for desktop and mobile. have a desktop version and a mobile version, use
+a landing page to drive downloads of your desktop version. 
+
+end of this week (sunday 25) - test more stimuli try to find stimuli that will modulate alpha/beta but not gamma ie hold gamma constant while modulating alpha/beta
+alpha/beta seems to be more sensitive to movement speed, but only if you have a relatively low spatial frequency
+
+
+other parameter matrices you could test? contrast/randomization, size/contrast, size/randomization, size/orientation, etc
+
+get a list of all possible modulations and test those. 
+jia uses the following: [size, noise, contrast, orientation]
+can also add [spatial freq, temporal freq, luminosity, cross-orientation, brown/pink/white noise, direction, ]
+
+list:
+
+[size, contrast, randomization, orientation, direction, spatial freq, temporal freq, luminosity, eccentricity]
+
+tomorrow - 
+joel stuff, retinotopic experiment on joel (done)
+start building coupling figures on desktop (use scripts from laptop) 
+book MRI for orientation experiment (not abe)
+talk to lyes (paper) talk to greg (eye tracker) 
+submit RBIQ (done)
+start 1 new campaign (ppc) 
+get bitcoin data (1 minute) (donish)
+create stimulus for gamma experiment
+
+today: contrast x randomization, luminosity x contrast? 
+need to find a way to modulate alpha and beta while holding gamma constant. maybe a retinotopic scheme?  
+if you keep a quadrant active and periodically perturb input to other quadrants, you should be able to perturb alpha/beta without creating gamma. 
+then, you can use this to distinguish between BOLD responses in different areas when there is/isn't a gamma inducing stimulus? 
+so basically, have some random noise in the background that constantly modulates alpha/beta, but also drag a quadrant through the visual field?
+
+a full field method would be better - more SNR and no localization bias...
+
+basically, you want to modulate alpha/beta while holding gamma constant, and see what BOLD does (without using spatially specifici stimuli). 
+one way is using attention, but this introduces other variables. you want to do it by driving the visual system purely on feedforward input
+
+try the rnd/contrast gratings. might give something interesting. 
+
+today: finish the didactic literature review. you have two articles, now add a third (the epidemiological study)
+that will give you a wide range of articles (EEG sleep measures, effects of melatonin on cricket immune system, and epidemiological study in nurses) 
+then, read everything you have so it forms a cohesive picture in your mind 
+	create an outline of how you want to present these results - ie, what is circadian rhythm, how is it generated, how is it controlled, etc. 
+
+cancel all paused campaigns. 
+send 29 to stacey makin
+
+
+
+
+
+
+
+
+

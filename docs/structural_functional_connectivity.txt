@@ -1,0 +1,7 @@
+structural and functional connectivity vascular resting state FMRI study
+does structural vascular connectivity recapitulate functional BOLD connectivity?
+
+vascular connectivity: structural connectivity over a group n of vascular density correlation
+functional connectivity: RS BOLD signal correlation amoungst regions
+ASL atlas: gray matter CBF as a function of feeding artery 
+

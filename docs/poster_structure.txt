@@ -1,0 +1,54 @@
+poster_structure
+need to get the lead field matrix as a structural parameter
+
+stimuli, annd frequency band power
+gamma power as a function of distance (inverse-squared) 
+
+pure structural correlations - 
+functional correlations - larger extent
+
+lead field matrix normalization
+
+check male vs female responses after and before normalization by structure	
+
+you can also do structural correlations in the data you have from the 9-subjects.
+pre-processing that data (again), get electrode locations in brainstorm, or another program 
+
+methodology first: denoise to ICA components, and then go back into brainstorm and get source-localized epochs
+
+compare the ICA decomposition, when using all datasets, and when using only a few datasets 
+the relationship between the ICA component decomposition, and the lead-field matrix 
+first try to uniformize the spectrum and run ICA, see what that does (should have a similar effect o low-pass filtering)
+adding the ERP results: ERP vs ERSP, erp vs structure	
+
+the lead field matrix vs ica component scalp maps - correlate gamma component scalp maps with lead field in each voxel - see which 
+voxels correlate best. 
+
+compare BOLD to EEG in each voxel, during movie and rest-and plot the spatial correspondance of each component. 
+use glass brain to visualize the correlations 
+
+lead-field matrix in all subjects: register all electrode coordinates to a standard brain, AVERAGE the coordinates across all subjects
+and then warp those coordinates back to each subject's space (from synchrony project) - this may already be done btw 
+lead field matrix vs components - what can you find in the two signals, that relate them to each other? 
+first you need to isolate common components across all subjects - ica components
+step 1: preprocessing + ICA - FMRI and EEG, isolate components in each one (characteristic spatial maps in all subjects)
+	you can have a weight map in all subjects, or just denoise and then go directly to source space, to compare with denoised 
+	FMRI time series. 
+	but - make sure you also save the components, so you can do leadfield-ICA comparisons later. 
+first thing you actually need to do is understand the lead-field matrix better (Get this on your laptop, and try it at the workshop)
+	
+optimal denoising - bcg removal, gradient removal, check artifacts, check components
+get components across all subjects in both groups, get fmri in 2nd group on laptop (badger fmri)
+source-localized ICA components - correlating lead field matrices with component weight maps - a poor man's way to isolate the 
+dipole location - you can add this as an EEGLAB plugin, however - instead of the dipfit thing
+but this is really a short terms solution, or proof of concept type thing - the eventual goal is to get source localized epochs in 
+all brain voxels, and be able to correlate those with FMRI activation, and compute connectivity metrics, etc
+
+tonight: before the workshop - get all the brainstorm stuff copied to your laptop, and have the single subject working (alex) 
+finish all the installation for the neuropype workshop 
+
+
+
+
+
+

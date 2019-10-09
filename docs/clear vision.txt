@@ -1,0 +1,25 @@
+clear vision: overall - millionaire, professor, 10k+ citations, hundreds of articles, dozens of apps, 
+
+cs 230 - continue creating slides. start finalizing lectures around august 15. have 10 full lectures by sept with acccompanying results
+cs 405 - finish reading the book, get more materials from layachi when he returns
+	- start noting down which mathematical concepts your lack and brush up on them (bayes, linear algebra,etc) 
+	-
+grants - submit NOI this week start building references for application
+	finish all poster presentations. look for other things to add to CCV. improve NOI wording, find more reviewers
+	re-read the DG merit indicators, keep in mind always when writing application 
+	finish adding all your posters - CNS 1, RBIQ, 
+
+money
+	
+	1) open questrade account. deposit 5k. norbit's gambit to conver money to USD 
+	2) create strategy based loosely on graham's intelligent investor (buy low, sell high)
+		find the key metrics outlined in the intelligent investor. get history for major companies using google docs
+		 metrics: pe, eps
+		graham method - undervalued companies with strong dividend history 	
+		get historical data from all stocks, build a network to analyze their future value based on clustering attributes
+			- use simfin data to find companies with 15+ year dividend history, buy, hold, compare (tonight)
+		example: vector of 1000x10 (stock x attribute) - get for 2010, 2011, 2012, etc. 
+		then, train the network to predict the next year or day's value based on current
+		2a) get stocks with 15+ year history, align in time. 
+		2b) simulate the last 15 years of action, buying below a certain threshold, selling above another. 
+		

@@ -1,0 +1,24 @@
+fibernavigatory + other unity stuff: 
+
+other unity:
+
+forex app:
+
+fix the forex app, lower the price to 7.99, and update the keywords. 
+copy the description from the forex game app - add emojis and keywords, use bold text, etc. 
+put the app (unity) on the apple app store, set that up at the same time as you do the imeka app.
+make the spheres slightly larger and lighter so they stand out more
+fix the margin % - right now its % but it should be %*100. also, it allows you to go into negatives, and then the trade direction gets reversed for some odd reason. 
+
+
+
+rpg game: 
+get more sprites (vice + cloudy, windless day), and good clothing. 
+
+fibernavigator:
+fix file loading for ipad - be able to load different track files and t1 from ipad and android devices. try to get more devices to make sure it works on:
+ipad, samsung, apple phone, and desktop
+
+more features:
+fiber box dragging
+functional connectivity.

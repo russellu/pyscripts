@@ -1,0 +1,17 @@
+cellular mechanisms of the blood brain barrier opening induced by ultrasound in the presence of microbubbles
+abstract: local BBB opening is an advantageous approach for targeting drug delivery to the brain. recently, it has been 
+shown that focused ultrasound (US) sonications, when applied in the presence of preformed gas bubbles, caused magnetic
+resonance proven reversible opening of the BBB in target locations, however the cellular mechanisms of such transient 
+disruption are largely unknown. we investigated US induced changes in endothelial cell fine morphology that resulted in 
+BBB opening in rabbits. to obtain evidence for the passage of blood-borne macromolecules through the opened transvascular
+routes, an immunocytochemical procedure for endogenous immunoglobinG was performed, in addition to routine electron 
+microscopy. an increased number of vessels and vacuoles, fenestration and channel formation, as well as opening of some
+tight junctions were seen in capillaries after low-powered sonication. immunosignals presented in some of the vesicles 
+and vacuoles, in the cytoplasmic channels, and so rarely in the intracellular clefts; immunosignals could also be seen in
+neuropil around the blood vessels. damage to the cellular ultrastructure was not seen in those areas. however, cell 
+destruction and leakage of IgC through defects of the endothelial cell lining took place at 3W sonications. the data 
+reveals that several mechanisms of transcapillary passage are possible after such sonications: 1) transcytosis, 
+2) endothelial cell cytoplasmic openings -fenestration and channel formation 3) opening of a part of tight junction
+and 4) free passage through the injured endothelium (with higher power sonications). 
+
+introduction:

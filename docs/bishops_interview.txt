@@ -1,0 +1,55 @@
+bishops interview
+
+1) scan courses, figure out which ones you could teach
+	which would you be best suited to teach? 
+	a) introduction to programming
+		maybe switch the language to c#, more emphasis on functional programming
+	b) developing mobile apps (unity)
+	c) computer ethics
+		history background, many philosophy courses
+	d) data structures
+		high marks in these courses (90+%)
+	e) scientific programming
+	f) programming mobile apps
+		unity
+	g) computer games design
+		unity game engine + basic opengl 
+	h) image processing, computer vision
+		more focus on machine learning, convolutional neural nets, LSTM etc, use python
+		statistical analyis
+
+data science job postings
+	python and sql
+	statistical analysis
+	process, clean, and verify integrity of data sets
+
+2) in what ways would you change/improve the curriculum (especially relative to what it was when you were there)
+	more data science heavy emphasis - machine learning, 
+	introduce a new course for data science and machine learning
+		get datasets specifically from industry/machine learning challenges
+
+3) how would you integrate undergrads into your research?  
+4) salary - don't ask for too much up front 
+	75000, because you have no teaching experience
+
+questions: 
+1) why do you want the job?
+	i came in today because i'm very interested in 
+	why do i want to work at bishops? i went to school here for 4 years, i enjoy the environment and atmosphere, teaching
+	being a computer science prof in my home town would be like a dream come true
+	i believe combining computer science and medical imaging is one of the hottest topics right now
+	usherbrooke and bishops computer science collaborations could advance both fields 
+2) with so many talented candidates, why should we hire you?
+	answer with what the job entails and how you've handled similar situations
+3) where do you see yourself in 5 years?
+	
+4) what do you bring to our team?
+
+bishops has around 100 undergrand and 100 masters students 
+
+thesis based master's program
+group of research on topology, computation and imagery: develop an algorithmic and combinatorial approach to abstract structures of 
+topology with the aim of applying them in science and engineering
+first specific goal is to enhance understanding of the critical zones in self-intersection of imaged curves and surfaces where mesh 
+generation techniques break due to the singularity of the gradient vector field (see freesurfer) 
+

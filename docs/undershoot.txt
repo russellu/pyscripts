@@ -1,0 +1,18 @@
+study the undershoot as a function of venous density? maybe the undershoot is strongest in areas where there are larger
+veins?
+
+titles for talk tomorrow
+
+outline slide
+electric potential (formula) say how its a rough approximation (how the electrical potential might look given a dipole)
+slide #6 -> MENTION structure and show the structural maps and electric potential 
+
+BOLD comes out of nowhere (make it same as for EEG)
+
+potential limitations -> put the BOLD
+show the correlation schema many times (including at start) 
+add 2 titles
+add your within subject comparison (many electrodes), add a slide for why you think distance is good, and the 3 types 
+of comparison. add your retinotopy data. 
+
+subtract a full visual field activation map to normalize the signal (ie, to get a baseline?) => for the veins, and for EEG

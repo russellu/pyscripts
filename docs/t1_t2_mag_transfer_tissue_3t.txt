@@ -1,0 +1,14 @@
+T1, T2 relaxation and magnetization transfer in tissue at 3T.
+T1,T2 and MT experiments were performed in vitro at 3T and 37deg C on a variety of tissues: mouse liver, muscle, and 
+heart; rat spinal cord and kidney; bovine optic nerve, cartilage, and white/gray matter, and human blood. The MR params
+were compared to those at 1.5T. as expected, the T2 relaxation time constants and quantitative MT parameters (MT exchange
+rate, R, macromolecular pool fraction, M0B, and macromolecular T2 relaxation time) at 3T were similar to those at 1.5T. 
+the T1 relaxation time values, however, increased significantly with field strength, and consequently, the phenomenological
+MT parameter, magnetization transfer ratio, MTR, was lower by approximately 2-10%. collectively, these results provide a 
+useful reference for optimization of pulse sequence parameters for MRI at 3T. 
+intro: longitudinal (T1) and transverse (T2) relaxation time mechanisms are relevant in understanding water molecular 
+dynamics in biological systems. T1, T2 relaxation times depend on the chemical and physical environments of water protons
+in tissue. MRI contrast between normal and pathological tissue is often based on the differences in tissue microstructure,
+and therefore different T1 and T2 relaxation times. T1, T2, and MT also provide quantitative assessment of tissue 
+pathology, in particular offering information about the processess of demyelination and axonal loss, inflammation, 
+infarction, white matter edema, tumor malignancy, and ischemia. 

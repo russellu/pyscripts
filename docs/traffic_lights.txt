@@ -1,0 +1,7 @@
+traffic light simulation: create a simulation where you maximize the efficiency of the traffic light distribution across
+the city. 
+
+factors in the simulation: traffic, number of lights, duration of lights, and pedestrians (pedestrians are minor)
+
+
+so basically start with a simple simulation: a 5x5 grid, with 

@@ -1,0 +1,23 @@
+goals and timeline for october 2018
+
+primary goals: submit 2 more papers, publish neuroimage paper, update apps, finish grant proposals (x5)
+
+5 grant proposals: CIHR, FQRNT, NSERC, MNI (x2) 
+TIMELINE: 
+friday august 3rd: know exactly which grants you will apply to, and what information you need
+	re-read maxime's grant, get information off MNI website, 
+
+2 more papers + neuroimage: fiber visualizer app, and tuning paper
+TIMELINE:
+friday august 17: 
+	rough draft of all figures for tuning paper
+		redo the timing calibration for the stimulus designs - make sure all the angles are correct
+		get the proper angles so you can quantify everything
+	backup all data
+
+update apps: update and improve the forex app, add app to istore
+TIMELINE:
+friday august 10th:
+	make at least one major change (style, saving state, or premium indicators) 
+	
+

@@ -1,0 +1,10 @@
+CAD data to VR
+.fbx 3d to game engine
+bim data 
+writing tools to analyze the file - which are easily optimized
+simd - single inst multiple
+Joel 
+vim ac
+revvit architectural design program 
+
+by the end of today: have the FMRI bandpass map in the same space as T1, and cycle through volumes 

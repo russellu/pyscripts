@@ -1,0 +1,24 @@
+review_response
+
+scalp distance to ROI for large group - instead of electrodes  	
+BEM to get different conductivity layers 
+LOC - voxel wise curvature metrics, or keep LOC and use calcarine mask instead 
+CMF - more reason to discard peak freq?
+use Robson labels to get anatomical and functional extents
+
+mris_anatomical_stats
+you can use mri_label2label to map the label from one subject to others
+
+https://surfer.nmr.mgh.harvard.edu/fswiki/VolumeRoiCorticalThickness
+
+show correlation over different electrodes
+proportion of FMRI voxels in V1 mask, use that instead of lateral occipital cortex? 
+
+curvature stats: 
+https://www.mail-archive.com/freesurfer@nmr.mgh.harvard.edu/msg10297.html
+
+look only in calcarine, 
+
+show another scatter plot of skull thickness-surrogate vs gamma, and show two subjects iso-surface in fibernavigator
+first get the correlation curve for the roi distance as a function of frequency
+check out the excinh paper, for examples on how to make figures - get a more advanced procall function. 

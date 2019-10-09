@@ -1,0 +1,60 @@
+affiliate_5
+
+this week: keep optimizing campaigns, and and at least 1 campaign a day.
+start improving your landing pages and looking into alternative, cheaper traffic sources. 
+start testing different landing pages and see if you can drive some organic traffic to your pages. 
+focus on the rehab campaign, make more landing pages and drive some display traffic as well as more facebook ads to these landing pages. 
+your goal is to have 1 rehab conversion by the end of next week. 
+
+speak with a counselor about entering into a substace abuse treatment program press 1
+for anything related to alc or narc anonymouse, drug testing, or court order assessment press 2
+
+call to book flight landing page - market it as an offer to talk to a sales representative about getting a cheap flight somewhere. 
+
+starts with "if you're looking to book a new flight, please press 1". 
+
+put the payout in the campaign title as well, so you know how to adjust your bids
+
+tonight: home security apply goojibear and check other campaigns to apply to 
+
+goojibear - adoption (11-85$), home security (65$), walk-in tubs (35%$), hvac (14$), viagra (6.50$) 
+
+need a new strategy - be more selective with your keywords and only take the high intent keywords that you can pick out manually from the list ie water, flood, etc
+
+try a new strategy where you have intent + type combinations as adgroups, and geolocs as keyword combos within the ad group. 
+
+try using a higher bid with these more specific local keywords, only use high paying campaigns though.
+
+new campaigns: 
+apply to more household type campaigns - 
+western exterminators 10.50 for 90sec x
+presto-x pest 10.50 for 60sec x
+replacement siding 17.50 for 90sec x
+replacement windows 17.50 for 90sec x
+home warranty 11.50 for 90sec
+adt home security 50$ for 180sec x
+empire flooring 20$ for 90sec x
+allstate insuance (home, car, health, life) 11$ for 95sec
+garage door 12$ for 120sec x
+chiro 13$ for 90sec
+stairlift 8$ for 30sec 
+safestep tub 13$ 60sec
+
+
+today: garage door, pest control, and windows/siding. try the new approach with the keyword permutations + location. 
+add new thing: multiple spyfu keyword root - use more than one keyword to get the root websites, ie "pest control", "exterminator,", etc
+
+tonight: finish 4 more campaigns (pest control, windows, floor, siding, astoria ADT home security (50$), garage door) using the new approach,
+deleting: astoria_homeowners, avenge_ccdebt, astoria_water damage, avenge_payday loan, avenge_tax debt
+
+download all the keywords for floor/siding, then work on didactic while waiting for adwords to upload
+
+need to work on better gelling the offer ad text with the IVR - should lead to less bogus clicks, especially if you use highly targeted keywords
+
+next approach (assuming location targeting doesn't work) - start manually scrutinzing your lists (you probably have close to a million different 
+keywords now, you can start building massive intent and negative keyword lists, that you can pair with subject keywords for automatic campaign generation. 
+
+goals for this weekend: start learning the adwords api, and apply to 5 more campaigns. start thinking about ways to leverage all the keywords/data you've acquired 
+so far. 
+
+

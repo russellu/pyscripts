@@ -1,0 +1,27 @@
+impaired gamma band activity during perceptual organization in adults with ASD: evidence for dysfunctional network activity in 
+frontal-posterior cortices 
+abstract: current theories of the pathophsiology of ASD have focused on abnormal temporal coordination of neural activity in cortical
+circuits as a core impairment of the disorder. the current study examines the possibility that gamma-band activity may be crucially
+involved in abnormal brain activity during ASD. MEG data were recorded during presentation of mooney faces from 16 healthy controls
+and 13 participants with ASD. participants with ASD showed elevated reaction times and reduced perceptual discrimination during
+the presentation of upright mooney faces, while responses to inverted faces were in the normal range. impaired perceptual organization
+in the ASD group was accompanied by a reduction in both the amplitude and phase locking of gamma band responses. in controls, 
+perceptual organization of mooney faces involved increased 60-120HZ in a fronto-parietal network, while in the ASD group stronger
+activity was found in visual regions. these findings highlight the contribution of impaired gamma band activity towards complex
+visual processing in ASD, suggesting atypical modulation of high frequency power in fronto-posterior networks. 
+
+introduction: ASD are predominantly genetically mediated syndromes, characterized by impairments in reciprocal social interaction
+and communication alongside restricted and repetitive behaviors. they also involve a wide range of cognitive alterations, 
+including changes in basic sensory processing and higher level cognitive processes. evidence is emerging that cognitive alterations
+as well as clinical symptoms may emergy from impaired network organization. in support of this, several studies have demonstrated
+impaired or altered functional connectivity during a range of tasks in ASD. however, FMRI provides only limited insights due to 
+its low temporal resolution and the fact that it is not a true reflection of neural activity. EEG and MEG however allow measurement
+of precise neural timing, fundamental for neural coding. oscillations in the gamma band range are of particular importance for 
+establishing precise synchronization in cortical circuits. 
+preliminary evidence suggests that gamma band activity may be associated to ASD. in the auditory domain, reduced entrainment at 40Hz
+in ASD patients as well as their first degree relatives has been demonstrated. in the visual domain the evidence is conflicting,
+with reports of both hyper and hypoactivity. to clarify the role of gamma band activity in ASD, mooney faces were used to stimulate
+gamma band activity in high functioning ASD patients and a population of healthy controls, while measuring using MEG. based on 
+current pathophysiological models of ASD which discuss a dysfunction in the excitation/inhibition balance, as well as atypical 
+modulation in frontoposterior networks, reduced gamma band power during perceptual processing was expected in participants with 
+ASD, as well as abnormal modulation of high frequenct activity in frontal, parietal, and sensory cortices. 

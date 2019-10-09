@@ -1,0 +1,148 @@
+classical models for dynamic contrast enhanced MRI: 
+DCE MRI is a functional MRI method where T1 images are acquired dynamically after bolus injection of a contrast agent. the data 
+can be interpreted in terms of physiological tissue characteristics by applying the principles of tracer-kinetic modeling. in the
+brain, DCE-MRI enables the estimation of CBF, CBV, BBB permeability surface area product (PS), and the volume of the interstitium
+(Ve). these parameters can be combined to form others such as the volume transfer constant Ktrans, the extraction fraction E, 
+and the contrast agent mean transit times through the intra and extravascular spaces. 
+a first generation of tracer kinetic models was developed in the early 1990s and has become a standard in many applications. 
+subsequent improvements in DCE-MRI data quality have driven the development of a second generation of more complex models, which 
+are increasingly used, but it is not always clear how they relate to first generation models or model free deconvolution methods
+for tissues with intact BBB. the purpose of this review is to clarify the relationship between first and second generation
+models and model-free methods. 
+
+introduction: development of DCE-MRI: the concept of dynamic MRI after contrast agent injection was proposed in the mid 1980s as
+a way of measuring the tissue perfusion and capillary permeability to the signal changes caused by the agent. perfusion imaging
+requires a high temporal resolution to capture the first pass of the bolus when most of the contrast agent is intravascular, in the
+brain this enables the measurement of CBF and CBV. capillary permeability imaging uses a lower temporal resolution and a longer
+acquisition time to characterize the slow interestitial uptake after the first pass. target parameters are the interstitial volume
+Ve, the volume-transfer constant Ktrans across the BBB, and the permeability surface area product PS. perfursion and permeability
+imaging can be combined by the use of a high temporal resolution and a long acquisition time. DSC and DCE imaging are both used,
+DSC imaging estimates perfusion within the brain, while DCE imaging estimates perfusion in other parts of the body and permeability
+in the brain and body. 
+
+DCE-MRI in the brain: DCE MRI can minimize T2* effects with a short echo time, and is more linear to the concentration of the 
+contrast agent.
+
+modeling DCE-MRI: a combined measurement of perfusion and permeability with DCE-MRI requires the application of a suitable 
+tracer-kinetic model to separate the contribution of both spaces. the first generation of DCE-MRI models dates back to the work of
+Larsson, Tofts, and Brix in the early 1990s, commonly referred to as the Tofts models. they produce a measurement of Ve, Ktrans,
+and CBV. 
+
+aim, scope, and limitations: they will focus exclusively on tracer-kinetic models, which relate concentration-time curves to 
+physiological parameters. they will ignore all problems related to the conversion of DCE-MRI to concentration, such as the precise
+influence of limited water exchange, inflow errors in the AIF, or B1 inhomogeity. 
+general principles of tracer-kinetic theory are reviewed first, which lead directly to model free deconvolution methods and form 
+the conceptual foundation of all model-based approaches. parameters describing tissues where the contrast agent is distributed over
+an intra and extravascular space are described. four alternative models of the second generation are introduced, with special 
+emphasis on the boundary regimes, where they reduce to a simpler model. 
+tracer-kinetic analysis: general tracer-kinetic theory of linear and stationary systems forms the foundation for model-free 
+deconvolution analysis and all tracer-kinetic models. 
+mass conservation: a tracer is a particular type of indicator that is chemically identical to a systemic substance of interest but
+separately detectable. a standard MR contrast agent like Gd-DTPA is an indicator that is not a tracer, however, the term 
+tracer-kinetic theory is still convenient to use here. 
+consider a tissue with a number of inlets and outlets through which systemic substances are delivered and extracted respectively. 
+an indicator may be added to one or more of these inlets. the tissue concentration C(t) is the number of indicator molecules in the
+tissue relative to the total volume of tissue, C(t) is a direct measurable quantity. the indicator's volume of distribution v is 
+the fraction of tissue that is accessible to the indicator, dimensionless ml/100ml. the indicator concentration c(t) within the 
+distribution space is defined as the number of indicator molecules relative to the volume of the distribution. c(t) = C(t)/v. 
+the indicator flux J through an inlet or outlet is the number of indicator molecules that pass through it per unit of time. by
+convention, the flux is normalized to the tissue volume, so it has units of mol/min/100ml. the clearance F of the inlet or outlet
+is defined as the ratio J to the concentration c at the inlet or outlet and therefore is also normalized to tissue volume. 
+J(t) = F*c(t). the physiological interpretation of F depends on the mechanism that transports the indicator, in the case of 
+transportation by convection, F is the flow of the carrier fluid. 
+from a physics perspective, the normalization of fluxes and flows to tissue volume appears unusual, these quantities normally scale
+with the surface through which they flow and have units of mol/min/cm^2 and ml/min/cm^2 respectively. normalization to volume would
+therefore not produce a well defined local quantity but rather one that is dependent on voxel size. this is not the case in 
+physiological flow, as the capillary bed is organized so that the inflow of arterial blood into a region of interest is proportional
+to the volume of the region it is meant to feed. the fundamental assumption underlying those definitions is therefore that all
+blood entering a region is feeding flow, ie, it passes through the capillary bed of a region before being evacuated. if some of 
+the measured flow passes through a region unused, ie, the flow in large arteries, veins, or arterio-venous shunts, the measured
+quantities will show a dependence on voxel size. 
+the most general principle in tracer-kinetic theory is the conservation of indicator mass. for a tissue with a collection of 
+inlets i and outlets o, the difference between the total influx and outflux is the rate of exchange of the tissue concentration,
+dC/dt (t) = sum(i)[Fi*ci(t)] - sum(o)[Fo*co(t)]. this equation essentially encodes the fact that no indicator is created or 
+destroyed inside the tissue. 
+
+linearity and stationarity: a link between inlet and outlet flux can be obtained through the notion of indicator transit time, 
+defined as the time elapsed between entering and leaving the tissue. since a particle can take several paths through the tissue,
+indicator passage for a given inlet i is characterized by a probability distribution of transit times hi(t), hi(t) is by definition
+a positive function with unit area, in general every inlet may have a different hi(t). the expected value of hi(t) is the mean
+transit time Ti of the inlet i, Ti = integral(0,inf)[dt]*t*hi(t). 
+in general, the transit-time distribution may depend on the time of injection tau and on the injected concentration c, in which 
+case it is described by a function hi(t;tau,c). a tissue is said to be stationary if the transit time distribution does not depend
+on the time of injection and it is linear if it does not depend on the injected concentration c, but these conditions are not
+necessarily fulfilled. dependence on injection time is in fact quite common, as pathological processes or normal physiological 
+changes alter the internal structure of the tissue, however these changes typically do not happen on timescales shorter than the
+duration of the experiment. a non-linear response may occur when higher doses of the contrast agent cause a physiological response,
+however it is typically assumed that these effects do not come into play at the typical standard bolus injection dose. if a tissue
+can be assumed to be both linear and stationary, then hi is a function of the transit time t alone. 
+for linear and stationary tissues, hi(t) describes the contribution of the inlet i to the total outflux of the tissue n terms of 
+a convolution : sum(o)[Fo*co(t)] = sum(i)[hi(t)**Fici(t)]
+the convolution product f**g of two functions f(t) and g(t) is defined as follows:
+(f**g)(t) = integral(0,t)[duf(u)*g(t-u)], therefore C(t) = sum(i)[Ri(t)**Fi*ci(t)], the residue function Ri(t) of the inlet i is
+the fraction of particles entering through i with a transit time larger than t, Ri(t) = 1-integral(0,t)[hi(u)*du].
+equivalently, Ri(t) is the fraction of particles entering the inlet i at t=0 that are still present at time t. since hi(t) is 
+positive with unit area, Ri(t) is also positive, decreasing, and satisfies Ri(0) = 1 . this reflects the fact that immediately 
+after injection a contrast agent molecule must still be inside the region. 
+the mean transit time Ti of an inlet i equals the area under Ri(t), Ti = integral(0,inf)[Ri(t)*dt]. 
+
+model-free analysis: a typical DCE-MRI experiment considers a tissue sample with a single inlet a through which arterial plasma
+flow Fp enters the tissue. the data consist of the tissue concentration C(t) and the ca(t) in the blood plasma of the feeding 
+artery, this is also known as the AIF. the measured time curves C(t) and ca(t) are related by convolution with an unknown, tissue
+characteristic impluse response function I(t), so C(t) = I(t)**ca(t), with I(t) = Fp*R(t).
+in a model free analysis, I(t) is derived by numerical deconvolution of C(t) with ca(t), this can be performed without making any
+extra assumptions about the interior structure of the tissue. since R(0) = 1, Fp can be calculated as the initial value I(0) of
+the impulse response. since R(t) is decreasing, this is also equal to the maximum of I(t): Fp = max(I). the initial value I(0) is
+very sensitive to numerical error and bolus dispersion error. 
+a second parameter that can be obtained without making any further assumption is the mean transit time T. Integrating I(t), we
+find that T is the ratio of area to height: T = integral(0,inf)[I(t)*dt] / max(I). 
+under most circumstances, the volume of distribution v can be derived as well by application of the central volume theorem
+v = Fp*T. v is the area under I(t), v = integral(0,inf)[I(t)*dt]. 
+the central volume theorem is valid for linear and stationary tissues that have a single inlet of indicator and where all internal
+transport of an indicator proceeds by convection or an equivalent mechanism (single inlet, all convection system). an important
+exception where the central volume theorem is invalid is the kidney, where permeability is highly asymmetric because backflux of 
+contrast agent from tubular to intravascular space is generally impossible. 
+a practical problem with the application of above integral equations arises when I(t) has not yet returned to baseline at the end
+of the acquisition, and the area is underestimated due to data truncation leading to underestimations in T and v. this is 
+unproblematic for intravascular indicators, where T is on the order of a few seconds, so model-free measurement of CBV can be
+performed with very short acquisition times. in the presence of indicator extravasation, model free calculation of v and T require
+much longer acquisitions, since the interstitial transit time is on the order of minutes. 
+the problems with data truncation can explain why model free analysis was originally applied only to intravascular indicators, 
+de-facto to tissues with intact BBB. however the calculation of Fp does not require integration, so this parameter is not sensitive
+to truncation errors caused by extravasation. in the brain this implies that model free measurement of CBF is valid irrespective of
+the state of the BBB. 
+
+compartmental modeling: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

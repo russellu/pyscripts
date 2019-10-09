@@ -1,0 +1,6 @@
+figure notes 
+t-value (oblique > cardinal) update y-axis
+show atlas for color bars figure 4G
+show close up of all brains, same view for all images (lateral and ventral)
+improve atlas colors (dilate or change surface intensity)
+normalize proportion by the number of total elements

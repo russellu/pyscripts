@@ -1,0 +1,17 @@
+final stimulus: you want to compare tuning curves for EEG alpha/beta and gamma
+rotating 25 seconds, 360deg, 5 second rest (orientation)
+ => clockwise and counter-clockwise
+rotating 25 seconds, 360deg, 5 second rest (retinotopy)
+ => clockwise and counter-clockwise
+50 trials each (25 each direction) => 50 minute experiment 
+mix them both together, and do 5 10 minute runs (10 trials per run) 
+
+change the inward annulus to have a higher spatial frequency, slower rotations, and more black pixels
+oh and get the eye tracker also
+
+BOLD and gamma have the same orientation tuning...great! what does this mean exactly? try to see if the BOLD orientation
+tuning is spatially specific, or if its all in the same voxels, just a stronger BOLD response (ie, more active voxels). 
+
+alpha/beta is not orientation tuned. what does this mean? 
+the retinotopic tuning is pretty simple and probably down to distance. the orientation tuning is the really interesting
+thing, because it dissociates gamma and alpha/beta. also, the BOLD seems to match the gamma in this case. 

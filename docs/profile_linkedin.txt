@@ -1,0 +1,18 @@
+profile_linkedin
+cleaning, reshaping, exploring, and visualizing data (python) 
+creative and versatile analytical skills
+bayesian modeling, hypothesis testing, linear regression, pca, tree models, time-series modeling
+SQL, unstructured datasets, 2-5+ years experience, graduate degree statistics, physics
+hadoop, spark, python, r, julia, backend programming, machine learning, autonomous, time series analysis
+structured and unstructured datasets to solve multiple business problems, collaborates with business partners
+proficiency in most areas of mathematical analysis, experience mentoring or managing junior scientists, 
+high level programming language, statistical data analysis, experimental design, hypothesis validation, 
+scikit-learn, r, matlab, ipython, 
+a proven track record of using data analysis to impact key business or product decisions, 
+data engineering, academic research
+
+need to restructure your resume: highlight your strengths (list them in preferred order), highlight machine 
+learning (ICA), how you are able to adapt new machine learning algorithms, etc
+first element should be computer science phd (biomedical imaging), then list a bunch of machine learning stuff
+goal: flesh out your linkedin (courses, intro), update your resume, add more contacts
+goal by 2019: 500+ contacts, major profile changes, 

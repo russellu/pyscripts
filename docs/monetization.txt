@@ -1,0 +1,6 @@
+5000 downloads, 130$, with a 30% monetization strategy (could be a lot better). 
+if you have a good monetization strategy (get 3% of users to spend 5 bucks), then you should be making around 150$ every 1000 DL
+that would mean 150k for a game with 1mil downloads.
+of course, there are some apps that do waaay better than this. that monetization ratio is still quite poor. 
+take admob for example. if you have 1,000,000 downloads, you can assume 300,000 installs, and maybe 60k users per day for 5 minutes 
+each. assume a 1$ ecpm, and 1 ad per minute, 60*5 = 300$ per day in ad revenue = 109,000$ per year. 

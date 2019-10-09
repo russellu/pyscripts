@@ -1,0 +1,5 @@
+forex price action updates: 
+fix the text size
+fix the account loading
+fix the trade bug (trades appear when you randomize, you want to remove all trade markers when you randomize the market)
+	release new version, add more keywords

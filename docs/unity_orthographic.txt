@@ -1,0 +1,3 @@
+unity orthographic camera:
+ensure that your sprite is rendered on a nice pixel boundary, in other words, ensure that each pixel of your sprite is rendered
+on one screen pixel. the trick to achieving this is tweaking the camera's orthographic size.

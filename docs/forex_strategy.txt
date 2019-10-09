@@ -1,0 +1,68 @@
+predicting the market:
+
+use bollinger bands and moving average
+have the following vector:
+
+price - bband1
+price - bband2
+price - mvg
+
+predict the following: price 5,10,15, etc minutes in the future
+
+certain strategies work in certain conditions - identify the conditions under which tehy work - how? 
+group all the winners and losers, and then find the difference in volume etc
+
+purely technical analysis does not seem like it is going to work. market is too random
+need to take advantage of fundamentals, dividends, and interest rates. 
+
+how do you see the business landscape shaping up? obviously AI will be important. more automation, less manual labor jobs. robotics companies,
+globalization, interest rates increasing. forex markets have been flat which means more opportunity for swing trading, and holding on to
+high interest currency pairs. 
+
+hedging and swing trading with currency pairs - is it mathematically feasible? 
+technical analysis of stocks - get a sense for the type of turnaround that you see on average, how does the stock behave? 
+don't chase returns, instead, look for good opportunities to invest and take them
+
+get more data - instead of trying to predict based on technical analysis, get a sense for the underlying correlation structure and behavior
+of different commodities and indices ie, is gold correlated to oil? 
+
+the most important thing should be accurate time stamps
+understand how all the pieces fit together.
+your strategy should be based around dividends, interest rates, and buying dips for value while hedging when the opportunity presents itself
+your goal is to make money, but don't think you will find a holy grail that you can set and forget. you need to make small gains, understand
+value and where there are dissociations (money making opportunities)
+
+
+don't think about "making 20% a year" or whatever. instead, focus on minimizing risk and exposure, while making a stable monthly/weekly profit.
+once you have proven to yourself that you can survive trading real money with a reasonable frequency in the market, you can open up and start
+making some larger investments. 
+
+for example, if two currency pairs are typically correlated, 
+
+goal #1: understand the major instruments, (futures, indices, forex, etc) and how they are all interrelated, and the cost of doing business
+	look for instruments that pay out on interest rates, dividends, etc (REITs, forex interest, what else?)
+		ask this question on investopedia
+goal #2: get historical data from the major instruments, pay if you have to. set up a web-scraping service, or get a broker that allows you
+to constantly monitor data. you want to get the 'state' of the market quickly and automatically, to identify trading opportunities 
+	historical data service for historical analyis
+	web scraping or broker to get real time data, and build market 'state' to identify opportunities 
+		this service should not depend on any long duration to set up, and 
+		historical data - alignment in time is the most important factor
+		build your own infrastructure
+
+goal #3: set up a live account with a reputable broker and start making small trades. 
+
+generate some trading ideas 
+
+idea #1: find value in correlation anomalies (when you know it has moved out of wack and will probably come back) and combine that with passive
+income from dividends, interest rates, etc 
+
+idea #2: hedging with passive income in your favor - you can also try selling peaks in anticorrelation, and buying back dips 
+	ie, if two indices are historically correlated, but are moving away from that pattern, buy and wait (look for indices with interest)
+
+
+
+
+
+
+

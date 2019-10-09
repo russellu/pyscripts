@@ -1,0 +1,15 @@
+slide #8 - number of subjects in (2)
+slide #9 - less variability? need to show this, or tone it down. 
+slide #10 - mono vs di, explain the difference 
+slide #11 - quality of figure is bad
+slide #16 - remove 
+slide #17 - dipole in sphere, often assumed that this governs EEG (don't just look to confirm the equation)
+slide #19 - 1/r^2, plot in matlab, mention cutoff, add n=7, and introduce 3 measures	
+slide #21 - get ref
+slide #22 - show scalp topography, 2 channels, right/left, top/bottom
+show BOLD retinotopic maps with the stimulus design (earlier) 
+slide #35 - EEG retinotopic mapping paper #1
+	  - find dataset
+	  - existing dataset: simulate a clinical population 
+noise floor, jumps in impedence
+add no systematic difference peak frequency power at the end of lit review

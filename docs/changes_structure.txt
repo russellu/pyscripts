@@ -1,0 +1,12 @@
+changes:
+
+added alpha/beta analysis
+improved methods (automatic component selection)
+removed all freesurfer metrics
+removed all FMRI metrics (besides ROI for center of mass)
+added sorting effect analysis (effect size of dist/canc)
+added inter-electrode plots
+removed small group from main plots, put in figure 5
+
+results/discussion completely new
+tweaked methods, abstract, intro

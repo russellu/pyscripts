@@ -1,0 +1,83 @@
+sfn so far...
+lots of oscillations...
+main points on poster: can use the ff/fb ratio to explain the BOLD orientation tuning (Rather than orientation anisotropies)
+other posters: 
+
+memory perception, 
+	there is overlap between memory and perception, but the memory tuning curves are much broader
+	linked to FF/FB activity? 
+memory model
+	memory is not a discrete process but a mixture of gaussians, memory sampling is continuously degraded with time	
+v1/v2 connections
+	10x more feedback than feedforward
+v1/v2 orientation tuning
+	v2 orientation tuning looks less spatially specific
+neural spheres
+	you can inject stem cell sphere into the brain, or grow them with astrocytes, astrocytes release molecules that cause them to 
+	develope more synapses
+optogenetics ventral tegmental area
+	supressing activity in the VTA reduces fear response
+eeg voltage 
+	use raw instantaneous voltage instead of power or phase, to correlate with perceptual effects
+	can try this with FMRI as well, and EEG theta and alpha/beta
+decoded memory vs function
+	areas responsible for activating during memory recall are similar across memory tasks, and distinct from areas involved in decoding same tasks
+optimal contrast tuning curve
+	500ms, 6 points, 30 trials - you can estimate the contrast tuning curves for BOLD and EEG or just EEG based on this (you can do BOLD as well) 
+super agers
+	cognitively younger elders have thicker cingulate cortices
+parahippocampal gyrus prf
+	large, bilateral prf in parahippocampal gyrus
+v6 mapping with optical flow
+	v6 can be isolated by optical flow experiments
+center surround orientation tuning
+	90 degree phase offset for surround? 
+traveling waves seen using ECOG and EEG
+spectral parameterization 
+	peak frequency as a function of time 
+dynamic synapses
+male female social behavior - can be altered by flipping a switch
+
+possible future ideas: prf using neural network, instantaneous voltage vs FMRI, contrast tuning curve estimation, 
+
+most important posters:
+1) distribution of synaptic terminals - larger driving synapses, smaller modulatory synapses, gamma and alpha
+2) bold as a function of time-lag correlation: more networked hubs = less time variance
+3) microstructure - goal of 1mm fully reconstructed
+4) optic radiation retinotopy - feeds v1 v2 v3
+5) eeg components - classify if they are part of the brain or not based on scalp ica
+6) neurovascular coupling state specific
+7) pulvinar coordinates activity in v1 and v4 - theta increases in peak frequency results in +/- baseline change with narrow bar
+8) modeling LFP with previous LFP 
+9) spatial correlations locally reduced injection
+10) implantable acoustic probes
+11) calcium correlated to gamma and arterial diameters, calcium spiking variability predicts gamma and diameters
+12) ecog auditory cortex high gamma independent component analysis
+13) synaptic dendrites in layer 6 contact reciprocal pyramidal cells more so than soma-specific connections
+14) size and spatial frequency tuning maps using intrinsic signal
+15) movie vs contrast grating feedforward and feedback silencing - silencing feedback has larger effect on movie.
+16) ECOG gamma in response to opacity faces higher gamma more opacity
+17) modeling contrast response function inhibitory + excitatory
+18) multi-grid brain probe that you can implant
+19) eeg electrodes for sensing the electric field vector - 3 components signals
+20) gamma with age - lower peak frequency and power, higher gamma for females
+21) functional ultrasound imaging in 3d on brain with skull removed 
+22) alpha peak frequency and pain
+23) subdermal recordings - small incision and insert grid
+24) state space oscillator for decomposing neuronal frequencies
+25) gamma rhythm does not alter with perceptual recall (meaning perception does not require lower level vision?)
+26) lower pca components can obtain sufficient coding accuracy (ie lower components still contain significant info)
+27) kernel + neuralink - create cv, email all companies on exhibitors list, follow on linkedin
+28) 
+
+
+
+
+
+
+
+
+
+
+
+

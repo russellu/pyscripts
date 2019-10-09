@@ -1,0 +1,19 @@
+adwords
+online advertising allows you to filter who sees your ads. it also allows you to target users on multiple devices. 
+targeting gives you the ability to reach people with specific interests, and show them relevant ads
+keywords are used to show your ad when people search for certain terms
+ad location - show your ad on google search result pages and websites that are part of google search
+age, location, langauge
+days, times, frequency
+devices
+
+can track user behavior including if they click, if they buy, how long it takes, etc
+you can manage multiple adwords accounts
+you can use adwords editor to better manage your campaigns offline 
+
+two main networks - search network and display network
+the campaign type determines which of these your ads will show up in
+the search network includes search, maps, shopping, and hundreds of non-google search partner websites
+the search network allows you to show your text ads next to google search results, and reach customers actively searching for stuff
+display network includes a collection of google websites like finance, gmail, blogger, youtube, partner sites, mobile sites, and
+apps that show adwords campaigns

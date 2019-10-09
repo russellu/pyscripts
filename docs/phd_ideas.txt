@@ -1,0 +1,36 @@
+stuff left to do for phd:
+attend 3-4 more conferences, network for a post-doc
+publish 2 more papers in high impact journals, and 1 more or more in low impact (giving 5+ total)
+	neuroimage/cortex/jneur : coupling
+	neuroimage/cortex/jneur : structure
+	neuroimage/cortex/jneur/jphys : global gamma orientation tuning 	
+
+do the experiment get 20+ subjects, reveal the structural basis of EEG and EEG-BOLD coupling
+by the end of the phd, your goal is to be earning 100$ a day passive income through app store, and have 6 articles publier
+20 minutes morning and night from 20 days out, don't be cocky...
+pass predoc
+	read nunez book, understand electrodynamics
+	read buxton book, understand BOLD and MRI physics
+	review the gamma literature
+	review the EEG-structure literature
+	answer the questions posed to you by the examiners 
+	GABA receptor density and GABA concentrations - why? 
+
+need to solidify the hypothesis: distance and curvature, but why?
+
+articles:
+
+EEG/GAMMA
+1) driving fast-spiking cells induces gamma rhythm and controls sensory responses 
+2) the origins of extracellular fields and currents - EEG, ECOG, LFP and SPIKES 
+3) multiple origins of the cortical gamma rhythm
+4) a critical role for NMDA receptors in parvalbumin interneurons for gamma rhythm induction and behavior
+
+BOLD
+1) quantification of intravascular and extravascular contribution to BOLD effects induced by alteration in 
+oxygenation or intravascular contrast agents
+2) ogawa - BOLD
+3) diffusion-weighted spin-echo fmri at 9.4T
+4) balloon model paper and subsequent papers 
+
+find out why the gradients affect the EEG signal

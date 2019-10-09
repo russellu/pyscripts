@@ -1,0 +1,38 @@
+diffusion weighted spin-echo FMRI at 9.4T microvasculature/tissue contribution to BOLD signal changes
+the nature of the vascular contribution to BOLD contrast used in FMRI is poorly understood. vascular contributions
+were investigated at an ultra high field of 9.4T, using diffusion weighted FMRI techniques in a rat forepaw stimulation
+model. tissue and blood T2 times were measured to optimize the echo time for FMRI. the T2 or arterial blood was 40.8
++/- 3.4msec, similar to tissue T2 of 38.6ms. in comparison, the T2 of venous blood at an oxygenation level of 79% was
+9.2 +/- 2.3ms. the optimal spin-echo time of 40msec was confirmed from echo-time dependency FMRI studies. the intravasc
+contribution was examined using a graded diffusion-weighted spin-echo echo-planar imaging technique with diffusion 
+weighting factor (b) values of up to 1200sec/mm. relative BOLD signal changes induced by forepaw stimulation showed no 
+dependence on the strength or direction of diffusion sensitizing gradients, suggesting that the large vessel contribution
+to the BOLD signal is negligible at 9.4T. however, gradient echo fmri performed with bipolar diffusion sensitizing grads
+which suppresses the intravascular components from large vessels, showed higher %signal changes in the surface of the
+brain. this effect was attributed to the extravascular contribution from large vessels. these findings demonstrate that
+caution should be exercised when when interpreting that higher percent changes obtained with gradient echo BOLD FMRI are
+related to stronger neural activation. 
+
+introduction: the blood oxygenation level dependent (BOLD) effect is the most widely used contrast mechanism for FMRI. 
+it is sensitive to venous blood volume, and to vessel size and orientation. these vascular contributions, which depend
+on magnetic field strength as well as acquisition methods, are still poorly understood. to comprehend the vascular 
+contributions, the microvascular must be separated from the macrovascular components. the microvascular or tissue 
+component arises from capillaries and surrounding tissues, while whereas the macrovascular component arises from large
+venules and veins. it is desireable to minimize the macrovascular contribution, due to the fact that it can often be
+distal from the site of neuronal activity. according to the BOLD model, vascular contributions are composed of EV and IV
+effects. the EV contribution from large vessels is linearly dependent on magnetic field strength, whereas the EV 
+contribution from small vessels increases quadratically with increased field strength. this suggests that higher 
+magnetic fields can increase the relative contribution from microvascular components to the BOLD signal. the EV component
+of microvessels contributes to both SE and GE fMRI as a result of dynamic signal averaging induced by water diffusion 
+during an echo time. however, the EV component of large vessels contributes only to GE and not SE experiments due to the
+refocusing pulse which nulls the effect due to static inhomogeneity around large vessels. these EV effects can not be
+reduced using flow-sensitive bipolar gradients. the IV signal can be reduced using bipolar crusher gradients, such as the
+ones used in diffusion weighting, because fast-moving spins dephase and lose their signal more quickly than static spins.
+it is generally accepted that IV signals from large vessels are reduced at b-values of 20-30sec/mm^2. GE FMRI studies
+using bipolar gradients have been done at 1.5, 3 and 4T in humans, showing that at 1.5T, most of the BOLD signal arises
+from IV macrovascular effects. when the same experiment was performed at 3 and 4T, some activation remained, suggesting
+that macrovascular EV and microvascular EV/IV effect coexists with a significant macrovascular IV contribution. 
+
+conclusions: at lower field strengths, the macro-vascular effects dominate, at larger field strengths using spin-echo
+FMRI it is possible to obtain EV from microvascular, as it increases quadratically with field strength whereas the EV
+increases only linearly. 

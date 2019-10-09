@@ -1,0 +1,783 @@
+package jforex;
+//balance 96889.79
+
+//buy 1.20696
+//sell 1.20686
+//balance 96875.51
+
+import java.util.*;
+import java.text.SimpleDateFormat; 
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import com.dukascopy.api.*;
+import static com.dukascopy.api.IOrder.State.*;
+import com.dukascopy.api.IEngine.OrderCommand;
+import javax.mail.*; 
+import javax.mail.internet.*;
+import javax.mail.Message.*; 
+
+@RequiresFullAccess
+@Library("C:/javax.mail.jar")
+
+public class test_strategy implements IStrategy {
+
+    private IEngine engine;
+    private IConsole console;
+    private IHistory history;
+    private IContext context;
+    private IIndicators indicators;
+    private IUserInterface userInterface;
+    
+    private String accountCurrency = "";
+    private double leverage;
+    private String accountId = "";
+    private double equity;
+    private double useofLeverage;
+    private int overWeekendEndLeverage;
+    private int marginCutLevel;
+    private boolean globalAccount;
+    private double tradeAmount; 
+    private double dollarsPerPip;
+    
+    private final int MAX_SLIPPAGE = 5; 
+    private final double MAX_PERCENT_RISK = 0.15; 
+    private final double MAX_DRAWDOWN_PIPS = 35*2*36; 
+    
+    public static String[] currencies = {"AUDCAD","AUDCHF","AUDJPY","AUDNZD","AUDSGD","AUDUSD","CADCHF","CADJPY","CHFJPY","CHFSGD","EURAUD","EURCAD","EURCHF","EURDKK","EURGBP","EURJPY","EURNZD","EURSGD","EURUSD","GBPAUD","GBPCAD","GBPCHF","GBPJPY","GBPNZD","GBPUSD","NZDCAD","NZDCHF","NZDJPY","NZDUSD","SGDJPY","USDCAD","USDCHF","USDHKD","USDJPY","USDSGD","ZARJPY"}; 
+    public static double[] spreads =    { 2.5,     2.5,     0.95,    2.33,    5,       0.9,     1.95,    1.05,    1.5,     9,       1.9,     1.85,    1.0,     4.0,     0.85,    0.6,     3.6,     5.25,    0.25,    3.35,    3.5,     2.2,     1.6,     5.0,     0.96,    3.0,     2.1,     2.1,     1.05,    2.5,     0.9,     1.05,    3.0,     0.35,    2.0,     0.7    }; 
+    public static double[] pipScales =  {.0001,   .0001,   .01,     .0001,   .0001,   .0001,   .0001,   .01,     .01,     .0001,   .0001,   .0001,   .0001,    .0001,   .0001,   .01,     .0001,   .0001,   .0001,   .0001,   .0001,   .0001,   .01,     .0001,   .0001,   .0001,   .0001,   .01,     .0001,   .01,     .0001,   .0001,   .0001,   .01,     .0001,   .01    };
+    private DrawStrategy drawStrategy; 
+    private boolean finishedInit = false; 
+
+    private String[] emails = {"russell.buttler@usherbrooke.ca","jforexemails@gmail.com","derekcandy@hotmail.com","davcameron@gmail.com"};
+
+    public void onStart(IContext context) throws JFException {
+        this.engine = context.getEngine();
+        this.console = context.getConsole();
+        this.history = context.getHistory();
+        this.context = context;
+        this.indicators = context.getIndicators();
+        this.userInterface = context.getUserInterface();
+
+        Set<Instrument> instruments = new HashSet<Instrument>();
+        for(int c=0;c<currencies.length;c++){
+            String instrumentString = currencies[c].substring(0,3) + "/" + currencies[c].substring(3,6);
+            
+            Instrument instr = Instrument.fromString(instrumentString); 
+            instruments.add(instr);               
+        }
+        context.setSubscribedInstruments(instruments, true); 
+        int i = 10;
+        while (!context.getSubscribedInstruments().containsAll(instruments) && i>=0) {
+            try {
+                console.getOut().println("Instruments not subscribed yet " + i);
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {    
+                console.getOut().println(e.getMessage());
+            }
+            i--;
+        }
+        
+        drawStrategy = new DrawStrategy(); 
+        double totalProfit = 0;   
+        for (int c=0;c<currencies.length;c++){
+            String instrumentString = currencies[c].substring(0,3) + "/" + currencies[c].substring(3,6);
+            Instrument instr = Instrument.fromString(instrumentString); 
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyy HH:mm:ss"); 
+            dateFormat.setTimeZone(TimeZone.getTimeZone("GMT")); 
+            Date dateFrom = null;
+            Date dateTo = null;
+            Date current = Calendar.getInstance().getTime(); 
+            String currentTime = new SimpleDateFormat("dd/MM/yyy HH:mm:ss").format(Calendar.getInstance().getTime());
+            
+            long prevBarTime = history.getPreviousBarStart(Period.ONE_MIN,System.currentTimeMillis());
+            try { 
+                dateFrom = dateFormat.parse("13/09/2017 00:00:00"); 
+                dateTo = dateFormat.parse(currentTime);
+            } catch (Exception e){
+                e.printStackTrace();
+            }    
+            List<IBar> bars = history.getBars(instr, Period.ONE_MIN, OfferSide.ASK, dateFrom.getTime(),prevBarTime);
+            
+            Strategy newStrat = new Strategy(currencies[c],bars); 
+            drawStrategy.addStrategy(newStrat); 
+            try{Thread.sleep(500);}catch(Exception e){console.getOut().println("sleep error!");}; 
+            totalProfit = totalProfit + newStrat.sumProfit(); 
+        } 
+        console.getOut().println("total profit = " + totalProfit); 
+        finishedInit = true;      
+     
+        onAccount(context.getAccount()); 
+                                
+        //sendEmails(); 
+    }
+    
+    public void sendEmails(){
+        SendMail mailSender;
+        String messageBody = getAccountSummary(); 
+        for(int i=0;i<emails.length;i++)
+            mailSender = new SendMail(emails[i],"Trade Summary:",messageBody);
+    }
+
+    public void onAccount(IAccount account) throws JFException {
+        accountCurrency = account.getCurrency().toString();
+        leverage = account.getLeverage();
+        accountId= account.getAccountId();
+        equity = account.getEquity();
+        useofLeverage = account.getUseOfLeverage();
+        overWeekendEndLeverage = account.getOverWeekEndLeverage();
+        marginCutLevel = account.getMarginCutLevel();
+        globalAccount = account.isGlobal();
+       // console.getOut().println("account currency = " + accountCurrency + ", leverage = "+leverage +", accountId = "+accountId+", equity="+equity
+       // + ", useOfLeverage = "+ useofLeverage + ", overWeekEndLeverage = "+ overWeekendEndLeverage + ", marginCutLevel = " + marginCutLevel + " globalAccount = "+globalAccount);    
+        dollarsPerPip = (equity*MAX_PERCENT_RISK)/MAX_DRAWDOWN_PIPS;
+        tradeAmount = Math.ceil(dollarsPerPip)/100; 
+       // console.getOut().println("dollarsPerPip = " + Math.ceil(dollarsPerPip) + " tradeAmount = " + tradeAmount); 
+    }
+    
+    public String getAccountSummary(){
+        double startEquity = 98055.84;
+        String line1 = "CURRENT EQUITY: " + equity + "\n";
+        String line2 = "START EQUITY: " + startEquity + "\n";
+        String line3 = "PERCENT CHANGE = " + ((equity-startEquity)/startEquity)*100 + "\n";
+        String finalString = line1 + line2 + line3; 
+        for(int i=0;i<drawStrategy.strats.size();i++){
+            finalString += drawStrategy.strats.get(i).currency + " profit(pips) = " + 
+            (int)drawStrategy.strats.get(i).sumProfit() + ", unrealized profit/loss = " 
+            + (int)(drawStrategy.strats.get(i).getUPL()/drawStrategy.strats.get(i).pipScale) +"\n";      
+        }   
+        return finalString; 
+    }
+
+    public void onMessage(IMessage message) throws JFException {
+        
+    }
+
+    public void onStop() throws JFException {
+        
+    }
+    
+    public void onTick(Instrument instrument, ITick tick) throws JFException {
+       
+    }
+    
+    public void onBar(Instrument instrument, Period period, IBar askBar, IBar bidBar) throws JFException {
+        
+        if(period.equals(period.ONE_MIN)){
+            for(int i=0;i<currencies.length;i++){
+                String instrumentString = currencies[i].substring(0,3) + "/" + currencies[i].substring(3,6);
+                if(instrument.toString().equals(instrumentString)){
+                    if(askBar.getVolume() > 0)
+                        drawStrategy.strats.get(i).feedData(askBar,bidBar);     
+                }
+            }
+        }
+        else if(period.equals(period.DAILY) && instrument.toString().equals("EUR/USD")){
+            sendEmails(); 
+        }
+        
+    }
+
+/**
+ * 
+ * CLASS DRAW STRATEGY
+ * 
+ **/ 
+class DrawStrategy extends JPanel implements Runnable{
+    private JFrame jf ; 
+    private int WIDTH = 500 ; 
+    private int HEIGHT = 500 ; 
+    private BufferedImage bim = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB) ; 
+    private Graphics2D g2 = bim.createGraphics() ;     
+    private int pointsToDisplay = 3000 ; 
+    private boolean visualize = true; 
+    private ArrayList<Strategy> strats; 
+    private Strategy currentStrategy; 
+    
+    public DrawStrategy(){
+        initFrame(); 
+        new Thread(this).start() ; 
+        strats = new ArrayList<Strategy>(); 
+    }
+    
+    public void addStrategy(Strategy strat){
+        if(strats.size()==0)
+            currentStrategy = strat; 
+        strats.add(strat); 
+        JButton currButton = new JButton(strat.currency);
+        currButton.addActionListener(new MyAction(strat.currency));
+        currButton.setBackground(Color.WHITE);
+        currButton.setForeground(Color.BLACK);
+        this.add(currButton,BorderLayout.PAGE_END);
+        revalidate(); 
+        render();
+        repaint(); 
+    }
+    
+    class MyAction implements ActionListener{
+        String currency; 
+        public MyAction(String currency){
+            this.currency = currency; 
+        }
+        public void actionPerformed(ActionEvent e) {
+           switchCurrency(currency); 
+        }
+    }
+    
+    public void switchCurrency(String newCurrency){
+        int currIndex = -1; 
+        for(int i=0;i<currencies.length;i++)
+            if(currencies[i].equals(newCurrency))
+                currIndex = i; 
+        currentStrategy = strats.get(currIndex); 
+        render();
+        repaint(); 
+    }
+    
+    public void run(){
+        render(); 
+        repaint(); 
+        try{Thread.sleep(20);}catch(Exception e){console.getOut().println("sleep error!");};
+    }
+
+    public void render(){    
+        
+        NumberFormat formatter = new DecimalFormat("#000.00000") ;
+        RenderingHints rh = new RenderingHints(
+                 RenderingHints.KEY_TEXT_ANTIALIASING,
+                 RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2.setRenderingHints(rh);
+        g2.setStroke(new BasicStroke(1));
+        
+        g2.setColor(Color.BLACK) ;
+        g2.fill(new Rectangle2D.Double(0,0,jf.getWidth(),jf.getHeight())) ;
+        
+        if(currentStrategy!=null){
+            ArrayList<Double> values = currentStrategy.inputData; 
+            
+            int startInd = 0 ; 
+            if(values.size() < pointsToDisplay){
+                startInd = 0 ;     
+            }
+            else {
+                startInd = values.size() - pointsToDisplay ; 
+            }      
+            double w = getWidth() ; 
+            double h = getHeight() ; 
+            double xstep = w/(values.size()-startInd) ; 
+            double max = listMax(values.subList(startInd, values.size()-1)) ; 
+            double min = listMin(values.subList(startInd, values.size()-1)) ; 
+            max = max + (max-min)/2 ; min = min - (max-min)/2 ; 
+            double ystep = h/(max-min);
+            
+            for(int i=startInd+1;i<values.size();i++){
+                g2.setColor(Color.LIGHT_GRAY);
+                double x1 = (i-startInd-1)*xstep ; 
+                double x2 = (i-startInd)*xstep ; 
+                double y1 = (max-values.get(i-1))*ystep ; 
+                double y2 = (max-values.get(i))*ystep ; 
+                g2.draw(new Line2D.Double(x1,y1,x2,y2)) ;
+                
+                if(values.size() > 50){
+                    g2.setColor(Color.CYAN);
+                    double b1y1 = (max-currentStrategy.bollingerBands.get(i-1)[0])*ystep ; 
+                    double b1y2 = (max-currentStrategy.bollingerBands.get(i)[0])*ystep ; 
+                    g2.draw(new Line2D.Double(x1,b1y1,x2,b1y2)) ;
+                    
+                    double b2y1 = (max-currentStrategy.bollingerBands.get(i-1)[1])*ystep ; 
+                    double b2y2 = (max-currentStrategy.bollingerBands.get(i)[1])*ystep ; 
+                    g2.draw(new Line2D.Double(x1,b2y1,x2,b2y2)) ;  
+                }          
+            }
+            
+            for(int i=0;i<currentStrategy.trades.size();i++){
+                if(currentStrategy.trades.get(i).entryIndex > startInd && currentStrategy.trades.get(i).entryIndex < values.size()                    
+                   || currentStrategy.trades.get(i).exitIndex < values.size() && currentStrategy.trades.get(i).exitIndex > startInd){        
+                    if(currentStrategy.trades.get(i).direction==-1)
+                        g2.setColor(Color.RED);
+                    else g2.setColor(Color.GREEN);
+                    int entryIndex = currentStrategy.trades.get(i).entryIndex; 
+                    int exitIndex = currentStrategy.trades.get(i).exitIndex; 
+                    double x1 = (entryIndex-startInd-1)*xstep; 
+                    double x2 = (exitIndex-startInd-1)*xstep; 
+                    double y1 = (max-values.get(entryIndex))*ystep; 
+                    double y2 = (max-values.get(exitIndex))*ystep; 
+                    g2.fill(new Ellipse2D.Double(x1-8,y1-8,16,16));
+                    g2.fill(new Ellipse2D.Double(x2-3,y2-3,6,6));
+                    if(exitIndex !=0)
+                        g2.draw(new Line2D.Double(x1, y1, x2, y2)); 
+                }    
+            }
+            
+            
+            NumberFormat form2 = new DecimalFormat("#000.00") ;
+            g2.setColor(Color.YELLOW); 
+            String profitPips = Integer.toString((int)(currentStrategy.sumProfit())); 
+            g2.drawString("profit (pips) = " + profitPips, 10, jf.getHeight()-105);
+            String uplPips = Integer.toString((int)((currentStrategy.getUPL()/currentStrategy.pipScale))); 
+            g2.drawString("upl (pips) = " + uplPips, 10, jf.getHeight()-90);
+            String nTrades = Integer.toString(currentStrategy.trades.size());
+            g2.drawString("# closed trades: " + nTrades, 10, jf.getHeight()-75);
+            String currentSpread = form2.format(currentStrategy.currentSpread); 
+            g2.drawString("current spread: " + currentSpread, 10, jf.getHeight()-60);
+            
+            double totalProfit = 0; 
+            for(int i=0;i<strats.size();i++)
+                totalProfit += strats.get(i).sumProfit();
+            
+            String totalProfitPips = Integer.toString((int)totalProfit); 
+            g2.drawString("TOTAL PROFIT: " + totalProfitPips, 10, jf.getHeight()-120);
+        }
+    }
+    
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        Graphics2D g2 = (Graphics2D)g ;
+        g2.drawImage(bim,0,0,null) ;
+    }
+    
+    public void initFrame(){
+        
+        jf = new JFrame() ; 
+        jf.setPreferredSize(new Dimension(WIDTH,HEIGHT));
+        jf.add(this) ; 
+        jf.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE) ;        
+        jf.setVisible(true) ;
+        jf.pack() ;   
+        jf.addComponentListener(new ComponentListener() {
+            public void componentResized(ComponentEvent e) {
+                bim = new BufferedImage(jf.getWidth(),jf.getHeight(),BufferedImage.TYPE_INT_ARGB); 
+                g2 = bim.createGraphics(); 
+                WIDTH = jf.getWidth();
+                HEIGHT = jf.getHeight();
+                render();
+                repaint();  
+            }
+            public void componentShown(ComponentEvent event){    
+            }
+            public void componentHidden(ComponentEvent arg0) {                
+            }
+            public void componentMoved(ComponentEvent arg0) {                
+            }
+        });
+    }
+}
+/**
+ * 
+ * CLASS STRATEGY
+ * 
+ **/  
+class Strategy {
+    
+    boolean inBuy = false;
+    boolean inSell = false;
+    double currentProfit = 0;
+    double spread = 0; 
+    double pipScale = 0;
+    double comission = 2.55; 
+    
+    double std = 3.7;
+    double macdiff = 0;
+    double tp = 34; 
+    double stop = 91;      
+    double bbandMvgLength = 50; 
+    double histSTD = 0; 
+    
+    int orderCount=0; 
+    
+    private IOrder order = null; 
+    
+    ArrayList<Double> inputData; 
+    ArrayList<Double> volumeData;
+    ArrayList<Double> mvgBollingerBand; 
+    ArrayList<double[]> bollingerBands; 
+    double currentSpread = 0; 
+    private String currency; 
+    ArrayList<Trade> trades; 
+    Trade currentTrade; 
+    List<IBar> historyBars; 
+    boolean historyMode = true; 
+    
+    public Strategy(String currency, List<IBar> historyBars){
+        this.currency = currency;
+        this.historyBars = historyBars; 
+        int currIndex = 0; 
+        for(int i=0;i<currencies.length;i++)
+            if(currency.equals(currencies[i]))
+                currIndex = i;
+        spread = spreads[currIndex];
+        pipScale = pipScales[currIndex]; 
+        inputData = new ArrayList<Double>(); 
+        volumeData = new ArrayList<Double>(); 
+        mvgBollingerBand = new ArrayList<Double>(); 
+        bollingerBands = new ArrayList<double[]>();
+        trades = new ArrayList<Trade>(); 
+       
+        for(int i=0;i<historyBars.size();i++)
+            if(historyBars.get(i).getVolume() > 0)
+                feedData(historyBars.get(i),historyBars.get(i)); 
+        
+        historyMode = false; 
+    }
+    
+    public ArrayList<Double> initCloseData(ArrayList<IBar> points){
+        ArrayList<Double> closeData = new ArrayList<Double>(); 
+        for(int i=0;i<points.size();i++)
+            closeData.add(points.get(i).getClose()); 
+        return closeData; 
+    }
+    
+    public ArrayList<Double> initVolumeData(ArrayList<IBar> points){
+        ArrayList<Double> volumeData = new ArrayList<Double>(); 
+        for(int i=0;i<points.size();i++)
+            volumeData.add(points.get(i).getVolume());
+        return volumeData; 
+    }
+    
+    public void feedData(IBar askBar, IBar bidBar){
+        inputData.add((bidBar.getClose() + askBar.getClose())/2); 
+        volumeData.add(askBar.getVolume()); 
+        currentSpread = (askBar.getClose()-bidBar.getClose())/pipScale; 
+        updateMvg();
+        updateBollingerBands();
+        if(inputData.size() > bbandMvgLength){
+            executeTradeLogic();
+        }
+        if(historyMode==false){
+            drawStrategy.render();
+            drawStrategy.repaint(); 
+        }
+    }
+    
+    public void executeTradeLogic(){
+        double currentPrice = inputData.get(inputData.size()-1); 
+        double currentVolume = volumeData.get(volumeData.size()-1); 
+        double previousPrice = inputData.get(inputData.size()-2); 
+        double upperBand = bollingerBands.get(bollingerBands.size()-1)[0]; 
+        double lowerBand = bollingerBands.get(bollingerBands.size()-1)[1]; 
+        double prevUpperBand = bollingerBands.get(bollingerBands.size()-2)[0];
+        double prevLowerBand = bollingerBands.get(bollingerBands.size()-2)[1];
+        
+        if(inBuy==false && inSell==false){ 
+            if(previousPrice < prevUpperBand && currentPrice > upperBand  
+                    && currentVolume < 110 && histSTD > 5*pipScale && historyMode==false 
+                    && (currentSpread < 2 || currentSpread < spread*1.5)){
+                boolean opened = submitOrder(-1); 
+                if(opened==true){
+                    currentTrade = new Trade(currentPrice,-1,(spread+comission)*pipScale,inputData.size()-1); 
+                    trades.add(currentTrade); 
+                    inSell = true; 
+                }
+                
+            } 
+            else if(previousPrice > prevLowerBand && currentPrice < lowerBand 
+                    &&  currentVolume < 110 && histSTD > 5*pipScale && historyMode == false 
+                    && (currentSpread < 2 || currentSpread < spread*1.5)){
+                boolean opened = submitOrder(1); 
+                if(opened==true){
+                    currentTrade = new Trade(currentPrice,1,(spread+comission)*pipScale,inputData.size()-1); 
+                    trades.add(currentTrade); 
+                    inBuy = true; 
+                }
+            }
+        }
+        else if(inBuy==true){
+            if((previousPrice < prevUpperBand && currentPrice > upperBand) 
+                    || (currentPrice - currentTrade.entry < -(stop*pipScale))
+                    || (currentPrice - currentTrade.entry > (tp*pipScale))
+                    && (currentSpread < 2 || currentSpread < spread*1.5)){
+                boolean closed = closeOrder();
+                if(closed==true){
+                    currentTrade.close(currentPrice,inputData.size()-1); 
+                    inBuy = false;  
+                }
+            }
+        }
+        else if(inSell==true){
+            if((previousPrice > prevLowerBand && currentPrice < lowerBand) 
+                    || (currentTrade.entry - currentPrice < -(stop*pipScale))
+                    || (currentTrade.entry - currentPrice > (tp*pipScale))
+                    && (currentSpread < 2 || currentSpread < spread*1.5)){
+                boolean closed =  closeOrder();
+                if(closed==true){
+                    currentTrade.close(currentPrice,inputData.size()-1); 
+                    inSell = false; 
+                }
+            }
+        }
+    }
+    
+    public boolean submitOrder(int direction){
+        boolean opened = false; 
+        try{
+        orderCount++; 
+        String instrumentString = currency.substring(0,3) + "/" + currency.substring(3,6);
+        Instrument instrument = Instrument.fromString(instrumentString); 
+        String orderString = currency + orderCount; 
+        if(direction==1)
+            order = engine.submitOrder(orderString, instrument, OrderCommand.BUY, tradeAmount,0,MAX_SLIPPAGE);
+        else if(direction==-1)
+            order = engine.submitOrder(orderString, instrument, OrderCommand.SELL, tradeAmount,0,MAX_SLIPPAGE);
+        
+        order.waitForUpdate(2000, FILLED);
+
+        if (order.getState() != FILLED) {
+            console.getOut().println("Can't close order - order not filled: " + order.getState());    
+            opened = false;        
+        }
+        else opened = true;     
+        }catch(Exception e){System.out.println("order error");} 
+        return opened; 
+    }
+    
+    public boolean closeOrder(){
+        boolean closed = false; 
+        try{
+            order.close();
+            order.waitForUpdate(2000);
+             if (order.getState() != FILLED) {
+            console.getOut().println("Can't close order - order not filled: " + order.getState());    
+            closed = false;       
+        }
+        else closed = true; 
+        }catch(Exception e){}
+        return closed; 
+    }
+    
+    public double sumProfit(){
+        double profit = 0; 
+        for(int i=0;i<trades.size();i++)
+            profit += trades.get(i).profit;
+            
+        return (int)(profit/pipScale); 
+    }
+    
+    public String getCurrency(){
+        return currency; 
+    }
+    
+    public void updateMvg(){
+        if(inputData.size() > bbandMvgLength){
+            mvgBollingerBand = updateSimpleMovingAverage(inputData, mvgBollingerBand, (int)bbandMvgLength); 
+        }
+        else{
+            mvgBollingerBand = simpleMovingAverage(inputData, (int)bbandMvgLength); 
+        }
+    }
+    
+    public void updateBollingerBands(){
+        if(inputData.size() > bbandMvgLength){
+            bollingerBands = updateBBands(inputData, bollingerBands, mvgBollingerBand,(int)bbandMvgLength, std);     
+            histSTD = getHistSTD(inputData,3);
+        }
+        else{
+            bollingerBands = bollingerBands(inputData, (int)bbandMvgLength, (int)bbandMvgLength, 3.75); 
+        }
+    }
+    public double getUPL(){
+        if(currentTrade == null)
+            return 0;
+        else if(currentTrade.exitIndex != 0)
+            return 0;
+        else{
+            return currentTrade.getUPL(inputData.get(inputData.size()-1)); 
+        }
+    }
+}
+
+/**
+ * 
+ * CLASS TRADE
+ * 
+ **/ 
+class Trade {
+    int direction;
+    double entry;
+    double exit;
+    double profit; 
+    double transactionCost; 
+    int entryIndex;
+    int exitIndex; 
+   
+    public Trade(double entry, int direction, double transactionCost, int entryIndex){
+        this.entry = entry;
+        this.direction = direction; 
+        this.transactionCost = transactionCost; 
+        this.entryIndex = entryIndex; 
+    }
+    
+    public void close(double exit, int exitIndex){
+        this.exitIndex = exitIndex;         
+        if(direction==1)
+            profit = exit-entry - transactionCost;
+        else if(direction==-1)
+            profit = entry-exit - transactionCost; 
+    }
+    
+    public double getUPL(double currentPrice){
+        if(direction==-1){
+            return entry-currentPrice;
+        }
+        else{
+            return currentPrice-entry; 
+        }
+    }   
+}
+
+    public static ArrayList<Double> simpleMovingAverage(ArrayList<Double> input, int period){
+        ArrayList<Double> mvg = new ArrayList<Double>();
+        double runningSum = 0;
+        for(int i=0;i<input.size();i++){
+            if(i<period) {
+                runningSum = runningSum + input.get(i);
+                mvg.add(runningSum/(float)(i+1));
+            }
+            else{
+                runningSum = runningSum + input.get(i) - input.get(i-period);
+                mvg.add(runningSum/(float)period);
+            }
+        }
+        return mvg;
+    }
+
+    public static ArrayList<double[]> bollingerBands(ArrayList<Double> input, int mvgPeriod, int stdPeriod, double stdFactor){
+        ArrayList<double[]> bands = new ArrayList<double[]>();
+        ArrayList<Double> SMA = simpleMovingAverage(input, mvgPeriod);
+
+        if(stdPeriod > input.size())
+            stdPeriod = input.size(); 
+        
+        for(int i=0;i<stdPeriod;i++) {
+            double[] startBand = {input.get(i),input.get(i)};
+            bands.add(startBand);
+        }
+
+        for(int i=stdPeriod;i<input.size();i++){
+            double std = standardDeviation(input,i-stdPeriod,i);
+            double[] bandI = {SMA.get(i)+std*stdFactor,SMA.get(i)-std*stdFactor};
+            bands.add(bandI);
+        }
+        return bands;
+    }
+
+    public static double standardDeviation(ArrayList<Double> input, int start, int end){
+        double sumDifference = 0;
+        double mean = mean(input,start,end);
+        for(int i=start;i<end;i++){
+            sumDifference = sumDifference + (input.get(i)-mean)*(input.get(i)-mean);
+        }
+        return Math.sqrt(sumDifference/(double)(end-start-1));
+    }
+
+    public static double mean(ArrayList<Double> input, int start, int end){
+        double mean = 0;
+        for(int i=start;i<end;i++){
+            mean = mean + input.get(i);
+        }
+        return mean/(double)(end-start);
+    }
+    
+    public static ArrayList<Double> updateSimpleMovingAverage(ArrayList<Double> inputData, 
+            ArrayList<Double> sma, int period){
+        
+        double currentSMA = sma.get(sma.size()-1); 
+        currentSMA = currentSMA - inputData.get(inputData.size()-period-1)/(double)period
+                + inputData.get(inputData.size()-1)/(double)period; 
+        sma.add(currentSMA);      
+        return sma; 
+    }
+    
+    public static ArrayList<double[]> updateBBands(ArrayList<Double> inputData, ArrayList<double[]> bollingerBands,ArrayList<Double> bbandMvg, int period, double stdFactor){        
+        double mean = mean(inputData,inputData.size()-period,inputData.size()); 
+        double std = standardDeviation(inputData,inputData.size()-period,inputData.size()); 
+        double[] newBollingerBands = {mean+std*stdFactor,mean-std*stdFactor}; 
+        bollingerBands.add(newBollingerBands);
+        return bollingerBands; 
+    }
+    
+    public static double getHistSTD(ArrayList<Double> input, int period){   
+        double std = standardDeviation(input,input.size()-period,input.size()); 
+        return std; 
+    }
+
+    public static double listMax(List<Double> input){
+        double max = -999999999 ; 
+        for(int i=0;i<input.size();i++)
+            if(input.get(i) > max)
+                max = input.get(i) ;
+        return max ;        
+    }
+   
+    public static double listMin(List<Double> input){
+        double min = 999999999 ; 
+        for(int i=0;i<input.size();i++)
+            if(input.get(i) < min)
+                min = input.get(i) ; 
+        return min ; 
+    }
+
+    
+    
+class SendMail {
+
+    final String senderEmailID = "jforexemails@gmail.com";
+    final String senderPassword = "jforexPASSWORD";
+    final String emailSMTPserver = "smtp.gmail.com";
+    final String emailServerPort = "465";
+    String receiverEmailID = null;
+    
+    public SendMail(String receiverEmailID, String emailSubject, String emailBody){
+        this.receiverEmailID=receiverEmailID;
+        Properties props = new Properties();
+        props.put("mail.smtp.user",senderEmailID);
+        props.put("mail.smtp.host", emailSMTPserver);
+        props.put("mail.smtp.port", emailServerPort);
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.socketFactory.port", emailServerPort);
+        props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.socketFactory.fallback", "false");
+        SecurityManager security = System.getSecurityManager();
+        try{
+            Authenticator auth = new SMTPAuthenticator();
+            Session session = Session.getInstance(props, auth);
+            MimeMessage msg = new MimeMessage(session);
+            msg.setText(emailBody);
+            msg.setSubject(emailSubject);
+            msg.setFrom(new InternetAddress(senderEmailID));
+            msg.addRecipient(Message.RecipientType.TO,
+            new InternetAddress(receiverEmailID));
+            Transport.send(msg);
+            System.out.println("Message send Successfully:)");
+        }
+        catch (Exception mex){
+            mex.printStackTrace();
+            console.getOut().println(mex.getMessage()); 
+        }
+    }
+    public class SMTPAuthenticator extends javax.mail.Authenticator{
+        public PasswordAuthentication getPasswordAuthentication(){
+            return new PasswordAuthentication(senderEmailID, senderPassword);
+        }
+    }    
+}
+}

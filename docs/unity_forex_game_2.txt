@@ -1,0 +1,153 @@
+unity_forex_app
+
+long term goals - sell premium version for 29.99 on app store and landing page (allow free download/install for trial version) 
+	you can release multiple different versions for people who want to try different types of instrument (or just include all keywords/data in one version)
+
+
+short term (today) get back to baseline for indicator creation - get familiar with the code again 
+if you remember correctly, you left off adding macd (which is one of many indicators you want to eventually add) 
+	i think you were on the get min/max for the price chart, so you were working on scaling the plot based on whatever was active
+
+can worry about scaling later - right now, you want to focus on getting all indicators added correctly to the chart, and making sure the process of the user
+clicking on the add indicator button and entering the parameters, to the indicator showing up on the screen, is smooth and bug-free. same for the indicator
+removal process. 
+
+for now, disable the box chart indicators and the line plot indicators, and focus on adding them one by one through the GUI
+
+remove indicator button - refresh it every time a new indicator is added. 
+
+PATH TO VICTORY
+need a predefined sequence of steps you can take to earn 150+$ per day from this software
+
+1) finish the app
+	a) indicators - by next friday, all the currently defined indicators should be added, and think of more to add also but keep it limited
+	b) boxes - the box indicator configuration should be set - stack them in the bottom row one by one (allow user to adjust size?)
+	c) account structure and saving - need to finish this and have a smooth account loading/creation/saving interface
+	d) data - add more and different types of data (bitcoin, etfs, etc)
+	e) plot labels - add the text labels to the plot axes
+	f) trade markers - create trade markers for buy/sell actions
+	g) account statistics - track the user's activity, how successful they were with each indicator, and epoch the indicators around wins/losses
+		i) ie, average the indicators before the user's best and worse trades (big marketing point, sell it as quantitative trade analysis) 
+	h) ability to select specific time points in the data? 
+
+2) release and monetize the app
+
+	monetization: 
+		advertising in android/iphone
+		in-app purchases
+		sales through landing page
+
+today: be able to add/remove all indicators that are currently coded and if you finish this, start coding more indicators (rsi, aroon, etc) 
+today: just put in 3hrs of work in the morning, 10am-1pm. 
+	finish the MACD - insert the bars, and remove the box when the user removes the indicator
+	add a "calculating" prompt when calculating indicators. 
+today: try to finish all indicators up to the higher timeframe - create a random colormap for new indicators, and a rainbow colormap for the mma 
+today: start 9:44, end 1:44 - 4hrs. finish: stochastic, volume, atr, adx, higher timeframe, spread, after this?
+	next big thing is to sync higher timeframe with lower timeframe (based on time stamps) and have 2 plots open. 
+	the basic functionality is to be able to put indicators on higher time-frames (do the bare minimum for this) 
+	appears to be a problem with the volume data, isn't saving properly (but spread is there in 6th index). 
+	higher timeframe - last indicator to add, and also plays into adding the second screen, and indicators on higher TF.
+	next - make sure all the box plots are working for add/remove, and add an adjustable bar so you can change the size of each plot screen. 
+		be able to add multiple boxes, and remove multiple boxes, and adjust box width/height
+
+today: multiple box plots, and adjust the size of the box plot 
+step 1: be able to adjust a single box plot with the mouse/tap. 
+start by automatically adding an indicator - maybe put a small rectangle above/below each box chart? 
+start with a simple sphere, be able to move a sphere around on the screen (every new indicator you create gets a sphere) 
+goal for today: be able to adjust the size of multiple indicator boxes 
+first thing - be able to move the initial box	
+basic drag logic - every new indicator resizes all the boxes by dividing the screen up evenly. 
+if you drag too low/high, the rest of the indicators get pushed up/down, but there is a minimum visibility (ie, 1/20th of the screen), but it doesn't
+draw them it just turns black. 
+each indicator has a rectangle (add the mainplotrect to the amalgamated rectangles) and a sphere. 
+logic for controlling box size:
+add NEW: reshape all, make height/n
+resize current: keep all boxes in an array. as you add them, they get placed one on top of another. each sphere can control the bottom of its own plot or
+the top of the above plot. 
+have an "on resize" function that is called every time you move a size sphere. it takes into account the screen height, and calculates new dimensions based
+on which sphere the user has changed position. 
+next - do the baseline condition (Add new indicator, resize all boxes) (done)
+every new box plot indicator adds a new sphere, that is selectable (add shader to build also) 
+add a sphere to the top of every new box indicator. 
+almost done - just need to get "remove indicator" working properly. sphere is not removing. 
+need to start testing it for desktop also. 
+
+next big step will be to synchronize the low with the high time-frame, and add indicators to the high time frame
+
+add trade indicators - ie, MACD cross, RSI threshold, etc (make the markers match the indicator color) 
+
+this coming week (sun 18-sat 24, 7 days):
+	finish ALL the indicators + display problems including but not limited to the following
+		1) long term indicator - this will depend on your current timeframe, so for example if you are trading 1 minute, it will be 5,30,1hr, 4hr
+			the easiest way to do this will be to just build up bars similar to the java version, based on current time frame, no need for time synchro. 
+			you also want to be able to add indicators to the higher time-frame - find a simple way to do this (maybe append them to the list?)
+				or - just use a simple candle chart
+			
+		2) MACD/ADX - fix color for slow/fast mvg and ADX direction (DONE) 
+		3) zoom - make it less abrupt, add zoom button (for desktop version) (DONE)
+		4) add/remove indicator order is broken (when you have both main chart and box chart indicators). (DONE)
+		5) 5-6 more indicators, so you can say "20+ indicators" 
+			(fibs, support/resistance, recent high/low, parabolic SAR, accumulation/distribution, momentum, ultimate oscillator)
+		6) fix volume in saved data, or double check make sure it is not working...
+		7) finish the colors for the multiple moving average (DONE)
+		8) finish trade markers (buy/sell dots + line), show with spread, save in user info (DONE - except for trailing label) 
+		9) update new unity credit card (find your CC!) - in car?
+		10) bollinger band and multiple mvg lines - scale the main plot by these instead of the actual line. 
+		11) different colors for multiple bollinger band/RSI/CCI etc. use a different color map for each type? (DONE)
+		12) show stoploss/take profit on the chart itself - need to actually implement this first 
+		13) have a separate box for when a trade is open showing trade progress? ie a upl monitor (with stop and TP and %chance of stop/tp and prev low/high) 
+		14) Aroon - add the subtraction box to the main plot? 
+		15) add labels to box chart indicators (DONE) 
+	all of the above => the basic functionality will be complete (indicators + buy/sell + display)
+
+	something is wack with the values, none of the indicators seem to be giving the correct range. 
+
+before march (24-28, 4 days):
+	finish the data parsing and loading
+	get more currencies/instruments
+	finish account loading/saving state
+
+march 1-30
+	auto-trader/trade analyzer/account summary stuff
+	sound
+	unity in-app purchases
+	custom splash screen
+	dividing premium/regular modes (isPremium) 
+	etc
+	design logo/text for google play
+
+target release: march 31st 2018 - first version released to android, complete with in-app purchases. 
+		next target - desktop/laptop/tablet launch - drive people to landing page and test conversions
+
+today first thing: you must work 4hrs, non-negotiable.
+1) fix the scaling for all box plot indicators, and draw the label/parameters and threshold lines. 
+	add a new variable to indicator - threshold lines
+2) by the end of the day - a functional program that you can practice trading on using indicators. (DONE)
+
+tomorrow - 5 hours of forex game work straight. 9am-2pm. 
+	implement: 
+	stop loss/take profit
+	long term indicator - work on this first
+		add as box plot indicator. just stuff the previous frames 
+		how did you do this last time? first create an indicator, then incrementally add to it as time goes on.
+		first check if the arrays==null, or just update? 
+		it exists as an array of floats the same size as the original data, but you start a new bar every n time periods. 
+		or, will this make it less accurate and you need to take real time into account? this is probably better, because data 
+		actually has time-specific effects and people may want to test this. it involves adding in more saved data (time) but in the end, will be
+		better because the result will be far more accurate... 
+		so basically you need to go back to the data and re-calculate these bars...will also solve the volume and account loading issue at the same time. 
+		make that your goal for today 
+		if you're going to start fresh with the data, you should start from the beginning - re-download all the data from dukascopy, and any other source
+		you can find (bitcoin, etc). find what people are trading these days and get that data (structure your app around this) 
+	bollinger band/mma scaling 
+	problem with CCI in data flats? also the MACD doesn't scale well when you have really long averages. 
+	
+if you finish the above 3 things, you will be able to move to account loading/saving and data parsing. 
+
+once that is done, auto-trader, trade analyzer, and release (maybe bump release date up to march 15?)
+	
+
+
+
+
+

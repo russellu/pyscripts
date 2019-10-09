@@ -1,0 +1,226 @@
+random and forex = lower TP, higher stop = more profit
+is there a way to manage the trade to make this work better? 
+try a trailing stop...squeeze more profit out of each trade	
+
+how to properly test a trailing stop? 
+
+in a buy, if it crosses your TP, lock in the profit and repeat 
+
+same randomness as normal trading (ie, completely random)
+still haven't found a way to predict the random market
+
+relying on randomness - is it possible to use the noisiness of the market against itself? 
+what is the optimal survival strategy in a random environment
+random walk environment - probability of exiting a trade based on distance from entry point? 
+
+you don't predict the direction of a random walk, only that it will travel a certain distance in any direction
+so, wherever it is, its radius is constantly shifting
+you can use this to set optimal bounds on the trade, but not much else. 
+ie, you can use this to set new limits on the trade, if it goes past a limit, set a new take profit at a lower limit
+(just as likely that the new limit will be hit as the old).
+ie, always set a limit based on the minimum value. that ensures that it is more likely to be activated 
+you should have a 50/50 chance of winning each trade, and then its just a matter of optimizing the limits and stops so 
+that on average you come out profitable 
+no dice. why not? moving the limit so that its more likely to be hit, just means you're more likely to not hit your 
+original mark and take less profit overall
+taking advantage of randomness 
+
+how to code this? every time the market moves, set a new limit
+
+you need a way to make very few trades, and have an average trade value near zero, and in one direction only. 
+
+strategy:just buy them all, hold, and see how much difference there is in pips from end to end.
+how to organize the currencies? first pick the ones with the highest rollover, and just work down from there in terms
+of correlations
+sell euraud +.7  -eur,+aud
+sell gbpnzd +.69 -eur,+aud,-gbp,+nzd
+buy nzdchf + .42 +2nzd,-chf
+sell usdcnh +.88 -usd,+cnh
+buy usdchf +.45 usd,-2chf
+sell eurpln +1.74 -2eur +pln
+buy eurjpy -.18 -eur -jpy
+sell gbpaud +.51 -2gbp +2aud
+buy gbpjpy +.04 -gbp -2jpy
+sell zarjpy -.17 -zar +jpy
+sell usdmxn +24.38 -usd +mxn
+buy usdnok +.53 usd -nok
+sell eurnok +2.11 -2eur nok
+buy eurdkk -.15 -eur -dkk
+sell nzdusd -.23 +nzd +usd
+
+
+-eur -dkk nok +usd +mxn -zar +jpy -gbp +2aud +nzd
+
+how to optimize the spreads? you want to hedge 100% every currency (and what about the locking in of profit?)
+do the incremental buy and sell thing, and lock in the profit as well while heding 100% of your account	
+
+sell euraud eur- aud+
+buy eurchf eur0 chf- 
+sell audnzd aud0 nzd+ 
+sell nzdusd nzd0 usd+
+sell usdcad usd0 cad+
+
+new strategy: buy and sell in direction of trend to lock in profit, wait it out and hedge while market goes against you
+rationale: market is inherently random, but if you hedge, there is little chance of getting a margin call
+if you just buy one currency and sell another, that are highly correlated/anticorrelated, you will have a upl that 
+fluctuates around zero. then, just exit either one when it goes in the direction against your position.
+step 1 find correlated/anticorrelated pairs, and quantify this: how often do they diverge and what is the max divergence?
+
+
+strategy: if no trade, buy1 and sell2, wait for buy1 to hit tp, and sell2 to hit tp, then immediately re-enter.  
+
+this strategy doesn't really take advantage of the correlations between currency pairs, ie, it just buys continually
+in one direction and while hedging in the other direction, is bound to lose out to the general drift eventually. 
+a better strategy would be to wait for pullbacks in one currency while hedging with another, and use those as entry points
+or wait for temporary divergence between the pairs, and see if this can be used to your advantage
+NEED TO try the same with the 1min bars (assuming they're aligned properly in time) could be missing out on a lot of 
+trades by using 1hr only bars. 
+
+something else to try: weight the probability by the size of the average difference 
+
+simplest thing possible: load a txt file with parameters, and feed it into a black box showing trades (enough to display)
+make sure it works on live market, and forward test on different time segments. if it survives 2 months of fwd test in 
+demo, try it live. 
+add more currencies, and try to remove some bad ones. cost function works pretty well, but if you can optimize it a bit 
+more, you can be 100% sure of profits. 
+start with a 2k account and trade 10c pips (max drawdown = 450, maxdd*2 = 900) => double the account in 2.5 yrs
+plot the spreads in dukascopy also...if you can improve this, then you can squeeze even more profit out of the market)
+plan for double the transaction costs (all spreads*2, to account for slippage)
+by tomorrow: working in both java and dukascopy 
+
+
+need a way to reverse engineer the market - ie, take the ICA and extract some features, then use those to trigger trades
+in the individual currencies and see if there's any statistically significant effects 
+ie, epoch the market based on triggers in ICA and then average those epochs
+#1: get moving average of ica components, and use that slope to trigger trades in all currencies. 
+
+need a 'predictability index' for when the market is trading well, and when it is not. 
+ie, when the market is moving well according to the mvg patters( less crossovers)
+- quantify it as number of crossovers/minute, based on a certain period mvg
+the trend is your friend? depends on the pair you are trading, it seems. 
+
+the efficient market hypothesis: impossible to beat the market because it already incorporates all relevant information.
+sumps lower when lower time frame - spreads? 
+sumps higher when more mvgs used - trends? 
+try exiting when the mvgs are in a certain direction also (if it works one way, it should work the other way also)
+try switching the 0.3285 with certain params...less specific params => 0.319, not significantly different...
+switching the direction => 0.3265 not significantly different
+try correlating before and after (test) -> similar metrics 
+try increasing the time frame => 30min, 1500 avgs - this helps for the higher pips, but not much else => 0.3249, no diff
+trying decreasing the threshold for the mvgs - 
+right now, you're using diff mvg => all have to be going down for you to profit
+reverse - probability means more mvgs are above price, which means going down -
+forward - same but for opposite polarity
+
+
+optimization: when below but pointing up, when above but pointing down - 0.29
+optimize the probabilities - for 0-1 (buy), for 0-1 (sell) - this will just bias it towards the trend , 0.3165
+change the threshold slightly - 0.2 and 0.8 from 0.01 and 0.99 - 
+always end up around 0.32 => 
+
+strange pattern that you are observing - diagonally down from top right, small tp => large stop, small stop => large tp
+-.3229
+
+with the exit condition also: 0.45 - due to upl? (only 0.4 du eto up)
+removing shitty currencies brings the average up quite a bit (from 0.32 to 0.54), see if this has a preferential effect
+on any currencies 
+change the parameters slightly - 0.6 and 0.4 - 0.39 - 0.41 using the UPL and a tighter stop
+try using a different cost function? use profit/max drawdown, probably quite similar to the linearity though 
+
+
+no reproducibility
+no differences across moving average parameters, ie, if you switch from upward to downward, nothing changes. 
+how to find consistent market patterns?
+conclusion: moving averages are bullshit, and all associated methods are also bullshit 
+tonight: better investigate the source of the candle ERPs - get a characterization of each one for all time increments
+and all configurations (high-low, low-high, etc) plot the single trials for each currency pair, and the average
+of all pairs - calculate the % of ERP for which the price moves down, and the % for which price moves up, etc 
+fractal - an ERP within an ERP
+
+test the open-close - high-low and the close-open - low-high
+
+whenever the close is greater than the open (price moves up strongly) 
+the difference between the price increase and the high/low is great
+
+
+
+get the optimal indice for each currency(threshold, #trades)
+other metrics ?? highs-opens, opens-highs,etc
+a more systematic way to go about this?
+how to tell if a certain candlestick pattern is predictive or not? 
+
+for some reason, when you take the zero changes, you get increases. why? 
+close minus low, sorted descending, always goes down
+you want to find parameters that can lead to it going down in some cases, and up in others. ie, if a candle moves up
+strongly, it should have the opposite effect for an opposite candle 
+market goes up in the first half and down in the second half. can also look into ways to maximize profit based on how
+the trade is unfolding .. 
+looks like it goes down in both direction...itnereting
+get the individual trades
+try to attach a moving average to the candle patterns, to see if this can filter out bad trades...
+
+it seems like some currencies are worse or less predictable than others...
+
+optimize the moving average - or another parameter? the mvg doesn't change much actually. 
+first try without mvg, and just use a typical trading setup
+
+build up a continuous with dd
+
+think of a way to select parameters in real time - simululate the walk forward analysis - 
+save all currencies, in an array, and then perform another type of simulation on the end result
+ie just look at the last few months profit curves for all currencies, and then select currencies that are going up
+(and choose the good 
+
+the strategy only performs well because you placed a-priori restrictions with your looking ahead bias - 
+these biases are: choosing certain pairs only, and placing sells only (you know in general the market moves down) 
+pairs selected based on the second block do not predict those based on the first block - why? because the second block
+and the correlation is quite low (0.1) 
+
+
+how to break the candles up into patterns? cluster them, and check each cluster for significant differences? 
+ie take all the data points candlesticks (4xn) and cluster them into 50 different groups
+doesn't appear to be any sorting effect. 
+you can also cluster the candles according to many more patterns - a 16x vector, or whatever (ohlc*4) 
+
+couldn't really find a good k-means candle sorting...trying with mvgs now...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+reverse engineer? (only with real market data)

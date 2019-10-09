@@ -1,0 +1,12 @@
+1) effects of indicators on price (moving average, MACD, etc)
+
+2) brownian motion nature of market fluctuations - show vs random data. 
+
+3) stop/take profit matrices, and effects of transaction costs.
+
+4) effects of candle patterns on price
+
+5) effects of different time frames
+
+6) 
+

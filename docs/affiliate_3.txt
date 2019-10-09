@@ -1,0 +1,148 @@
+affiliate_3
+
+new strategy: broad match modifier
+	get all keywords on spyfu, ubersuggest, google keywords, and google trends 
+	google trends - negative keywords
+	stuff all keywords into a list, and read them manually
+		put them each in their own columns with header (spyfu1, etc). 
+		get an idea for where the different keywords come from based on different sources. 
+
+	get an idea of what the different keyword sources stand for:
+	google trends:
+
+	google keywords
+	
+	need to be more systematic with split testing
+
+
+	build a core keyword list based on the manual inspection
+	a simple formula that you need to decide: how much are you willing to pay cpc, and how much do the search terms cost?
+	you can optimize each campaign by looking at the payout, and assuming a certain conversion rate, choose the campaign
+
+
+next week goals: apply to the top 10 offers at palo, find keywords with low cpc, that fit the formula (lower cpc than reward), 
+
+
+need a way to 'alias' keywords to get lower cpc
+try to take a look at your historical data if you can - see what you can do to not make the same mistakes again. 
+go to the serp page in spyfu, find all the websites which appear to be succesfully running reverse mortgages, and rip their keywords/
+ads, add some geos and test. make sure you do it on optimal campaigns. 
+	don't use info or other types of sites
+
+should probably get accepted for these campaigns before you start building keyword lists	
+
+condense the keyword list down to the essential, intent-driven keywords. 
+you can judge a campaign based on average epc, and then just estimate the average. correlate the epc with payout
+you found the best campaigns based on conversion rate, so now you need to make landing pages and apply for all. once you have applied, start working on 
+a campaign for the top offers that you are already accepted into (aging in home, epc=400, payout=10 => 40%). if you can get 100 clicks in a week, you should make
+400$ according to this offer. 
+need to learn how to do market research so you can set up your campaign without wasting a bunch of money 
+
+the strategy: find best offers, find competitors that are succesfully selling those offers, copy competitors, wait, optimize keyword bids, wait, repeat, profit. 
+1) find best offers, apply to offers
+2) find competitors winning on offers
+3) copy competitors (keywords/ads)
+4) launch campaign
+5) optimize keywords
+6) wait
+7) if (not profit) return to 5
+8) profit
+
+you need to think of it scientifically, like you're denoising your data. the noise is the crap offers and the crap keywords...you need to remove those bad 
+keywords/offers and look only at what will give you profit. 
+
+learn how to set up a landing page using html. 
+don't worry about themes at the moment, just get a basic html that you can auto-generate landing pages with using numbers and strings. 
+
+also need to think about campaigns that have a higher degree of urgency to them, locksmith, fire/water repair, etc. 
+change the keywords on the solar offer. 
+
+so now you know the average conversion rate is 20%, of the calls that actually get through to the network. 
+you can judge offers with no 7 day epc based on this. (assume a 20% conversion rate, and take the best offers based on that)
+what are you working with right now? 
+palo: solar, health insurance, health U65 1, health U65 2, Health Medicare, 
+check google adwords search terms for removed campaigns (seems like that info is gone) 
+next: list all your current campaigns and their payouts/EPC, estimate epc based on payout
+
+all about my dough but don't even check the peephole 
+
+according to gene - behavioral health (Addiction/mental health), debt relief and home security raw - good for call only and google. 
+
+your app is a success, with a bit of work you can make this a success as well. just make sure you're optimizing all your possibilities, for example, talking
+to Gene and Danilo have yielded valuable info, so keep networking and finding people to talk to
+130$ a month for STM forum is a bit steep, maybe wait till you have a few profitable campaigns, right now you should be spending more time working anyways 
+get a hold of leonidas and the youtube guy (check leonidas premium sub) 
+
+finish the payday loan campaign, switch retreaver number, let it run set max cpc to 1.50 	
+home insurance with new keywords on avenge. compare it to the astoria campaign (less keywords)
+solar is doing nothing (your custom keyword list blows)
+work on your spyfu technique, you're probably missing out on some valuable stuff
+need a way to remove plurals/variations from your large keyword lists - to condense down the number of SKAGs and get more data for each individual ad group. 
+
+behavioral health (Addiction and mental health), debt relief, home security raw are also doing well. try to get some of these campaigns going. 
+avenge - debt relief, home security, tax debt relief. set up creative for these campaigns and email avenge.
+astoria - adoption (unique), locksmithx5 (urgent), creditrepair, addiction x2, chiro
+palo - solar (re-do), 
+surge - home security, legal auto-injury, tax debt, credit repair bundle. 
+
+cashnetusa.com - avenge payday loan
+home security
+
+today: create debt relief domain, and apply to all those campaigns. need a generic domain that covers debt relief and credit as well, so payday loans etc.
+	create a rehab domain as well. 
+call about CC 
+
+apply to home security at surge and avenge and astoria
+
+goal today: launch 5 more campaigns, with good keyword filtering + negs, apply to more campaigns
+
+bad keywords tend to be very general. 
+do a final visual inspection of terms. more general terms can be left out for now. put an x beside bad keywords. 
+or maybe just let the data do the talking, because you never know what some terms will pick up. don't try to outsmart google, just let google work. 
+get two more campaigns out in the next two hours and call it a day. 
+tax debt and credit card debt. fix the surge landing pages if you have time. 
+
+today: 4 more campaigns: credit card debt, solar (palo), travel (Avenge),  hormone replacement (Astoria), + get the surge campaigns working (try to get a home
+security offer as well today). 
+
+new spying technique: get inside the mind of the user searching for a certain term, and then type what they would search. take the keywords from the sites 
+organically ranking for that query and others. 
+
+3DayBlinds 
+Rehab Help Today
+Knee and Back Brace
+Long Distance Moving
+Empire Flooring
+Aging in the Home
+Life Lock Identity Protection (2) 
+VIAGRA and CIALIS Special Offer
+Spectrum (Time Warner Cable) Double Play/Triple Play
+Auto Insurance - Dynamic
+
+need to apply for all these offers next (have all these done by end of the week, create landing page + apply today). 
+
+today: blinds, moving, flooring 
+
+keyword processing still not that good - need a way to remove the ing, ers, s, etc from similar words, keep the keyword lists as short as possible. 
+need to start systematizing your negative keywords into batches - like: exclude_cars, exclude_young_people, exclude_seniors, etc. 
+
+bottom line for today: need better keyword processing - include more negatives, exclude more short-tail keywords (too general), condense the list  further,
+keep pushing down bad ad groups. need to start forming your negative keyword lists by category, and make sure you include plurals/suffixes (broad match 
+negative keywords are exact). 
+
+think outside the box - spyfu search terms websites that may seem unrelated but have high intent. 
+
+getting 400-500 impressions a day, only 2 clicks today. longer conversations but intent was still bad.
+tomorrow - set up 3 more campaigns, and more facebook ads (5 total, different wording and images). 
+it has to start working eventually, just keep trying offers untill something pops. right now you've eliminated most of the bad traffic, so its just a 
+matter of upping your bids and getting the good high intent traffic while testing more offers and improving your string processing.
+
+next week, start venturing into landing page traffic while continuing to set up campaigns. 
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+simultaneous in-vivo spectral editing and water suppression
+abstract: water suppression is typically performed in vivo by exciting the longitudinal magnetization in combination with dephasing
+or by using frequency selective coherence generation. MEGA, a frequency selective refocusing techhnique, can be placed into any
+pulse sequence element designed to generate a Hahn spin echo or stimulated echo, to dephase transverse water coherences with 
+minimal spectral distortions. water suppression performance was verified in-vivo using stimulated echo acquisition mode localization
+which provides water suppression comparable with that achieved with four selective pulses in 3, 1-DRYSTEAM. the advantage of the
+proposed method was exploited for editing j-coupled resonances. using a double banded pulse that selectively inverts a j-coupling
+partner and simultaneously suppresses water, efficient metabolite editing was achieved in the point-resolved spectroscopy (PRESS)
+and STEAM sequences in which MEGA was incorporated. to illustrate the efficiency of the method, the detection of GABA was
+demonstrated, with minimal contributions from macromolecules and overlying singlet peaks at 4T. the estimated occipital GABA 
+concentration was consistent with previous reports, suggesting that editing for GABA is efficient when based on MEGA at high
+field strengths. 
+
+introduction: 1h spectroscopy can provide detailed information about human tissues, because of its high sensitivity. to achieve
+consistently accurate quantification, high quality water suppression is necessary. various frequency selective techniques have
+been used to achieve water suppression in vivo. chemical shift selective suppression, and related techniques, use frequency
+selective prepulses followed by dephasing gradients to minimize the water z-magnetization prior to excitation. since these 
+techniques are applied during a small time prior to excitation, the water signal may recover due to T1 relaxation or spin exchange,
+and overall pulse sequence time is somewhat increased. several variations of chess have been introduced to further improve water
+suppression, such as DRYSTEAM (DRY stimulated echo acquisition mode). drysteam uses several frequency selective pulses combined
+with gradient dephasing, which are applied prior to the first slice selective pulse and during TM, to optimize the suppression 
+of a certain resonance. modifications of chess, in which flip angles, pluse shapes, interpulse delays, and/or dephasing gradients
+are also varied can improve the suppression of a given resonance for a selected range of T1 and B1 values. 
+binomial pulses, and variants thereof, can also be used to achieve excellent water suppression as well as for spectral editing.
+for instance, spectral editing of lactate has been performed by subtracting the spectra acquired with a binomial refocusing pulse
+from the spectra acquired with a hard 180deg pulse, which does not retain the full water-suppression capability. 
+previously, the new solvent suppression sequence MEGA was described, which can be placed within any pulse sequence containing an 
+element whose function is to refocus transverse magnetization. MEGA employs gradients surrounding the frequency selective refocusing
+pulse to dephase transverse magnetization. a detailed analysis and comparison of MEGA to other methods has been presented. pulse
+sequence element MEGA has the following advantages 1) it is relatively insensitive to pulse flip angle errors of the frequency 
+selective pulse, because of RF field inhomogeneities or inaccurate pulse calibration. 2) MEGA does not introduce phase distortion to
+spectral peaks off-resonance. 3) MEGA is easy to implement because the frequency selective pulses are identical. 4) inter-conversion
+of transverse and longitudinal magnetization does not occur when MEGA is used. here, the performance of MEGA for water suppression
+is demonstrated in the simple hahn spin echo and stimulated echo acquisition modes. 
+since MEGA water suppression relies on applying 180deg pulses about a refocusing pulse, it lends itself to be used for the editing
+of j-coupled spin systems. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

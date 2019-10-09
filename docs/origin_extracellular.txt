@@ -1,0 +1,270 @@
+the origin of extracellular fields and currents - EEG, ECOG, LFP and spikes
+abstract: neuronal activity in the brain gives rise to transmembrane currents that can be measured in the extracellular
+medium. the major contributor of the extracellular current is the synaptic transmembrane current, other sources
+including Na+ and Ca+ spikes, ionic fluxes through voltage and ligand-gated channels, and intrinsic membrane oscillations,
+can substatially shape the extracellular field. high density recordings of field activity in animals, and subdural 
+recordings in humans, combined with recently developed data processing tools and computational modeling, can provide
+insight into the cooperative behavior of neurons, their average synaptic input and spiking output, and increase our 
+understanding of how these processes contribute to the extracellular signal. 
+
+electric current contributions from all active cellular processes within a volume or brain tissue superimpose at a given
+region in the extracellular medium and generate a potential V (which is a scalar measured in volts), with respect to the
+reference potential. the difference in V between two locations gives rise to an electric field, which is a vector whose
+amplitude is measured in volts per distance, that is defined as the negative spatial gradient of V. Electric fields can 
+be monitored by extracellularly placed electrodes with sub-millisecond time resolution and can be used to interpret many
+facets of neuronal communication and computation. A major advantage of extracellular field recording techniques is that in
+contrast to other methods used for the investigation of network activity, the biophysics related to these measurements are
+well understood. this has enabled the development of reliable and quantitative methods mathematical models to elucidate
+how transmembrane currents give rise to the recorded electric potential. 
+
+historically, V has been referred to as the electroencephalogram (EEG) when recorded from the scalp, as the ECOG when
+recorded from subdural grids on the cortical surface, and as the local field potential (LFP) or depth EEG when recorded
+by a small size electrode in the brain. 
+recent advances in microelectrode technology using silicon based polytrodes offer new possibilities for estimating 
+input-output transfer functions in-vivo, and high density recordings of electric and magnetic fields of the human brain 
+now provided unprecedented spatial coverage and resolution of the elementary processes involved in generating the 
+extracellular field. novel time-resolved spectral methods provide insights into the functional meaning of the information
+rich high frequency bands of the V signal. these new developments have led to a more in-depth understanding not only of
+the relationship between network activity and cognitive behavior, but also of pathomechanism in brain disease. 
+
+contributors to extracellular fields: any excitable membrane be it a spine, dendrite, axon, axon terminal, and any type 
+of transmembrane current contributes to the extracellular field. the field is the superposition of all ionic processes, 
+from fast action potentials to the slowest fluctuations in the glia. all currents in the brain superimpose at any given
+point to in space to yield V at that location. thus, any transmembrane current, irrespective of its origin, leads to an
+intracellular as well as an extracellular voltage deflection. the characteristics of the LFP waveform, such as the 
+amplitude and frequency, depend onn the proportional contributions of the multiple sources, and various properties of 
+brain tissue. the larger the distance of the recording electrode from the current source, the less informative the LFP
+becomes about the events occuring at the location (s) of the sources. this is mainly owing to the fact that Ve amplitude
+scales with the inverse of the distance r between the sources and the recording site, and to the inclusion of other 
+signals leading to spatial averaging. in addition to the magnitude and sign of the individual current sources, and their
+spatial density, the temporal coordinate of the respective current sources (that is, their synchrony) shapes the 
+extracellular field. thus, extracellular currents can arise from multiple sources as described below. 
+
+Synaptic activity: in physiological situations, synaptic activity is often the most important source of extracellular
+current flow. the idea that synaptic currents contribute to the LFP stems from the recognition that extracellular currents
+from many individual compartments must overlap in time to induce a measurable signal, and such overlap is most easily
+achieved for slow events such as synaptic currents. the dendrites and soma of a neuron form a tree-like structure, with an
+electrically conducting interior surrounded by a relatively insulating membrane, with hundreds to tens of thousands of
+synapses located along it. neurotransmitters acting on synaptic AMPA or NMDA receptors mediate excitatory currents, 
+involving Na+ and Ca2+ ions respectively, which flow inwardly at the synapse. This influx of cations from the extra to
+intracellular space gives rise to a local extracellular sink, which must be balanced by return current or an extracellular
+source, which is opposing ionic flux from the intracellular to the extracellular medium. depending on the distance of 
+the source from the sink, a dipole or n-pole is formed. the contribution of a monopole to V scales as 1/r, whereas the
+contribution of a dipole scales faster, as 1/r^2, this steeper decline being due to the two opposing charges that 
+comprise the dipole cancelling each other out to first order. 
+
+notably, gaba subtype A receptor mediated inhibitory currents are thought to add very little to the extracellular field
+as the Cl- equilibrium potential is close to the resting membrane potential. However, in actively spiking neurons the
+membrane is depolarized, and therefore inhibitory and hyperpolarizing currents can generate substantial membrane flow. 
+
+spike afterhyperpolarization and 'down' states: elevation of the intracellular concentration of a certain ion may trigger
+influx of other ions through activation of ligand-gated channels, and this will in turn contribute to V. for example, 
+bursts of fast spikes and associated dendritic Ca2+ spikes are often followed by hyperpolarization of the membrane, owing
+to activation of Ca2+ mediated increase of K+ conductance in the somatic region. as the amplitude and duration of such 
+burst-induced afterhyperpolarizations can be as large and last as long as synaptic events, AHPs also contribute to the
+extracellular field, particularly when bursting of nearby neurons occurs in a temporally coordinated fashion: for example,
+following hippocampal sharp wave events. in the intact brain, responses to unexpected stimuli or movement initiation are
+often associated with relatively long-lasting (0.2-2s) LFP shifts, which might be mediated by synchronized AHPs. this 
+slow LFP is often referred to as readiness potential or contingent negative variation. 
+
+during non-REM sleep, the membrane potential of cortical neurons periodically shifts (0.5-1.5Hz) between a hyperpolarized
+'down' state and a more depolarized 'up' (spiking) states. at least part of the cessation of spiking during the down 
+states can be explained by AHPs of the synchronously bursting pyramidal cells in the up state. the temporally coordinated
+silent down state of nearby neurons is associated with a positive V in infragranular layers and and a negative V in the 
+supragranular layers (these down states are also known as delta waves, 48,54-56). various mechanisms contribute to these
+state transitions, including a gradual decrease in extracellular Ca2+ concentration, and corresponding decrease in 
+synpatic transmission, inactivation of Ih channels, and other network effects. as the largest amplitude of up-down shifts
+of the membrane occur in the large layer 5 pyramidal neurons, it has been suggested that the large voltage shifts in the
+somata of of synchronously active silent neurons induce the formation of an extracellular dipole between deep 
+(infragranular) and superficial (supragranular) layers. neither interneurons nor the thalamocortical inputs are active
+during the down state, so that down state (characterized by delta waves) is a disfacilitatory, non-synaptic event that can
+be mimicked by synchronous hyperpolarization of nearby pyramidal neurons. 
+
+gap junctions and neuron-glia interactions: direct electric communication between neurons through gap junctions or 
+electrical synapses can enhance neuronal synchrony. although gap junctions allow ionic movements across neurons, and
+therefore do not involve any extracellular current flow, they can affect neuronal excitability and contribute indirectly
+to the extracellular field. membrane potential changes in non-neuronal cells such as glia may also give rise to V. recent
+studies on neuron-glia interactions have indicated that the glial synctium may contribute to slow and infra-slow (<0.1Hz)
+field patterns, which may arise from glia, glia-neuron interactions, or vascular events. 
+ephatic effects: neurons are surrounded by a conducting medium, the extracellular space, and can therefore sense the the
+electrical gradients they generate during processing. in fact, the effect of gradients brought about by synchronous 
+population activity along cable-like dendrites can be mimicked by appropriate intracellular current injections. this 
+raises the question of whether the spatiotemporal field fluctuations in the brain are merely an epiphenomenon of 
+coordinated cellular activity, or whether they also have a functional feedback or amplification role by affecting the
+discharge properties of neurons. that is, do they serve any function for the organism or are they like the heartbeat, a
+useful diagnostic epiphenomenon. due to the high resistivity of the extracellular medium, it is unlikely that spikes have
+this effect, however when many neurons are synchronously active, ephatic effects may come into play due to the strong 
+spatial gradients generated in the extracellular voltage. methods such as trans cranial electrical stimulation have a 
+measureable effets on neurons, and the fields brough about by these stimulation techniques are similar to those produced
+by population patterns in vivo under physiological conditions. ephatic coupling has been shown to affect population 
+activity during hypersynchronous epileptic discharge, and ephatic feeback may affect spike-field coherences and bias the
+spiking phases with respect to the LFP also under physiological conditions, for example during hippocampal sharp waves
+or theta waves. 
+
+neuronal geometry and architecture: all neurons contribute to the extracellular field, but their relative contribution 
+depends on their shape. pyramidal cells are the most populous cell type, and they have long thick apical dendrites that
+can generate strong dipoles along the somatodendritic axis. such dipoles give rise to an open field, as there is 
+considerable spatial separation of the active sink from the return currents. this induces substantial ionic flow in the
+extracellular medium, therefore neurons that generate open fields such as pyramidal cells make a sizeable contribution to
+the extracellular fields. by contrast, spherically symmetric neurons such as thalamocortical neurons that emanate 
+dendrites of relatively equal size in all directions can give rise to a closed field. however, a strictly closed field 
+only arises when several dendrites are synchronously activated. as this is rarely the case, depolarization of a single 
+dendrite generates a small field even when the cell is spherically symmetric. 
+assuming a homogenous medium, the two most important determinants of the extracellular field strength are are the spatial
+alignment of neurons and the temporal synchrony of the dipole moments they generate. in cytoarchitecturally regular
+structure such as the cortex, the apical dendrites of pyramidal cell neurons lie parallel to one another and the afferent
+inputs run perpendicular to the dendritic axis. this geometry is ideal for the superposition of synchronously active 
+dipoles and is the primary reason why LFPs are largest in cortex. in the rodent hippocampus, the soma of pyramidal cells
+occupy only a few rows, by contrast in the human hippocampus the cell bodies are vertically shifted relative to each other
+and form a wider somatic layer. as a result, the source currents from the soma flow in the opposite direction to the sink
+currents from the dendrites of neighouring neurons, effectively cancelling each other. this partly explains why the 
+amplitude of the LFP decreases from rat to cat, and from cat to primate. another reason why brain size affects the 
+magnitude of the extracellular current is that mammals with smaller brains have smaller pyramidal cell neurons, which are
+therefore more densely packed compared to mammals with larger brains, leading to a small conductivity sigma. indeed, all
+LFP patterns have larger amplitude in the mouse than in the rat brain. 
+another important geometric factor that affets the magnitude of the extracellular current flow is the highly folded nature
+of the cortex in higher mammals. when the cortical sheet bends to form a gyrus, the apical dendrites are pushed closer to
+each other on the concave side, and current density becomes higher compared to when the apical dendrites occupy the 
+convex side of the curve. the influence of tissue curving is particularly striking in the dentate-gyrus-subiculum-
+hippocampus axis, where concave and convex bends alternate. in subcortical structures, spatial regularity of neurons is
+much less prominent, nevertheless afferent fibers from one source may have some asymmetric distribution on spherically
+symmetric neurons, whose temporally synchronous activity can generate spatially distinct sources and sinks. 
+
+temporal factors: geometric factors alone cannot explain the magnitude of the extracellular current. for example, the
+cerebellum is a highly ordered structure, but generates very weak extracellular field. this is because cerebellar 
+computation is mainly local, and does not require the input of many large numbers of neurons. however, when synchrony
+is imposed on the cerebellum from outside, large currents can arise in the extracellular space. thus, in addition to 
+cytoarchitecture, a second critical factor in determining the magnitude of the extracellular current is the temporally
+synchronous fluctuations of the membrane potential in large groups of neuronal aggregates. synchrony, which is often 
+brought about through network oscillations, explains why different brain states are associated with dramatically 
+different magnitudes of LFP. a consistent quantitative feature of the LFP is that the magnitude of LFP power is inversely
+related to temporal frequency, that is, there is 1/f^n scaling, with n between 1-2. these features have given rise to 
+much speculation regarding the relationship between the network features of the brain and the extracellular signal, 
+although a strict power law behavior of the LFP is still being debated. the 1/f scaling property of the LFP can be
+largely attributed to the low-pass frequency filtering propert of dendrites. simulations have shown that in large layer 5
+pyramidal neurons, the effect of a high-frequency local input (100Hz) to the distal dendrite can be detected 
+extracellularly near the distal dendritic segment, whereas the signal is attenuated approximately 100-fold near the soma. 
+slower signals (<1Hz) are attenuated much less. the low pass filtering effect of a purely passive neuron depends on the
+distance between the soma and the location of the input, and on the membrane time constant. this suggests that dendritic
+morphology is an important factor in frequency filtering, and pyramidal cells, with their long dendrites, are particularly
+effective low-pass filters. however, as the electrotonic length and input resistance of neurons can be effectively altered
+by synaptically induced inhibitory and excitatory conductance changes, the frequency filtering performance of neurons 
+depends not only on the geometric characeteristics of neurons but also on their physiological state. the capacitative 
+nature of the extracellular medium itself is another frequently cited caused of the attenuation of high frequency LFP. 
+network mechanisms also contribute to the 1/f nature of the spectrum. in a brief time window, only a few neurons can 
+contribute to the LFP, but in a longer time window, many more neurons can contribute, giving rise to a much larger LFP. 
+this is also reflected in the phase-coherence distance relationship, with lower frequency signals having higher coherence
+compared to higher frequency signals. provided that neuronal recruitment happens within the time span of an integrating
+mechanism, (NMDA/GABA receptors have a slow time constant, while AMPA or GABAb recptors have a short time constant) the 
+amplitude of low frequency LFP components will be larger than the amplitude of high frequency LFP components. finally, 
+different network oscillations generated in the cerebral cortex may show a hierarchical relationship, often expressed by
+cross-frequency coupling between the various rhythms. as the phase of slower oscillations modulates the power of higher
+frequency events (phase-amplitude coupling), the duration of the faster events is limited by the allowable phase of the
+slower event. 
+it should be emphasized that most neuronal communication takes place in short time windows, from tens to hundreds of ms, 
+and the spectral properties of such short time windows strongly deviate from the scale-free frequency-power distribution,
+and are often dominated by oscillations or sensory input triggered induced or evoked events. these stimulus driven,
+transient LFP events are the physiologically relevant time windows from which one aims to infer neuronal communication
+from the mean field behavior of neuronal populations. 
+
+the role of volume conduction in V: the electric field specifies the forces acting on a charged particle. the field is 
+defined at every point in space from which one can measure a force 'felt' by an electric charge, and it can be 
+transmitted through a volume, a phenomenon known as volume conduction. the origin of the volume conducted field is the 
+return currents of the dipole (18,22,83). the extent of volume conduction depends on intricate relationships between the
+current dipole and features of the conductive medium, consequently, some LFP patterns can be recorded far away from the 
+source, and others remain relatively local. the most robust demonstration of the importance of volume conduction is that 
+return currents from active dipoles in brain tissue can be measured on the scalp by electric recording mechanisms. 
+assuming that conductivity in the brain is purely ohmic, the V induced by a current dipole depends on the magnitude and 
+location of the current source, and on the conductivity of the extracellular medium. conductivity in the medium depends on
+the degree of isotropy and homogeneity in the medium, and is therefore a function of a number of factors, including the
+geometry of the extracellular space. the relationship between V and the CSD J measured in A/m^2 at a particular point in 
+space is given by maxwell's equations of electromagnetism, that in their simplified form (when magnetic contributions can
+be neglected) dictate that gradient(sigma*V) = -gradient(J) where sigma is the extracellular conductivity tensor. the 
+properties of sigma crucially effect the waveform and functionality of the spatiotemporal V deflections. assuming that the
+extracellular milieu can be satisfactorily described by a purely homogenous and isotropic ohmic volume conductivity sigma,
+V is governed by Laplace's equation gradient^2(V) = 0, with a boundary condition along a cable-like source described by
+sigma*V = J, where J is the transmembrane current density. for a single point source in an unbounded isotropic volume 
+conductor, the solution is V = I/(4*pi*sigma*r). multiple current sources and sinks then combine linearly by the 
+superposition principle. it follows that the transmembrane voltage is a relatively poor predictor of the extracellular LFP
+whereas the transmembrane current is a more reliable estimator. the above calculations assume that the extracellular 
+medium is homogenous and isotropic. measurements of the extracellular medium in the relevant frequency range (<10Hz) 
+have not yet fully resolved this issue, some experiments indicating that it is anisotropic and homogenous, and others 
+suggesting that it is strongly anisotropic, inhomogenous, and may even possess capacitative features. 
+striking examples of volume-conducted events have been demonstrated in hemispherectomized patients over the missing
+hemisphere. furthermore, auditory evoked brain stem responses over the scalp are a clinically useful diagnostic tool based
+on volume conduction. volume conduction clearly poses problems for the interpretation of the functional meaning of the
+relationship between signals recorded from different brain locations. for example, two nearby dipoles with different 
+orientations can produce volume conducted fields at different sites, and when the coherence between signals recorded at 
+these distant sites increases (for example, as a function of behavior), this may falsely be interpreted as some dynamic
+or functional coupling between the circuits residing at the sites of the recording electrodes, even though the coherence
+increase was brough about by the temporal shifts between the two dipoles (117). 
+
+the inverse problem of LFP: extracellular signals provide information about the collective behavior of aggregates of 
+neurons, particularly with regard to the temporal scale of their activity. however, the same macroscopic extracellular 
+signal can be generated by diverse cellular events. thus a seemingly similar theta oscillation in the hippocampus and
+cortex may be brought about by differen mechanisms. a common obstacle in interpreting the 'mean field signal' is the
+'inverse problem', or the problem of attempting to infer the microscopic variables from the macroscopic ones, in this case
+inferring the nature of the primary current dipoles from the spatiotemporal profile of the volume conducted field. 
+this problem is commonly dealt with by first solving the 'forward problem', deriving macroscopic variables from their
+elementary, causal constituents, and then using the established relationships between the microscopic and macroscopic 
+variables to gain insight into the the microscopic events from the macroscopic patterns. the first step in this process
+is to identify the contribution of the suspected synaptic and non-synaptic mechanisms of the LFP by correlating the 
+macroscopic events and the microscopic events (119,120,122). alternatively, synthetic mean fields can be generated in 
+network models of neurons in which events in the different domains of the neurons are timed on the basis of experimentally
+observed temporal patterns. 
+
+localizing current sinks and sources : CSD analysis: in deciphering the location of the current sources (That is, cations
+flowing from the intracellular space to the extracellular space) and sinks (Cations flowing into the cell) that give rise
+to the LFP, the concept of CSD is useful. CSD is a quantity that represents the volume density of the net current leaving
+or entering the extracellular space. consider a distant current source relative to three linearly and equally spaced 
+recording sites in a homogenous volume. each electrode will measure some contribution to the field from the distant source,
+and the voltage difference between the middle and side electrode will be small. as a consequence, the differences between
+the 'voltage differences per distance' or second spatial derivative of V, between the middle and side electrodes is small,
+an indication that the field can be attributed to a distant source. by contrast, if the three electrodes span the 
+location of the current generating synapse or neuron group, the voltage at the three recording sites will be unequal and
+the difference magnitude of this derivative will be large, an indication of the local origin of the current. the current
+flow between the two recording sites can be calculated from the voltage distance and the resistivity using Ohm's law.
+
+interpreting current density: unfortunately, it is not possible using CSD methods alone to interpret for example if an
+outward current close to the cell body is due to active inhibitory synaptic currents, or if it reflects the passive return
+current of active excitatory processes. the missing information may be obtained by selectively stimulating the various
+anatomically identified inputs to the recording circuit, this process helps to attribute the sinks and sources to the 
+known sources of synaptic inputs. in addition to anatomical knowledge, simultaneous intracellular recordings from 
+representative neurons within the population responsible for the generation of the LFP may be required. it is also 
+possible to record extracellularly from identified pyramidal cells and inhibitory interneurons in the same volume of 
+tissue and use the spike-field correlations to determine whether, for example, a local current is an active hyperpolarizing
+current or a passive return current from a more distant depolarizing event. somatic hyperpolarization brough about by the
+activation of perisomatic basket cell neurons also generates a voltage gradient between the soman and dendrites. as 
+dendritic excitation and somatic inhibition result in the same direction of current flow, the excitatory and inhibitory
+currents will superimpose in extracellular space and result in large-amplitude LFPs. although strong somatic inhibition 
+can enhance the magnitude of the LFP, it may at the same time veto the occurence of action potentials in pyramidal cells. 
+this complex relationship is the reason why large-amplitude extracellular current flow may be associated with strong 
+spiking, moderate spiking, or no spiking output. as a result the measured correlation between LFP and spiking activity
+can vary tremendously, even within a small volume. such variable coupling between LFP and unit firing may be one of the
+sources of controversy regarding the contribution of LFP vs spikes to the MRI-BOLD signal fluctuations, because often 
+there is a strong correlation between LFP power in the gamma range and spiking activity. 
+
+spike contribution to the LFP: any transmembrane current contributes to the LFP, including currents generated by action
+potentials. the action potential includes not only the spike itself, but the AHPs, which have duration and magnitudes that
+vary as a function of brain state and neuron type. the spike contribution to the LFP has important implications. first,
+increased spiking generates a broad frequency spectrum with a power distribution that depends on the composition of the
+active cell types, second both increased spike frequency and synchrony increase spectral power particularly in the high
+frequency (>100Hz) ranges. however, when spike AHPs are also considered, the contribution of action potentials may be
+substantial in the lower frequency ranges as well, even in the absence of synaptic transmission. thus, increased power in
+the higher frequency bands can be regarded as an index of spiking synchrony. third, high frequency power has a restricted
+spatial extent, it increases in layers with a high density of cell bodies and axon terminals. fourth high frequency power,
+which largely reflects spiking activity, co-varies with LFP components that emanate from postsynaptic potentials and other
+non-spike related membrane voltage fluctuations. fifth, the high-frequency power can be phase-locked to low-frequency
+oscillations, this occurs because it is largely the phase locked spiking neurons that generate the extracellular currents. 
+overall, the high frequency content of the LFP can be used as a proxy for neuronal outputs. 
+
+conclusions and future directions: 
+
+
+
+
+
+
+
+
+

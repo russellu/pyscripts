@@ -1,0 +1,24 @@
+wireless recording in the peripheral nervous system with ultrasonic neural dust
+highlights: first in-vivo electrophysiological recording with neural dust motes
+2) passive, wireless, battery less EMG and ENG recording with mm-scale devices
+3) recorded signals transmitted via ultrasonic backscatter from implanted neural dust motes
+4) ultrasound as a scalable means of providing wireless power and communication
+
+summary: 
+1) deciphering and modulating bioelectric activity in the body to attain therapeutic effects in target organs.
+2) current approaches rely on wires, creating problems for chronic use.
+3) emerging wireless approaches lack size scalability necessary to interrogate small-diameter nerves.
+4) conventional electrode-based techniques lack capability to record from nerves with high spatial resolution, or
+record independently from many discrete sites within a bundle
+5) neural dust is a wireless and scalable ultrasonic backscatter system for powering and communicating with 
+implanted bioelectronics
+6) ultrasound is effective at delivering power to devices in tissue
+7) passive, battery-less communication using backscatter enables high fidelity transmission of EMG and ENG signals
+from anesthetized rats
+
+preparing the didactic: get the final version of the articles, get all supporting material, read through it a few
+times, organize the talk in your mind, then put it on paper, then start creating specific slides
+
+step 1) get the final version of all articles
+step 2) organize the talk on paper
+step 3) create slides

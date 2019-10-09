@@ -1,0 +1,18 @@
+FMRI_stims:
+
+rotating orientation
+	rotate the grating for 8 minutes straight, and high-pass filter out the drifts (anything below the cycle of the wedge).
+	
+block design retinotopy
+	do the quadrants separately, and the hemispheres/hemi-fields. do a full field block design as well. 
+	quadrants: upper left/upper right, bottom left/bottom right, top/bottom, left/right. 
+	split it up into 2 scans, with four parts. then do a shorter 3rd scan with full-field.
+	10 second block design for wedge => 51 trials total, or 12 per stimulus type 
+
+contrast? one more scan with varying contrast level block design? 5 reps each = 25 reps = 10 second trials. 
+
+rotating wedge? 
+
+goal is to get this submitted before ohbm/ismrm (as well as have app published). 
+look at vasculature, distance, and cancellation (for retinotopy) 
+alpha/beta does not care about amplitude => feedback is bullshit? 

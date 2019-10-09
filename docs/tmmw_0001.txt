@@ -1,0 +1,33 @@
+tmmw: 
+GET the sprite collisions FIXED for once and for all - have the collision with weapons working, and switching between 2-3
+different attacks based on the controller. 
+you can set it up to randomly execute attacks, or you can use a different type of attack with 3-4 separate buttons. 
+one cool way would be to use the stabbing icon in the middle, and left/right slash on the sides.
+so you push down, and the button you push down on is the one that starts to attack (stabbing, left, or right slash)
+ie, a backhand, a forehand, or a stab. 
+but start by just getting multiple attacks set up.
+
+the next thing to do is probably to have some kind of battle between two sprites (after extensively testing with many 
+rigid bodies at the same time). 
+ie have 10-15 collidables inside your arena, and start hitting stuff around. 
+by tuesday, have a sprite hitting balls in an arena with multiple attack animations. 
+
+what about a defend animation?
+
+
+SCIENCE: work more on your paper 
+answer guillaume
+work on sam's asl
+work on/think about stimulus
+
+GENERAL: 
+pay parking tickets
+deposit checks 
+send insurance thing
+pay hydro
+clean house 
+clean clothes
+go to gym (weights) 
+
+all this stuff can be done relatively easily (shouldn't take more than 1-2hr for general (Tickets etc) and another 2hr for
+house/clothes (4hrs)

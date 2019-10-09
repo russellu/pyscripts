@@ -1,0 +1,42 @@
+todo: 
+
+coupling paper: get all subjects aligned in their folders, including karl and sukhman
+	-> work on gradient denoising
+	-> work on bcg denoising, and motion correction denoising
+	
+for each subject, you need the following: freesurfer, electrode coordinates, registered gray matter, ica decompositions, grid, denoised EEG (grad+bcg+ica)
+
+
+structure_timeline:
+today : 
+	denoise all FMRI, get ROIs for all subjects (9 subj + 24 subj) 
+
+
+
+
+gradient denoising: the best way is to fit each artifact using other artifacts, to minimize the distance between each artifact and the average
+maybe instead of regressing, select the artifacts so that the ssd is equal to zero, when you add them all up..
+ie, artifact x - artifact y  = -1, artifact
+
+for each artifact, select only the artifacts in the immediate vicinity, and then apply a weighting factor to each of them ,so that they approximate as closely 
+as possible the artifact you are trying to model 
+
+recursive ICA - perform ICA on the raw dataset, then subtract the clean dataset from the raw, and run ICA on that noise image, as well as on the "clean" data set.
+
+by tonight: get the bandpass filtered ROIs for the gamma stimuli + all subject's ERSP (gamma power in occipital electrodes). 
+tomorrow - compute correlations between IO and gamma power, and distance/gamma power. 
+
+to compute final results you need the following: 1) electrode locations 2) surface normals 3) electrode space gamma power modulation 4) FMRI hot activation mask
+
+the message: functional vs structural measures, %change and extent of activation, stimulus types correlated across subjects (structure), 
+
+
+
+
+
+
+
+
+
+
+

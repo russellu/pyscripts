@@ -1,0 +1,159 @@
+affiliate goals today:
+
+finish the matlab scripts to create multiple ad groups at once. 
+add negative keywords list to remove cars, ipads, etc. 
+create new campaigns for the following offers: 
+surge auto insurance-uninsured (7.00, 120s)
+mold removal campaign (17.50$, 90s)
+
+intent search terms getting quite low impressions - probably normal, these people are more likely to buy so their clicks are worth more
+
+do mold removal first, because you still have all that fresh code from water/fire damage, then move back to spyfu and do auto insurance
+find out what ring pools is, what it does and how it can help you
+
+combine paid and organic keywords into a single file (load them both, then concatenate the matrices) 
+need a mold removal landing page
+
+by the end of the day: 4 campaigns up and running, in adwords and bing, landing page for all of them (bing)
+
+should also add the city as an intent keyword (to further filter intent?) 
+you can also take the first 2000 instead of just the first 1000 keywords in spyfu, for more keywords. 
+
+by the end of next week you want to be breaking even or profiting every day. 
+
+today: apply to two more networks, finish your personal website (put some ads/creative), start 2-3 more campaigns 
+(health insurance, pet insurance, and another)
+
+paid traffic using google adwords and bing, call only ads (google) and call extension (bing) with landing page
+landing page for call only ads:
+http://householdtop.com/mortgage-help/
+slack: Russell Butler, die666DIE
+
+get a list of all states and major cities/towns and run that against your keywords
+mold/fire water don't seem to be very profitable - try to optimize the auto insurance campaign so you're breaking even today, and
+then add more profitable campaigns later
+
+ad privacy policy, contact us, about us to all landing pages
+today: set up low T (again) and solar, apply to home security at surge, astoria, and palo	
+get retreaver adwords integration working 
+apply for astoria home insurance and final policy insurance
+check out the CJ offer you've been approved to
+
+listen to calls, use what the people say to find keywords 
+immediacy - solar is not the greatest, things like towing, or painkillers are much better because people are more likely to pick up the phone and call. 
+ads - polar opposites
+check the geographic data - use the locations with the highest rank and lowest cost per conversion 
+
+today - add conversions to all your ads, start 2 new campaigns, continue to optimize current campaigns look for more info on how to run profitable ppc campaigns
+look for campaigns that have a sense of urgency - locksmith, painkillers, etc 
+chiropractors, pest control, plumbing, locksmith 24/7
+you want to be running minimum 10 campaigns at all times, right now you only have 5 which means you need 5 more up and running today. 
+re-watch the youtube crash course
+
+prefixes and suffices: 24 hour, affordable, get, hire, need, find
+	near me, companies, 
+
+need to clean up keyword permutations that you get from spyfu
+strip the keywords and then build them back up using prefixes and suffices? or just use the spyfu keywords only. 
+
+
+success/break even formula : find the cost per conversion and then set your bid so that the payout is greater than or equal to the cost per conversion
+
+breaking news donald trump
+knock off ad
+re-use data
+pre-qualify
+facebook messenger ad
+
+today is about discipline and getting facebook ads working. don't exceed your 50$ max, and be getting impressions/clicks in facebook by the end of the day with
+a matlab pipeline to create the campaign automatically. 
+
+-50% ROI by the first week according to danilo lee. so if after a week of running ads and seeing no improvement or less than 50% return, cut the campaign. 
+according to raj, 50% of his income comes from SEO, so he gets people coming to his website based on the keywords alone. 
+you may have to work on that, another thing to get working is learning htlm so you can create landing pages automatically, with all the keywords that you need
+automatically inserted into image tags and descriptions. 
+
+can use the facebook demographics to improve your google/bing campaign demographics 
+target the correct geos within the correct offers. this is 90% of the battle
+
+need to get strategic with your offers - 7 day EPC, 
+calculate the conversion rate for each offer. 
+7 day epc = 4875$, payout = 65$, => every call generates 49$, 4875/65 = 75 => 75% conversion rate , 75 conversions per 100 calls
+
+viagra offer: 8.67 payout, 143$ epc => 1.43$ per call, 143/8.67 = 16 => 16 conversions for every 100 calls => 16% CR
+check out your # calls and conversion rates
+
+ageing in the home - 500$ epc, 10$ payout, 500/10 = 50, 50/100 = 1/2 = 50% CR => you need to be paying <5$ per call, if you are getting >5$ CPC you will be
+losing money.
+
+home security 50$/call, 1309 EPC => 13$/call, 1309/50 = 26, 26/100 = 0.26 = 26% CR, which means you need to pay 0.26*50 = 13$ per call or less (once you have the 
+calls dialed in). look for offers where conversion rate is high, and $/call is also high
+
+use competitive payouts - look at different companies, and run the offer with the best payouts
+partner up with trustworthy networks - read their reviews and background histories
+monetize all quality traffic - take advantage of bundling features that allow you to create generic campaigns, route traffic to the advertiser most likely to
+conver the call based on a set of conditions like location, time, and repeat vs new call
+optimize campaigns for better performance
+
+tomorrow - copy your campaign, but change the match type to phrase and exact, test those campaigns.  
+
+criticism of the current approach - you treat it too much like gambling, not enough strategy. checking your adwords every 10m to see if you got another click
+is not the way to win at this game. 
+
+wait till 11, if you still get no impressions, raise the bid.
+
+negative keywords - this is like the filter that you apply to your searches, it removes bad searches. 
+but you really don't have enough data at the momment to make a quantitative type of judgement on which are good and which are bad, you can only look at the keywords
+and make an educated guess what the buyer's intent was when they clicked on it. 
+
+maybe try a different approach - see if you can get people to go to a landing page and test this 
+
+need to do more research, find out what is trending and what is not, find a way to test campaigns before you waste money running them, 
+
+make a heat map in matlab that shows search terms as a function of geo. take only the top keywords and only the top geos. 
+
+use a not mask for the negative keywords - get google trending keywords, and use negatives for the mask of the keywords you don't select from the list. 
+use broad match modifier, not broad match (put a + sign in front of all keywords) 
+
+new approach: try the rising/top terms for google based on a root keyword, using bmm, with a strong neg. keyword list, and value offering ads with strong CTA
+filter for intent and then sell hard. 	
+
+today: quickly set up a new home insurance campaign, and test it using bmm. keep all other campaigns paused for now, delete one and reuse number. or just re-use home
+insurance number. 
+
+another way to define negative keywords - get the spyfu list, and find only the good terms, then just take keywords from terms not matching yours, and build a neg.
+list from those terms. the negative keyword list is just as important as the positive keywords list, in fact, they are equivalent. 
+
+a simple campaign with a few keywords and negative keywords. create it in matlab using create_campaign, after defining the lists first
+change bid adjustment based on the best locations? 
+
+need to think of a way to build up a negative keyword list fast
+do the keyword processing in a separate script, and build the campaign in another script. 
+need some element of manual intervention, to weed out bad keywords, but also automatic so you can process large lists
+get all keywords for a campaign - spyfu, google trends, and ubersuggest. concatenate all these lists and view them in excel, mark them if they are good, x them if 
+they will make up part of the negative keyword list. 
+
+still need to set up the proxy, and user agent for mobile on desktop
+
+need to get position 1&2 on mobile, it will make or break your keywords
+
+create the suffix/prefix list from all these in excel. 
+
+solar: try the 12*5 keyword list with a simple campaign
+
+new plan: get as many keywords as you can, condense the list, comb through it by eye to find root terms and domain specific negative keywords,
+combine root terms with geos/intent, create ads and wait. (use bmm for all keywords) 
+
+tonight: 2 more campaigns (24/7 campaigns), add to your negative keyword and intent keyword lists. 
+create negative keyword and intent keyword lists for different types of vertical
+
+
+
+
+
+
+
+
+
+
+

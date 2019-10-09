@@ -1,0 +1,105 @@
+quantitative measurement of blood brain barrier permeability in human using dynamic contrast enhanced MRI with 
+fast T1 mapping. 
+abstract: breakdown of the bbb occuring in many neurological diseases has been difficult to measure noninvasively
+in humans. DCE MRI measures BBB permeability, but important technical challenges remain and normative data from 
+healthy controls is missing. BBB here is measured in both healthy subjects and subjects with white matter pathology.
+fast t1 mapping was used to measure the leakage of Gd-DTPA from plasma into brain. a quarter of the standard 
+Gd-DTPA was used and found to give both sufficient contrast to noise and high T1 sensitivity. the patlak graphical
+approach was used to calculate the permeability based on changes in 1/t1. permeability constants were compared with
+csf fluid albumin index. the upper limit of the 95% confidence interval for white matter BBB permeability for normal
+subjects was 3x10^-4 L/g min. MRI measures correlated strongly with levels of CSF albumin in the subjects who
+underwent lumbar puncture. 
+introduction: the neuronal environment is protected from systemic circulation by a series of interfaces that have
+been termed the bbb. disruption of BBB is an important indicator of inflammatory response in neurological disease,
+including stroke, MS, and infection. accurate, noninvasive quantification of bbb permeability would be a valuable
+aid in the diagnosis of stroke, and inflammatory disorders, as well as in measuring the bbb response to therapy. 
+bbb permeability has been measured in human subjects and animal models using neuroimaging techniques, including
+dynamic perfusion CT, and dynamic contrast enhanced MRI (DCE MRI). the mri methods are based on the contrast agent
+leakage effect on water proton signal in the extravascular space. technical challenges including nonlinear 
+behavior of the contrast agent, lack of fast imaging techniques, and lack of agreement on approach for measuring
+and modeling the effects of contrast agent leakage on MRI parameters. prior studies measure pixel intensity changes
+in t1 or t2* weighted images after a short time period following contrast agent injection, and are sensitive only
+to relatively high levels of contrast agent leakage. slower rates of leakage appear to be important in chronic 
+diseases such as alzheimer's and binswanger's disease, and quantitative t1 measurements in animal models show slow
+rates of BBB leakage. 
+this study applied a method to assess BBB leakage in human subjects using quantitative T1 measurements, in two 
+groups of subjects, avoiding the nonlinear effects of contrast agent on T2* signal. 
+using fast T1 mapping (TAPIR - t1 mapping with partial inversion recovery), the duration of data acquisition at 
+each time point was reduced, and sampling a large number of time points during the measurement allowed to reduce
+noise in the pharmacokinetic curves. the patlak model of intercompartmental exchange was used with a graphical 
+approach to calculate the rate of transfer of Gd-DTPA from the blood to the extravascular brain using the measured
+T1 changes. 
+materials and methods: twenty healthy controls, and two groups of patients (10MS, 45VCI). VCI patients had a lumbar
+puncture for CSF collection, and blood was also collected for calculation of albumin index. the albumin ratio was
+calcuated by dividing the CSF albumin level by that of the plasma. VCI patients were separated into groups according
+to tests, 1) suspected microvascular disease with vascular inolvement, 2) large vessel multiple strokes or single
+strokes, 3) mixed vascular and alzheimer's disease, 4) leukoaraioisis. 
+selection of dose of contrast reagent: a modified compartmental modeling technique, which includes the nonlinear
+mixing effect, 	was used to evaluate the effect of the initial dose on the time course of Gd-DTPA during data 
+acquisition. doses above 0.025mmol/kg lead to elevated contrast in the gray matter and subcortical areas of wm, due
+to the higher vascular density in those areas. they determined that a dose of 0.025 mmol/kg provided both adequate
+washout from the blood and change in the intensity of the MRI signal over 25 min. also using phantoms with different
+concentrations of GD-DTPA they found that 1/T1 in the vicinity of the reduced dose changed much more rapidly with 
+changes in Gd-DTPA than at higher concentrations. 
+MRI acquisition and sequence parameters: t1 quantification was performed with the fast T1 mapping sequence TAPIR, 
+tr=15ms, 3 echoes at 2.8,5.1,and 7.4ms, alpha=25deg, TI=30ms, preparation delay=2s, and a sampling interval of 
+3min,30s, with the first TAPIR T1 dataset acquired before Gd-DTPA injection and 7 datasets acquired following the
+injection. 
+T1 reconstruction: the tapir method is based on the look and locker method, the sequence consists of non-selective
+magnetisation preparation module followed by a look-locker acquisition, which consists of the repetitive application
+of slice selective alpha pulses. after a significant number of pulses the system approaches a steady state value 
+given by: m(inf) = (1-e^(-TR/T1)) / (1-cos(alpha)*e^(-TR/T1)) where t1 is the longitudinal relaxation time, and TR
+is the time between alpha pulses given to a single slice. the application of this preparation module creates 
+longitudinal magnetization m1, which may be expressed as : m1 = 1-e^(-tn/T1)*(1+INV(1-e^(-r/T1)), where INV reflects
+the efficiency of the inversion pulse. the longitudinal magnetization develops from the initial value m1 to the 
+steady state value m(inf) according to an exponential relationship with apparent time constant T1* given by:
+1/T1* = 1/T1 - ln(cos(alpha))/TR. 
+thus, the longitudinal magnetization m sampled at times tn,p  = tn + TR*(p-1). where n is a slice index, 
+p=1,2,...Np, and Np equals the number of points sampled during signal evolution, expressed as:
+m = m(inf) - (m(inf) - m1)*e^((t-tn)/T1*). 
+consequently, the signal intensity S is given by the following expression: S = M0*m*sin(alpha). 
+
+permeability calculations: post processing including field inhomogeneity correction, noise reduction and motion 
+correction was performed using nonparametric nonuniform intensity nonuniformity correction package
+permeability maps were constructed using a method based on a tracer compartmental modeling technique and extended
+to measurements of DCEMRI contrast changes by Larsson et al, and later, to quantitative measures of T1 by ewing et 
+al, in studies on animal models. the method is based on measuring the leakage of contrast agent from the plasma
+compartment into the tissue compartment through the BBB, which causes changes in the water proton relaxation 
+times. the relationship between the pre and post contrast longitudinal relaxation rate difference at any point in 
+time (delta(1/T1(t))), and the concentration of contrast agent at that point in time is assumed to be linear, 
+(delta(1/T1(t)))*k = C(t), where k is the constant of proportionality. 
+this estimate of concentration can be used with a formulation derived by Patlak and blasberg, to determine the rate
+Ki at which a tracer passes from the vascular compartment into the tissue compartment:
+Ctiss(t) = Ki*integral(0,t)[Cpa(tau)*dtau] + Cpa(t)*Vp. 
+where Ctiss(t) is the concentration of the tracer in tissue, (mL tracer/gram of tissue) at time t, Cpa(t) is the 
+concentration of the tracer in plasma, arterial input, Vp is the fraction of the total volume occupied by the blood
+volume, and the units of Ki (blood to tissue transfer constant) are mL of contrast agent per gram of tissue per 
+minute. the concentrations can be replaced by the T1 relaxation rates, scaled by the same proportionality constant
+k. Cpa(t) was determined from the time course of a signal change in a pixel containing the sagittal sinus, assumed
+to be proportional to the arterial concentration of the contrast agent concentration. this voxel was chosen to have
+minimal noise and maximal dynamic range.
+
+statistical methods: the BBB permeability were submitted to statistical analysis for inferences.
+
+estimating normal BBB permeability: permeability values were greater in gm than wm, motivating them to study those
+areas separately. the bbb permeability in the wm of control subjects is not zero, in agreement with other reports
+and instead ranged from 0 to 6*10^-4 L/g min. this variability could be due to the systemic noise in the 
+measurement as well as a small amount of leakage through the bbb. 
+
+results: to gain insight into the distribution of Ki in wm pixels and determine a noise threshold for the 
+permeability maps, the Ki distribution was plotted for each subject, no significant variation amoung the 
+distributions was noted in the control subjects. an empirical histogram of the combined WM Ki values was plotted, 
+and modeled using a Pareto distribution function. the upper limit of the 95% confidence interval of the model fit
+was selected as the cutoff point for identifying measurement noise in the calculated permeability values in 
+subsequent analysis. 
+
+
+
+
+
+
+
+
+
+
+

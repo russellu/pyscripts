@@ -1,0 +1,2 @@
+gamma_experiment
+more voxels = higher peak frequency? 

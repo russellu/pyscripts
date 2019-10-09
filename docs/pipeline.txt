@@ -1,0 +1,76 @@
+pipeline: 
+fmri: motion correct, bandpass filter, blur
+eeg: (Scalp) -> grad, bcg, ica, remove components, back-project
+     (source) -> head model (openmeeg volume), noise/data cov, dipole source localization, filtering 3 components, avg power,
+	-> save to disk -> warp to EPI, load with BOLD in matlab, correlate 
+
+
+single subject - do everything manually in brainstorm, then load and process sources automatically and save
+
+4 separate paradigms - retinotopic mapping, full field stimulation (event-related), and movie/rest (continuous) 
+
+all subjects - process them in brainstorm, and then get their matlab grid using a separate script. 
+fix the script, so it doesn't fuck up every time you restart brainstorm
+
+brainstorm processing: 
+step 1: EEG - denoise with components, save merged gamma scripts (for signal/noise covariance) 
+
+
+what are all the files that you need? 
+1) EEG-FMRI correlations (most important - each voxel a source-BOLD frequency specific correlation curve)
+2) EEG-stimulus correlations (all bands) - each voxel a spectrum of EEG vs stimulus correlations 
+3) BOLD-stimulus correlations - each voxel a correlation coefficient of BOLD-stimulus correlations 	
+
+each subject - do all correlations with all frequency bands, voxel by voxel 
+the first thing you need is just to get the time courses or power values for each stimulus condition/state, and save those as matlab
+files, so basically a matrix of time courses 1 for each freqency band (45*3000*735 or something) which isn't too large. 
+the correlations and whatnot can then be computed after. 
+one special case - gauvin's first gamma scan EEG cuts off early...just base it all on the MRI triggers (when you do the correlation)
+
+once you have the source-space power values for all subjects, and the BOLD as well - what is next? 
+single voxel correlations - EEG vs BOLD, in all subjects - this is the first result, frequency specific coupling curves in each voxel
+grand average across all tasks, subjects, and states result #1
+then, look for differences in coupling in a single voxel across states and stimulus types - 
+ie, the single trial EEG-BOLD correlations, computed for each voxel or within a ROI, 
+differences from rest to movie, and what does this depend on result #2
+different HRFs, from rest to movie, and from rest/movie to stimulus - average kernel within a large ROI, movie-rest-stim
+
+FMRI denoising - removing bad components, and blurring to 8-12mm FWHM - use a matlab script to get good components 
+
+registration - put them all in standard space before computing correlations? or apply it to the correlation maps?
+also, what about the registration itself - do an EPI based atlas, or a T1 based atlas? try a T1 based atlas with your data only
+T1 based atlas, and then flirt+fnirt all subjects to that atlas (After 2 step atlas creation), then bring all correlation maps/hrf
+maps/whatever to T1 space for final averaging 
+
+make the T1 atlas (linear, then do a nonlinear fnirt registration of each subject to the atlas) - you can put these on the other cpu
+to run them faster. 
+
+get the greg data, and the stimulus time courses for the retinotopy sometime tonight or tomorrow
+
+
+getting some wack results in tegan...bad grid format, maybe fixed this. still, need to get 4 good subjects and see how the results 
+look before going back to denoising EEG data. by the end of today, should have voxel-wise correlations for the 4 subjects
+average movie, rest, and others and grand average (maybe add valerie also?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

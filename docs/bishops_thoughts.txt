@@ -1,0 +1,18 @@
+bishops prof
+
+immediate thoughts: holy shit this is awesome. secondary thoughts oh shit i'm fucked
+kevin wants to corral you immediately. get as much as you can out of him as well. 
+75k/year to start
+will need to work hard on grants and other sources of funding 
+Professor Butler
+
+by July: finish the 2 articles (submitted or published) + the app article + neural network article 
+
+what will be in the interview: ask what the performance criteria are for the job interview. think of it like a performance 
+
+auto mpg dataset (Categorical, numerical) - > can you model the miles per gallon of the cars 
+model stacking agnostic point of view  - build a bunch of models on top of one model 
+
+random workout - select random exercises and stack them 
+
+

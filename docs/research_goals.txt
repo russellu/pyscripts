@@ -1,0 +1,5 @@
+research_goals
+
+november 15 - ISMRM deadline - reproduce the results from your badger study, on Dave's and your own datasets. 
+	today: denoise all gradient subjects from Dave's study, run ICA on bcg corrected data and visualize topoplots
+		=> try to get decent topoplots in all subjects, play with the bcg parameters and ica filters 

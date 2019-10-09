@@ -1,0 +1,6 @@
+choosing car
+
+1) affordability
+2) status 
+3) upkeep
+4) safety

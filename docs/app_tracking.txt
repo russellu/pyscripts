@@ -1,0 +1,9 @@
+forex_Ads
+
+current (Basic, all countries,)
+CPA = 0.83, target CPA = 0.05 (assuming organic IAP rate), CTR 0.95%, 
+
+added US, UK, Australia, and Germany
+changed exclude from US,UK,etc to nothing
+added better keywords (less redundancy)
+added a photo

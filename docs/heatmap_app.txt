@@ -1,0 +1,38 @@
+heatmap app
+
+bring cord, so you can test on your device
+get location and covert it to lat, long, update coordinates in a kotlin data class 
+interpolation or not interpolation (option)
+use line or heat map (option) 
+make new icon
+see how many downloads you get with current keywords etc, and then you can decide if you want to put more work into it
+causing lag - create an async function to only update every 5 seconds or so (instead of continuously calling) 
+check if the app is asleep, and perform fewer checks then
+add persistence for the vertices 
+
+download the project with the working (hopefully) background intent. see if that works for you, and then reverse engineer it into your kotlin
+code
+
+today: finish the basic heat map app - persistence, storing lats and longs, background location querying with high precision
+add the option to clear, and sort by day
+
+add button to pause acquisition, 
+only collect data when the user has moved a certain distance
+
+getting location changed updates from location locationprovider makes no sense, because it will be limited by the number of location queries
+anyhow. instead, you can get faster updates depending on the relative velocity - if you are moving quickly, get more location updates, and
+vice-versa. 
+
+show a progress bar 
+show a calendar with dates
+
+merge the locations and give them a value (name). also, start naming locations based on experience (send push notifications) 
+locations - problem right now is they all stack up, reducing the intensity of other locations.
+instead, just set a minimum distance, and if the new location is within a minimum distance of the old location, do not add it. 
+
+mode - hashmap mode or array list mode - 
+add logarithm mode (log(number of close ones)
+add current location tab showing ("HOME, etc")  - tap on textbox to set
+get the direction (x = red, y=green) -  add Toasts for log/intensity mode 
+
+save the data using the service 

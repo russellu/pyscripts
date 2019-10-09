@@ -1,0 +1,23 @@
+my fitness workout planner is a flexible journal for recording workouts and visualizing workout results 
+it allows you to create customized workouts (by creating a new session), and within each session, you can add your own exercises.
+it allows you to track your progress and visualize your results across sessions and exercises, and notifies you when you reach a new personal best
+
+
+there are three basic types of exercise:
+1) SIMPLE ACTIVITY
+	the simple activity is used to describe exercises/activities with only one number per entry.
+	an example of a simple activity would be "number of pushups" which is one number per entry
+
+2) MULTI-SET ACTIVITY
+	the multi-set activity is used to describe exercises/activities with more than one number per entry
+	an example of a multi-set activity would be a 3x8 set of bench press (135 pounds, 8 reps, 3 sets)
+
+3) TIMED activity
+	the timed activity is used to describe exercises/activities that require a timer
+	an example of a timed activity would be the time spent in the plank position (an ab exercise)
+
+the planner can also be used for tracking more unconventional metrics (it doesn't have to be used for exercises only)
+	for example, the timer could be used to track your commute to/from work each day
+		     the simple activity could be used to record the number of calories and your weight each day
+		     
+take control of your workout and life with this powerful and simple recording tool!

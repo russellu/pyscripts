@@ -1,0 +1,156 @@
+graphical analysis of blood to brain transfer constants from multiple time point uptake data 
+summary: a theoretical model of blood-brain exchange is developed and and a procedure is derived that can be used for
+graphing multiple-time tissue uptake data and determining whether a unidirectional transfer process was dominant
+during part or all of the experimental period. if the graph indicates unidirectionality of input, then an influx 
+constant Ki can be be calculated. The model is general, assumes linear transfer kinetics, and consists of a 
+blood-plasma compartment, a reversible tissue region with an arbitrary number of compartments, and one or more 
+irreversible tissue regions. the solution of the equations for this model shows that a graph of the ratio of the total
+tissue solute concentration at the times of sampling to the plasma concentration at the respective times (Cp) versus 
+the versus the ratio of arterial plasma concentration - time integral to Cp should be drawn. if the data are consistent
+with this model, then this graph will yield a curve that will eventually become linear, with a slope of Ki and an 
+ordinate intercept less than or equal to the vascular plus steady state space of the reversible tissue region. 
+
+introduction: most studies of solute transfer across the BBB employ the same general experimental procedure and derive
+one of three transfer numbers - the extraction fraction, the influx constant, or the efflux constant (washout). the
+experimental procedure usually includes introducing the solute of interest into the bloodstream, taking blood samples
+throughout the experimental period, obtaining terminal brain and blood samples, and assaying the samples for the test
+solute. the calculation of the appropriate transfer number involves the assumption of a specific blood-tissue 
+distribution model for the system and insertion of the experimental data into the working equation of the assumed
+model. 
+the influx constant Ki has been measured least to date, yet when properly determined it reliably quantitates blood-brain
+transport for all but rapidly exchanging solutes, and is the only transfer number which can be accurately determined
+for solutes that cross the BBB slowly. moreover, a simple relationship between Ki, capillary blood flow, capillary 
+surface area, and capillary permeability has been developed and can be used to convert the influx constant of the test
+solute to a PS product if the blood flow is known. 
+the transfer constant for a particular solute across a membrane such as a frog's skin or the toad urinary bladder is 
+usually determined experimentally by measuring the unidirectional flux rate across the epithelium from a source 
+solution of constant concentration. in this situation, Ki is defined as the steady state rate of solute flux across
+the membrane system divided by the test solute's concentration in the source solution. therefore, with respect to BBB,
+Ki is defined as the steady-state rate of solute flux across the BBB complex from plasma into brain extracellular fluid,
+divided by the plasma concentration of the solute. the present paper illustrates how Ki can be found for any membrane
+system including the BBB when the source solution's concentration is not constant. 
+for the calculation of an influx constant from blood-tissue distribution data, the net transfer of the solute across
+the BBB is assumed to be unidirectional throughout the experimental period. this assumption means that all the test
+material that cross the BBB into the test tissue remains there at the time of brain sampling. potassium is one such 
+tracer for which this would hold true. 
+in the present paper, a theoretical model of blood-brain exchange is developed and used to analyze solute influx across
+the BBB. the model is general because no specific time course of arterial concentration is assumed and no particular
+arrangement or number of compartments in the system is presupposed. the compartments can be in series between the plasma
+and brain extracellular fluid, or in parallel to the BBB. however, the movement of solute out of the last compartments
+of the BBB and into the EES must be irreversible, ie, unidirectional. 
+the equations that arise from the model indicate that the presence and duration of steady state unidirectional influx 
+can be assessed by plotting the uptake data from many experiments of differing durations in a particular way, and 
+determining whether the resulting curve has a linear portion. if a linear phase is found, then the net transfer process
+is effectively unidirectional for that specific period of time, and the influx constant can be calculated from the
+slope of the line. in addition, the multiple time/graphical approach eliminates the necessity of employing a vascular
+space marker and intravascular distribution correction of the tissue data, provides physiological information about the
+distribution of the test material within the BBB complex, and can be used to assess the rate constant of an 
+essentially irreversible metabolic process within the blood-brain system as well as a transport one. for example, the
+rate of glucose metabolization in the brain can be determined by making the appropriate plot 2-deoxyglucose distribution
+data because the hexokinase reaction is essentially irreversible. 
+
+theory: the following assumptions are made about the transport model: 
+1) there is a single source for the test solute in the system (plasma, denoted by subscript p)
+2) the concentration of the test material in the plasma, Cp, may vary with time.
+3) relatively rapid exchange of the test substance can occur between the plasma and a tissue region, which is made up
+of n compartments. the test solute can flow directly or indirectly from plasma into any of these compartments, move
+freely among any of these compartments, and flow back into the plasma. the test solute transfer between and among the
+plasma and the compartments of this first region is reversible. this exchangeable tissue region is denoted by 
+subscript 'r'. 
+4) the test solute can enter a second tissue distribution region from the blood and/or the exchangeable tissue region,
+however after entering this region the solute cannot leave. the second region is called the irreversible or bound 
+region, and consists of one or more parts that can be lumped together mathematically into a single compartment. 
+5) the test solute in the exchangeable region can leave this region only by going either into the plasma or the 
+irreversible region. 
+6) the transfer of the test solute within this system obeys first-order kinetics, with the rate constant for its 
+movement from the jth to the ith compartment being denoted as kij. 
+7) the test solute does not alter the system.
+8) if the system metabolizes the test substance, this only occurs in the irrversible region and produces a metabolite 
+that is trapped therein and is measurable. 
+9) the test solute is not initially present in either the exchangeable or bound region. 
+
+the necessary equations of this tracer distribution system are the standard ones: if t is time, A is an nx1 vector
+of the amounts of model solute in each of the exchangeable compartments, K is the nxn matrix of the rate constants
+kij, Q is the nx1 vector of the rate constants from the plasma to the exchangeable compartments, (kip), and Cp(t) is 
+the tracer concentration in the plasma, then, the following relationship describes tracer accumulation in the 
+reversible compartment: dA/dt = K*A + Q*Cp(t). 
+if G is the nxn diagonal matrix of the rate constants from the exchangeable to the bound regions, (kbi), kbp is the 
+rate constant for the direct movement of material from the plasma to the trap, and Un' = (1...1), a 1xn vector, then 
+the equation for the amount of material T in the irreversible region is dT/dt = Un'*G*A + kbp*Cp. 
+the measureables of the experimental system are Cp and the total amount of material in the tissue samples Am. if Vp is
+the volume of the plasma in the tissue sampled, then  Am = Un'*A + T + Vp*Cp. 
+if Cp is constant, A will approach a finite limit as t approaches infinity, since the real parts of the eigenvalues
+of K are negative. thus, for the case when t approaches infinity, 
+
+DISCUSSION: the preceding theoretical treatment indicates a way to measure the classical unidirectional flux constant
+for any membrane system when the concentration of the test solute is not maintained constant in the source solution.
+this approach can be applied to study solute flux across simple single membranes and more complex multi membrane 
+compartment systems. the following procedure demonstrates the method of assessing solute influx constants across the 
+BBB complex and also serves as a model for the study of any membrane system. 
+First, uptake experiments of varying duration are performed in a series of animals, or multiple measurements over time
+are made in a single subject. the test solute can be administered in any manner, but the time course of the plasma
+concentration as well as the final concentrations in plasma and brain must be accurately measured in each animal
+or by serial measurements in a single subject. then, all data are combined by brain region, and plots of 
+Am/Cp vs integral(0,t)[Cp*dtau]/Cp are made from each group of data. finally, the forms of the resulting curves are 
+analyzed for linearity (that is, unidirectionality of uptake), if a linear phase or portion of the curve is 
+discernible, then the influx constant is estimated from the slope of this line. Am is the total amount of material in 
+the tissue samples.
+the multiple-time/graphical approach produces a relatively model-independent transfer constant, which results in a 
+significant advantage for data analysis in comparison to compartmental analysis, since the results for any 
+compartmental analysis are highly specific to the particular comparmental model chosen. 
+the principle advantage of the multiple time/graphical approach for the measurement of the influx constant is the 
+opportunity it provides to assess the unidirectionality of the test solute's transport across the BBB, and to validate
+the assumption of this unidirectionality. the approach also eliminates the employment of a marker - either a different
+isotopic form of the test solute or a different material - for the determination of the vascular space within the 
+tissue sample and the correction of the measured tissue concentration for the amount of test solute that was entrapped
+within this space at the end of the experimental period. 
+as presented in the intro, bradbury and kleeman first conceived of the multiple time/graphical approach and applied it
+to their studies of tracer potassium exchange between blood and brain. in this study, and the similar ones mentioned,
+constant plasma levels of the various test solutes were maintained, and this experimental condition allowed the 
+simple plotting of the tissue/plasma concentration ratio vs time, the ready evaluation of the linearity of the uptake
+process, and the estimation of the influx constant. however, a time course of constant arterial concentration is hard
+to obtain experimentally. 
+simpler experimental and analytic procedures for measuring the influx constant were introduced, which included the 
+administration of a test solute by bolus, selection of a single experimental time, and use of a simple equation for
+calculation of the influx constant, but these simplifications also introduced new problems. 
+
+in addition to eliminating a vascular space correction, the multiple time/graphical approach produces information about
+the distribution of the test solute within the BBB complex and reversible compartments in parallel with the BBB. the
+ordinate intercept obtained by extrapolating the linear portion of the uptake curve is equal to or less than the 
+apparent steady state distribution volume of the solute in all the reversible and exchangeable compartments, including
+the blood space of the tissue. a number of studies have indicated that the rapid distribution spaces of extracellular
+solutes in the blood-brain system may be something more than the plasma space. for instance, it was found that there 
+was the following relationship between rapidly exchanging spaces of 4 solutes: plasma globulin, dextran, inulin, and
+H-mannitol. 
+this approach considers a more general BBB than previously considered. the derivation and model of blood-brain transfer
+considers the possibility of multiple compartments that rapidly equilibriate with each other and plasma, and which can
+be in parallel to as well as in series with overall bbb flux. 
+there are at least two situations in which the multiple-time/graphical method is clearly inappropriate: the first is
+if the biological state of the animal in a series changes over the time intervals used in the study. the second is 
+if the animal model is not reproducible from individual to individual. 
+
+in summary, graphical analysis of brain uptake data from experiments of varying times not only allows the evaluation 
+of the unidirectionality of transfer and of the influx constant, but also eliminates the vascular space correction of
+other analytical approaches and the model dependency of compartmental analyis. in addition, the multiple time/graphical
+approach produces information about the size and exchange rates of the compartments that rapidly and reversibly 
+exchange with plasma. 
+the multiple time/graphical approach is also highly applicable to the analysis of data obtained from PET because a 
+series of timed data for graphical analysis can be obtained for a single subject. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

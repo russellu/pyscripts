@@ -1,0 +1,3 @@
+5s on, presented every 10s
+t=0,2.5s, start stimulus
+5s on, 5s off

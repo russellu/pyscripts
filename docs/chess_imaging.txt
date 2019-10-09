@@ -1,0 +1,28 @@
+1H NMR chemical shift selective imaging
+introduction: 1h nmr images of human and animal tissue reflect the spatial distribution of both water and methylene (CH2) proton
+resonance signals. there are several reasons for the separation of these contributions 1) the large chemical shift dispersion in 
+high magnetic fields which leads to an apparent spatial shift in composite images between the superimposed H2O and CH2 images,
+2) the evaluation and interpretation of proton H2O and CH2 relaxation times from NMR images, and 3) the physiological implications
+of water and fat distributions for medical diagnosis. here, a chemical shift selective CHESS sequence is described, which destroys
+the unwanted signal component by means of a selective 90deg excitation pulse and subsequent magnetic field gradient (homogeneity
+spoiling gradient) prior to imaging of the wanted component. the new method allows the creation of either a pure water or pure
+fat image. in general, water and methylene proton resonances can be distinguished by their relaxation times and chemical shifts,
+ie their exact NMR resonance frequencies which differ by about 3ppm. since in-vivo spin-lattice relaxation times t1 of fatty tissue
+are often shorter than other tissues, a reasonable suppression of the fat contributions can be obtained by using an inversion 
+recovery imaging technique and adjusting the inversion-recovery delay to the respective zero crossing time. the method is 
+applicable to any imaging magnet regardless of homogeneity and field strength, but will fail in the cases where the T1 values of
+certain water resonances are similar to the t1 values of the ch2 resonances. in cases where high magnetic field strengths and 
+homogeneities of the order of 1ppm are available, a true biochemical discrimination of H2O and CH2 images based on their chemical
+shift will be superior. a first approach of this kind has recently been proposed, using selective saturation of the unwanted 
+resonance immediately before application of conventional NMR imaging sequence. direct selective excitation of the resonance 
+frequency of the unwanted component prior to imaging has been described for imaging without plane selection. in such cases, the
+dual problem of selection of NMR frequencies and spatially encoded frequencies is easily cirumvented by replacing the slice 
+selection pulse by a chemical shift selective pulse within the imaging sequence. 
+
+methods: the CHESS imaging technique presented here relies on a single frequency selective excitation pulse with a flip angle of
+90deg followed by a dephasing gradient (homogeneity spoiling gradient). the procedure leaves the spin system in a state where no 
+net magnetisation of the unwanted component is retained, while the wanted component remains entirely unaffected in the form of
+z-magnetisation. a 10ms RF pulse with gaussian shape, and a 20ms period for the application of the spoiling gradient, for which it
+is convenient to use the slice selective gradient of the subsequent imaging sequence. 
+
+results: the 1h nmr spectrum of the human hand has been acquired at 100Mhz. 

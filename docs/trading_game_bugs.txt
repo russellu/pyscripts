@@ -1,0 +1,11 @@
+trading_game_bugs
+
+-remove auto trader button, indicators stay in the  ""remove indicator" list (done) 
+-SCROLL back - don't change the upl?? (done) 
+-when you load a previous account, you can't scroll back past the old limit (done) 
+
+-still need to get good autotraders for all the available currencies. see if any other strategies work for bitcoin/eurusd 15 min 
+
+-candle width + 51 dataholder + default candles. 
+-check unity receipt when offline
+-put $ sign near upl. 

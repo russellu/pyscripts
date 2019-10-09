@@ -1,0 +1,46 @@
+amir questions:
+
+possibility of using optogenetics with BOLD or other FMRI/PET 
+possibility of using simultaneous neurophysiology FMRI (high resolution FMRI)
+
+possible papers: 
+
+optogenetic control of orientation tuning 
+global gamma vs local gamma/LFP and BOLD (using orientation tuning)
+effects of optogenetics on global and local gamma
+
+if possible - effects on alpha/beta and gamma rhythms, and these rhythms' relationship to BOLD
+
+what is a major problem in currentyl neuroscience
+the neurophysiological origins of the human EEG gamma rhythm - why does it respond the way it does,
+and what neurophysiological underpinnings cause it to be that way
+more specifically: why does it prefer oblique over cardinal gratings, why the temporo-spatial
+frequency tuning (of scalp gammma), why the sensitivity to randomization
+
+use human and mice/marmosets, measure LFP, EEG, and control using optogenetics. possibly combine
+with hemodynamic measures such as FMRI as well. relate differences in human gamma EEG to differences
+in neural activity. 
+double peak - where does it come from, how does it arise? 
+
+using optogenetics in the thalamus to alter cortical rhythms and investigate lower frequencies 
+
+neurophsiological origins of global gamma and link it to EEG
+tuning (spatial/temporal frequency, orientation, randomization, etc) 
+spectral patterns (Desynch, double peak, peak frequency)
+relationship to neurophysiology and FMRI 
+neurovascular coupling during resting state and during stimulation 
+7 tesla + simultaneous
+collaboration with sylvain baillet
+collaboration with ultrasound
+
+nserc fqrnt cihr october 2018
+mni fellowships nov 2018
+jan 2019
+
+
+initial dip
+set up collaborations (ultrasound, sylvain baillet MEG, etc) 
+
+ 
+
+

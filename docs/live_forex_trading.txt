@@ -1,0 +1,2 @@
+dukascopy demo or live account
+find a way to hook up the demo account to the android app and pull data directly from dukascopy using some kind of request

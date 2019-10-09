@@ -1,0 +1,59 @@
+eeg-fmri sleep study
+
+#1: denoise EEG data in scalp space: gradient, bcg, and ICA.
+	(need to figure out how MNE works for ICA component subtraction)
+	
+
+#2: isolate well known FMRI components (default mode, visual, executive control, etc)
+	
+
+#3: compute coupling between these networks and clean EEG scalp space power
+	as a function of sleep stage
+	look at power as a function of sleep stage	
+
+
+goal by christmas: re-submit distance paper, have rough results for sleep paper, 400 contacts on linkedin, start exploring job opportunities
+more. set up a collaboration with 
+
+presentation:
+goals: comprehensible and impactful, you want the presentation to be easily understood, and also be very important
+
+slides: 
+1) introduce sleep and sleep stages, scoring of sleep based on EEG
+2) introduce EEG-FMRI, montreal, subject pool
+3) introduce ICA and the need for ICA
+4) introduce some common FMRI networks
+5) results: network #1
+6) results: network #2
+7) results: other networks
+8) 
+
+results:
+
+EEG and BOLD power during different sleep stages
+	- concatenate the bandpass-shifted epochs, and compute power over the concatenated timeseries
+	- get the voxel-wise and electrode-wise differences due to sleep stage
+
+EEG and BOLD correlation during different sleep stages
+	-> hrf-convolved EEG in all frequency bands vs BOLD in all components 
+	-> hrf-convolved EEG vs voxel-specific BOLD
+
+tomorrow: get these results in the single subject, replicate them in the day2 scan, and get the processing running on more subjects
+
+how to elegantly write a function to concatenate and compute psd
+
+1) get trigger onset times relative to sample rate of data you are processing
+2) concatenate
+3) psd
+
+-> this should be applicable to both EEG and FMRI 	
+
+
+
+
+
+
+
+
+
+

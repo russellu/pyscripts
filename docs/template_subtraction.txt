@@ -1,0 +1,6 @@
+gradient removal fails because of edge effects - how to remove these? 
+the artifact template does not match the previous artifact template. you have to shift the template each time, 
+so that you are subtracting out a mean template, on average
+
+step 1: get 'b' from ax+b
+step 2: save the previous template

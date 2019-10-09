@@ -1,0 +1,85 @@
+figures:
+1) contrast/grating, different subjects and different responses 
+2) grating inside/outside the scanner
+3) retinotopic tuning curves in response to drifting grating, retinotopic mapping
+
+paper pending in jneuroscience (1/4)
+add pilot data
+focus on specific structural measures (folding and distance) 
+	=> cancellation profiles paper 
+
+
+what do you need for the structure comparisons? curvature and distance
+new ROIs - use ICA to get the ROI, instead of correlations, then take the top x voxels in the ROI weight map. 
+Brainstorm necessary? to get the leadfield matrix and compare that to each gamma response, it might be useful
+
+phd presentation: 
+1: healthy human EEG what is it - cortical folding and distance (show equation)
+2: variability how much and what causes it? (show visual stimulus contrast 5%,33%,100%) and differen subjects
+	what is an EEG signal?- ERP and ERSP, correlation between bands
+3: why do we care? (autism study, Dave's study)
+4: current literature - different studies and weaknesses (confounds)
+5: my approach - retinotopic mapping (avoiding confounds, literature)
+6: methods (retinotopic stimulus)
+7: discussion
+	-investigate spatial specificity of different bands
+	-investigate intra subject variability
+	-investigate inter-subject variability
+	-investiage intra-band variability 
+
+so basically, the presentation will go like this: EEG is the most widely used functional measure of human brain activity.
+EEG measures the electrical potential, and these are the ways of quantifying EEG: ERP, ERSP. Both these measures are
+relevant, but we don't understand why there is such great variability between participants. 
+as EEG is a functional measure, we look for functional differences between stimulus types. However this can be obscured
+by inter-subject variability due to non-brain measures. 
+
+structural basis of healthy human EEG variability - slides
+
+01: healthy human EEG - scalp potential - dipolar neurons
+02: scalp potential - distance and curvature (other measures set to 0)
+03: EEG signal in detail: ERP and ERSP (frequency bands (power), latency (phase), etc)
+05: EEG response to stimulus (functional) - link this to gamma band macaque
+04: EEG inter-subject response to stimulus - some subjects show no respones - link to macaque
+06: other factors responsible? return to equation (distance and curvature)
+07: curvature - no empirical studies (introduce IO). 
+08: distance - no studies using ROI analysis
+09: others: skull thickness, etc
+10: why distance and curvature? return to EEG as a functional measure, ERSP
+11: literature - show autism study, response to complex stimulus and grating
+12: show all subjects - functional differences obscured - need to normalize signal, quantify relative contr.
+13: methods: how to get anatomical a-priori
+14: retinotopic mapping
+15: functional mapping - BOLD FMRI - physiology
+16: BOLD-FMRI - limitations and pitfalls - high resolution EPI
+17: structural measures - T1, UTE, electrodes
+18: EEG retinotopy - response to the stimulus
+19: flow chart (Retinotopic activation -> masking -> electrode analysis)
+20: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

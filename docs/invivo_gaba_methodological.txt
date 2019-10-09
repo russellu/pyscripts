@@ -1,0 +1,75 @@
+in vivo magnetic resonance spectroscopy of gaba: a methodological review: 
+introduction: MRS is a powerful methodology allowing for the direct detection of endogenous metabolites in the human body
+non-invasively and in-vivo. although historically most often applied within a clinical context, it is increasingly used to study
+the healthy brain. although the principal inhibitory transmitter in the brain (GABA) is only present at millimolar levels, it is
+possible to measure GABA with MRS, by tailoring the sequence to measure gaba specifically. although the majority of cortical
+neurons are glutamatergic, approximately 1/6 are gabergic, and there is a wide interest in studying the role of inhibitory processes
+in normal brain function and pathology/disease. both GABA receptors and transporters have been well characterized, and associated
+genes have been been implicated by genetic studies of schizophrenia and bipolar disorder. two main subtypes of GABA receptor,
+gabaa and gabab mediate the synaptic effects of gaba, and synaptic gaba is rapidly removed by high affinity gaba transporters. 
+GABA is produced from glutamate by glutamic acid decarboxylase (GAD). amoung a wide variety of methods for studying gaba and
+gabaergic processes, the only technique that allows the direct, non-invasive detection of endogenous gaba in vivo in the brain is
+mrs. 
+
+methodological summary: 
+in-vivo 1H magnetic resonance spectroscopy: magnetic resonance spectroscopy is the in vivo application of nuclear magnetic 
+resonance spectroscopy, and is implemented on MRI scanners. 1H MRS detects radiofrequency signals that arise from hydrogen nuclear
+spins within tissue metabolites, and these signals have chemically specific frequencies, determined by the chemical environment of
+the hydrogen spins. thus, MRS signals are separated in the MR spectrum along chemical lines, in what is known as the chemical
+shift dimension. some of the most prominent chemical shifts in human occipital lobe are n-acetyl asparate, creatine, and cholate
+containing compounds. the spectrum is a plot of the signal intensity (roughly proportional to the metabolite concentration) against
+chemical shift. chemical shift is reported in field-independent units, or ppm (parts per million of the proton frequency). NAA for
+example always gives a signal at 2.0 ppm, even though signals are acquired at close to 64Mhz or 128Mhz at 3t. MRS can be done by
+acquiring signals within a certain voxel, or by a hybrid MRS and imaging experiment, known as MRSI or CSI (chemical shift 
+imaging). single voxel imaging is usually done using either the point-RE-solved-spectroscopy (PRESS) or stimulated echo acquisition
+mode (STEAM). 
+since it is well known which metabolites are in the brain, the MR spectrum from a given region can be analysed as a linear 
+combination of basis spectra, using tools such as the LCM model, in order to measure metabolite concentrations. the success of this
+type of analyis is heavily affected by the quality of data - the SNR increases linearly with the size of the voxel, and the square
+root of the acquisition time, and the width of the signals (And thus their separability form other signals) depends on the 
+homogeneity of the magnetic field within the acquisition volume. a typical single voxel measurement might be made from a 8cm^3 
+voxel in 5 minutes. 
+the spectrum in figure 1a exhibits a fundamental problem of in vivo H MRS, especially as applied to GABA - the dispersion of the
+signals along the chemical shift axis is limited in comparison with the line width of the signals, even with good shimming. 
+therefore, signals from different metabolites often overlap, and signals from more abundant metabolites often obscure those from 
+less abundant metabolites, such as gaba. 
+
+coupling in MRS: one common feature of the MR spectrum is the appearance of multiplets, signals associated with a single hydrogen
+environment that are split into a number of sub-peaks, this phenomenon arises because of spin-spin coupling or j-coupling,
+whereby a spin is affected by adjacent spins within a molecule. the splittings due to coupling resultin signals that have a lower
+peak intensity and a broader footprint along the chemical shift axis, both of which make coupled species such as gaba and 
+glutamate harder to detect and quantify. 
+
+mrs of gaba: GABA is present in the human brain a concentration of about 1mM, which is an order of magnitude lower than some of the
+more concentrated metabolites and 40,000 times less than water. the gaba spectrum is composed of 3 multiplets which correspond to
+the three methylene groups in the molecule. these signals are overlapped by more intense signals arising from more abundant 
+metabolites, NAA at 2ppm, Cr at 3ppm, and glutamate/glutamine at 2.3ppm. at field strengths of 3T and below, differentiation of
+these compounds becomes difficult. 
+there are three possible approaches to reducing signal overlap in order to resolve gaba signals. it is possible to reduce the 
+information content of the spectrum by performing spectral editing methods. alternatively, overlap can be mitigated by spreading
+signals out into a second frequency dimension using 2d MRS. the third approach is to move to higher field strength.
+
+edited detection of GABA: although the coupling between gaba spins results in wider signals with lower intensities, hindering
+detection, it can also be taken advantage of to separate gaba signals from the rest of the spectrum. the GABA signal at 3ppm 
+is coupled to the signal at 1.9ppm, therefore it is possible to separate the signals on this basis. a frequency selective pulse 
+which only directly affects signals close to 1.9ppm can be added to the MRS experiment. this will have an indirect effect on 
+GABA signals at 3ppm, because they are coupled to the GABA spins at 1.9ppm, while it will have no effect on other signals at
+3ppm. if two experiments are performed, with and without this pulse, the subtraction of the two will give a spectrum that only 
+contains those signals affected by the pulse. this is referred to as J-difference editing, and is use	d by the first proposed
+method for detecting GABA and also by the most commonly used technique today, MEGA-PRESS. one disadvantage of such j-difference
+methods is the reliance on subtraction to remove strong overlapping signals from the spectrum. any instability in the experiment,
+whether caused by instrumental factors or subject movement, will result in subtraction artifacts that can obscure the intended 
+edited GABA signals. 
+
+two-dimensional MRS: 
+
+high-field MRS: a growing number of sites have installed 7T scanners, which are likely to be used to quantify gaba in the future.
+one advantage of high field MRI is a tightening of the multiplets from the metabolites, 
+
+
+
+
+
+
+
+

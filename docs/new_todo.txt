@@ -1,0 +1,33 @@
+new_todo
+phd: this weekend : 16 hrs on predoc - finish both Martin and JF's sections - martin's just do the last question
+	health complications of leaky bbb + finish the things you need to update on the other slides, JF will take more
+	research but finish that one paper and then get two basic references that address his question. 
+
+hobby/passive income:
+finish the purchase testing (get the purchase test downloaded on phone, alpha test etc)
+learn joomla, so you can build a website and start selling stuff/updating like a blog (Forex findings, medical results, thoughts)
+finish the persistence tutorial (vogella), implement that in your app
+finish the color for locked/unlocked currencies
+get an auto-trader strategy working, even if its only a few pips profit - worst case, its a scam auto-trader that only works
+on the data you have trained it on - best case, it works by using the walk-forward analysis (keep testing this) 
+	what is a fast way to continuously test strategies, and combine different strategies?
+	take profit/stop loss optimization (SIMPLE STRATEGY) - test it on all time frames, and all currencies
+	1) test take profit/stop loss for all currencies and time frames
+	2) find a price action pattern or indicator that leads to a consistent profit (k-means of previous n time points,
+	clustering previous n differences, candles, etc)  - you actually had a decent candle scheme working earlier
+		a) need to make this more streamlined, and combine with the TP/stop loss (different time frames)
+	need to "industrialize" this process, ie, have a way to see if it is gonna be feasible on all currencies etc
+	so basically the half and half method works pretty well - optimize on half or 3/4, test on other half or 3/4
+		you will see this works well for some things like the TP/STOP but not for others. 
+		
+
+the game - start thinking more about the segmentation/image processor in matlab, for the game sprites. 
+	 - re-vamping of the physics engine which is FUCKED right now - its decently fast (50+ objects), but is probably not gonna
+	get much faster without a good understanding of shaders etc, if you can even do that 
+	lighting is important, and shadows
+
+health:
+take two more weeks off (for headaches) then go back to the gym. stick to the alpha diet (high protein and fruit/veg)
+
+no more fucking around watching movies - imagine if you spent 2hrs a day actually being productive instead of watching movies!
+forex is random bullshit. no two ways about it, there is simply now way to beat the market consistently. 

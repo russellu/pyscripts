@@ -1,0 +1,89 @@
+basic pipeline for EEG-FMRI voxel-wise coupling
+
+1) gradient denoise, downsample to 250Hz, export from brainvision (done for each set separately in BV recorder)
+2) BCG denoise in matlab
+	a) get the same artifact from all subjects (run ICA on all datasets together?), save, and then run subtraction
+	b) subtraction: get channels with highest amplitude artifacts, correlate, use top indices on each artifact, subtract. 
+		i) epoch length - customize for each subject - you want it to be zero around the edges, to eliminate discontinuities
+		ii) subtract top 50 indices or whatever, maybe play with the indices a bit to minimize the difference between artifact
+		    and template - use a scaling factor mvregress, just scale the correlated stemplate so that it matches all channels.
+
+
+next step - compute the power for all stimuli in badger and mongoose, average across components and subjects, make sure the denoising 
+worked. do the same for ICA with highpass at 1Hz
+
+organize the FMRI datasets on your computer, get both mongoose and badger on your laptop. compute them separately then move them to 
+a hard drive, you can run the stats on the desktop or something. 
+
+
+tomorrow - check out the ISMRM submission process  - you could also submit your work at imeka as a mobile app. 
+
+good components - check the scalp map, power spectrum, and ersp. what else? 
+
+echo times: 16.994, 42.426, 67.857
+
+
+
+organize all your images - mongoose and badger, eeg and fmri
+
+today: coupling of components vs FMRI at each voxel/frequency band, or back-projected electrodes vs 
+get FMRI correlation maps for visual response in both groups badger and MONG based on EEG data (denoise ICA, bandpass filter, etc)
+use that to correlate BOLD with each EEG component, then later get the voxel-wise coupling. 
+
+after cleaning all data - bandpass filter, then get correlation maps for all tasks, rename mongoose files, 
+next - calculating raw power in all bands, and removing segments with large artifacts (EEG) 
+
+correlation maps all look good - save them, and then calculate coupling in occipital voxels for all subjects and all conditions
+average the two gamma maps, and the two sin/box maps for mongoose.
+
+once you have validated the occipital lobe coupling (after removing motion artifacts), proceed to the voxel-wise coupling for both 
+datasets. 
+compute mong coupling for rest, and visual stimulation, then start up brainstorm and work on getting sources again. 
+coupling results seem to be the same as before, possibly slightly better.
+
+next step - get all subjects electrodes and head models in brainstorm, compute sources, and then do voxel-wise coupling	
+
+by tonight: clean channel level data in all subjects, both protocols, head models, and sources for all subjects
+	run time-frequency overnight (test on 1 subject first)
+
+	cleaning data - running ICA on different frequency bands - 0.5-5,5-30,30-90
+tuesday night: finish computing all EEG-FMRI coupling in voxel space, wednesday and thursday write abstract
+
+2-30, 31-100
+
+next step - plot the abs of all channels in all subjects
+
+coupling as a function of frequency band - coupling as a function of electrode/component? a kernel in each electrode? but how to compare to the FMRI?
+
+today: finish the scripts for voxel-wise coupling, cross-correlations, and hrf-based. 
+
+do two outputs - cross-correlations, and HRF-based. compare time-lagged correlations with HRF-based coupling
+so basically have an output at 1,2,4,s etc. 
+sunday - finish the final abstract, send to kevin and other authors. 
+
+compute voxel-wise cross-correlations, and voxel-wise coupling
+
+display a kernel in each voxel (similar to dave's maps, but with voxels) 
+	try to get that today - the voxel-wise kernel 
+
+
+get the hrf coupling first, then work on cross correlations - may have to downsample all images. 
+get the hrf as first result. (by 9, have figures). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

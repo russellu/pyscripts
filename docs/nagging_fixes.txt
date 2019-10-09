@@ -1,0 +1,45 @@
+nagging_fixes
+back button on creatnewgame (DONE)
+back button on loadgame (DONE) 
+indicator autotrader close0 (DONE)
+pre-optimized "remove custom" (DONE)
+enter buy autotrader = blue (DONE)
+ADX Color bars (DONE)
+dropdown text sizes 
+1000x speed (DONE)
+
+stress test: 
+-make buttons look nicer, black background (done)
+-multiple mvg - not free (in help) (done) 
+-improve the text Layout of help indicators (done)
+-help back -> back to help, not main menu (done)
+-basic instructions -> have number 1,2,3 etc 
+	and a controls section lower down. (done)
+-error in load user when there are no users (done)
+existing in the account? (delete saved game) (done)
+-equity curve - doesn't go all the way to end. (done)
+-put spread in pips, not instrument units. (done)
+-show trade markers option (for auto-trader) (done)
+-initial autotrader buttons wrap-around (done)
+-increase text size of remove/manual mode buttons (done)
+-remove auto-trader button, the resize sphere stays (done)
+-cci,rsi,stoch,etc need to show the price lines with text.
+-delete user - show message when deleted.. (done)
+-adding a second pre-optimized (or custom) autotrader
+delete the previous one (done)
+-end of data message text - create new account! (done)
+-icon (done)
+
+//before next release: 
+-equity curve - bar chart + more details? 
+-get optimal parameters for 15minute charts only. 
+-crossover up1 crossover down0 in exit params (done) 
+-spread is working the opposite of how it should?
+-seems like the trade is actually triggering (done) 
+-need to check on other people's phone if product works
+	(or just change the name of the consumable) 
+-show auto-trader legend, allow to disable  
+-disable scroll when auto-trader dropdown activated (done) 
+-put loading button when creating auto-trader/indicator (done, no worky)
+-put entry/exit triggers on autotrader description text 
+-

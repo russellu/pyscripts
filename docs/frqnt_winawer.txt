@@ -1,0 +1,7 @@
+winawer grant
+
+things i need to complete:
+FMRI, and using the model to link across different spatial scales'
+
+need to be more explicit about how the project will allow you to infer neuronal population activity
+from FMRI, and how ECOG will help you to bridge the gap between populations and EEG for example. 

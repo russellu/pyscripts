@@ -1,0 +1,7 @@
+eyetracker:
+today: be able to save eye tracker data with epoch information into a mat file, and load that in matlab and compare with EEG single trial data. 
+tomorrow: fix the setup and stimuli for the final configuration  
+
+final stimulus - spatial and temporal frequency to modulate alpha/beta, while holding gamma constant - faster gratings, and lower spatial frequencies. 
+another stimulus? you can get 30 parameters, 30 trials each from spatfreq, but you should test something else as well
+maybe two plaids that rotate on top of each other, 360 degrees, or the retinotopy stimulus. 

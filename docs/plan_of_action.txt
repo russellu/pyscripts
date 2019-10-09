@@ -1,0 +1,41 @@
+plan of action: this week:
+
+12 hrs work minimum per day
+accomplish the following:
+1) conversion for rehab campaign - work on landing page and ads, test more landing pages and facebook ads, try to find a way to get around google's restrictions.
+	find a way to track landing page conversions, and user behavior on the landing page (pixels)
+2) finish distance vs gamma paper - all data should be computed by tomorrow, by tomorrow afternoon you should have all relevant results in sub-plot form, create
+a large spreadsheet, discuss with greg/kevin, and finish the final version by friday. 
+3) work out 2x, set new pbs in all lifts. 
+4) start 3-4 new campaigns, try to re-do some old campaigns (fire/water damage), apply to new campaigns, start testing landing pages on other types of campaign.
+	you want to get good at creating excellent looking landing pages from scratch. sleek design, to the point, and SEO optimized. 
+5) rough copy of didactic seminar complete - and choose the topic 
+	topic - effects of 60Hz power line noise on brain and body
+
+failing hard with display network traffic. keep pruning your other campaigns, and keep adding more campaigns, (1 per day), continue this for the next 6 months
+but don't spend more than 1-2hrs per day. if you aren't breaking even by then time to cut and run. in the meantime, focus hard on science and the new forex app,
+try to get back into unity development and get the forex app out so you can start making money with that as well. you're making ~200 downloads a day now, before
+long you should be averaging ~10$ per day and if you can get 2-3 more solid apps out, you might be able to make ~100$ per day from apps alone. 
+
+tonight: get matlab installed/working or email kevin and get a paid version. start up a new offer
+keep adding campaigns day by day, and cutting back on crappy campaigns and keywords. at the end of each week, prune the campaigns that aren't performing and keywords
+
+no more display network/lp for now...
+
+6 months * 5 campaigns per week * 4 weeks per month = 120 new campaigns total
+
+new forex game - think about how you want to market this, if you can sell it online for windows/mac, even better. release it on mobile but market a landing page 
+as well for windows/mac users. 
+
+new improvements to adwords campaigns: add the space padding before/after words, and get a list of all locations (towns, cities, states, and abbr. states), use these
+to filter for intent.
+start exploring the adwords api, see if you can use this to set up campaigns more quickly. 
+
+RJ45CS24w*
+
+today: finish figures 1&2, and get home security offer up and running. start thinking about getting back into forex application coding.   
+
+keep setting up one campaign a night, try to nail down more specific keywords so you filter out anything but high intent calls. do this for the next 6 months 
+while continuing to make incremental improvements to your methods. 
+
+

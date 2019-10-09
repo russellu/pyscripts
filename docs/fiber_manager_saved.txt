@@ -1,0 +1,212 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+/**
+ * FiberManager class is used for managing the display of tracks and bundles based on various filtering options
+ * such as track length, subsample factors, track color, and fiber selection tools
+ **/
+public class FiberManager {
+
+    public Trk2Mesh trk2Mesh;
+
+    public List<List<List<List<int>>>> bundleIndices; // mesh indices of all bundles
+    public List<List<List<List<Vector3>>>> bundlePositions; //vertice position of all bundles' points
+    public List<List<List<bool>>> bundleMask; 
+    public List<List<List<float>>> bundleLengths;
+    public List<List<List<Color>>> bundleDirections; 
+
+    public int bundleDisplaySubSample = 1;
+    public int trackDisplaySubSample = 1;
+    public float trackLengthFilter = 1f;
+    public int trackColorFilter = 0; 
+
+    public FiberManager(Trk2Mesh trk2Mesh)
+    {
+        this.trk2Mesh = trk2Mesh;
+
+        bundleIndices = new List<List<List<List<int>>>>();
+        bundlePositions = new List<List<List<List<Vector3>>>>();
+        bundleMask = new List<List<List<bool>>>();
+        bundleLengths = new List<List<List<float>>>();
+        bundleDirections = new List<List<List<Color>>>(); 
+    }
+
+    // set the track vertice z position to -50 so they aren't visible
+    // sliders for filtering red, blue, and green tracks, slider for filtering long and short tracks 
+    // takes a MASK of 1s and 0s for TRACKS, and sets the tracks to be visible or not visible based on the mask (1=visible) 
+    public void HideTrackSubset(GameObject currentBundle, int bundleIndex, float alpha)
+    {
+        Mesh bundleMesh = currentBundle.GetComponent<MeshFilter>().mesh;
+
+        Vector3[] vertices = bundleMesh.vertices;
+        List<Vector3> newVertices = new List<Vector3>();
+
+        for (int j = 0; j < bundleIndices[bundleIndex].Count; j++)
+        {
+            float vert0_z = vertices[bundleIndices[bundleIndex][j][0]].z;
+            if (bundleMask[bundleIndex][j] == true)
+            {
+                if (vert0_z < -30)
+                    for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+                    {
+                        Vector3 newVert = vertices[bundleIndices[bundleIndex][j][k]];
+                        newVertices.Add(new Vector3(newVert.x, newVert.y, newVert.z + 50));
+                    }
+                else
+                    for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+                    {
+                        newVertices.Add(vertices[bundleIndices[bundleIndex][j][k]]);
+                    }
+            }
+            else if (bundleMask[bundleIndex][j] == false)
+            {
+                if (vert0_z > -30)
+                    for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+                    {
+                        Vector3 newVert = vertices[bundleIndices[bundleIndex][j][k]];
+                        newVertices.Add(new Vector3(newVert.x, newVert.y, newVert.z - 50));
+                    }
+                else
+                    for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+                    {
+                        newVertices.Add(vertices[bundleIndices[bundleIndex][j][k]]);
+                    }
+            }
+        }
+
+
+            /*
+            bool restoreTrack = false;
+            Vector3 vert0 = vertices[bundleIndices[bundleIndex][j][0]];
+            if (vert0.z < -30)
+                restoreTrack = true;
+
+            for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+            {
+                if (j % 20 == 0)
+                {
+                    Vector3 newVert = vertices[bundleIndices[bundleIndex][j][k]];
+                    newVertices.Add(newVert);
+                }
+                else if (restoreTrack == true)
+                {
+                    Vector3 newVert = vertices[bundleIndices[bundleIndex][j][k]];
+                    newVertices.Add(new Vector3(newVert.x, newVert.y, newVert.z + 50));
+                }
+                else
+                {
+                    Vector3 newVert = vertices[bundleIndices[bundleIndex][j][k]];
+                    newVertices.Add(new Vector3(newVert.x, newVert.y, newVert.z - 50));
+                }
+            }
+            
+        }
+        */
+        bundleMesh.SetVertices(newVertices);
+        bundleMesh.RecalculateBounds();
+    }
+
+    public void ChangeTrackColors(GameObject currentBundle, int bundleIndex)
+    {
+        Mesh bundleMesh = currentBundle.GetComponent<MeshFilter>().mesh;
+        Color[] colors = bundleMesh.colors;
+        List<Color> newColors = new List<Color>();
+        for (int j = 0; j < bundleIndices[bundleIndex].Count; j++)
+        {
+            for (int k = 0; k < bundleIndices[bundleIndex][j].Count; k++)
+            {
+                newColors.Add(bundleDirections[bundleIndex][j]); 
+            }
+        }
+        bundleMesh.SetColors(newColors);
+        bundleMesh.RecalculateBounds(); 
+    }
+
+    //resample the tracks in each bundle, goes from 1-10
+    public void SubSampleTracks()
+    {
+        if (bundleDisplaySubSample >= 80)
+            bundleDisplaySubSample = 1;
+        else
+            bundleDisplaySubSample+=5;
+       
+        //select the point indices to resample 
+        for (int i = 0; i < bundleMask.Count; i++)
+            for (int j = 0; j < bundleMask[i].Count; j++)
+            {
+                if (j % bundleDisplaySubSample == 0)
+                    bundleMask[i][j] = true;
+                else
+                    bundleMask[i][j] = false; 
+            }
+    }
+
+    public void FilterLength()
+    {
+        if (trackLengthFilter >= 3)
+            trackLengthFilter = 1;
+        else
+            trackLengthFilter += 0.25f;
+
+        for (int i = 0; i < bundleMask.Count; i++)
+            for (int j = 0; j < bundleMask[i].Count; j++)
+            {
+                if (bundleLengths[i][j] > trackLengthFilter)
+                    bundleMask[i][j] = true;
+                else
+                    bundleMask[i][j] = false; 
+            }
+    }
+
+    // select only tracks with red, green, or blue directions 
+    public void FilterColor()
+    {
+        switch (trackColorFilter)
+        {
+            case 0:
+                trackColorFilter = 1;
+                break;
+            case 1:
+                trackColorFilter = 2;
+                break;
+            case 2:
+                trackColorFilter = 3;
+                break;
+            case 3:
+                trackColorFilter = 0;
+                break; 
+        }
+
+        for (int i = 0; i < bundleMask.Count; i++)
+            for (int j = 0; j < bundleMask[i].Count; j++)
+            {
+                Color currentTrackColor = bundleDirections[i][j];
+
+                switch (trackColorFilter)
+                {
+                    case 0:
+                        if (currentTrackColor.r > currentTrackColor.g && currentTrackColor.r > currentTrackColor.b)
+                            bundleMask[i][j] = true;
+                        else
+                            bundleMask[i][j] = false; 
+                        break;
+                    case 1:
+                        if (currentTrackColor.g > currentTrackColor.r && currentTrackColor.g > currentTrackColor.b)
+                            bundleMask[i][j] = true;
+                        else
+                            bundleMask[i][j] = false;
+                        break;
+                    case 2:
+                        if (currentTrackColor.b > currentTrackColor.g && currentTrackColor.b > currentTrackColor.r)
+                            bundleMask[i][j] = true;
+                        else
+                            bundleMask[i][j] = false;
+                        break;
+                    case 3:
+                        bundleMask[i][j] = true; 
+                        break;
+                }
+            }
+    }
+
+}

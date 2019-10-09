@@ -1,0 +1,24 @@
+goals before cuba
+#1) release another app on both android and app store (an enhanced auto-trading app with more pairs, etc).
+	monetize, monetize, monetize - you want 10$ a day by christmas, and releasing a multi-platform app by mid october is key,
+	that will give you time to develop and work on a new app and hopefull itself be making 10bucks a day by xmas. 
+	if you can be making 10$ a day by christmas, that means ~4 months of coding = 10$ a day, so another 2 years = 24/4 = 8 80$ a
+	day by the time you graduate (average scenario), best case scenario you're making 150-200$  a day, worst, <20-30. 	
+
+	release your 2nd app for android only because it's already 3/4 done, you just need to get the data loading part done, and add
+	a couple indicators/robo trader
+
+keys to reaching this goal - don't get caught up in things like developing strategies (Takes time and is lazy work), news/facebook,
+etc are all obviously out of the question. just focus and put your head down and work and you will get there. 
+
+read the copywriting resources from WSPB
+
+#2) keep searching for a profitable strategy, and try to get significant progress on a demo account, ie, >10% gains using low leverage
+	divide up the time - half on the strategy/blog/marketing, half on the apps. 
+
+#3) coupling results finished and ready to submit to ISMRM,
+
+#4) nifti loader finished, primitive mi-brain finished 
+	some features: 
+
+two full body workouts before cuba: 1 this afternoon, one on monday/tuesday morning (legs, chest, biceps, cardio, abs, lower back)

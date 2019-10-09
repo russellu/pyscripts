@@ -1,0 +1,15 @@
+fibernavigator*1234
+imeka.app@gmail.com
+
+applID
+first: imeka
+last: app
+pwd: Imeka1234
+
+apple login
+pwd: imeka1234
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+

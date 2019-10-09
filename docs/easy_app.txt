@@ -1,0 +1,11 @@
+what is the easiest possible app to make?
+
+using unity, a brain selection app where you can target different regions and using multiple choice answers, select which is which
+you can also select the appropriate area based on the map
+
+use only the regions you have right now. copy the app from the current unity project
+update fiber visualizer first 
+
+a simple 2d platform where the sounds are correlated to attacking creatures ad objects. 
+
+a game with your current bullpen - call it Bullpen, have different melee creature combos. 

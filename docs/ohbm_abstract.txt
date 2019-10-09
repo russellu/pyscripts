@@ -1,0 +1,57 @@
+ohbm abstract
+
+motion and heartbeat artifacts account for gamma-bold and alpha-bold coupling in EEG-FMRI
+
+motion and cardiac artifacts explain the majority of simultaneous EEG-FMRI coupling in alpha and gamma bands
+
+results: 
+first, show the typical alpha-bold correlation response at canonical HRF, which is stronger in posterior lobe
+then, show gamma-bold coupling before motion
+
+then show the effects of global signal regression/heartbeat removal
+	before/after GSR (voxel-wise, and average across whole brain)
+	alpha voxels - correlations before/after GSR, and t-values.
+then show the effects of motion removal on gamma-bold
+	before/after motion removal (voxel-wise, and average across whole brain)
+	gamma voxels - correlationns before/after GSR, and t-values
+
+alpha hrf - compare it to the cardiac response function from Chang et al
+gamma hrf - compare it to breathing response function? 
+
+conclude
+
+motion time course - bold vs spectrogram vs motion
+
+need a figure illustrating global signal regression, and alpha/beta power time courses before/after GSR. 
+use alex's brain (strong global signal, and strong alpha/beta responses - denoise in bvrecorder (rest only)
+
+problem with interpretation - the reduced whole-brain coupling due to GSR may be due simply to increased positive
+coupling which centers the correlations around zero. you should instead look at the squared coupling, to see
+if anything changes from pre to post GSR. 
+
+GSR increases similarity of EEG-BOLD coupling with canonical HRF
+
+denoise gradient in matlab, and get the mean heart rate channel for each subject, cross correlate with denoised data 
+	show that the BCG correlates with the source-localized EEG in a similar fashion to the global signal
+
+the final piece of the puzzle - show that the BCG correlates with global signal and other EEG channels (if you can). 
+
+the relationship between global signal and BCG and source-localized EEG
+BCG and global signal - positive 0s, negative alpha 6s
+channel-level data vs BCG - correlation of all channel-level signals with BCG - what does this show?
+then, look at BCG ica vs global (Average across subjects)
+then look at bcg vs EEG sources. 
+
+results: gamma reduced by motion correction, alpha reduced by GSR and more closely matches hrf, GS correlates with bcg,
+bcg correlates with EEG, most of EEG coupling is due to cardiac artifact (reduced by GSR) 
+
+correlate BCG or just stop here? 
+correlate BCG with denoised scalp-level data, show this result as EEG vs EEG bcg (last result) 
+correate BCG with denoised scalp-level data, and correlate BCG with global signal
+bcg vs denoised eeg -> relationship of bcg to EEG
+bcg vs gs -> relationship of bcg to GS 
+(both interesting) 
+
+
+
+

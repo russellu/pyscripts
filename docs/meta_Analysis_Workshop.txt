@@ -1,0 +1,142 @@
+brainmap notes
+
+standardized coordinates
+penfield - picture of brain
+talairach - 3d coordinates, and publishing the coordinates, but mni also has 3d space coordinates
+"a sterotactice method of anatomical localization" 1984 peter fox
+
+point of standardized coordinates?
+	image averaging
+	per-subject mapping - tlrc space as a reporting standard
+"enhanced detection of focal brain responses using intersubject averaging" fox 1988
+
+brainmap meta analysis environment: 1) scribe codes coordinate based publications
+	2) brainmap organizes coordinate based data and meta data (functional and structural sectors) and third resting state sector
+	3) sleuth find and downloads brainmap data
+	4) ginger-ale computes meta analysis
+
+coordinate based meta analysis:
+1) the idea collective literature provides better estimates of functional area location than any individual study
+2) brainmap database an open access repository of published, coordinate based data and meta data
+
+whole brain metaanalysis
+(activation likelihood estimate) ALE - predicts likelihood of event occurence per voxel in a future study 
+ALE SCALE correction (Langner et al, neuroimage 2015) 
+HBM virtual workshop 2005 HBM entire issue - good way to launch graduate student project. 
+
+meta analytic connectivity modeling - connectivity across experiments 
+
+structural covariance analysis of the voxel-based morphometry literature 
+	"structural ALE, meta-analysis of gray matter anomalies in schizophrenia" Glahn 2008
+
+disease categories don't predict structural deficits, NIH is moving more towards symptoms rather than disease categories
+
+meta-analytic connectivity modeling (MACM) region to whole brain computation, use ALE to compute co-activation likelihood
+
+connectivity based parcellation - a step beyond MACM - a co-activation map defined for every voxel, then a cluster analysis 
+pulvinar segmented by MACM connectivity, barron et al 2015 
+steve smith 2009, similar ica decmpositions
+
+REVIEW/SUMMARY: 
+"meta-analysis in human neuroimaging: computational modeling of large scale databases" 2014
+
+
+
+
+TALK #2: BRAINMAP TAXONOMY
+
+taxonomy - quality of data, quality of the coding
+
+TALK #3: eickhoff
+
+limitation of neuroimaging data
+coordinates - strong advantages over image based, due to the ability to extract coordinates from papers without the help of orig. auth
+
+activation likelihood estimation (ALE): the reported coordinates are not treated as points, but centers of probability distributions
+original approach: 10mm FWHM
+two main sources of variance in stereotaxic location 1) between subjects (inter-individual variance), 2) between templates (inter-lab)
+the width of the gaussian accomodates experimental spatial uncertainty, not to recreate original clusters. 
+
+average euclidean distance between corresponding maxima - 10.7mm (for inter-subject variability) 
+studies with larger sample size have a smaller gaussian, and stronger localization power
+	-> studies with larger sample sizes contribute more to ALE
+
+non-parametric testing against a null hypothesis derived from permutation analysis
+initially: histograms of ALE-values obtained from randomly distributing the same number of foci throughout the brain
+
+analytical solution rather than simulation of the null distribution
+
+what is the minimum number of studies? -> 20
+what is the power of a given ALE?
+which inference approach should i use? 
+	voxel-wise uncorrected
+	FDR, FWR
+	use cluster level family wise error correction
+
+these can be answered by simulations
+
+
+4th talk: 
+meta analyses are best performed by subject matter experts than statisticians
+the meta-analysis is itself a study requiring careful planning and execution
+	corollary: plan and document every step, be prepared to defend your choices 
+
+finding data: start with brainmap/sleuth, use multiple sources and strategies (pubmed, web of science, research gate, google scholar)
+	search with synonyms and related topics, references of recent articles. 
+submit new papers to brain map
+	code using scribe
+	brainmap team will check all coding
+	sleuth will perform talairach -> MNI coordinate normalization
+
+filtering data:no roi, surface based, tractographic, region seeded, partial brain acquisitions (missing cerebellum, zoomed in views)
+coordinates must all be in the same space
+non-redundancy: prune papers that may be duplicate reports of the same or overlapping samples
+	reports of early (small sample) and later (large sample) results of the same clinical trial
+	prune experiments that are redundant analyses of the same data
+study specific filters
+	contrast type: low vs high level baseline (Rest, fixation vs removal of sensory/motor effects)
+	design type (event-related/block design)
+
+finding and filtering documentation: search, identify studies, extract the data (look for meta-analysis) 
+
+talk #6 peter fox 
+ALE and MACM network models 
+ALE for nodes, MACM for edges of network model
+1st generation ALE models, paradigm specific nodes and edges
+	pearson correlation undirected paths 
+	present/not present, 
+	network topology (cliques (closed), not cliques (open)), #edge ranking
+	
+MACM is typically used across paradigm, region to whole brain 
+
+ALE/MACM DMN Model - paradigm general nodes, MACM edges
+social cognition tests and the default mode network 
+
+
+ALE/MACM DMN model
+how do you get a direction to the path? 
+networks a self fulfilling prophecy? 
+
+hipocampus as seed region - (region seeded modeling)
+
+disagnostic psychiatry is wrong and we need a neurbiological view
+transdiagnostic - buzzword 
+
+model reduction model Bullmore et al 1998
+hubs more likely to have lesions than non-hubs during brain disorders
+
+neural network model - tasks to voxels, solve for cognitive components
+functional components are more like structural components than resting state is like task activation 
+
+
+
+
+talk #7 : using MACM to get edges
+
+
+
+
+
+
+
+

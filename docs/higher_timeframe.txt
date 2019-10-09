@@ -1,0 +1,125 @@
+higher timeframe - adding in the higher timeframe as an indicator. 
+how to do this? base it on the timestamps, use the closest time point to the current time point and then build up the final candle from there
+check if volume works now
+
+step 1: load the new timeframe dataset
+step 2: find the time point that matches the latest time point of the current plot
+step 3: build the vector of candles + the latest candle which is partially complete. 
+
+you'll need to make a separate drawing function for the new, higher timeframe - 
+	try this first, just get a higher timeframe displaying as another indicator box
+
+NEXT - need to synchronize the higher timeframe with the lower when you plot it in the display box (this will be 90% of the work done, then
+just need to create the current bar which is always incomplete) 
+
+Next - draw the higher time frame in candles, not bars. 
+
+next - find the closest time point to the current time point, and advance in whatever the increment may happen to be. 
+
+once you've found the closest index, then what? you want to build up the lower time frame vector so that the candle chart is continuously updated
+
+for now (tonight) - just try to plot a candle chart that jumps forward once the next time point has been crossed
+
+next step = draw the high time frame in candles, and make sure it matches the lower time frame. 
+next step = update the higher time frame when the price advances/is scrolled
+	how to do this - use the time stamp, or use the divider + offset? 
+	get the base time stamp from the base time frame, and update the higher time frame with each iteration. (done_
+	seems to be working now - now make it work for the scrolling backwards (maybe just need to update with on-scroll function?) (done)
+	make it so it goes directly to the loading screen - why isn't it doing this now? because you changed some stuff in account (done) 
+
+once you have the scrolling, the edge case, and the continuous bar finished, put it on the phone and do some stress testing.
+	edge cases - maximum number of time points to display, and options dropdown based on base time frame
+then, get all the instruments, zipped, and save.
+then, account loading/saving status (time point, trade markers, account balance, etc) 
+then, trade analyzer/statistics, ability to select different time periods (calendar), convert timestamps back to yyyymmdd 
+
+getting the continuous candle - you need to know the higher time frame period, and the base time frame period
+right now you have the index of the base time frame period's current bar, and the index of the closest preceding bar on the higher time frame
+you need to know how many base tf bars are between the preceding high time frame bar, and the current base tf bar: try printing the time stamp, see what you get
+
+just find how many time points away the next time stamp is, and subtract that from the difference between the two timeframes?
+
+options dropdown 
+#bars and starting index (of base time frame) (done)
+text label at top (done) 
+scroll back limit (done) 
+
+stop, take profit markers (done)
+stop, take profit logic (done)
+	use high and low as well (done)
+
+current spread display
+current spread logic
+
+5 more days till april
+by then, you want to have the everything besides the trade analyzer/account summary and auto trader patched up. 
+another stop/take profit option - from high point (try it in auto trader matlab first) - get the current high/low, and exit based on that (5,10 pips whatever)
+try the auto trader with higher time frames as well. actually this is the same as just entering randomly, except it allows you to use your own entries
+
+creating new matlab script for auto trader while finishing the app - and then add it in to the app as another feature. 
+
+today: save all trade settings include multiple accounts, trade index, open/closed trades, indicator status, open/closed trades, etc 
+start with something simple and fast - save the index. (done)
+next - save a simple indicator
+	try to just create a simple indicator without saving anything first (from the loading screen)  (done)
+next - save open and closed trades  (done) - but something fucked up when you close the app without saving? (done)
+save stop/take profit, bars, leverage, speed, equity, grid, price-line (done)
+next - get a subset of all currencies and instruments but containing all varieties (so you know it works - btc, jpy, usd, dukas instruments)
+display the stop and take profit
+write all currencies and time-frames 
+
+display dates - convert double to date-time? 
+
+finish the above two today, and finish the APP by this weekend (should be doable) -> auto trader + trade analyzer + account summary.  
+
+what form should the saved indicators have? 
+the saveduser fields should be updated every time the field is changed, and saved when the user presses back or exits the app 
+
+GOAL: release the app by end of easter break
+march 31:
+
+add all currencies with all time frames and test individual ones (done)
+get pip scale of all currencies and test on jpy, eur, zar, etc (done) 
+show spread (done)
+get the names of the more exotic instruments (done)
+complete mobile version data loading (30 minute for all 60-odd currencies + pairs) (done) 
+save multiple users (done)
+^^^ get this done today for sure (visualize in matlab first, get mean spread and pipscale, save to csv) 
+
+create account statistics panel full
+misalignment between selected and displayed instrument (probably in plot)
+fix text labels (minute_0001, etc) 
+make sure leverage working for different instruments 
+create trade analyzer panel skeleton (sunday/monday) 
+create auto trader panel skeleton (sunday/monday)
+finish IAP tutorial 
+write description/sales pitch, get screenshots, etc. 
+decide on premium features 
+test multi-timeframe auto-trader in matlab 
+premium features vs free features (green/red?) how to distinguish
+^^^^^by monday night
+
+today: test the auto-traders in matlab, and get at least one simple auto-trader working in unity. 
+tomorrow - finish the auto traders in c# before you do anything else! 
+release the apple version once you start working at Imeka 
+
+auto-trader - should be two options, build your own auto-trader, or use a pre-optimized auto-trader. 
+remove auto-trader mode. 
+
+goal by lunch: have the bollinger band reversal auto-trader strategy working. 
+first thing: add the bollinger bands to the plot, and return to the main plot screen. 
+next - display the trades on the plot (no logic first) 
+display trades is working, next, need to add in the logic. 
+logic should be simple - just add in buy and sell signals (using plot, or whatever) to the tradecontroller 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+downsample to 180Hz
+downsample to 10mm isotropic

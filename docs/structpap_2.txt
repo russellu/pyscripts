@@ -1,0 +1,62 @@
+structure paper version 2.0, for submission to neuroimage by January 10th 2018
+step 1: check neuroimage requirements and what they look for, recent papers, etc
+build your article around the neuroimage format, instead of just cramming it to fit. 
+
+starts with a theoretical model or methods figure
+
+show the initial result first - mean gamma vs mean distance, and then go into electrode specific
+
+figure 1: show methods and peak frequency, make plots more fancy
+cite how gamma is supposedly due to inhibition, more gamma = more inhibition, subject-specific differences
+different metrics - get a nice surface visualizer
+
+visualizing curvature metrics?
+
+Figure 2:
+use grid lines on any grid plots you might show - throw in some grids
+
+
+
+
+result - normal vectors in pial and white matter surfaces
+
+the wisdom of psychopaths
+need clean dataset ready to run ICA -> flips and bad elecs, then run ICA on continuous data and plot ersp/topo
+
+do the same for small group although they should be ok already (outside only?) 
+also try the frequency space ICA - might give better results. 
+flip the vector of bad electrodes, 1:32 = 33:64, etc. 
+
+voxel-wise comparisons EEG-FMRI? see how peak frequency varies with BOLD in each voxel? 
+see how stimulus response profile matches with BOLD in each voxel? 
+
+
+goal for today 17-12-30
+finish the distance paper, including ROI image with electrodes and COM
+distance figure pretty much done - get some feedback, and put finishing touches 
+
+then 3 days for curvature paper (including freesurfer and new stats)
+the figure 1, then figure 4 (by 18-01-15)
+study of neonates power differences
+
+distance not cortical morphology determines eeg gamma
+supplementary: same analysis but with %change
+
+no significant corr for cancellation, but significant sorting effect? 
+show posterior electrodes in red, others in black
+voxel-wise analysis of I0? I0 VBM
+get I0 in all subjects, warp, and correlate across voxels. finish the figure first
+
+get all the figures you need, then plan the figure layout
+plan the paper with kevin after sending him a gigantic sheet full of figures. 
+
+need to get all the raw data - gina still showing some artifacts, and also good for supplementary figures.
+raw data with single trials for all stimulus types, both ERSP, and subtracted frequencies. 
+get the raw data and just save it to the E:, all freqs, all times, then later you can play with different types of baseline subtraction. 
+filter the raw data from 1-100 and just save each as its own set. 
+
+
+
+
+
+

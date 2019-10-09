@@ -1,0 +1,15 @@
+evidence for gamma inhibition deficits in dorsolateral prefrontal cortex of patients with schizophrenia: 
+abstract: previous studies have shown that patients with schizophrenia and bipolar disorder have deficits in cortical inhibition.
+through the combination of tms and eeg, it has been shown that cortical inhibition can be measured over the dlpfc, a region closely 
+associated with the pathophysiology of schizophrenia. it is possible to index cortical inhibition of specific frequency bands, including
+the gamma band whose modulation has been related to higher order cortical processing. this study shows that patients with schizophrenia
+have significant deficits of cortical inhibition of gamma oscillations in the dlpf, compared to healthy subjects or subjects with 
+bipolar disorder, while no deficits are demonstrated in the motor cortex. the results suggest that lack of inhibition of gamma 
+oscillations in the dlpf represent an important frontal neurophysiological deficit, which may be responsible for the spectrum of deficits
+commonly found in schizophrenia. 
+
+introduction: several lines of evidence suggest that CI is impaired in patients with schizophrenia and bipolar disorder. it has been shown
+that patients with schizophrenia have deficits in gamma oscillatory activity in response to auditory tones, or during perception of a 
+gestalt, while other studies have shown impairment in gamma modulation in the dlpfc during working memory tasks. both an increase and
+reduction of gamma oscillations have been reported in schizophrenia, and these studies suggest that gabaa receptor mediated inhibitory
+post-synaptic potentials contribute to generation of gamma oscillations.

@@ -1,0 +1,11 @@
+remove toggling of views
+remove the gui with the view toggle 
+fix GUI so it works on multiple devices and can load .trk and .nii 
+ipad password
+255880
+
+update all tracks - what is the fastest way to test this to make sure it works?
+could you put all bunles in their own separate fibermanager? would that make it more difficult
+for the fiber filter? you could always just add in a global filtering mechanism later, once you
+have these few features working on the existing setup 
+in this case, fibermanager should hold its own bundles? 

@@ -1,0 +1,4 @@
+thesis intro
+
+remove most of the orientation tuning details
+add more about curvature

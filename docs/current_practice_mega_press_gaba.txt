@@ -1,0 +1,20 @@
+current practice in the use of mega-press spectroscopy for the detection of GABA. 
+this report will provide a summary of the current state of the art for detecting GABA using mega press at 3t, and a basic guide to help
+researchers new to the field.
+introduction: mrs provides a non-invasive technique to measure neurometabolites in-vivo. gaba has been in particular difficult to measure
+reliably, due to spectral overlap of the main gaba peaks with other metabolites such as creatine. high field short echo time applications
+provide one solution to the problem, another is the use of edit proton MRS to detect gaba. 
+
+mega-press: Meshcer Garwood point-resolved spectroscopy. allows gaba signals to be separated from the stronger overlying signals of other
+metabolites by taking advantage of known couplings within the gaba molecule. scalar coupling is an interaction between different protons
+within a molecule, which takes place through the bonding electron network, altering the appearance of the spectrum and time-evolution
+of spins during the experiment. in the context of MEGA-PRESS, applying an RF pulse to one coupled spin can modify the time-evolution of a
+coupled partner, and therefore the appearance of the corresponding peak in the spectrum. 
+the difference edited technique mega press involves the collection of two interleaved datasets which differ in their treatment of the gaba
+spin system. in one dataset, an editing pulse is applied to GABA spins at 1.9ppm, in order to selectively refocus the evolution of 
+j-coupling to the gaba spins at 3ppm. in the other, the inversion pulse is applied elsewhere, so that the j-coupling evolves freely 
+throughout the echo time. the majority of peaks in the spectrum are unaffected by the editing pulse, so subtraction of the refocused ON from
+the un-refocused OFF removes all these peaks from the spectrum, and retains only those peaks that are affected by the editing pulses. 
+
+acquisition: differences in implementation across systems originate largely from differences in timing, slice profile, and bandwidth of 
+slice-selective pulses used in the base PRESS experiment, and differences in the timing and bandwidth of the editing pulses. 

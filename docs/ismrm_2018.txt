@@ -1,0 +1,3 @@
+ismrm - questions 
+need to talk to people that have expertise on how to build coils/electrophysiology rigs. 
+your future goal is to build your own brain measurement device. 

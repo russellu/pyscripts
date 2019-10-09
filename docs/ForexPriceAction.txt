@@ -1,0 +1,21 @@
+README for ForexPriceAction application
+
+to enter a trade, press BUY or SELL. to exit a trade, press the opposite button 
+	ie, if a trade was entered using "BUY", the same trade could be exited using "SELL"
+
+restart the market from a random time point using "RANDOMIZE" button
+	this also closes the current trade at whatever price it is currently at
+
+summarize all trade results so far using "SUMMARIZE SESSION" button
+increase or decrease speed of market using "SPEED UP" or "SLOW DOWN" buttons
+increase or decrease number of time points displayed using "ZOOM IN" or "ZOOM OUT" buttons
+increase or decrease leverage using "MORE LEVERAGE" or "LESS LEVERAGE" buttons
+set automatic stop loss using "AUTO STOP LOSS" button
+set automatic take profit using "AUTO TAKE PROFIT" button
+
+*PREMIUM FEATURES*
+
+select custom time windows to trade using "SELECT TIMESLOT" button
+select custom currency pairs to trade using "SELECT CURRENCY" button
+select from different indicators using indicator buttons on left tab
+

@@ -1,0 +1,174 @@
+winawer_research_proposal 
+
+research strategy
+a) significance: 
+motivation/goal: bridging the gap from neuron to brain function, brain is functionally organized into small (<1mm) populations, human neuroimaging has identified
+multiple spatial scales, from small cm wide networks to whole brain connections engaging multiple areas. to understand how the brain works, we need to measure
+dynamic processes across spatial scales, from populations to networks. capacity for non-invasive, fast, and high resolution brain imaging has exploded in recent 
+years (FMRI), yet limits in resolution, modeling, and linking fmri to neurophys have left us far from understanding how activity in neuronal populations relates
+to signals measured. propose empirical models to a) build encoding models from stimulus and task to neuronal population response, b) translate properties of neuronal
+populations across spatial scales and modalities. obtain measurements across multiple spatial scales to inform and validate models that translate between these scales,
+using custom MRI hardware for high spatiotemporal resolution, cortical optical recordings, and high density intra-cranial human ECOG to obtain a unique set of
+measurements at level of neuronal populations in humans.
+
+Current state of the art:
+FMRI: despite recent advances in hardware and acquisition speed, FMRI is inherently limited by the fact that it measures neural activity indirectly through 
+hemodynamic changes, furthemore, the vascular contribution to FMRI muddles the signal. 
+integrating FMRI and neurophysiology: combining ECOG and FMRI is a promising avenue, as ECOG is sensitive to synchronous as well as asynchronous neural activity.
+recent findings combining high resolution ECOG and FMRI in marmosets reports a tight match between hemodynamics and asynchronous neuronal firing, but another 
+study reports the two can be uncoupled. 
+computational modeling of sensory systems: PRF models aggregate neuronal responses at a cortical site as a funciton of stimulus properties and paradigm design,
+and can be subsequently convolved with an HRF to predict BOLD signals. they have interpretable units such as position and size in the visual RF, and these parameters
+can be used to compare measurements between sites (V1 vs MT), task (attention or not), individuals (healthy vs autism) and instruments (ecog vs fmri). prfs can also
+be applied in the auditory and tactile domains. 
+gaps in the current state: fundamental disagreements about the relationship between BOLD and neuronal activity remain, BOLD fmri associated with multiple ephys
+features, resulting in conflicting models, stimulus paradigms, and species. the solution proposed is to account for all observed relationships in a comprehensive 
+model, using high quality multimodal data collection from the same individuals, and solving one model of neuronal population responses, which in turn predicts 
+multiple instrument measurements. 
+
+innovation: a) development of a comprehensive model to link neuronal population physiology to non-invasive measurements, b) obtain state of the art multimodal 
+recordings from the same individuals in the service of bridging the modalities and feeding the models, c) validating the model with data from multiple modalities
+and brain systems (visual, somatosensory, and motor), and d) make algorithms, data and code available 
+Deliverables: a unique, publically available data set of functional human brain activity, spanning multiple measurement modalities and scales, linked by a common
+set of carefully controlled experiments and tasks. new computational models of neuronal population activity in visual and somatosensory cortex, implemented using
+public, state of the art software infastructure. parallel, public datasets in human and rodent, including high resolution FMRI, and neural/optical measurements.
+
+approach: a set of ecog, 3t, and 7t will be acquired in individual patient volunteers at the UMCU. a set of MEG, EEG, ECOG, and 3T will be acquired at NYU. the same
+experiments (except ECOG) will be conducted at both sites in healthy controls. optical recordings and high field fmri in rodents and a subset of patient volunteers
+relate hemodynamic models based on vascular anatomy to humans and translate between modalities. 
+Brain Systems: systematically vary activity across a wide range of task and stimulus conditions, to elicit a wide range of neurophysiological response. 
+
+participants: 24 ecog patients will complete visual or somatosensory experiments, for a total of 12 complete ecog sets in each sensory domain. 48 healthy subjects
+will participate in the identical experiments (excluding ECOG). 
+
+experiment 1: task vs rest: a confound in assessing signal changes in a quantitative manner is the baseline state to which signal changes are compared. the baseline
+state can vary depending on arousal or attention, the experiment will consist of 9 cycles of task/rest, (12s/12s), the crosshair will dim, prompting the subject
+to press a button, the tactile experiment will consist of a vibration that will change in frequency during task, and amplitude throughout task. 
+
+experiment 2: hemodynamic response function: slow, event-related design, stimuli presented for 0.25s, exponentially distributed ISI, mean 9s, range 3-24s, a large
+contrast pattern for visual, and 50hz vibration on fingertips for tactile. 
+
+experiment 3: retinotopy/somatotopy - retinotopy and somatotopic mapping experiments (prf mapping)
+
+experiment 4: spatiotemporal: noise patterns, faces, etc, all presented for 0.5s. somatosensory will span amplitude, sparseness, frequency. 
+
+data acquisition and preprocessing: 0.8-1mm 7Tesla, spin and gradient echo. high field T1 weighted 0.5-0.8mm isotropic T1. for patients, MRI, EEG, and MEG will take
+place pre-operatively, postoperative CT will identify electrode locations, and aligned. 
+
+AIM1: characterize, model, and quantify the electrophysiological response of neuronal populations to external stimuli and tasks. 
+background and motivation: aim1 develops new models for the neurophysiological signals in visual and somatosensory cortex in response to stimulus and task. three
+central components to the aim 1) use computational framework to study how stimuli are encoded, building on PRF methods already established, predicting responses
+to a wide range of features (orientation, patter, contrast, etc). the models will take the space and time varying properties of the visual stimuli, extending visual 
+prf models to space and time, and developing/validating space and time models for tactile stimuli. second, separate stimulus related responses from task-related
+responses, it is likely that neuronal population response and hemodynamic responses differ for sensory stimulation compared with task effects, hence both must be
+measured separately (Task-related effects and stimulus-related effects - attention?) third, rather than modeling the output of a particular instrument, instead model
+the signals in a neuronal population, and from this population activity predict the electrophysiological responses measured by the instrument, this requires a 
+significant extension of pRF models to incorporate multiple circuit responses. 
+experimental protocol and analysis: the forward computation from stimulus or task to instrument is separated into three explicit stages: 
+model-a: the largest component of aim1, the input is stimulus or task and the output is the time-varying set of synaptic inputs to a local neuronal population, with
+dimensions time points x number of neurons, output is modeled as arising from several separate circuits which are summed, one circuit is time-locked to the stimulus,
+one is asynchronous, one is narrowband at high frequency, and one or more is narrowband at low frequency. this approach is consistent with claims that local neuronal
+signals reflect multiple circuits, and these circuits are sensitive to different stimulus properties. due to lack of access to complete synaptic inputs to individual
+neurons, model-a cannot be fitted and validated directly, instead, predictions are made for ECOG and EEG/MEG in conjunction with models b/c, and for FMRI, in 
+conjunction with models d/e. 
+
+an example of developing one model component - an asynchronous circuit for visual stimuli - is as follows: start with a well tested pRF model of the FMRI signal 
+called the SOC model, which takes an arbitrary gray scale image, and predicts the BOLD response, next, hypothesize that the same type of model will predict the ECOG
+broadband signal, and complete the circuit model by using the SOC output as the rate of spike arrivals in each neuron, and convert the rate to discrete spikes using
+Poisson sampling, this circuit computes time varying spike arrival to each modeled neuron in a population, in contrast with the SOC model, which computes a single
+number per stimulus. other model components, such as one generating gamma rhythms have very different properties, the stimulus dependency of gamma rhythms is very 
+different from BOLD or broadband ECOG, pilot work developed a NBF model, which accurately predicts the level of gamma oscillations measured by the electrode, large
+gamma oscillations reflect elevated synchrony in the local neuronal population, but not an elevated rate of spike arrivals. to adapt the NBF model to a population,
+its output is used to scale the band-limited neuronal coherence, in this circuit model, the gamma power in individual neurons does not depend on the stimulus, but the
+coherence across the population does. in these examples, model development begins by predicting one feature of the electrophysiological measurement, (ECOG BB or NB
+ gamma), the model was then augmented to output a matrix of synaptic inputs to a local population, rather than a single number, additional circuit models will be 
+developed to account for low frequency oscillations and stimulus-locked signals. 
+to extend the visual model to account for temporal properties of the stimulus, start with FMRI models. a recently developed PRF model that predicts the BOLD response
+to brief stimuli varying in duration and ISI, accounting for temporal summation and adaptation, the model was developed for FMRI but has been validated with ECOG, 
+further work will require augmenting the model to compute neuronal population activity, and include multiple circuits (stimulus locked, narrowband high frequency
+and narrowband low frequency). sensorimotor models will adopt similar approach, using fMRI and gaussian prfs across and within digits. 
+the task-related study serves two purposes, first, providing important constraints for understanding how neuronal signals relate to the BOLD signal, and second, 
+task-related effects in sensory cortex are of interest in and of themselves, sensory cortex encodes incoming stimuli and is sensitive to a wide range of top-down
+processes, a comprehensive model must account for both types. 3 alternative hypotheses will be tested, specifically that task related effects 1) do not include a 
+robust, observable local modulation in the local field potential, 2) are reflected in slow cortical potentials below the low frequency cutoff, 3) are reflected in
+broadband elevation of power. 
+
+model-b: this component translates the neuronal population inputs into neuronal dendritic potentials, using a variant of a leaky integrator model to explain the shape
+of the ECOG power spectrum. once learned, this model can be fixed, as the parameters are expected to be similar across cortical locations and subjects. 
+
+model-c: model-c translates the neuronal population activity to an electrode time series, using linear summation and assuming neurons oriented perpendicular 
+underneath the electrode. this linearity has important implications, for example asnychronous signals will cancel partially, growing only with the sqrt of the number
+of signals, while synchronous signals grow linearly. summation causes an interaction between spatial scale and coherence, providing leverage to fit multiple circuit
+models. 
+
+preliminary results: preliminary data exists, prf models that predict responses to arbitrary images have been extended from fmri to ecog, and a new model developed 
+to predict stimulus selectivity of narrow band gamma. temporal prf has been developed for fmri and validated with ecog. task related effects have been measured with
+3t fmri and agree with optical imaging in primates. broadband and nb gamma has been obtained using MEG. sensorimotor prf models have been developed for ecog. 
+
+possible outcomes and interpretation: extending spatial prf models to time will increase understanding of how sensory inputs are integrated over time, and building
+sensorimotor prfs will bring computational power of visual prf to a new domain. by modeling the activity of neurons in sensory cortex, fmri and neurophysiology will
+be integrated in terms of circuit properties, rather than simply asking which features of each type are correlated. 
+
+potential pitfalls: mini ecog might not be implanted in some patients for clinical reasons, if not, standard ecog will be used. ecog may not cover early visual cortex
+MEG/EEG SNR may be too low to be useful, if so, more trials on a reduced stimulus set will be collected. solutions may not be constrained, two or more possible 
+neuronal population responses may explain a given response, if so, more stimuli will be introduced to disambiguate. 
+
+aim2: characterize, model, and quantify the hemodynamic responses in single voxels to external stimulation: separate the spatiotemporal dynamics of micro from macro
+vessels, from BOLD measurements. microvessels directly interface with active neuronal populations, while macrovasculature is serially engaged in either actively or
+passively (arterial and venous respectively). optical recordings in animals have shown spatiotemporal regulation of hemodynamics on the order of mm and ms, extraction
+of spatiotemporal dynamics from FMRI signals will help us understand dynamic processes in neuronal populations. micro scale models based on rodent vascular network
+anatomy predict spatiotemporal evolution of hemodynamic parameters given physical properties of the vasculature, allowing for a quantitative interpretation of 
+hemodynamic measurements. propose to integrate micro and macro scale models to extract quantifiable spatiotemporal dynamics of microvessels from fmri measurements
+across field strengths and resolutions. a central questiona addressed is whether parameters measured at the micro scale can yield better predictions for macro scale
+parameters than those obtained using simplified assumptions from macro scale models, a key element is that empirical data is acquired at each scale to inform models
+and evaluate model predictions at different scales. 
+methods and preliminary data: optical recordings acquired at the micro scale, and micro/macro vascular dynamics will be measured at high field using custom coils
+and spin/gradient echo contrast. studies 2a and 2b will evaluate micro scale model in rodents and translate between modalities, study 2c will evaluate the model in 
+humans using optical imaging. differences in vascular architecture between species in blood transit times will also be investigated. lower resolution 3T FMRI will also
+be used to translate the model to macro-scale measurements. 
+study 2a: rodent micro-scale model: 9.4T fmri, tungsten microelectrode, electrical stimulation of the forepaw, levels of neuronal activity will be evaluated in prior
+experiments using optical imaging and microelectrode recordings. 
+study 2b: vascular challenges, by changing co2 concentration, measure hemodynamic responses using 9.4t and optical signals
+study 2c: human volunteers: optical recordings performed intra-operatively, under light propofol anesthesia, prior of after ecog implantation, sequential illumination
+of cortical tissue at multiple wavelenghts, 
+study 2d: human, healthy volunteers: gas challenge at 3t and 7t, interleaved 2m blocks, used during visual and somatosensory stimulation, to modulate arterial inflow
+while minimally affecting neural activity. 
+study 2e: 7t and 3t fmri will be performed in 3 separate scans per subject using the full set of visual and somatosensory stimuli. 
+analysis and predictions: by modulating physical properties of the vasculature in micro-scale models, spatiotemporal evolution of hemodynamic parameters will be 
+predicted, to distinguish between micro and macro-vessels. these parameters will be formulated in hemodynamic response functions for micro and macro vessels in terms
+of oxygenation and blood volume. incorporating these functions into a macro model accounting for micro and macro vascular compartments gives a prediction of micro
+and macro vascular fmri signals. micro-scale parameters will be used in model e to predict the fmri signal, and test if they yield better predictions than those 
+obtained with simplified assumptions from macro scale models. also use variants of the model, leaving parameters out to see if they are necessary to predict the
+measurements. model outputs will be compared with empirical measurements at the different spatial scales. 
+fmri data: estimate HRF components for micro and macro vascular compartments based on SE and GE contrasts. assuming the same volume, the difference between SE and GE
+signals gives an estimate of macro vascular contributions and vessel size within a volume. at high field, mainly extra-vascualr signals contribute to the measurement,
+at 3T, the relative contribution of extra and intra vascular signals will be evaluated by comparing EPI and PRESTO HRFs, and comparing 7T data interpolated to 3T voxel
+size. the amplitude (pos/neg) and spatial distribution of signal changes across voxels will be examined, as well as other time-series parameters (slope, etc). 
+model e validation: 
+
+
+
+
+
+
+
+
+questions:
+what type of visual stimuli did you use (which patterns, specifically?) - what data do you have? 
+extending these results to continuous paradigms?
+task and stimulus related effects studied separately - attention, feedforward/feedback?
+were you able to acquire simultaneous optical and ecog recordings in patients, or in mice?
+broadband and narrowband orientation preferences, microvascular and macrovascular orientation preferences	
+do you actually think modeling the different BOLD compartments will yield more stimulus specific responses? 
+
+
+
+
+
+specific aims:
+
+AIM2: Characterize, model, and quantify the hemodynamic response in voxels to external stimulation: determine the relative contribution of the two known contributors
+to the FMRI signal, the capillary bed and the intracortical/pial vessels. models will be developed that describe a) the responses in the two vascular components, and
+b) how these responses contribute to the various hemodynamic measurements. current vascular models are based on rodent physiology. similar measurements in rodents
+and humans will be obtained, to relate the models between species. stimuli from aim 1 will be used for hemodynamic measurements in humans, at 3 and 7t as well as 
+intra-operative optical imaging, additionally hemodynamic responses using fmri in rodents at 9.4t and cortical optical recordings for very high resolution. 

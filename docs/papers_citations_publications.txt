@@ -1,0 +1,22 @@
+publications - you want to average around 200 citations per year by 2024 (within the next 5 years)
+to do so, you will need to get your name on at least 5 first or last author articles per year, and 5 second author articles
+that will give you around 40-50 articles by 2024, and assuming an average impact factor of 4, 50*4 = 200 citations per year
+
+right now, you have in the works:
+
+1 x lyes (glaucoma, deprivation)
+1 x greg (anticipatory)
+2 x sam (hormones, EEG/TMS)
+1 x madora (eeg-tms)
+3 x russell (coupling, orientation, nrf)
+1 x amal (fragile-x)
+2 x francis (distance, pain)
+1 x grova (simultaneous gamma)
+1 x reihaneh (MRE elastography)
+
+other potential publications:
+the imeka app
+your fitbit/apple watch grant ideas
+	first publications - modeling the relationship between ppg and ecg and MRI/other physiology
+	next publications - more large scale experiments in collaboration with other profs and researchers at chus/bishops 
+more HCP analysis - inter-subject correlations EEG networks vs FMRI RSnetworks (a la Finn et al) 

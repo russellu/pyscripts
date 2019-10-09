@@ -1,0 +1,35 @@
+facebook ads
+
+
+ad level:
+
+ad name (35 char. limit) (required)
+ad status (set to on, must match campaign) (required)
+ad body (90 character limit for right bar, 500 character limit for newsfeed ads) (required)
+creative type (page post ad - everywhere, or standard - for right column only). (required)
+display link (shorter, friendlier URL) (optional)
+image (full image filename x.jpg) (required)
+image hash (unique identifier for image) (required only for edits)
+link (destination URL) (required if linking to an external website)
+link description (emphasize why someone may want to visit your news feed) (required)
+story id (id number associated with post) (required if setting up a page post ad)
+title (25 character limit, required)
+url tags 
+
+ad set level:
+
+daily budget X.XX
+ad set ID (required if editing existing, blank if creating new ad set)
+118
+
+
+
+
+
+
+
+
+
+
+
+

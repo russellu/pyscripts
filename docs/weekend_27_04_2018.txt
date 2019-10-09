@@ -1,0 +1,25 @@
+goals: weekend of the 27-28-29
+
+goal #1: get the online shop working with downloadable products - by sunday night, you want to be running an advertising campaign selling your trading software
+with landing page pitch, and a way to track clicks (which ads convert best)
+	starting point: finish the free downloadable pdf
+	pdf - re-read once more, finish with links, and a convincing pitch, and convert to pdf. upload to site, and write landing page. 
+	get the optimal parameters for all strategies, and the maximum pip differences for all indicator types. make sure you pitch this hard. 
+		have this pdf done before lunch'
+	
+	how are you going to arrange the parameters? just a long-ass list in pdf format? matrices? 
+	excel table with the following fields: average profit/loss, number of trades, profit curve correlation, etc. save by currency and timeframe, but also save
+	a gigantic table with all the SORTED parameters. 
+		go buy currency, each currency has its own directory, and you run all the strategies on that currency. 
+		save only the best parameters for each currency, (based on objective market data) then build the strategy from there. 	
+	the pitch is good, but now you need to condense it down into 1/4 the text, and go heavier on marketing
+		ie, you need to create fear of missing out in people, and make them believe you have the answer to all their problems. its way too long as is.
+
+
+
+goal #2: finish SFN abstract, and analyze all your currently available data. start seriously thinking about the paper you want to write for this. 
+	starting point: check the abstract format on the SFN website
+
+small goals/random shit - mail in the car insurance, deposit your cheque, send the create forms to max and felix, ...
+
+

@@ -1,0 +1,55 @@
+action_08_19_25
+
+main goal: prepare first 7.5 hours of lectures for two classes: cs230 and 405 - 15 hours total (45 hours preparation) and practice the lectures
+main goal: prepare first lab for cs230, have it ready to go in the mac lab
+main goal: start frqnt early career researcher, internal deadline is in 2 weeks. 
+(re-read the word document you sent yourself for the above 2)
+secondary goal: complete release of ios and steam forex app
+secondary goal: order new laptop, complete device reimbursement request, order wearables (samsung os, apple watch)
+secondary goal: complete all 1*, 2* exercises in bishop prml txtbook, practice more linear algebra/calculus
+
+
+1) prepare 7.5 hours of lecture for cs405 (after algorithms chapter, go back and start making complete slides (this weekend) - say each slide before you move on
+	finish basic slide outlines by wednesday evening, then move to 230 for thurs-fri
+2) prepare 7.5 hours of lecture for cs230 - samme as for 405
+3) prepare first lab for cs230
+4) make sure mac lab is working properly with your first lab
+5) verify iap working on ios (done) 
+6) verify steam forex game is published and downloading correctly (done)
+7) order new laptop for lectures
+8) order samsung galaxy watch and apple watch
+9) get reimbursed for iphone purchase
+10) complete exercises from bishop chapter 1/2, start chapter 3
+11) work out 2 times (chest/legs, back/bis)
+12) go on frqnet and get templates for all the forms you need to fill out for grant
+13) read the original bayesian paper (done)
+14) read original kdtree paper, implement in matlab/python
+15) decide how you will present your examples in python (windows, laptop, virtualbox, etc?)
+16) read efficient algorithms with neural network behavior
+17) get a latex installation working for your probability slides (done) 
+18) back up all courses and grants on github
+
+monday night: do more problems from bishop et al.
+read frqnt proposal guidelines and start checklist for grant proposal
+plan slides creation timeline for cs405/cs230
+
+thursday afternoon/night : finish current chapter of weka book
+
+next week - the big 3:
+frqnt
+cs 230/405 lectures
+NEED to finish the rough draft of frqnt
+NEED to complete at least 3 hours of lectures for 405/230 and the first two weeks of labs 
+	this means, have the labs working in NIC 103 and fully planned out/integrated with lectures
+	have finalized slides, and practiced full lectures for 230/405
+
+things to note: when writing the grant, don't write like you will come back and find the reference
+write like you are getting ready to submit the next day (ie, it should be easy to find the reference when you do the final version)
+same with creating slides - create slides like you will be presenting them the next morning. 
+
+main components of grant: 
+
+
+
+
+

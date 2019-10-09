@@ -1,0 +1,34 @@
+agenda
+why aso
+how to disover
+conversion rate optimization
+q&a
+
+most internet traffic is mobile, most mobile traffic is in apps, 65% of apps are found through app store search
+
+search discoverability:
+improving search discoverability 
+2 components
+1) app store search
+2) app store browse
+conversion rate optimization:
+taxi vs taxis - taxi had way more 
+keyword + app. common combination
+keywords in title weighted more than keywords in description
+keyword in proximity to beginning of title
+repeating the keyword in title and in keyword slot 
+click-through rate - if users consistently search and install your app, that will improve your ranking
+
+google:
+repeat the keyword 3-5 times in long description, short description, and title, first 167 characters in long description. shorter is 
+sweeter. 
+click through rate. 
+
+how does the ranking algorithm work?
+1) download velocity + ratings and review + engagement
+featuring
+
+search discoverability tools: app annie, mobile action
+
+
+

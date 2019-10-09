@@ -1,0 +1,236 @@
+next step - loading the user - when you switch from the load user screen to the activity screen, 
+next step - saving activities within users, and making the activity screen. 
+next step - the scroll button 
+	- the example user (default) - have a bunch of different activities (Timed, and basic) 
+	adding the default user, without saving it each time? maybe just re-write the array list starting at index 1? 
+		the warning message popup - for when you try to create a user that already exists
+		this can be used to solve both problems - add in the warning popup, and at the same time, the default user
+	add the warning message at the top (orange = warning, red = error, green = success message). 
+loading users from file - save all users, and then try to add the default user at the end (set up a special case in addUser)
+
+.
+.
+.
+final step - adding in-app purchases, for more categories. start with 3 base activity groups, and 5 activities per group 
+draw buttons on the activity group - for each activity within the group, add a small button on a grid that shows the activity
+
+stuff to put for the default user - different activities, name
+
+tonight: scrollbar, restrict button size, and work on activities 
+also, have a button in the middle that allows you to increase or decrease button size (to a certain limit) 
+when a button or user is modified, it automatically goes to the top
+
+add the functionality to activity buttons
+add the x's to activity buttons 
+add the graph to activity buttons (with bar charts and date) 
+a button to add more activities to the user profile
+
+have this done by sunday (all the basic programming), and then you can implement the first in-app purchase. 
+by the end of next week, aim to have this released on google play, with a streamlined code interface that you can easily
+trasnfer to other games (ie, your rpg), and in-app purchases. 
+tomorrow: create new activity (NEW ACTIVITY), pop up the keyboard and make the new activity (and put it in italics)
+	  add the default user's activities - put some random data in for the different activities (times, lifts, etc) 
+	  update the new text size headers (too big in the delete button)
+	  reset the count when switching screens (so it doesn't flash when you bring up the previous screen) (done) 
+	  display a chart for the activities
+	  fix the back button during the activity screen (done)
+	  remove quick start (done)
+	  the activity screen should display a chart, and a couple options to edit/remove old entries 
+	  add help text file
+		modify text size for delete button 
+		fix delete back button (no/yes on delete activity, fix delete activity) (done)
+	  add another button to switch an activity to another user
+	  make it so the create new activity button is a different color and can't be deleted. 
+		
+how to work the activity layout? 
+you press on the button, then what? 
+a screen pops up, and two bottom buttons - create new entry, and remove entry? 
+on the screen - a bar chart of the progress in the activities, be it time, weights, whatever - if its weights (multiple sets)
+then have a multi-bar chart like in matlab. 
+
+change the color of new activity - make it light gray, and italic font 
+
+
+
+
+tomorrow - finish the button menu app
+big things to add:
+timed activity and multi-set activity
+removing activity entries
+
+first thing to work on: new activity - change color of button background, and italics, and pop up keyboard, and add shit to keysensor
+when creating a new activity, it has to first ask to select the type of activity - simple, multi, or timed, etc
+once the user adds the new activity name, it switches to the activity screen, (with the graph), and adds the activity to the user 
+database. 
+
+when can you go for beer? once you've added the new activity to the app, (ie, type the name of the new activity, and then switch
+to that screen)
+after that - adding new entries, and plotting progress on current entries, and displaying/removing old entries. 
+(gonna have to put dates and shit on this stuff eventually
+
+next - add a descriptive "sub text" to each button (smaller text size, italics, possibly different color)
+add entries to each "thing"
+plot each things progression. 
+when you remove an entry, put the buttons logarithmically sized, with the most recent entries largest? 
+
+today: put the sub- text in the button, and add entries to the activity
+
+optimizing font size, need to use the maximum font size across all labels, in your menu. 
+or, just base it on a constant calculation based on the screen width. 
+to make things simpler, you can also use an arrayList<String> for the menu sub-headers, instead of trying fancier stuff. 
+
+next: add entry, and fix the rectangle where the data is displayed (keep the upper limit the topBarSize 
+
+adding entry, and scrollbar, and timed/multi-set activity, and you should be done
+(Add multi-set activity next) - same, with a bar chart, but with bars within bars. 
+go with the freemium model - free to download and test, pay to get the enhanced version (Better than using shitty adds). 
+- if you market it will, you can get 500-1000 downloads a day. if 10% of the people go premium, you'll be making 50-100$ a day,
+and in turn, 1500-3000 a month. 
+
+added the subheadings - next, add the new activity (after entering the text) - and check for non-digits 
+(change it to italics) 
+
+still need to complete the remove entry screen - so it actually removes the entry. 
+add entry seems to be working. 
+
+what are some "goodies" you can add to make the user more likely to buy? 
+	different color schemes
+	different options (in the help menu)
+	ability to have more entries 
+
+add and remove entries is working - now, add the ability to scroll up and down on the menus. (can do that later when you have internet)
+next - timed activity and multi-set activity. 
+do multi set activity, and timed activity when you have internet (timer) 
+adding entries to the multi-set activity? 
+option 1: add a new set, option 2: append to existing set (maybe have a "finalize set" button as well)
+so basically, add entry - another screen pops up - MultiSetScreen - with options - create new set, or add to existing set
+if you chose add new set, the "enter number" button pops up. if you choose to add to existing set, the set menu pops up, and you
+chose from the recently added sets which one to add to. 
+
+next: adding a multi-set activity. displaying a multi-set activity. timer (all should be done by tonight, 5 hours starting NOW...go!
+by the weekend...finalize the interface (change the colors and make it look more professional, scrollbar (or drag scroll), and in-app
+purchases, display screen labels
+
+then launch by sunday night! after that, focus on promoting the app and getting it in other app stores, while 
+simultaneously working on the game, and getting game metrics and other metrics that you could possibly apply to this app. 
+
+call it the "flexible workout log"
+
+today: the scroll button - scroll down all entries, or scroll down an entire page rather, and the multi-set entry. (add in the reps somehow) 
+the scrollbar screen - better to add it as a separate screen, or add it to the button composite? 
+=> add it as a separate button composite, and perform an additional check in viewscreen. the scrollbar screen can then call the viewscreen "currentscreen" 
+to remove shit 
+
+add a "congrats!" every time you increase the weight/score
+add a personal best page: lowest, and highest
+scale the colors of the buttons by the entry values 
+
+today: finish the multi-set entry and the scroll - add a function to the button to change the position. 
+fix the return to close screen, so it stays at the same zoom level. 
+start the remove buttons from the most recent entry,  
+
+stuff to do today:
+1) finish the multi-set entry - add reps 
+	start new set - keyboard pops up, prompt for first entry (enter number of reps, and weight of each rep) 
+	so the arrayList<arrayList<Double>> stays the same, but have another arrayList<arraylist<Double>> to save the #reps 
+	first enter the weight, then enter the #reps 
+add to existing set - finish this and you're pretty much done (+ visualization) - also finish the new activity, doesn't work on new buttons 
+some other default stuff you can add - like a heart rate monitor and step tracker? nah. 
+
+monetization strategies - a premium version to remove adds and get more activities - free version, only 3x5, so 3 different sessions, 5 different activities
+sharing activities across sessions? or, you can just add a pre-existing activity from another session, which duplicates it (but doesn't overwrite the other one) 
+
+should probably have a little prompt button (like a flashing vertical bar) to show the user they are in text writing mode 
+should probably have an edit set and edit entry button as well. 
+
+tomorrow - wake up and smell the covfefe - finish the timer (go to tims and get the timing code), or just check on your phone, and then the app is basically done,
+from there, you have to do a couple things 1) pretty it up and tie up lose ends, make it look good for the user, add the help. and 2) monetization strategy, how
+are you gonna make it so the user wants to buy? right now, the free version with in-app purchasing of premium should look pretty good. assuming you get a good #
+of downloads, for example the bodybuilding app had 5million+, making 6k a month...if you can get 100k downloads a year (good keyword optimization and advertising)
+and convert 10k to paying customers, you should be able to make around 20k a year, 
+
+some loose ends (listed roughly by importance) - after finishing the timer. 
+1) display the bench press (ie, multi set) bar chart, and clean up the charts in general (axis, colors, spacing). (done)
+2) uniformize the color scheme, and make it customizable through the help
+3) the top bar - transparency should gradually fade out (Try this), or at least make them all transparent/non-transparent. 
+	mostly done, but add to other parts of app. 
+4) the key entry box - make it a black background, with a flashing entry bar that moves based on the key input. (done)
+5) add slope, standard deviation, (moving average, etc to charts - to see progress more clearly) (add stats at top, but no mvgs) 
+6) change the keyboard for data entries to just numbers (done)
+7) add the help screen 
+
+timer looks good - just need to add the entries using finalize, and timer will be done.  
+make the max the max + 10%, min the min-10%, if a single value, just use that value +/- 10%. 
+
+color themes - use different themes like the matlab color schemes - forest, spring, jet, etc 
+
+today: finish the multi set display, and get the google play store monetization sheet done (RBC) 
+2d drawing - get the max number of sets within an entry, and scale based on that - then just draw every set separately, with different colors 
+ - how to also draw the #reps? maybe a different way of visualizing besides just bars? bars within bars?, ie break up every bar int a subset of bars 
+first, just draw the bars, then, break them up according to #reps .
+
+
+tomorrow - help screen and different color themes, fix the back-key for a few of the screens, and add a couple more workouts (default workouts) 
+once this is all done, you can focus on adding the in-app purchases. how to monetize? make users pay to add more activities, and more workouts
+limit it to 3 activies, and 5 excercises per activity.
+limit the color schemes - black and white only. that should be enough, and then have 3-5 other themes that you can unlock by paying
+add saving to when you add stuff and remove stuff from users
+remove the ghey transparency 
+
+tomorrow - icon, and in-app purchases, add a red line on the maximum entry 
+next - limit the bottom of the screen to have 400 pixels or whatever, for the buy application banner 
+limit the # of sessions to 1, and the # of exercises per session to 5 
+limit the example session so that users can't create more activities on the example session 
+pop up messages every time a user exceeds a previous record. 
+
+whats left? 
+add the congrats message when the user beats a record
+add the limitation on the non-premium accounts 
+try to finish this tonight - this will allow you to focus on other shit tomorrow, and bump up the production line. (2 apps and counting) 
+you wanna have 3 apps out by september. then, work on a bigger app (game) 
+
+fitness 
+logbook progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

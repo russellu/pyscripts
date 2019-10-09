@@ -1,0 +1,27 @@
+microvasculare BOLD contribution at 4 and 7 tesla in the human brain: gradient and spin echo FMRI with the suppression of
+blood effects. 
+the BOLD signal consists of both an intra and extravascular component from small and large vessels. their relative 
+contributions are dependent on field strength, imaging technique, and echo time. the IV and EV contributions were investi
+in human visual cortex at 4 and 7 tesla using gradient and spin echo with or without suppression of blood effects. 
+spin echo acquisition suppresses EV BOLD from large veins, and reflects predominantly T2 changes and EV BOLD signal from
+small vessels. at a short echo time of 32ms, diffusion gradient suppression of blood signals resulted in a 75 and 25% 
+decrease in spin echo BOLD at 4 and 7 tesla respectively. however, at longer echo times (55-65ms), approximating T2 
+typically used for optimal BOLD contrast, these gradients had much smaller effects at both fields, consistent with the
+decreasing blood t2 for increasing field strength. 
+gradient echo BOLD %changes, with relatively long echo times at both fields, were virtually unattenuated by gradients that
+attenuated blood contribution because the EV BOLD surrounding both large and small vessels dominated. they conclude that
+spin echo BOLD at 4 and 7T, with TE approaching tissue T2, significantly reduce non-specific mapping signal from large
+vessels, and accentutates microvascular contributions. 
+
+BOLD contrast is dependent on blood vessel diameter, magnetic field strength, and image acquisition method (HSE) vs GE. 
+the BOLD effect arising from the capillary bed can be expected to have the same spatial extent as perfusion and oxygen
+metabolism induced by synaptic neuronal activity. on the other hand, functional maps based on BOLD effects originating from
+the larger diameter draining veins can be distant from the site of neuronal activity, therefore minimizing the macro-vasc.
+contribution is critical for high resolution FMRI. the BOLD signal arises from both an intravascular and extravascular 
+component, in both small and large vessels. the EV effects of large vessels can be eliminated using HSE experiments, 
+because the 180deg RF pulse refocuses the static dephasing induced by magnetic field inhomogeneities around large blood
+vessels. the IV BOLD component exists because blood deoxyhemoglobin content strongly influences the T2 and T2* of blood,
+as well as the susceptibility induced frequency difference between blood and surrounding tissue. both mechanisms contribute
+to blood-related signals in GE FMRI. in HSE based FMRI, the susceptibility induced frequency difference between blood and
+surrounding tissue is not relevant, but the IV effects persist because blood T2 is dependent on blood oxygen state. the IV
+effect originates from venous vessels of all sizes, and is a potential source of innacurate activation signals. 

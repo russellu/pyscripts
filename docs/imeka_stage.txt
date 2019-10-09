@@ -1,0 +1,222 @@
+imeka_stage
+today: figured out the basics of unity - looks very promising, cross platform and even faster to develop/test than java
+tomorrow - get the rotation working for your axis/sphere, and try to load a nifti file image. by the end of the day, have a 
+rotating brain on your phone. 
+
+end of week 2: rotating slices on android device, so far so good (still in mid september). 
+
+by the end of today - you want to have the orientation cube working, with freesurfer and t1 and possibly other images
+you will have to change the slider indices to reflect the orientation of the image.
+you don't need to change the actual orientation of the image, you just need to rotate the image and cube when it loads, so you can
+always start facing a certain direction. 
+
+first - make sure the sliders are working from left to right, posterio to anterior, and bottom to top
+	ie, if R, -1, etc 
+
+second - rotate the cube to match the brain
+
+third - rotate the brain and cube to a good starting position. 
+toggle slider or rotation with an icon. 
+
+day3,4: fibers. 
+
+by the end of next week: replicate mibrain on the phone/ipad. 
+
+week 4: volume rendering, FMRI, DWI
+
+
+WEEK 4 GOAL BY END OF WEEK 4
+have a fully functional track and anatomy loading viewer 
+key points: vox2ras transformation, lining up the anatomy and tracks to a standard grid based on nifti/trk headers. 
+fast trk visualization - 10,000+ streamlines on android, smooth visualization. 
+
+tomorrow - get line renderer working in your project, get a fast framerate with the optic radiation. 
+line renderer doesn't work well on the S5, try it on ipad when it comes back, until then, just use a small # of lines (sub sample 10x)
+for now, focus on getting the tracks and the anatomy in the same space
+
+draw the transformed coordinates, and then try with the fastlinedrawer
+
+
+converting the track coordinates into texture coordinates? how?
+
+use fast line renderer to draw tractography, test rotation performance with many lines. 
+implement the data manager with the 3d slices and shaders
+fingers - touch gestures for unity 
+
+by lunch - have fast line renderer drawing tracks on your phone
+by end of day - rotating the lines with the slices
+
+
+next week - test more datasets with more fibers, test the speed of gl.lines immediate mode (and try to improve it), 
+speed sucks. can't even render 20k fibers at a decent framerate. need to fix this, because that is just shit. fast line renderer
+also sucks, only does around 10k at a good framerate. 
+
+index counter++
+ifj%2==0
+
+need to make the indices reset every time a new fiber start, ie, you don't want to continue from the previous line
+for example, if you have [point1,point2,point3],[point1,point2,point3]
+your current code is doing [0,1,1,2,2,3,3,4,4,5,5,6]
+you don't want to use 3 in your next index ie you don't want to jump lines from the last index of the previous line to the first
+index of the next line. 
+the solution should be simple, just change the initial index to i+1 or whatever
+
+next step: loading more fibers, and breaking the fibers you've loaded up into multiple meshes
+1) need to create the sphere programatically
+2) display all fibers in mesh, add them chunk by chunk. 
+ example - loop through all the fibers, every time you get to 65000, OR you get to the end, create a new mesh
+3) data manager 
+4) split screen with anatomy shader (by end of week). 
+
+today: 
+1) remove the orientation box
+2) add in the 3 texture screens with option to toggle to 3d (sagittal, transverse, coronal)
+3) add the fiber painting to the texture screens, toggle anatomy (on both screens) 
+4) detect gestures pinch in, pinch out
+5) toggle the anatomy on/off
+
+put the tracks in the top half of the screen, put the textures and buttons in the bottom half (with the option to fullscreen) 
+fit the texture to the largest square? or use the same mesh as you used for the other textures?
+
+by the end of today - control the orthographic camera so you have the 3 stacked boxes and the control box, which works in both
+landscape and portrait mode 1) get it working on the unity screen 2) 
+2) if you have time, shade the texture with tractography colors. 
+
+1) create 4 spheres and arrange them according to the orthographic centers of the 4 quadrants 
+
+step one: try to move the textures so that they align to the left, center, and right extremes. 
+
+
+brainsurfer game - traverse the gray matter, and surf the white matter. surf from endpoint to endpoint
+
+first step : move it only if its in the top half of the screen. 
+
+first, you need to organize the spheres so that they change location depending on the orientation of the phone.
+if the phone is in portrait mode, the spheres will be arranged in quads, if the phone is in landscape mode, you'll have 1,2,3 and 
+then the control panel 
+
+today: finish completely the orientation panel, and the data loading panel. landscape/portrait mode, and loading new track files in
+the remaining panel. scroll by dragging on a certain panel, tap the panels to show/not show them (have an indicator on the sub-panel
+that shows if they're being displayed or not). 
+
+today: scroll using the brain, not the slider, load and display colored bundles, data manager. 
+step 1: scroll using the brains, drag mouse on different views, slide different textures. `
+
+by the time you leave for cuba (tuesday night) - shaders on textures, data manager, control over textures/rotation. 
+email krys the updated pdf tonight
+draw a translucent box over the brain that you're rotating? 
+fix the bounds cases - zero and size of brain slice, moving the mouse from one part of the screen to another. 
+need to start the scrolling when the mouse is not down, and then end the scrolling when the mouse is lifted. (done)
+
+this afternoon - data manager, and color tracks. start by loading a single colored bundle, and reading its color properly.
+create a data manager in the lower right hand corner of the device. use resources folder, and load data
+also make the cool colored track idea where different segments have different shades 
+
+today: finish the track segment coloring (try different schemes like x,y,z curvature * original color) 
+finish the data loader (remove sliders)
+start the texture shader
+
+tomorrow: finish the texture shader.
+texture shader step 1: get the position and color of each pixel in the texture that you are currently viewing
+ie, you have to map from the pixel to a point in world space, and then map from that point to a track...
+
+make a 3rd, separate data structure or 3d volume that you store all these values in? 
+
+try first with the setPixel function, just to make sure everything is working well, then if you need you can move to shaders. 
+
+a third separate data structure that stores a 3d representation of the brain with colors at every point. 
+basically, a copy of img but with [x,y,z,color] instead of just [x,y,z]. 
+
+alternatively, it would be easier just to get the color in 3d space
+maybe have an x,y,z coordinate associated to every track point as well? 
+or just use an overlay slice to place on top of the texture?
+
+how to store the track info? 
+test #1: draw a single track on the texture - 
+
+track data structure - 
+
+the end result needs to be a 3d matrix with x,y,z values for track
+the 4th dimension? an array list of track colors? or do you combine them all into one value? 
+
+right now, the track data structure is a list of lines in 3d space. you have both world space track coordinates, and nifti space
+track coordinates. 
+
+one central image to store them all - but how to represent multiple colors in each voxel? 
+
+add another track on startup 
+
+adding the track texture - one problem is that some of the line segments pass through multiple voxels, so it won't really work on them
+especially if you have only one track or very few tracks. so you need a way of drawing the clipped tracks to the texture itself. 
+
+next steps: better controls (zoom, moving boxes around, etc)
+move the code into its own separate files
+add color scheme selection to the gui (options tab) 
+today: 
+sub-sampling (# tracks and points on each track), and fix the landscape/portrait mode for phone. 
+you want to have it running smoothly on the phone with 3-4 bundles
+
+zooming the different views to main screen, and changing the scrolling mechanism to reflect this. 
+
+need to instantiate the buttons first, and then adjust their positions later. 
+
+today - finish the button zoom stuff, and try to get unity plus - by the end of the week hopefully have it running on
+macbook with data loading from disk 
+
+how to switch the main camera to the smaller box and vice versa? 
+assign each camera a rect as part of the screen, and then just switch between rects and check the rect when scrolling. 
+you also want to be able to zoom in/out on the planes...but leave that for after. 
+
+remove the orientation camera (not needed anymore) 
+
+choosing the right box - first, get the quadrant that the mouse is in (landscape or portrait)
+first get the quadrant - if landscape, left or right quads, if portrait top or bottom quads
+
+first things first - try to just change the camera view port, put the sagittal texture in the big viewport, and the 3d view
+in the sagittal texture viewport. 
+
+next - assign a quadrant to the mouse click
+
+remove the buttons. 
+
+map the camera views to the screen location. how? using another class? 	
+initial case: user taps on square, and you want to switch texture to main. 
+have an array of strings (main, topright, topleft, botright, botleft)
+on a boolean "in place" array, where you just have 0s and 1s
+but then, what if you switch another one later (without switching back)
+
+today: arrange the buttons properly again, and add the touch zoom feature to switch panels
+if you get all that done, put it on the mac and start testing it on the ipad
+
+show anatomy button - should turn of the slices, but keep the tracks, and still allow you to scroll. 
+
+how to work the screen selection tap? start with a simple case - tap and switch main camera with tapped camera. 
+a more complicated case - tap and switch main with tapped, and then tap a different one - switch tapped to main, main back to original
+and tapped to original
+
+you need to map the camera rects to the slices/3d views	
+you have: maincamera, axialcamera, sagittalcamera, and coronalcamera
+
+just have a method that sets main, axial,sagittal,and coronal - and automatically resets all others. 
+	-then you will also need to think of a way to scroll and pan based on the current configuration 
+		-worry about that after you are able to switch the cameras at will 
+
+make it so the game doesn't scroll when you're using the file navigator
+make the file navigator full screen, and so it fits the screen 
+
+goal by the end of the day - loading a brain on the ipad, load .nii and .trk 
+add a "load all tracks" button and a "clear all tracks" button
+add the zoom to the slices 
+add the different color options
+load compressed niftis (.gz)
+add a loading... text
+
+today - add all, remove all, pre-loaded fibers, select file from disk 
+friday - gzip, and re-arrange code. 
+try to remove that weird white crap between the buttons. 
+first - get all the buttons initialized properly, then add functionality 
+
+change the bundle list to a List<>, instead of an array, and then just add additional booleans and refresh the dropdown when a new 
+fiber is loaded. 
+
+

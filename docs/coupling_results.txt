@@ -1,0 +1,129 @@
+results_coupling
+
+coupling results for coupling paper
+-first check the best way to get correlations - compute in sliding window, with bandpass/without bandpass filtering (not necessary
+if using sliding window) - get rest in all subjects and see how it looks. 
+
+compute different types of processing on your FMRI - global signal regressed, and non global signal regressed. (this can be a result)
+state, region, and pipeline dependent neurovascular coupling: implications for FMRI analysis	
+
+get all badger subjects FMRI in grid space, start running matlab coupling script, convert mongoose grids, run on mongoose, average all
+in atlas space (rest) 
+
+coupling results - raw, and with motion interpolation 
+
+show a significant difference in gamma coupling due to motion correction 
+
+get all subjects into the same space (down-sample the atlas brain?) - this should work
+
+get the correlation map between gamma and MEH. 
+
+3 types of processing - raw, mc, and gsr_mc - look for significant coupling differences between gsr_mc and mc, and raw and mc. 
+you already know that gamma correlations are drastically reduced when correcting for motion artifacts 
+
+the main point is to find significant differences. look first at all states and subjects - for global signal regression, to mc
+voxel-based or ROI based?  ROI based - downsample ROIs, and get mean kernel in each ROI, for all processing pipelines ~
+get the ROIs, and look for significant differences in the cross correlations across ROIs
+	=> this allows you to look at temporal differences in specific regions
+
+another way - look at the classic hemodynamic time lag, and average across frequency bands alpha/beta and gamma, then perform 
+voxel-wise comparisons 
+	=> this allows you to look at spatial differences in specific regions
+
+look for a pattern here. examine different states and processing types. 
+you can also look at overall patterns in terms of DMN/V1 positive/negative alpha/beta correlations 
+
+so to recap: you want the following data (in both datasets, but start with badger)
+1) cross-correlation kernels in all ROIs, assuming 12 ROIs, it will be a vector of [3,12,9,6,50,41] or [ROI,sub,tsk,freq,time]
+	first thing - downsample ROIs
+2) HRF time-lag cross-correlation kernels in all voxels, vector of [30,30,15,3,9,6,50] which can be further averaged across freq
+	first thing - find optimal time lag
+once you have these vectors, do t-tests across the following
+1) mc vs non mc (all states, stim), mc vs gsr (all states, stim), mc&gsr state vs state vs state
+
+2) mc vs non mc (all states, stim), mc vs gsr (all states, stim), mc&gsr state vs state vs state
+
+state dependence - t-tests between different states. 
+
+two main results: the coupling difference in DMN due to GSR, and the reduction in gamma coupling due to interpolation
+of EEG motion (show motion spike time series, show GSR example). 
+show also the global signal correlated with neural activity (And references) 
+GSR introduces positive alpha-bold correlations in the DMN - what does this say about GSR? 
+GSR introduces anti-correlations in noise voxels. 
+without GSR, the DMN is not correlated to alpha, with GSR, the DMN becomes positively correlated. 
+interpretation - GSR is removing respiratory-induced fluctuations, and 
+GSR also results in lower overall correlations (check this in the data), implying it removes true neural activity
+GSR also correlates significantly with EEEG 
+
+two interpretations - GSR good, GSR bad (or GSR does nothing)
+GSR good - positive alpha-BOLD correlations due to removal of respiration noise - how? 
+GSR bad - positive alpha-BOLD correlations due to anti-correlations
+
+final results - need the motion time series from each subject (go back to ICA decompositions, and find components that correlate with motion regressors, or just look
+like motion according to mullinger's work. the only true way would be to compare these using cross correlation with FMRI, but mullinger ref should be enough. 
+
+also need to resample all data to the same time period - use afni to resample the mongoose data to the 693ms TR, and then recompute mongoose power for all subjects
+
+paper theme: gamma and bold correlate but only under specific stimulus conditions and in certain areas, other gamma-bold correlations
+may be largely due to motion, respiratory induced artifacts, spin history effects (in the BOLD FMRI signal). 
+
+a non-ICA denoised approach? use the RAW FMRI to correlate with EEG? - see if this affects the motion artifats
+
+
+figures
+1) methods: inside vs outside, gamma vs bold time series, denoising, spatial map comparison
+2) goense, hrf stimulus specific, xcorr gamma
+3) xcorr rest, movie, differences in state, gsr, motion
+4) other
+
+presentation: whole brain neurovascular coupling in healthy human: implications for global signal regression
+NVC
+global signal regression
+	what contributes to the global signal?
+		motion, breathing, heart rate
+	the brain is organized into dynamic, anti-correlated functional networks fox2005, fransson2005, greicius2003
+
+still need to get motion parameters from FMRI image time series
+
+saturday - need to get shit ready because you will only have 1 day after to prepare for the presentation
+	- get all slides done in skeleton form (need to solidify the basic message)
+	- compute coupling in all states for all types of motion correction and artifact reduction
+	- compute GSR-EEG coupling
+	- know what you will present
+	- know the basic message (title)
+	
+what is the basic message? you are using neurovascular coupling to resolve a long-held debate about global signal
+regression.
+
+show coupling differences between states are due to motion (sometimes) emily finn
+
+first get the GSR results, then see what it looks like with and without GSR. implications follow. 
+
+how to merge the motion and the GSR results? the motion results are matching because people claim GSR and global signal.
+positive/negative correlations separated by 10.3 seconds, could this underly the early alpha correlation with BOLD
+
+show t-value maps with and without global signal regression 
+save mean t-value coupling across all brains for gsr and non-gsr
+save mean t-value difference across all brains for non-gsr minus gsr 
+RESULT: whole brain neurovascular coupling with/without GSR.
+global signal correlation with all EEG voxels - with and without motion correction of EEG. 
+
+
+
+show xcorr matrices of global signal with neural activity in each voxel (and different regions) 
+
+GSR makes coupling weaker between two correlated regions, and artificial anti-coupling with othe regions. 
+
+check global signal connectedness in each state. correlate that to NVC
+
+still need: global signal coupling xcorr (2d), global signal voxel-wise avg coupling vs mc only coupling, global signal corr maps. 
+	
+need to correlate respiratory and heart rate ecg with bold, see what you get. 
+
+
+
+
+
+
+
+

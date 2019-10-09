@@ -1,0 +1,12 @@
+the GOAT equation
+
+greatness = (win ratio) * (average competition quality) * weight
+where average competition quality = mean(win ratio of competition at time of fight)
+      win ratio = #wins / (#real losses + 1), real losses = losses not by DQ or freak injury/cut
+      weight = weight class, if heavyweight, then mean weight of opponents 
+
+other scaling factors:
+clean GOAT (eliminate PED users)
+prime GOAT (22-35)
+p4p GOAT (eliminate weight factor)
+

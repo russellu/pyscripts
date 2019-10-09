@@ -1,0 +1,15 @@
+devofinance apps:
+
+1) Forex demo trading game (android) - use candles only, zoom in
+2) Forex offline demo (android) - use bollinger + red line, zoom out a bit more
+3) Forex demo accelerator (steam, windows + mac) - use 
+4) Forex offline accelerated demo (ios) - use rainbow
+
+need unique looking icons with corresponding labels 
+need to uniformize names (Forex offline demo) 
+need background 
+
+icons should have your logo watermark + system watermark (android, windows, ios, etc)
+once you have this you can start driving traffic using specific keywords
+
+all the logos have to have 

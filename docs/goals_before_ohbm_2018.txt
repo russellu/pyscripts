@@ -1,0 +1,21 @@
+goals_before_ohbm
+
+gym: 6 days per week: cardio 3-4, weights 2-3. squats up to 270 x 8 ATG, 
+bench up to 225x8, 30 chinups, etc. 
+cardio: sprints 25 minutes, rowing 25 minutes. bodyweight stuff (pushups,
+chinups, etc) 
+just focus on doing more each time, eating good food, and losing fat.
+
+phd: resubmit to nimg with ica, source loc., and pooled data (by this week)
+n=15 for fmri and n=15 for new EEG tuning study
+2x ohbm posters, ismrm e-poster (train sam)
+
+apps: physics engine and simple ai, levels, controls. all the basics of a 
+simple game, new sprites, only thing to do is create content.
+fix payment bug in unity app, release new version. do some more ASO. 
+
+goals IN singapore:
+present posters and get contacts
+attend all interesting talk and posters
+other: get all cavities fixed, get new tailored suit, and anything else that
+can be had cheaply in the 3rd world 

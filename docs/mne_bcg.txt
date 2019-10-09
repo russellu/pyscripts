@@ -1,0 +1,1 @@
+the ultimate goal of the package: automatic denoising from raw EEG to source-space EEG-FMRI correlations

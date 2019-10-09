@@ -1,0 +1,14 @@
+ideas for denoising BCG artifacts
+denoising autoencoder:
+-reconstruct the input based on AAS subtracted epochs
+-reconstruct the input based on ecg channel only (doesn't work so well)
+-reconstruct the input based on ICA denoised BCG components (works well on some subjects but not others)
+
+the problem is one of the chicken and the egg - if you could have a denoised BCG for each subject, you could 
+then easily learn the correct representation - however, you don't, so you have to base it on other factors that
+approximate the BCG artifact (such as ECG and ICA)
+adding noise to the input to better approximate the BCG? or just use dropout
+
+the ECG channel carries quite a bit of info about the scalp channels, but not enough to remove it all
+maybe if you train it for longer, or change the training parameters, this will work better
+maybe if you combine the ECG with GFP or some other measure

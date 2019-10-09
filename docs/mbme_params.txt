@@ -1,0 +1,6 @@
+mbme_params
+
+echotime = 18,40.889,63.778
+tr = 1222
+
+~/me-ica/meica.py -e 18,40.889,63.778 -d echo1.nii.gz,echo2.nii.gz,echo3.nii.gz --TR=1222 --prefix=meica
